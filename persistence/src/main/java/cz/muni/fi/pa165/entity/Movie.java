@@ -1,6 +1,5 @@
 package cz.muni.fi.pa165.entity;
 
-
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
