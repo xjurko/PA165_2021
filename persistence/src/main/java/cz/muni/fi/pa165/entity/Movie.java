@@ -21,10 +21,12 @@ public class Movie {
     @ManyToMany(mappedBy = "movies")
     private Set<Actor> cast;
 
+    @ManyToMany(mappedBy = "movies")
     private Set<Director> directors;
 
     private int runtimeMin;
 
+    @Enumerated(EnumType.STRING)
     private Set<Genre> genres;
 
     private String caption;
