@@ -3,9 +3,13 @@ package cz.muni.fi.pa165.entity;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
-import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Movie entity
+ *
+ * @author juraj
+ */
 
 @Entity
 public class Movie {
@@ -20,7 +24,6 @@ public class Movie {
 
     @ManyToMany(mappedBy = "movies")
     private Set<Actor> cast;
-
     @ManyToMany(mappedBy = "movies")
     private Set<Director> directors;
 
