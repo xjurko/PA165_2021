@@ -26,6 +26,7 @@ public class Movie {
 
     private int runtimeMin;
 
+    @ElementCollection
     @Enumerated(EnumType.STRING)
     private Set<Genre> genres;
 
