@@ -1,13 +1,12 @@
 package cz.muni.fi.pa165.dao;
 
 import cz.muni.fi.pa165.entity.User;
-import jdk.jshell.spi.ExecutionControl;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
-@Component
+@Repository
 public class UserDaoImpl implements UserDao {
     @Override
     public void store(User m) {

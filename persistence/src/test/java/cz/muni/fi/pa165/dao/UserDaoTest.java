@@ -3,30 +3,32 @@ package cz.muni.fi.pa165.dao;
 import cz.muni.fi.pa165.PersistenceConfig;
 import cz.muni.fi.pa165.entity.User;
 import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
+import org.springframework.test.context.transaction.TransactionalTestExecutionListener;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceContext;
-import javax.persistence.PersistenceUnit;
-import javax.validation.ConstraintViolationException;
-import java.time.LocalDate;
-import java.util.*;
+import javax.transaction.Transactional;
+import java.util.List;
+import java.util.Optional;
 
 @ContextConfiguration(classes = PersistenceConfig.class)
-public class UserDaoTest {
+@TestExecutionListeners(TransactionalTestExecutionListener.class)
+@Transactional
+public class UserDaoTest extends AbstractTestNGSpringContextTests {
+
     @Inject
     private UserDao userDao;
 
-//    @PersistenceContext
-//    private EntityManager em;
+    @PersistenceContext
+    private EntityManager em;
 
     @Test
-    void testStoreAndFind(User m) {
+    void testStoreAndFind() {
         User user = new User("testUser1", "user1@fi.muni.cz");
         userDao.store(user);
 
