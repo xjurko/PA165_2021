@@ -10,6 +10,11 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * implementation of MovieDao
+ *
+ * @author juraj
+ */
 
 @Repository
 public class MovieDaoImpl implements MovieDao {

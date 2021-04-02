@@ -17,6 +17,11 @@ import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 
 import javax.sql.DataSource;
 
+/**
+ * Configuration taken from https://github.com/fi-muni/PA165/blob/master/eshop-persistence/src/main/java/cz/fi/muni/pa165/PersistenceSampleApplicationContext.java
+ *
+ * @author juraj
+ */
 
 @Configuration
 @EnableTransactionManagement
