@@ -5,6 +5,12 @@ import org.springframework.lang.NonNull;
 import javax.persistence.*;
 import java.util.Objects;
 
+/**
+ * User entity
+ *
+ * @author lsolodkova
+ */
+
 @Entity
 @Table(name="Users")
 public class User {
