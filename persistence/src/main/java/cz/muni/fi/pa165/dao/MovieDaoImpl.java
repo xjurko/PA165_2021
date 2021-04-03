@@ -43,8 +43,8 @@ public class MovieDaoImpl implements MovieDao {
     public Optional<Movie> findById(Long id) {
         try {
             return Optional.ofNullable(
-                    em.createQuery("select m from Movie m where m.name = :id", Movie.class)
-                            .setParameter("name", id)
+                    em.createQuery("select m from Movie m where m.id = :id", Movie.class)
+                            .setParameter("id", id)
                             .getSingleResult()
             );
 
