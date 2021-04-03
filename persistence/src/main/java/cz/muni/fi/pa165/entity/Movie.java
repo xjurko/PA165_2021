@@ -3,6 +3,7 @@ package cz.muni.fi.pa165.entity;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -32,6 +33,10 @@ public class Movie {
     @ElementCollection
     @Enumerated(EnumType.STRING)
     private Set<Genre> genres;
+
+    @OneToMany(mappedBy = "movie")
+    private Set<UserMovieRating> movieRatings = new HashSet<>();
+
 
     private String caption;
 
