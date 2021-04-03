@@ -20,14 +20,14 @@ public class User {
 
     @NonNull
     @Column(nullable = false, unique=true)
-    private String userName;
+    private String name;
 
     @NonNull
     @Column(nullable = false, unique=true)
     private String email;
 
-    public User(String userName, String email){
-        this.userName = userName;
+    public User(String name, String email){
+        this.name = name;
         this.email = email;
     }
 
@@ -35,25 +35,25 @@ public class User {
         return id;
     }
 
-    public String getUserName() { return userName; }
+    public String getName() { return name; }
 
     public String getEmail() { return email; }
 
     @Override
-    public boolean equals(Object o) {
-        if(this == o) return true;
-        if(!(o instanceof User)) return false;
+    public boolean equals(Object other) {
+        if(this == other) return true;
+        if(!(other instanceof User)) return false;
 
-        final User u = (User) o;
+        final User user = (User) other;
 
-        if(!u.getUserName().equals(this.getUserName())) return false;
-        if(!u.getEmail().equals(this.getEmail())) return false;
+        if(!user.getName().equals(this.getName())) return false;
+        if(!user.getEmail().equals(this.getEmail())) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(userName, email);
+        return Objects.hash(name, email);
     }
 }

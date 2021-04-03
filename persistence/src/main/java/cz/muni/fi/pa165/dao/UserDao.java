@@ -16,9 +16,9 @@ public interface UserDao {
     /**
      * stores or updates a single entity in the database
      *
-     * @param u entity to be updated
+     * @param user entity to be updated
      */
-    void store(User u);
+    void store(User user);
 
     /**
      * retrieves all stored entities

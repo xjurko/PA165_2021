@@ -23,7 +23,7 @@ public class UserDaoImpl implements UserDao {
     private EntityManager em;
 
     @Override
-    public void store(User u) { em.persist(u); }
+    public void store(User user) { em.persist(user); }
 
     @Override
     public List<User> fetchAll() {
@@ -48,7 +48,7 @@ public class UserDaoImpl implements UserDao {
             throw new IllegalArgumentException("Cannot search for an empty username");
         try {
             return Optional.ofNullable(
-                    em.createQuery("select u from User u where userName=:name", User.class)
+                    em.createQuery("select u from User u where name=:name", User.class)
                             .setParameter("name", name)
                             .getSingleResult()
             );
