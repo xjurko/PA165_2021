@@ -59,7 +59,7 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public void remove(Long id) {
-        throw new UnsupportedOperationException();
+    public void remove(User user) {
+        em.remove(user);
     }
 }

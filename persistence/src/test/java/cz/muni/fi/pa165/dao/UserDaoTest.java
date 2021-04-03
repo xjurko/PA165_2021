@@ -67,7 +67,7 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
         userDao.store(user);
         Assert.assertTrue(userDao.findById(user.getId()).isPresent());
 
-        userDao.remove(user.getId());
+        userDao.remove(user);
         Assert.assertTrue(userDao.findById(user.getId()).isEmpty());
     }
 

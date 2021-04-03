@@ -43,9 +43,9 @@ public interface UserDao {
     Optional<User> findByName(String name);
 
     /**
-     * Removes a user with particular id from the database
+     * Removes a user from the database
      *
-     * @param id user's id to be removed
+     * @param user user entity to be removed
      */
-    void remove(Long id);
+    void remove(User user);
 }
