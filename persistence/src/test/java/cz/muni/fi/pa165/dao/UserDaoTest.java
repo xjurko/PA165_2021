@@ -36,7 +36,6 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
     private EntityManager em;
 
     @Test
-    @Ignore("enable when user implemented")
     void testStoreAndFind() {
         User user = new User("testUser1", "user1@fi.muni.cz");
         userDao.store(user);
@@ -47,7 +46,6 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
     }
 
     @Test
-    @Ignore("enable when user implemented")
     void testStoreAndFindAll() {
         User user1 = new User("testUser1", "user1@fi.muni.cz");
         User user2 = new User("testUser2", "user2@fi.muni.cz");
@@ -60,14 +58,13 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
     }
 
     @Test
-    @Ignore("enable when user implemented")
     void testStoreAndRemove() {
         User user = new User("testUser1", "user1@fi.muni.cz");
 
         userDao.store(user);
         Assert.assertTrue(userDao.findById(user.getId()).isPresent());
 
-        userDao.remove(user.getId());
+        userDao.remove(user);
         Assert.assertTrue(userDao.findById(user.getId()).isEmpty());
     }
 
