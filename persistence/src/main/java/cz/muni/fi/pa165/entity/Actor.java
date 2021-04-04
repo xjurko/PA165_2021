@@ -29,10 +29,6 @@ public class Actor {
 
     private LocalDate deathDate;
 
-    //private String caption; // is it the path to image?
-
-    //private String externalRef;
-
     @ElementCollection
     @Enumerated(EnumType.STRING)
     private Set<Genre> genres;
@@ -55,8 +51,67 @@ public class Actor {
         this.movies = movies;
     }
 
-    public Actor() {
+    public Actor() {}
 
+    public Actor(@NonNull String fullName) {
+        this.fullName = fullName;
+    }
+
+    @NonNull
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(@NonNull String fullName) {
+        this.fullName = fullName;
+    }
+
+    public Double getHeight() {
+        return height;
+    }
+
+    public void setHeight(Double height) {
+        this.height = height;
+    }
+
+    public LocalDate getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    public LocalDate getDeathDate() {
+        return deathDate;
+    }
+
+    public void setDeathDate(LocalDate deathDate) {
+        this.deathDate = deathDate;
+    }
+
+    public Set<Genre> getGenres() {
+        return genres;
+    }
+
+    public Set<Movie> getMovies() {
+        return movies;
+    }
+
+    public void addGenre(Genre genre) {
+        this.genres.add(genre);
+    }
+
+    public void removeGenre(Genre genre) {
+        this.genres.remove(genre);
+    }
+
+    public void addMovie(Movie movie) {
+        this.movies.add(movie);
+    }
+
+    public void removeMovie(Movie movie) {
+        this.movies.remove(movie);
     }
 
     @Override

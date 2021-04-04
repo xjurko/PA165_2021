@@ -27,7 +27,7 @@ public class ActorDaoImpl implements ActorDao{
     }
 
     @Override
-    public List<Actor> findAll() {
+    public List<Actor> fetchAll() {
         return em.createQuery("select act from Actor act", Actor.class)
                 .getResultList();
     }

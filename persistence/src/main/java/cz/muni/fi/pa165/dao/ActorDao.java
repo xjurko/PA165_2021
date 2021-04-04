@@ -25,7 +25,7 @@ public interface ActorDao {
      *
      * @return all actors
      */
-    List<Actor> findAll();
+    List<Actor> fetchAll();
 
     /**
      * Find an actor by id
