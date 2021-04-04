@@ -2,4 +2,4 @@
 PA165 project at MUNI
 
 ## Use case diagram
-doc/use_case_diagram.png
+![Use case diagram](doc/use_case_diagram.png)
