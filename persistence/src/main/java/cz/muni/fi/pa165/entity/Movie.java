@@ -14,7 +14,6 @@ import java.util.Set;
 
 @Entity
 public class Movie {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -25,6 +24,7 @@ public class Movie {
 
     @ManyToMany(mappedBy = "movies")
     private Set<Actor> cast;
+
     @ManyToMany(mappedBy = "movies")
     private Set<Director> directors;
 
@@ -35,8 +35,7 @@ public class Movie {
     private Set<Genre> genres;
 
     @OneToMany(mappedBy = "movie")
-    private Set<UserMovieRating> movieRatings = new HashSet<>();
-
+    private Set<MovieRating> movieRatings = new HashSet<>();
 
     private String caption;
 
@@ -60,6 +59,10 @@ public class Movie {
         this.genres = genres;
         this.caption = caption;
         this.externalRef = externalRef;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     @Override

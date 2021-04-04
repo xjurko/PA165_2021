@@ -3,7 +3,9 @@ package cz.muni.fi.pa165.entity;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * User entity
@@ -25,6 +27,9 @@ public class User {
     @NonNull
     @Column(nullable = false, unique=true)
     private String email;
+
+    @OneToMany(mappedBy = "movie")
+    private Set<MovieRating> movieRatings = new HashSet<>();
 
     public User(String name, String email){
         this.name = name;
