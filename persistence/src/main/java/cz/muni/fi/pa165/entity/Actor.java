@@ -29,10 +29,6 @@ public class Actor {
 
     private LocalDate deathDate;
 
-    @ElementCollection
-    @Enumerated(EnumType.STRING)
-    private Set<Genre> genres;
-
     @ManyToMany
     private Set<Movie> movies;
 
@@ -40,14 +36,12 @@ public class Actor {
                  Double height,
                  LocalDate birthDate,
                  LocalDate deathDate,
-                 Set<Genre> genres,
                  Set<Movie> movies) {
 
         this.fullName = fullName;
         this.height = height;
         this.birthDate = birthDate;
         this.deathDate = deathDate;
-        this.genres = genres;
         this.movies = movies;
     }
 
@@ -90,20 +84,8 @@ public class Actor {
         this.deathDate = deathDate;
     }
 
-    public Set<Genre> getGenres() {
-        return genres;
-    }
-
     public Set<Movie> getMovies() {
         return movies;
-    }
-
-    public void addGenre(Genre genre) {
-        this.genres.add(genre);
-    }
-
-    public void removeGenre(Genre genre) {
-        this.genres.remove(genre);
     }
 
     public void addMovie(Movie movie) {
