@@ -15,4 +15,24 @@ public class Director {
     @ManyToMany
     private Set<Movie> movies;
 
+    public Director(String name) {
+    }
+
+    public Director() {
+
+    }
+
+    public void setName(String fullName) {
+    }
+
+    public void store(Director d) {
+    }
+
+    public Long getId() {
+        throw new UnsupportedOperationException();
+    }
+
+    public String getName() {
+        throw new UnsupportedOperationException();
+    }
 }
