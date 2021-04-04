@@ -44,6 +44,11 @@ public class Movie {
     ///release data or year
 
 
+    public void addRating(MovieRating rating) {
+        this.movieRatings.add(rating);
+    }
+
+
     public Movie(String name,
                  Set<Actor> cast,
                  Set<Director> directors,

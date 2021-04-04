@@ -6,6 +6,7 @@ import javax.persistence.*;
 
 @Entity
 public class MovieRating {
+
     @EmbeddedId
     private RatingId id;
 
@@ -28,6 +29,19 @@ public class MovieRating {
         this.user = user;
         this.rating = rating;
         this.id = new RatingId(movie.getId(), user.getId());
+
+        movie.addRating(this);
+        user.addRating(this);
+    }
+
+    @NonNull
+    public Movie getMovie() {
+        return movie;
+    }
+
+    @NonNull
+    public User getUser() {
+        return user;
     }
 
     @Override
