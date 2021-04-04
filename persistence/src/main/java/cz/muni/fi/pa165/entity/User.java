@@ -44,6 +44,10 @@ public class User {
 
     public String getEmail() { return email; }
 
+    public void addRating(MovieRating rating) {
+        this.movieRatings.add(rating);
+    }
+
     @Override
     public boolean equals(Object other) {
         if(this == other) return true;

@@ -8,11 +8,12 @@ import javax.persistence.PersistenceContext;
 
 /**
  * Implementation of MovieRatingDao
+ *
  * @author juraj
  */
 
 @Repository
-public class MovieRatingDaoImpl implements MovieRatingDao{
+public class MovieRatingDaoImpl implements MovieRatingDao {
     @PersistenceContext
     private EntityManager em;
 
