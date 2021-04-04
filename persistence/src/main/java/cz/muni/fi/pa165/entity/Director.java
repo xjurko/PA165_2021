@@ -25,9 +25,6 @@ public class Director {
     public void setName(String fullName) {
     }
 
-    public void store(Director d) {
-    }
-
     public Long getId() {
         throw new UnsupportedOperationException();
     }

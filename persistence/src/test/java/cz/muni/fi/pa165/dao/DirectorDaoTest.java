@@ -2,7 +2,6 @@ package cz.muni.fi.pa165.dao;
 
 import cz.muni.fi.pa165.PersistenceConfig;
 import cz.muni.fi.pa165.entity.Director;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
@@ -10,14 +9,13 @@ import org.springframework.test.context.transaction.TransactionalTestExecutionLi
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
+import javax.inject.Inject;
 import javax.transaction.Transactional;
 import javax.validation.ConstraintViolationException;
 import java.util.List;
 import java.util.Optional;
 
 import static org.testng.AssertJUnit.assertEquals;
-import static org.testng.AssertJUnit.assertNotNull;
-import static org.testng.AssertJUnit.assertNull;
 import static org.testng.AssertJUnit.assertTrue;
 
 /**
@@ -32,7 +30,7 @@ import static org.testng.AssertJUnit.assertTrue;
 @Transactional
 public class DirectorDaoTest extends AbstractTestNGSpringContextTests {
 
-    @Autowired
+    @Inject
     private DirectorDao directorDao;
 
     @Test(expectedExceptions= ConstraintViolationException.class)
@@ -61,7 +59,7 @@ public class DirectorDaoTest extends AbstractTestNGSpringContextTests {
 
         Optional<Director> found = directorDao.findById(d1.getId());
 
-        assertNotNull(found);
+        assertTrue(found.isPresent());
         assertEquals(Optional.of(d1), found);
     }
 
@@ -72,7 +70,7 @@ public class DirectorDaoTest extends AbstractTestNGSpringContextTests {
 
         Optional<Director> found = directorDao.findByName(d1.getName());
 
-        assertNotNull(found);
+        assertTrue(found.isPresent());
         assertEquals(Optional.of(d1), found);
     }
 
@@ -80,8 +78,8 @@ public class DirectorDaoTest extends AbstractTestNGSpringContextTests {
     public void testRemove() {
         Director d1 = new Director("d1");
         directorDao.store(d1);
-        assertNotNull(directorDao.findById(d1.getId()));
+        assertTrue(directorDao.findById(d1.getId()).isPresent());
         directorDao.remove(d1);
-        assertNull(directorDao.findById(d1.getId()));
+        assertTrue(directorDao.findById(d1.getId()).isEmpty());
     }
 }
