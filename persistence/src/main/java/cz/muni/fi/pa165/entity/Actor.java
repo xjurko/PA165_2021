@@ -36,7 +36,6 @@ public class Actor {
                  Double height,
                  LocalDate birthDate,
                  LocalDate deathDate,
-                 Set<Genre> genres,
                  Set<Movie> movies) {
 
         this.fullName = fullName;
