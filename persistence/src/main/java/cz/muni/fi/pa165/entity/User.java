@@ -18,10 +18,12 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    /*TODO: add constraint for non-blank name: size>=1, no spaces-only*/
     @NonNull
     @Column(nullable = false, unique=true)
     private String name;
 
+    /*TODO: add some regexp to constraint email*/
     @NonNull
     @Column(nullable = false, unique=true)
     private String email;
@@ -38,6 +40,8 @@ public class User {
     public String getName() { return name; }
 
     public String getEmail() { return email; }
+
+    /*TODO: probably add setters if someone wishing to change name/email */
 
     @Override
     public boolean equals(Object other) {

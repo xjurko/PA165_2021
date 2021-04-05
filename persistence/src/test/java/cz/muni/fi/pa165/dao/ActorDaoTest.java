@@ -8,6 +8,7 @@ import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.test.context.transaction.TransactionalTestExecutionListener;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import javax.inject.Inject;
@@ -52,7 +53,7 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
         a2.setBirthDate(LocalDate.of(1882, 10, 20));
         a2.setDeathDate(LocalDate.of(1956, 8, 16));
 
-        /*TODO: add movies after getters/setters in Movie class implemented*/
+        /*TODO: add movies and proper tests after getters/setters in Movie class implemented*/
 
         actorDao.store(a1);
         actorDao.store(a2);
@@ -70,11 +71,28 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
         actorDao.store(a);
     }
 
-    /*TODO: a test for a blank name (not null, just empty or of 77 space characters)
+    /*TODO: test for a blank name (not null, just empty or of 77 space characters)
     * after proper constraints in Actor class implemented
     */
 
-   /*TODO: a test for getById when id getter implemented in Actor (if needed)*/
+    @Test(expectedExceptions = ConstraintViolationException.class)
+    @Ignore("enable when Actor name will be constrained to be non-blank")
+    public void zeroLengthNameNotAllowed(){
+        Actor a = new Actor();
+        a.setFullName("");
+        actorDao.store(a);
+    }
+
+    @Test(expectedExceptions = ConstraintViolationException.class)
+    @Ignore("enable when Actor name will be constrained to be non-blank")
+    public void blankNameNotAllowed(){
+        Actor a = new Actor();
+        /*TODO: how to properly test for all-whitespace string?*/
+        a.setFullName("             ");
+        actorDao.store(a);
+    }
+
+    /*TODO: a test for getById when id getter implemented in Actor (if needed)*/
 
     @Test
     public void findByName()
@@ -82,5 +100,14 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
         Assert.assertEquals(actorDao.findByFullName("Bela Lugosi").size(), 1);
         Assert.assertEquals(actorDao.findByFullName("ghjdhgj").size(), 0);
         /*TODO: also test for partial matching when implemented*/
+    }
+
+    @Test
+    public void remove()
+    {
+        /*TODO: Optional return type is not used in ActorDao; possibly needs to be changed*/
+        Assert.assertFalse(actorDao.findByFullName(a2.getFullName()).isEmpty());
+        actorDao.remove(a2);
+        Assert.assertTrue(actorDao.findByFullName(a2.getFullName()).isEmpty());
     }
 }
