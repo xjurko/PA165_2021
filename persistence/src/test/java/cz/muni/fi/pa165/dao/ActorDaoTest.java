@@ -2,9 +2,6 @@ package cz.muni.fi.pa165.dao;
 
 import cz.muni.fi.pa165.PersistenceConfig;
 import cz.muni.fi.pa165.entity.Actor;
-import cz.muni.fi.pa165.entity.Movie;
-import cz.muni.fi.pa165.entity.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
@@ -17,6 +14,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
+import javax.validation.ConstraintViolationException;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -30,7 +28,7 @@ import java.util.List;
 @Transactional
 public class ActorDaoTest extends AbstractTestNGSpringContextTests {
 
-    @Autowired
+    @Inject
     private ActorDao actorDao;
 
     @Inject
@@ -65,6 +63,16 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
         List<Actor> found = actorDao.fetchAll();
         Assert.assertTrue(found.containsAll(List.of(a1, a2)));
     }
+
+    @Test(expectedExceptions= ConstraintViolationException.class)
+    public void testNullNameNotAllowed(){
+        Actor a = new Actor();
+        actorDao.store(a);
+    }
+
+    /*TODO: a test for a blank name (not null, just empty or of 77 space characters)
+    * after proper constraints in Actor class implemented
+    */
 
 
 }
