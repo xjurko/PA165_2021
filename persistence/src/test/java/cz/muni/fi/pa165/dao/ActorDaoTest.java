@@ -59,13 +59,13 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
     }
 
     @Test
-    public void testFetchAll() {
+    public void fetchAll() {
         List<Actor> found = actorDao.fetchAll();
         Assert.assertTrue(found.containsAll(List.of(a1, a2)));
     }
 
     @Test(expectedExceptions= ConstraintViolationException.class)
-    public void testNullNameNotAllowed(){
+    public void nullNameNotAllowed(){
         Actor a = new Actor();
         actorDao.store(a);
     }
@@ -74,5 +74,13 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
     * after proper constraints in Actor class implemented
     */
 
+   /*TODO: a test for getById when id getter implemented in Actor (if needed)*/
 
+    @Test
+    public void findByName()
+    {
+        Assert.assertEquals(actorDao.findByFullName("Bela Lugosi").size(), 1);
+        Assert.assertEquals(actorDao.findByFullName("ghjdhgj").size(), 0);
+        /*TODO: also test for partial matching when implemented*/
+    }
 }
