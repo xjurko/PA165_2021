@@ -7,29 +7,29 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class DirectorDaoImpl implements DirectorDao{
+public class DirectorDaoImpl implements DirectorDao {
     @Override
     public void store(Director d) {
-
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public List<Director> fetchAll() {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public Optional<Director> findById(Long id) {
-        return Optional.empty();
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public Optional<Director> findByName(String name) {
-        return Optional.empty();
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public void remove(Director d1) {
-
+        throw new UnsupportedOperationException();
     }
 }
