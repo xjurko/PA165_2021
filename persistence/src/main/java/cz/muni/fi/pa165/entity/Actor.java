@@ -3,6 +3,7 @@ package cz.muni.fi.pa165.entity;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.util.Set;
 
@@ -19,7 +20,7 @@ public class Actor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NonNull
+    @NotNull
     @Column(nullable = false)
     private String fullName;
 
@@ -36,7 +37,6 @@ public class Actor {
                  Double height,
                  LocalDate birthDate,
                  LocalDate deathDate,
-                 Set<Genre> genres,
                  Set<Movie> movies) {
 
         this.fullName = fullName;
