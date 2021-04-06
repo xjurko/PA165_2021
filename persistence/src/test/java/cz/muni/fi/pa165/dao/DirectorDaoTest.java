@@ -39,10 +39,12 @@ public class DirectorDaoTest extends AbstractTestNGSpringContextTests {
         directorDao.store(d1);
     }
 
+    /*TODO: add more tests */
+
     @Test
     public void testFetchAll() {
-        Director d1 = new Director("d1");
-        Director d2 = new Director("d2");
+        Director d1 = new Director("Richard Linklater");
+        Director d2 = new Director("Akira Kurosawa");
 
         directorDao.store(d1);
         directorDao.store(d2);
@@ -54,32 +56,48 @@ public class DirectorDaoTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void testFindById() {
-        Director d1 = new Director("d1");
+        Director d1 = new Director("Zdenek Sverak");
         directorDao.store(d1);
 
         Optional<Director> found = directorDao.findById(d1.getId());
 
         assertTrue(found.isPresent());
         assertEquals(Optional.of(d1), found);
+
+        assertTrue(directorDao.findById(d1.getId() + 1).isEmpty());
     }
 
     @Test
     public void testFindByName() {
-        Director d1 = new Director("d1");
+        Director d1 = new Director("Zdenek Sverak");
         directorDao.store(d1);
 
         Optional<Director> found = directorDao.findByName(d1.getName());
 
         assertTrue(found.isPresent());
         assertEquals(Optional.of(d1), found);
+
+        assertTrue(directorDao.findByName("Akira Kurosawa").isEmpty());
     }
 
     @Test
     public void testRemove() {
-        Director d1 = new Director("d1");
+        Director d1 = new Director("Richard Linklater");
+        Director d2 = new Director("Akira Kurosawa");
+
         directorDao.store(d1);
+        directorDao.store(d2);
+
         assertTrue(directorDao.findById(d1.getId()).isPresent());
+        assertTrue(directorDao.findById(d2.getId()).isPresent());
+
         directorDao.remove(d1);
         assertTrue(directorDao.findById(d1.getId()).isEmpty());
+        assertTrue(directorDao.findById(d2.getId()).isPresent());
+        assertEquals(directorDao.fetchAll().size(), 1);
+
+        directorDao.remove(d2);
+        assertTrue(directorDao.findById(d2.getId()).isEmpty());
+        assertEquals(directorDao.fetchAll().size(), 0);
     }
 }
