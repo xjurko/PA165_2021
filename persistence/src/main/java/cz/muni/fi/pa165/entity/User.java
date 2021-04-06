@@ -1,5 +1,7 @@
 package cz.muni.fi.pa165.entity;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
@@ -15,6 +17,8 @@ import java.util.Set;
 
 @Entity
 @Table(name="Users")
+@Getter
+@Setter
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -35,14 +39,6 @@ public class User {
         this.name = name;
         this.email = email;
     }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() { return name; }
-
-    public String getEmail() { return email; }
 
     public void addRating(MovieRating rating) {
         this.movieRatings.add(rating);
