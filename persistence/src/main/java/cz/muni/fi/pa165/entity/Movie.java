@@ -1,5 +1,7 @@
 package cz.muni.fi.pa165.entity;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
@@ -13,6 +15,8 @@ import java.util.Set;
  */
 
 @Entity
+@Getter
+@Setter
 public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,10 +27,10 @@ public class Movie {
     private String name;
 
     @ManyToMany(mappedBy = "movies")
-    private Set<Actor> cast;
+    private Set<Actor> cast = new HashSet<>();
 
     @ManyToMany(mappedBy = "movies")
-    private Set<Director> directors;
+    private Set<Director> directors = new HashSet<>();
 
     private int runtimeMin;
 
@@ -34,20 +38,22 @@ public class Movie {
     @Enumerated(EnumType.STRING)
     private Set<Genre> genres;
 
-    @OneToMany(mappedBy = "movie")
+    @OneToMany(mappedBy = "movie", orphanRemoval = true)
     private Set<MovieRating> movieRatings = new HashSet<>();
 
     private String caption;
 
     private String externalRef;
 
-    ///release data or year
-
+    //todo release data or year
 
     public void addRating(MovieRating rating) {
         this.movieRatings.add(rating);
     }
 
+    public void addActor(Actor actor) { this.cast.add(actor); }
+
+    public Movie(){}
 
     public Movie(String name,
                  Set<Actor> cast,
