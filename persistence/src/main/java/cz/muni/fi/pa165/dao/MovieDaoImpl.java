@@ -57,4 +57,5 @@ public class MovieDaoImpl implements MovieDao {
     public void remove(Movie m) {
         em.remove(m);
     }
+
 }
