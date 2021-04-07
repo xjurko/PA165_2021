@@ -2,6 +2,7 @@ package cz.muni.fi.pa165.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.HashSet;
@@ -15,7 +16,7 @@ import java.util.Set;
  */
 
 @Entity
-@Table(name="Users")
+@Table(name = "Users")
 @Getter
 @Setter
 public class User {
@@ -24,17 +25,17 @@ public class User {
     private Long id;
 
     @NotNull
-    @Column(nullable = false, unique=true)
+    @Column(nullable = false, unique = true)
     private String name;
 
     @NotNull
-    @Column(nullable = false, unique=true)
+    @Column(nullable = false, unique = true)
     private String email;
 
     @OneToMany(mappedBy = "movie", orphanRemoval = true)
     private Set<MovieRating> movieRatings = new HashSet<>();
 
-    public User(String name, String email){
+    public User(String name, String email) {
         this.name = name;
         this.email = email;
     }
@@ -45,16 +46,15 @@ public class User {
 
     @Override
     public boolean equals(Object other) {
-        if(this == other) return true;
-        if(!(other instanceof User)) return false;
+        if (this == other) return true;
+        if (!(other instanceof User)) return false;
 
         final User user = (User) other;
 
-        if(!user.getName().equals(this.getName())) return false;
-        if(!user.getEmail().equals(this.getEmail())) return false;
-
-        return true;
+        if (!user.getName().equals(this.getName())) return false;
+        return user.getEmail().equals(this.getEmail());
     }
+
 
     @Override
     public int hashCode() {
