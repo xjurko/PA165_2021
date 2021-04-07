@@ -30,7 +30,7 @@ public class Movie {
     private Set<Actor> cast = new HashSet<>();
 
     @ManyToMany(mappedBy = "movies")
-    private Set<Director> directors;
+    private Set<Director> directors = new HashSet<>();
 
     private int runtimeMin;
 
