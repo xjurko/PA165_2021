@@ -71,27 +71,6 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
         actorDao.store(a);
     }
 
-    /*TODO: test for a blank name (not null, just empty or of 77 space characters)
-    * after proper constraints in Actor class implemented
-    */
-
-    @Test(expectedExceptions = ConstraintViolationException.class)
-    @Ignore("enable when Actor name will be constrained to be non-blank")
-    public void zeroLengthNameNotAllowed(){
-        Actor a = new Actor();
-        a.setFullName("");
-        actorDao.store(a);
-    }
-
-    @Test(expectedExceptions = ConstraintViolationException.class)
-    @Ignore("enable when Actor name will be constrained to be non-blank")
-    public void blankNameNotAllowed(){
-        Actor a = new Actor();
-        /*TODO: how to properly test for all-whitespace string?*/
-        a.setFullName("             ");
-        actorDao.store(a);
-    }
-
     /*TODO: a test for getById when id getter implemented in Actor (if needed)*/
 
     @Test
