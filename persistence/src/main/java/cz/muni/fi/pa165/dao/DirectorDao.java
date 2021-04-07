@@ -21,9 +21,9 @@ public interface DirectorDao {
     void store(Director d);
 
     /**
-     * Find all actors
+     * Find all directors
      *
-     * @return all actors
+     * @return all directors
      */
     List<Director> fetchAll();
 
@@ -38,7 +38,7 @@ public interface DirectorDao {
     /**
      * Find a director by name
      *
-     * @param name name of actor
+     * @param name name of director
      * @return director with the given name
      */
     Optional<Director> findByName(String name);
