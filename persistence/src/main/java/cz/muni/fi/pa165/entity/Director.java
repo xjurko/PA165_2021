@@ -40,16 +40,9 @@ public class Director {
     public Director() {
     }
 
-    public Director(String name,
-                    Set<Movie> movies,
-                    LocalDate birthDate) {
-        this.name = name;
-        this.movies = movies;
-        this.birthDate = birthDate;
-    }
-
     public void addMovie(Movie movie) {
         this.movies.add(movie);
+        movie.getDirectors().add(this);
     }
 
     public void removeMovie(Movie movie) {
