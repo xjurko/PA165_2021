@@ -1,5 +1,7 @@
 package cz.muni.fi.pa165.entity;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
@@ -14,6 +16,8 @@ import java.util.Set;
  */
 
 @Entity
+@Getter
+@Setter
 public class Director {
 
     @Id
@@ -29,7 +33,6 @@ public class Director {
 
     private LocalDate birthDate;
 
-
     public Director(@NonNull String name) {
         this.name = name;
     }
@@ -44,32 +47,12 @@ public class Director {
         this.birthDate = birthDate;
     }
 
-    public void setName(String fullName) {
-        this.name = fullName;
-    }
-
-    public Long getId() {
-        return this.id;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public Set<Movie> getMovies() {
-        return movies;
-    }
-
     public void addMovie(Movie movie){
         this.movies.add(movie);
     }
 
-    public LocalDate getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
+    public void removeMovie(Movie movie) {
+        this.movies.remove(movie);
     }
 
     @Override
@@ -81,5 +64,12 @@ public class Director {
 
         if (!name.equals(director.name)) return false;
         return birthDate != null ? birthDate.equals(director.birthDate) : director.birthDate == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name.hashCode();
+        result = 31 * result + (birthDate != null ? birthDate.hashCode() : 0);
+        return result;
     }
 }

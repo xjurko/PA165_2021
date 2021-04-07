@@ -14,9 +14,9 @@ import java.util.Optional;
 
 public interface DirectorDao {
 
-    /** create/update a director
+    /** create a director
      *
-     * @param d director to be created/updated
+     * @param d director to be created
      */
     void store(Director d);
 
