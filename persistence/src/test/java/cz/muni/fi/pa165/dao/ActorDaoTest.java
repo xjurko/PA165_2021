@@ -18,6 +18,7 @@ import javax.transaction.Transactional;
 import javax.validation.ConstraintViolationException;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Tests for ActorDao
@@ -71,7 +72,12 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
         actorDao.store(a);
     }
 
-    /*TODO: a test for getById when id getter implemented in Actor (if needed)*/
+    @Test
+    public void findById(){
+        Optional<Actor> actor = actorDao.findById(a1.getId());
+        Assert.assertTrue(actor.isPresent());
+        Assert.assertEquals(actor, Optional.of(a1));
+    }
 
     @Test
     public void findByName()
@@ -83,7 +89,6 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
     @Test
     public void remove()
     {
-        /*TODO: Optional return type is not used in ActorDao; possibly needs to be changed*/
         Assert.assertFalse(actorDao.findByFullName(a2.getFullName()).isEmpty());
         actorDao.remove(a2);
         Assert.assertTrue(actorDao.findByFullName(a2.getFullName()).isEmpty());
