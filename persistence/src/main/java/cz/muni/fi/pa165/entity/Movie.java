@@ -47,6 +47,13 @@ public class Movie {
 
     //todo release data or year
 
+    @PreRemove
+    private void removeMovieFromActors() {
+        for (Actor actor: this.getCast()) {
+            actor.getMovies().remove(this);
+        }
+    }
+
     public Movie() {
     }
 
