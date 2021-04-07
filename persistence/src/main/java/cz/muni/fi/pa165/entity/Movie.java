@@ -27,7 +27,7 @@ public class Movie {
     private String name;
 
     @ManyToMany(mappedBy = "movies")
-    private Set<Actor> cast;
+    private Set<Actor> cast = new HashSet<>();
 
     @ManyToMany(mappedBy = "movies")
     private Set<Director> directors;

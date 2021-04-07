@@ -95,8 +95,8 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
     {
         List<Actor> actors = actorDao.findByFullName("Vivien Leigh");
         Assert.assertEquals(actors.size(), 1);
-        Assert.assertEquals(actors.get(1).getMovies().size(), 1);
-        Assert.assertEquals(actors.get(1).getMovies().iterator().next().getName(), "Gone with the Wind");
+        Assert.assertEquals(actors.get(0).getMovies().size(), 1);
+        Assert.assertEquals(actors.get(0).getMovies().iterator().next().getName(), "Gone with the Wind");
     }
 
     @Test
