@@ -10,6 +10,8 @@ import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import javax.inject.Inject;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 import javax.validation.ConstraintViolationException;
 import java.util.List;
@@ -29,6 +31,9 @@ import static org.testng.AssertJUnit.assertTrue;
 @TestExecutionListeners(TransactionalTestExecutionListener.class)
 @Transactional
 public class DirectorDaoTest extends AbstractTestNGSpringContextTests {
+
+    @PersistenceContext
+    EntityManager em;
 
     @Inject
     private DirectorDao directorDao;
@@ -88,15 +93,19 @@ public class DirectorDaoTest extends AbstractTestNGSpringContextTests {
         directorDao.store(d1);
         directorDao.store(d2);
 
+        em.flush();
+
         assertTrue(directorDao.findById(d1.getId()).isPresent());
         assertTrue(directorDao.findById(d2.getId()).isPresent());
 
         directorDao.remove(d1);
+        em.flush();
         assertTrue(directorDao.findById(d1.getId()).isEmpty());
         assertTrue(directorDao.findById(d2.getId()).isPresent());
         assertEquals(directorDao.fetchAll().size(), 1);
 
         directorDao.remove(d2);
+        em.flush();
         assertTrue(directorDao.findById(d2.getId()).isEmpty());
         assertEquals(directorDao.fetchAll().size(), 0);
     }
