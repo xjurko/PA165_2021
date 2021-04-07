@@ -98,6 +98,13 @@ public class MovieDaoTest extends AbstractTestNGSpringContextTests {
     }
 
     @Test
+    public void testAddingActorAlsoAddsMovieToThatActor() {
+        val storedActor = actorDao.findById(a1.getId()).get();
+
+        Assert.assertTrue(storedActor.getMovies().contains(m1));
+    }
+
+    @Test
     public void testRemove() {
         em.flush();
 

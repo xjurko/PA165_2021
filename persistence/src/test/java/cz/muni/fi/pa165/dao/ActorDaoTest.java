@@ -44,6 +44,7 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
 
     private Actor a1;
     private Actor a2;
+    private Movie m1;
 
     @BeforeMethod
     public void createActors() {
@@ -57,7 +58,7 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
         a2.setBirthDate(LocalDate.of(1882, 10, 20));
         a2.setDeathDate(LocalDate.of(1956, 8, 16));
 
-        Movie m1 = new Movie();
+        m1 = new Movie();
         m1.setName("Gone with the Wind");
         movieDao.store(m1);
         a1.addMovie(m1);
@@ -79,7 +80,7 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
     }
 
     @Test
-    public void findById(){
+    public void findById() {
         Optional<Actor> actor = actorDao.findById(a1.getId());
         Assert.assertTrue(actor.isPresent());
         Assert.assertEquals(actor, Optional.of(a1));
@@ -92,8 +93,7 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
     }
 
     @Test
-    public void findMovie()
-    {
+    public void findMovie() {
         List<Actor> actors = actorDao.findByFullName("Vivien Leigh");
         Assert.assertEquals(actors.size(), 1);
         Assert.assertEquals(actors.get(0).getMovies().size(), 1);
@@ -106,6 +106,14 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
         actorDao.remove(a2);
         Assert.assertTrue(actorDao.findByFullName(a2.getFullName()).isEmpty());
     }
+
+    @Test
+    public void testAddingMovieAlsoAddsActorToThatMoviesCast() {
+        val storedMovie = movieDao.findById(m1.getId()).get();
+
+        Assert.assertTrue(storedMovie.getCast().contains(a1));
+    }
+
 
     @Test
     public void testDeletingActorRemovesItFromMovies() {
