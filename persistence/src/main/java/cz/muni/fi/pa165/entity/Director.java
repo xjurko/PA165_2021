@@ -5,6 +5,7 @@ import lombok.Setter;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.util.Collection;
 import java.util.HashSet;
@@ -25,7 +26,7 @@ public class Director {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NonNull
+    @NotNull
     @Column(nullable = false)
     private String name;
 
@@ -34,7 +35,7 @@ public class Director {
 
     private LocalDate birthDate;
 
-    public Director(@NonNull String name) {
+    public Director(String name) {
         this.name = name;
     }
 
