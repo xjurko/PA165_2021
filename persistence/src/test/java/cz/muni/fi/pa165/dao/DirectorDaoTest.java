@@ -26,7 +26,6 @@ import static org.testng.AssertJUnit.assertTrue;
  * @author alia
  */
 
-@Ignore("enable when director implemented")
 @ContextConfiguration(classes = PersistenceConfig.class)
 @TestExecutionListeners(TransactionalTestExecutionListener.class)
 @Transactional
