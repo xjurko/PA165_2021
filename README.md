@@ -16,5 +16,5 @@ The application is written on Java, using Hibernate mapping tool, Maven build au
 ![Use case diagram](doc/use_case_diagram.png)
 
 
-## Class diagram
+### Class diagram
 ![Class diagram](doc/class_diagram.png)
