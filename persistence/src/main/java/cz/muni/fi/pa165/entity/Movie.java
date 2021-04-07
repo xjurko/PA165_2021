@@ -3,6 +3,7 @@ package cz.muni.fi.pa165.entity;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -13,7 +14,6 @@ import java.util.Set;
 
 @Entity
 public class Movie {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,6 +24,7 @@ public class Movie {
 
     @ManyToMany(mappedBy = "movies")
     private Set<Actor> cast;
+
     @ManyToMany(mappedBy = "movies")
     private Set<Director> directors;
 
@@ -33,11 +34,19 @@ public class Movie {
     @Enumerated(EnumType.STRING)
     private Set<Genre> genres;
 
+    @OneToMany(mappedBy = "movie")
+    private Set<MovieRating> movieRatings = new HashSet<>();
+
     private String caption;
 
     private String externalRef;
 
     ///release data or year
+
+
+    public void addRating(MovieRating rating) {
+        this.movieRatings.add(rating);
+    }
 
 
     public Movie(String name,
@@ -55,6 +64,10 @@ public class Movie {
         this.genres = genres;
         this.caption = caption;
         this.externalRef = externalRef;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     @Override

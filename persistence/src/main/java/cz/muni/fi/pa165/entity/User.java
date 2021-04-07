@@ -3,7 +3,9 @@ package cz.muni.fi.pa165.entity;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * User entity
@@ -26,6 +28,9 @@ public class User {
     @Column(nullable = false, unique=true)
     private String email;
 
+    @OneToMany(mappedBy = "movie")
+    private Set<MovieRating> movieRatings = new HashSet<>();
+
     public User(String name, String email){
         this.name = name;
         this.email = email;
@@ -38,6 +43,10 @@ public class User {
     public String getName() { return name; }
 
     public String getEmail() { return email; }
+
+    public void addRating(MovieRating rating) {
+        this.movieRatings.add(rating);
+    }
 
     @Override
     public boolean equals(Object other) {
