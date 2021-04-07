@@ -34,7 +34,7 @@ public class User {
     @Column(nullable = false, unique=true)
     private String email;
 
-    @OneToMany(mappedBy = "movie")
+    @OneToMany(mappedBy = "movie", orphanRemoval = true)
     private Set<MovieRating> movieRatings = new HashSet<>();
 
     public User(String name, String email){

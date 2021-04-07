@@ -13,6 +13,7 @@ import org.springframework.test.context.event.annotation.BeforeTestMethod;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.test.context.transaction.TransactionalTestExecutionListener;
 import org.testng.Assert;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import javax.inject.Inject;
@@ -21,6 +22,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceContext;
 import javax.persistence.PersistenceUnit;
 import javax.transaction.Transactional;
+import javax.validation.constraints.AssertTrue;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -75,7 +77,7 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
 
 
     @Test
-    public void testRemoveRemovesFromLinkedEntities() {
+    public void testRemovingRatingRemovesItFromMovieAndUser() {
         val user = new User("testUser1", "user1@fi.muni.cz");
         val movie = new Movie("testMovie", Set.of(), Set.of(), 10, Set.of(), "", "");
 
@@ -104,5 +106,44 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
         Assert.assertTrue(storedMovie.isPresent());
         Assert.assertEquals(storedMovie.get().getMovieRatings(), movie.getMovieRatings());
         Assert.assertTrue(storedMovie.get().getMovieRatings().isEmpty());
+    }
+
+    @Test
+    public void testRemovingMovieRemovesAllRatings() {
+        val user = new User("testUser1", "user1@fi.muni.cz");
+        val movie = new Movie("testMovie", Set.of(), Set.of(), 10, Set.of(), "", "");
+
+        val rating = new MovieRating(movie, user, 2);
+        ratingDao.store(rating);
+        em.flush();
+
+        movieDao.remove(movie);
+        em.flush();
+
+        val storedUser = userDao.findById(user.getId()).get();
+        Assert.assertTrue(storedUser.getMovieRatings().isEmpty());
+    }
+
+    @Ignore
+    @Test
+    public void testRemovingUserRemovesAllRatings() {
+        val user = new User("testUser1", "user1@fi.muni.cz");
+        val movie = new Movie("testMovie", Set.of(), Set.of(), 10, Set.of(), "", "");
+        val movie2 = new Movie("testMovi2e", Set.of(), Set.of(), 10, Set.of(), "", "");
+
+        val rating = new MovieRating(movie, user, 2);
+        val rating2 = new MovieRating(movie2, user, 1);
+        userDao.store(user);
+        ratingDao.store(rating);
+        ratingDao.store(rating2);
+        em.flush();
+
+        userDao.remove(user);
+        em.flush();
+
+        val storedMovie = movieDao.findById(movie.getId()).get();
+        val storedMovie2 = movieDao.findById(movie2.getId()).get();
+        Assert.assertTrue(storedMovie.getMovieRatings().isEmpty());
+        Assert.assertTrue(storedMovie2.getMovieRatings().isEmpty());
     }
 }
