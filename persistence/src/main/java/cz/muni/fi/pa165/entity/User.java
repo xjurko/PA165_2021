@@ -1,9 +1,12 @@
 package cz.muni.fi.pa165.entity;
 
-import org.springframework.lang.NonNull;
-
+import lombok.Getter;
+import lombok.Setter;
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * User entity
@@ -13,35 +16,32 @@ import java.util.Objects;
 
 @Entity
 @Table(name="Users")
+@Getter
+@Setter
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    /*TODO: add constraint for non-blank name: size>=1, no spaces-only*/
-    @NonNull
+    @NotNull
     @Column(nullable = false, unique=true)
     private String name;
 
-    /*TODO: add some regexp to constraint email*/
-    @NonNull
+    @NotNull
     @Column(nullable = false, unique=true)
     private String email;
+
+    @OneToMany(mappedBy = "movie", orphanRemoval = true)
+    private Set<MovieRating> movieRatings = new HashSet<>();
 
     public User(String name, String email){
         this.name = name;
         this.email = email;
     }
 
-    public Long getId() {
-        return id;
+    public void addRating(MovieRating rating) {
+        this.movieRatings.add(rating);
     }
-
-    public String getName() { return name; }
-
-    public String getEmail() { return email; }
-
-    /*TODO: probably add setters if someone wishing to change name/email */
 
     @Override
     public boolean equals(Object other) {

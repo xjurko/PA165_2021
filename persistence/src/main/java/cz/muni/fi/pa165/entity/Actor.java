@@ -6,6 +6,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -34,7 +35,7 @@ public class Actor {
     private LocalDate deathDate;
 
     @ManyToMany
-    private Set<Movie> movies;
+    private Set<Movie> movies = new HashSet<>();
 
     public Actor(String fullName,
                  Double height,
@@ -57,6 +58,7 @@ public class Actor {
 
     public void addMovie(Movie movie) {
         this.movies.add(movie);
+        movie.addActor(this);
     }
 
     public void removeMovie(Movie movie) {

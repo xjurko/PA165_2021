@@ -7,6 +7,7 @@ import org.springframework.lang.NonNull;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -29,7 +30,7 @@ public class Director {
     private String name;
 
     @ManyToMany
-    private Set<Movie> movies;
+    private Set<Movie> movies = new HashSet<>();
 
     private LocalDate birthDate;
 
