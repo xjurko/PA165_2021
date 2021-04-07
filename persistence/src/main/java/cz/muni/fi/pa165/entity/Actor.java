@@ -1,6 +1,7 @@
 package cz.muni.fi.pa165.entity;
 
-import org.springframework.lang.NonNull;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -14,6 +15,8 @@ import java.util.Set;
  */
 
 @Entity
+@Getter
+@Setter
 public class Actor {
 
     @Id
@@ -33,7 +36,7 @@ public class Actor {
     @ManyToMany
     private Set<Movie> movies;
 
-    public Actor(@NonNull String fullName,
+    public Actor(String fullName,
                  Double height,
                  LocalDate birthDate,
                  LocalDate deathDate,
@@ -48,45 +51,8 @@ public class Actor {
 
     public Actor() {}
 
-    public Actor(@NonNull String fullName) {
+    public Actor(String fullName) {
         this.fullName = fullName;
-    }
-
-    @NonNull
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(@NonNull String fullName) {
-        this.fullName = fullName;
-    }
-
-    public Double getHeight() {
-        return height;
-    }
-
-    public void setHeight(Double height) {
-        this.height = height;
-    }
-
-    public LocalDate getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
-    }
-
-    public LocalDate getDeathDate() {
-        return deathDate;
-    }
-
-    public void setDeathDate(LocalDate deathDate) {
-        this.deathDate = deathDate;
-    }
-
-    public Set<Movie> getMovies() {
-        return movies;
     }
 
     public void addMovie(Movie movie) {
