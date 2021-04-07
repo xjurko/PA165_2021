@@ -60,23 +60,6 @@ public class MovieDaoTest extends AbstractTestNGSpringContextTests {
         movieDao.store(m2);
     }
 
-    @Test(expectedExceptions= ConstraintViolationException.class)
-    public void testNullNameNotAllowed() {
-        Set<Actor> actors = new HashSet<>();
-        actors.add(new Actor("actor1"));
-
-        Set<Director> directors = new HashSet<>();
-        directors.add(new Director("director1"));
-
-        Set<Genre> genres = new HashSet<>();
-        genres.add(Genre.COMEDY);
-
-        m1 = new Movie(null, actors, directors, 100, genres, "amazing movie",
-                "external reference");
-
-        movieDao.store(m1);
-    }
-
     @Test
     public void testStoreAndFindById() {
         Optional<Movie> storedMovie = movieDao.findById(m1.getId());
