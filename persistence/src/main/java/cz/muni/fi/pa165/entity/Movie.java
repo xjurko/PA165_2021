@@ -51,6 +51,8 @@ public class Movie {
         this.movieRatings.add(rating);
     }
 
+    public void addActor(Actor actor) { this.cast.add(actor); }
+
     public Movie(){}
 
     public Movie(String name,
