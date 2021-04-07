@@ -1,30 +1,65 @@
 package cz.muni.fi.pa165.dao;
 
+import cz.muni.fi.pa165.entity.Movie;
 import cz.muni.fi.pa165.entity.User;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
+import javax.persistence.PersistenceContext;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * implementation of UserDao interface
+ *
+ * @author lsolodkova
+ */
+
 @Repository
 public class UserDaoImpl implements UserDao {
+
+    @PersistenceContext
+    private EntityManager em;
+
     @Override
-    public void store(User m) {
-        throw new UnsupportedOperationException();
-    }
+    public void store(User user) { em.persist(user); }
 
     @Override
     public List<User> fetchAll() {
-        throw new UnsupportedOperationException();
+        return em.createQuery("select u from User u", User.class).getResultList();
     }
 
     @Override
     public Optional<User> findById(Long id) {
-        throw new UnsupportedOperationException();
+        try {
+            return Optional.ofNullable(
+                em.find(User.class, id)
+            );
+        }
+        catch (NoResultException ex){
+            return Optional.empty();
+        }
     }
 
     @Override
-    public void remove(Long id) {
-        throw new UnsupportedOperationException();
+    public Optional<User> findByName(String name) {
+        if (name.isBlank())
+            throw new IllegalArgumentException("Cannot search for an empty username");
+        try {
+            return Optional.ofNullable(
+                    em.createQuery("select u from User u where name=:name", User.class)
+                            .setParameter("name", name)
+                            .getSingleResult()
+            );
+        }
+        catch (NoResultException ex) {
+            return Optional.empty();
+        }
+    }
+
+    @Override
+    public void remove(User user) {
+        em.remove(user);
     }
 }

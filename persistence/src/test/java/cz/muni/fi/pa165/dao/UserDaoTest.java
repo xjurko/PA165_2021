@@ -1,6 +1,7 @@
 package cz.muni.fi.pa165.dao;
 
 import cz.muni.fi.pa165.PersistenceConfig;
+import cz.muni.fi.pa165.entity.Director;
 import cz.muni.fi.pa165.entity.User;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestExecutionListeners;
@@ -16,6 +17,8 @@ import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
+
+import static org.testng.AssertJUnit.assertTrue;
 
 
 /**
@@ -36,8 +39,7 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
     private EntityManager em;
 
     @Test
-    @Ignore("enable when user implemented")
-    void testStoreAndFind() {
+    public void testStoreAndFind() {
         User user = new User("testUser1", "user1@fi.muni.cz");
         userDao.store(user);
 
@@ -47,8 +49,7 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
     }
 
     @Test
-    @Ignore("enable when user implemented")
-    void testStoreAndFindAll() {
+    public void testStoreAndFindAll() {
         User user1 = new User("testUser1", "user1@fi.muni.cz");
         User user2 = new User("testUser2", "user2@fi.muni.cz");
 
@@ -60,14 +61,13 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
     }
 
     @Test
-    @Ignore("enable when user implemented")
-    void testStoreAndRemove() {
+    public void testStoreAndRemove() {
         User user = new User("testUser1", "user1@fi.muni.cz");
 
         userDao.store(user);
         Assert.assertTrue(userDao.findById(user.getId()).isPresent());
 
-        userDao.remove(user.getId());
+        userDao.remove(user);
         Assert.assertTrue(userDao.findById(user.getId()).isEmpty());
     }
 
