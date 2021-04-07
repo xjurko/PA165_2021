@@ -102,7 +102,6 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void remove() {
-        /*TODO: Optional return type is not used in ActorDao; possibly needs to be changed*/
         Assert.assertFalse(actorDao.findByFullName(a2.getFullName()).isEmpty());
         actorDao.remove(a2);
         Assert.assertTrue(actorDao.findByFullName(a2.getFullName()).isEmpty());
