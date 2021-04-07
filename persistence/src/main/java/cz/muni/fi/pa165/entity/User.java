@@ -1,9 +1,13 @@
 package cz.muni.fi.pa165.entity;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * User entity
@@ -13,6 +17,8 @@ import java.util.Objects;
 
 @Entity
 @Table(name="Users")
+@Getter
+@Setter
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,20 +34,17 @@ public class User {
     @Column(nullable = false, unique=true)
     private String email;
 
+    @OneToMany(mappedBy = "movie", orphanRemoval = true)
+    private Set<MovieRating> movieRatings = new HashSet<>();
+
     public User(String name, String email){
         this.name = name;
         this.email = email;
     }
 
-    public Long getId() {
-        return id;
+    public void addRating(MovieRating rating) {
+        this.movieRatings.add(rating);
     }
-
-    public String getName() { return name; }
-
-    public String getEmail() { return email; }
-
-    /*TODO: probably add setters if someone wishing to change name/email */
 
     @Override
     public boolean equals(Object other) {
