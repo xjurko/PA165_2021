@@ -21,6 +21,7 @@ import javax.validation.ConstraintViolationException;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Set;
+import java.util.Optional;
 
 /**
  * Tests for ActorDao
@@ -56,7 +57,10 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
         a2.setBirthDate(LocalDate.of(1882, 10, 20));
         a2.setDeathDate(LocalDate.of(1956, 8, 16));
 
-        /*TODO: add movies and proper tests after getters/setters in Movie class implemented*/
+        Movie m1 = new Movie();
+        m1.setName("Gone with the Wind");
+        movieDao.store(m1);
+        a1.addMovie(m1);
 
         actorDao.store(a1);
         actorDao.store(a2);
@@ -74,34 +78,26 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
         actorDao.store(a);
     }
 
-    /*TODO: test for a blank name (not null, just empty or of 77 space characters)
-     * after proper constraints in Actor class implemented
-     */
-
-    @Test(expectedExceptions = ConstraintViolationException.class)
-    @Ignore("enable when Actor name will be constrained to be non-blank")
-    public void zeroLengthNameNotAllowed() {
-        Actor a = new Actor();
-        a.setFullName("");
-        actorDao.store(a);
+    @Test
+    public void findById(){
+        Optional<Actor> actor = actorDao.findById(a1.getId());
+        Assert.assertTrue(actor.isPresent());
+        Assert.assertEquals(actor, Optional.of(a1));
     }
-
-    @Test(expectedExceptions = ConstraintViolationException.class)
-    @Ignore("enable when Actor name will be constrained to be non-blank")
-    public void blankNameNotAllowed() {
-        Actor a = new Actor();
-        /*TODO: how to properly test for all-whitespace string?*/
-        a.setFullName("             ");
-        actorDao.store(a);
-    }
-
-    /*TODO: a test for getById when id getter implemented in Actor (if needed)*/
 
     @Test
     public void findByName() {
         Assert.assertEquals(actorDao.findByFullName("Bela Lugosi").size(), 1);
         Assert.assertEquals(actorDao.findByFullName("ghjdhgj").size(), 0);
-        /*TODO: also test for partial matching when implemented*/
+    }
+
+    @Test
+    public void findMovie()
+    {
+        List<Actor> actors = actorDao.findByFullName("Vivien Leigh");
+        Assert.assertEquals(actors.size(), 1);
+        Assert.assertEquals(actors.get(0).getMovies().size(), 1);
+        Assert.assertEquals(actors.get(0).getMovies().iterator().next().getName(), "Gone with the Wind");
     }
 
     @Test

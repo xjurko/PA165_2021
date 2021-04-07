@@ -57,6 +57,7 @@ public class Actor {
 
     public void addMovie(Movie movie) {
         this.movies.add(movie);
+        movie.getCast().add(this);
     }
 
     public void removeMovie(Movie movie) {

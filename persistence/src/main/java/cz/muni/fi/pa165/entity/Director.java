@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -13,7 +14,7 @@ public class Director {
     private Long id;
 
     @ManyToMany
-    private Set<Movie> movies;
+    private Set<Movie> movies = new HashSet<>();
 
     public Director(String name) {
     }
