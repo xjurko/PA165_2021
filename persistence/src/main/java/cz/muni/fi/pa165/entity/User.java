@@ -1,8 +1,9 @@
 package cz.muni.fi.pa165.entity;
 
-import org.springframework.lang.NonNull;
-
+import lombok.Getter;
+import lombok.Setter;
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -15,34 +16,28 @@ import java.util.Set;
 
 @Entity
 @Table(name="Users")
+@Getter
+@Setter
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NonNull
+    @NotNull
     @Column(nullable = false, unique=true)
     private String name;
 
-    @NonNull
+    @NotNull
     @Column(nullable = false, unique=true)
     private String email;
 
-    @OneToMany(mappedBy = "movie")
+    @OneToMany(mappedBy = "movie", orphanRemoval = true)
     private Set<MovieRating> movieRatings = new HashSet<>();
 
     public User(String name, String email){
         this.name = name;
         this.email = email;
     }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() { return name; }
-
-    public String getEmail() { return email; }
 
     public void addRating(MovieRating rating) {
         this.movieRatings.add(rating);

@@ -44,6 +44,12 @@ public class MovieRating {
         return user;
     }
 
+    @PreRemove
+    private void removeFromLinkedEntities() {
+        movie.getMovieRatings().remove(this);
+        user.getMovieRatings().remove(this);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
