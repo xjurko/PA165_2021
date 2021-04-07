@@ -10,7 +10,7 @@ import cz.muni.fi.pa165.entity.MovieRating;
 public interface MovieRatingDao {
     /**
      * Creates new rating
-     * @param rating rating to be updated
+     * @param rating rating to be persisted
      */
     void store(MovieRating rating);
 

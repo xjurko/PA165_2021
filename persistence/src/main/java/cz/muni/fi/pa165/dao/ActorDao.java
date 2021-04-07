@@ -16,7 +16,7 @@ public interface ActorDao {
 
     /** create an actor
      *
-     * @param act actor to be created/updated
+     * @param act actor to be created
      */
     void store(Actor act);
 
@@ -31,7 +31,7 @@ public interface ActorDao {
      * Find an actor by id
      *
      * @param id id of an actor
-     * @return actor if exists
+     * @return actor if it exists
      */
     Optional<Actor> findById(Long id);
 
@@ -39,7 +39,7 @@ public interface ActorDao {
      * Find an actor by full name
      *
      * @param fullName name of actor
-     * @return act actors with the given name
+     * @return actors with the given name
      */
     List<Actor> findByFullName(String fullName);
 

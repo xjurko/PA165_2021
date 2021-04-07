@@ -31,7 +31,7 @@ public interface DirectorDao {
      * Find a director by id
      *
      * @param id id of a director
-     * @return director if exists
+     * @return director if it exists
      */
     Optional<Director> findById(Long id);
 
@@ -46,7 +46,7 @@ public interface DirectorDao {
     /**
      * Delete a director
      *
-     * @param d1 director to be deleted
+     * @param d director to be deleted
      */
-    void remove(Director d1);
+    void remove(Director d);
 }

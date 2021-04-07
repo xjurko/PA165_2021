@@ -63,7 +63,7 @@ public class DirectorDaoImpl implements DirectorDao {
     }
 
     @Override
-    public void remove(Director d1) {
-        em.remove(d1);
+    public void remove(Director d) {
+        em.remove(d);
     }
 }

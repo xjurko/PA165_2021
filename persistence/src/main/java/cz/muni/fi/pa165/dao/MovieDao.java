@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * DAO for oeprations with the Movie entity
+ * DAO for operations with the Movie entity
  *
  * @author juraj
  */
@@ -14,9 +14,9 @@ import java.util.Optional;
 public interface MovieDao {
 
     /**
-     * create or update a single movie
+     * create a single movie
      *
-     * @param m movie to be updated
+     * @param m movie to be persisted
      */
     void store(Movie m);
 
@@ -31,7 +31,7 @@ public interface MovieDao {
      * Find all movies with the given name
      *
      * @param name name of the movie
-     * @return moveis matching the name
+     * @return movies matching the name
      */
     List<Movie> findByName(String name);
 

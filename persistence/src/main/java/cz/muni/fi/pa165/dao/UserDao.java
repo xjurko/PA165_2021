@@ -14,9 +14,9 @@ import java.util.Optional;
  */
 public interface UserDao {
     /**
-     * stores or updates a single entity in the database
+     * persists  a single entity in the database
      *
-     * @param user entity to be updated
+     * @param user entity to be persisted
      */
     void store(User user);
 
