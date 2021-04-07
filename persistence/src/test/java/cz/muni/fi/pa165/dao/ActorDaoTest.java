@@ -123,6 +123,5 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
         Assert.assertTrue(storedMovie.getCast().contains(a2));
         Assert.assertFalse(storedMovie.getCast().contains(a1));
         Assert.assertEquals(storedMovie.getCast().size(), 1);
-
     }
 }

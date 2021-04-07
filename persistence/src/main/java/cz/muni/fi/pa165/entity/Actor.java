@@ -67,7 +67,7 @@ public class Actor {
     @PreRemove
     private void removeActorFromMovies() {
         for (Movie movie : this.movies) {
-            movie.removeCastMember(this);
+            movie.getCast().remove(this);
         }
     }
 

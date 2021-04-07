@@ -55,7 +55,8 @@ public class Movie {
                  int runtimeMin,
                  Set<Genre> genres,
                  String caption,
-                 String externalRef) {
+                 String externalRef
+    ) {
 
         this.name = name;
         this.directors = directors;
@@ -77,10 +78,6 @@ public class Movie {
     public void removeCastMember(Actor actor) {
         this.cast.remove(actor);
         actor.getMovies().remove(this);
-    }
-
-    public Long getId() {
-        return id;
     }
 
     @Override
