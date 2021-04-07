@@ -2,6 +2,7 @@ package cz.muni.fi.pa165.dao;
 
 import cz.muni.fi.pa165.PersistenceConfig;
 import cz.muni.fi.pa165.entity.Actor;
+import cz.muni.fi.pa165.entity.Movie;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
@@ -54,7 +55,10 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
         a2.setBirthDate(LocalDate.of(1882, 10, 20));
         a2.setDeathDate(LocalDate.of(1956, 8, 16));
 
-        /*TODO: add movies and proper tests after getters/setters in Movie class implemented*/
+        Movie m1 = new Movie();
+        m1.setName("Gone with the Wind");
+        movieDao.store(m1);
+        a1.addMovie(m1);
 
         actorDao.store(a1);
         actorDao.store(a2);
@@ -84,6 +88,15 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
     {
         Assert.assertEquals(actorDao.findByFullName("Bela Lugosi").size(), 1);
         Assert.assertEquals(actorDao.findByFullName("ghjdhgj").size(), 0);
+    }
+
+    @Test
+    public void findMovie()
+    {
+        List<Actor> actors = actorDao.findByFullName("Vivien Leigh");
+        Assert.assertEquals(actors.size(), 1);
+        Assert.assertEquals(actors.get(1).getMovies().size(), 1);
+        Assert.assertEquals(actors.get(1).getMovies().iterator().next().getName(), "Gone with the Wind");
     }
 
     @Test
