@@ -2,9 +2,8 @@ package cz.muni.fi.pa165.entity;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.lang.NonNull;
-
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -24,13 +23,11 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    /*TODO: add constraint for non-blank name: size>=1, no spaces-only*/
-    @NonNull
+    @NotNull
     @Column(nullable = false, unique=true)
     private String name;
 
-    /*TODO: add some regexp to constraint email*/
-    @NonNull
+    @NotNull
     @Column(nullable = false, unique=true)
     private String email;
 
