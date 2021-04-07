@@ -27,10 +27,10 @@ public class Movie {
     private String name;
 
     @ManyToMany(mappedBy = "movies")
-    private Set<Actor> cast;
+    private Set<Actor> cast = new HashSet<>();
 
     @ManyToMany(mappedBy = "movies")
-    private Set<Director> directors;
+    private Set<Director> directors = new HashSet<>();
 
     private int runtimeMin;
 
@@ -50,6 +50,8 @@ public class Movie {
     public void addRating(MovieRating rating) {
         this.movieRatings.add(rating);
     }
+
+    public void addActor(Actor actor) { this.cast.add(actor); }
 
     public Movie(){}
 
