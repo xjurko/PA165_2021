@@ -1,36 +1,76 @@
 package cz.muni.fi.pa165.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.lang.NonNull;
+
+import javax.persistence.*;
+import java.time.LocalDate;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Actor entity
+ *
+ * @author Richard Sanda
+ */
+
 @Entity
+@Getter
+@Setter
 public class Director {
+
     @Id
-    @Column(nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @NonNull
+    @Column(nullable = false)
+    private String name;
 
     @ManyToMany
     private Set<Movie> movies = new HashSet<>();
 
-    public Director(String name) {
+    private LocalDate birthDate;
+
+    public Director(@NonNull String name) {
+        this.name = name;
     }
 
-    public Director() {
+    public Director() { }
 
+    public Director(@NonNull String name,
+                    Set<Movie> movies,
+                    LocalDate birthDate) {
+        this.name = name;
+        this.movies = movies;
+        this.birthDate = birthDate;
     }
 
-    public void setName(String fullName) {
+    public void addMovie(Movie movie){
+        this.movies.add(movie);
     }
 
-    public Long getId() {
-        throw new UnsupportedOperationException();
+    public void removeMovie(Movie movie) {
+        this.movies.remove(movie);
     }
 
-    public String getName() {
-        throw new UnsupportedOperationException();
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Director)) return false;
+
+        Director director = (Director) o;
+
+        if (!name.equals(director.name)) return false;
+        return birthDate != null ? birthDate.equals(director.birthDate) : director.birthDate == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name.hashCode();
+        result = 31 * result + (birthDate != null ? birthDate.hashCode() : 0);
+        return result;
     }
 }
