@@ -78,7 +78,6 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
     {
         Assert.assertEquals(actorDao.findByFullName("Bela Lugosi").size(), 1);
         Assert.assertEquals(actorDao.findByFullName("ghjdhgj").size(), 0);
-        /*TODO: also test for partial matching when implemented*/
     }
 
     @Test
