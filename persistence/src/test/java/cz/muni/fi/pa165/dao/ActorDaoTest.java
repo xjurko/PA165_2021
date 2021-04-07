@@ -2,6 +2,8 @@ package cz.muni.fi.pa165.dao;
 
 import cz.muni.fi.pa165.PersistenceConfig;
 import cz.muni.fi.pa165.entity.Actor;
+import cz.muni.fi.pa165.entity.Movie;
+import lombok.val;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
@@ -18,6 +20,7 @@ import javax.transaction.Transactional;
 import javax.validation.ConstraintViolationException;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Tests for ActorDao
@@ -42,10 +45,10 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
     private Actor a2;
 
     @BeforeMethod
-    public void createActors(){
+    public void createActors() {
         a1 = new Actor();
         a1.setFullName("Vivien Leigh");
-        a1.setBirthDate(LocalDate.of(1913,11,5));
+        a1.setBirthDate(LocalDate.of(1913, 11, 5));
         a1.setDeathDate(LocalDate.of(1967, 7, 8));
 
         a2 = new Actor();
@@ -65,19 +68,19 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
         Assert.assertTrue(found.containsAll(List.of(a1, a2)));
     }
 
-    @Test(expectedExceptions= ConstraintViolationException.class)
-    public void nullNameNotAllowed(){
+    @Test(expectedExceptions = ConstraintViolationException.class)
+    public void nullNameNotAllowed() {
         Actor a = new Actor();
         actorDao.store(a);
     }
 
     /*TODO: test for a blank name (not null, just empty or of 77 space characters)
-    * after proper constraints in Actor class implemented
-    */
+     * after proper constraints in Actor class implemented
+     */
 
     @Test(expectedExceptions = ConstraintViolationException.class)
     @Ignore("enable when Actor name will be constrained to be non-blank")
-    public void zeroLengthNameNotAllowed(){
+    public void zeroLengthNameNotAllowed() {
         Actor a = new Actor();
         a.setFullName("");
         actorDao.store(a);
@@ -85,7 +88,7 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
 
     @Test(expectedExceptions = ConstraintViolationException.class)
     @Ignore("enable when Actor name will be constrained to be non-blank")
-    public void blankNameNotAllowed(){
+    public void blankNameNotAllowed() {
         Actor a = new Actor();
         /*TODO: how to properly test for all-whitespace string?*/
         a.setFullName("             ");
@@ -95,19 +98,35 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
     /*TODO: a test for getById when id getter implemented in Actor (if needed)*/
 
     @Test
-    public void findByName()
-    {
+    public void findByName() {
         Assert.assertEquals(actorDao.findByFullName("Bela Lugosi").size(), 1);
         Assert.assertEquals(actorDao.findByFullName("ghjdhgj").size(), 0);
         /*TODO: also test for partial matching when implemented*/
     }
 
     @Test
-    public void remove()
-    {
+    public void remove() {
         /*TODO: Optional return type is not used in ActorDao; possibly needs to be changed*/
         Assert.assertFalse(actorDao.findByFullName(a2.getFullName()).isEmpty());
         actorDao.remove(a2);
         Assert.assertTrue(actorDao.findByFullName(a2.getFullName()).isEmpty());
+    }
+
+    @Test
+    public void testDeletingActorRemovesItFromMovies() {
+        val movie = new Movie("testMovie", Set.of(), 10, Set.of(), "", "");
+        movie.addCastMember(a1);
+        movie.addCastMember(a2);
+        movieDao.store(movie);
+        em.flush();
+
+        actorDao.remove(a1);
+        em.flush();
+
+        val storedMovie = movieDao.findById(movie.getId()).get();
+        Assert.assertTrue(storedMovie.getCast().contains(a2));
+        Assert.assertFalse(storedMovie.getCast().contains(a1));
+        Assert.assertEquals(storedMovie.getCast().size(), 1);
+
     }
 }

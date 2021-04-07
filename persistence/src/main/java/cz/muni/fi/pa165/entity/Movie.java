@@ -27,16 +27,16 @@ public class Movie {
     private String name;
 
     @ManyToMany(mappedBy = "movies")
-    private Set<Actor> cast;
+    private Set<Actor> cast = new HashSet<>();
 
     @ManyToMany(mappedBy = "movies")
-    private Set<Director> directors;
+    private Set<Director> directors = new HashSet<>();
 
     private int runtimeMin;
 
     @ElementCollection
     @Enumerated(EnumType.STRING)
-    private Set<Genre> genres;
+    private Set<Genre> genres = new HashSet<>();
 
     @OneToMany(mappedBy = "movie", orphanRemoval = true)
     private Set<MovieRating> movieRatings = new HashSet<>();
@@ -47,14 +47,10 @@ public class Movie {
 
     //todo release data or year
 
-    public void addRating(MovieRating rating) {
-        this.movieRatings.add(rating);
+    public Movie() {
     }
 
-    public Movie(){}
-
     public Movie(String name,
-                 Set<Actor> cast,
                  Set<Director> directors,
                  int runtimeMin,
                  Set<Genre> genres,
@@ -62,12 +58,25 @@ public class Movie {
                  String externalRef) {
 
         this.name = name;
-        this.cast = cast;
         this.directors = directors;
         this.runtimeMin = runtimeMin;
         this.genres = genres;
         this.caption = caption;
         this.externalRef = externalRef;
+    }
+
+    public void addRating(MovieRating rating) {
+        this.movieRatings.add(rating);
+    }
+
+    public void addCastMember(Actor actor) {
+        this.cast.add(actor);
+        actor.getMovies().add(this);
+    }
+
+    public void removeCastMember(Actor actor) {
+        this.cast.remove(actor);
+        actor.getMovies().remove(this);
     }
 
     public Long getId() {
