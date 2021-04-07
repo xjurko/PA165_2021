@@ -2,12 +2,10 @@ package cz.muni.fi.pa165.entity;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -39,9 +37,10 @@ public class Director {
         this.name = name;
     }
 
-    public Director() { }
+    public Director() {
+    }
 
-    public Director(@NonNull String name,
+    public Director(String name,
                     Set<Movie> movies,
                     LocalDate birthDate) {
         this.name = name;
@@ -49,7 +48,7 @@ public class Director {
         this.birthDate = birthDate;
     }
 
-    public void addMovie(Movie movie){
+    public void addMovie(Movie movie) {
         this.movies.add(movie);
     }
 
