@@ -124,7 +124,6 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
         Assert.assertTrue(storedUser.getMovieRatings().isEmpty());
     }
 
-    @Ignore
     @Test
     public void testRemovingUserRemovesAllRatings() {
         val user = new User("testUser1", "user1@fi.muni.cz");

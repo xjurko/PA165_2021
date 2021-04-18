@@ -1,7 +1,8 @@
 package cz.muni.fi.pa165.dao;
 
-import cz.muni.fi.pa165.entity.Movie;
+import cz.muni.fi.pa165.entity.MovieRating;
 import cz.muni.fi.pa165.entity.User;
+import lombok.val;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -23,7 +24,9 @@ public class UserDaoImpl implements UserDao {
     private EntityManager em;
 
     @Override
-    public void store(User user) { em.persist(user); }
+    public void store(User user) {
+        em.persist(user);
+    }
 
     @Override
     public List<User> fetchAll() {
@@ -34,10 +37,9 @@ public class UserDaoImpl implements UserDao {
     public Optional<User> findById(Long id) {
         try {
             return Optional.ofNullable(
-                em.find(User.class, id)
+                    em.find(User.class, id)
             );
-        }
-        catch (NoResultException ex){
+        } catch (NoResultException ex) {
             return Optional.empty();
         }
     }
@@ -52,14 +54,17 @@ public class UserDaoImpl implements UserDao {
                             .setParameter("name", name)
                             .getSingleResult()
             );
-        }
-        catch (NoResultException ex) {
+        } catch (NoResultException ex) {
             return Optional.empty();
         }
     }
 
     @Override
     public void remove(User user) {
+        val ratings = user.getMovieRatings();
         em.remove(user);
+        for (MovieRating rating : ratings) {
+            em.refresh(rating.getMovie());
+        }
     }
 }

@@ -49,25 +49,35 @@ public class Actor {
         this.deathDate = deathDate;
     }
 
-    public Actor() {}
+    public Actor() {
+    }
 
     public Actor(String fullName) {
         this.fullName = fullName;
     }
 
     public void addMovie(Movie movie) {
+        addMovie(movie, true);
+    }
+
+    void addMovie(Movie movie, Boolean propagate) {
         this.movies.add(movie);
-        movie.getCast().add(this);
+        if (propagate) movie.addCastMember(this, false);
     }
 
     public void removeMovie(Movie movie) {
+        removeMovie(movie, true);
+    }
+
+    void removeMovie(Movie movie, boolean propagate) {
         this.movies.remove(movie);
+        if (propagate) movie.removeCastMember(this);
     }
 
     @PreRemove
     private void removeActorFromMovies() {
         for (Movie movie : this.movies) {
-            movie.getCast().remove(this);
+            movie.removeCastMember(this, false);
         }
     }
 

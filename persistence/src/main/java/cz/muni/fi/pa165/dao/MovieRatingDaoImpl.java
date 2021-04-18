@@ -1,6 +1,7 @@
 package cz.muni.fi.pa165.dao;
 
 import cz.muni.fi.pa165.entity.MovieRating;
+import lombok.val;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -25,6 +26,10 @@ public class MovieRatingDaoImpl implements MovieRatingDao {
 
     @Override
     public void remove(MovieRating rating) {
+        val movie = rating.getMovie();
+        val user = rating.getUser();
         em.remove(rating);
+        em.refresh(user);
+        em.refresh(movie);
     }
 }
