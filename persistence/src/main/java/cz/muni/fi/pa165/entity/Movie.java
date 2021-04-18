@@ -77,10 +77,6 @@ public class Movie {
         this.movieRatings.add(rating);
     }
 
-    void removeRating(MovieRating rating) {
-        this.movieRatings.remove(rating);
-    }
-
     public void addCastMember(Actor actor) {
         addCastMember(actor, true);
     }

@@ -44,9 +44,6 @@ public class User {
         this.movieRatings.add(rating);
     }
 
-    void removeRating(MovieRating rating) {
-        this.movieRatings.remove(rating);
-    }
 
     @Override
     public boolean equals(Object other) {
