@@ -29,6 +29,7 @@ public class MovieRatingDaoImpl implements MovieRatingDao {
         val movie = rating.getMovie();
         val user = rating.getUser();
         em.remove(rating);
+        em.flush();
         em.refresh(user);
         em.refresh(movie);
     }

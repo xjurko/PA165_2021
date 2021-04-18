@@ -59,7 +59,8 @@ public class MovieDaoImpl implements MovieDao {
     public void remove(Movie m) {
         val ratings = m.getMovieRatings();
         em.remove(m);
-        for (MovieRating rating :ratings) {
+        em.flush();
+        for (MovieRating rating : ratings) {
             em.refresh(rating.getUser());
         }
     }

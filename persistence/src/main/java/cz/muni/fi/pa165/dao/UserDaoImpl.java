@@ -63,6 +63,7 @@ public class UserDaoImpl implements UserDao {
     public void remove(User user) {
         val ratings = user.getMovieRatings();
         em.remove(user);
+        em.flush();
         for (MovieRating rating : ratings) {
             em.refresh(rating.getMovie());
         }
