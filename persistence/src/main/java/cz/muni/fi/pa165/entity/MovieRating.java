@@ -1,10 +1,14 @@
 package cz.muni.fi.pa165.entity;
 
-import org.springframework.lang.NonNull;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
+@Getter
+@Setter
 public class MovieRating {
 
     @EmbeddedId
@@ -12,15 +16,15 @@ public class MovieRating {
 
     @ManyToOne
     @MapsId("movieId")
-    @NonNull
+    @NotNull
     private Movie movie;
 
     @ManyToOne
     @MapsId("userId")
-    @NonNull
+    @NotNull
     private User user;
 
-    @NonNull
+    @NotNull
     @Column(nullable = false)
     private int rating;
 
@@ -34,20 +38,12 @@ public class MovieRating {
         user.addRating(this);
     }
 
-    @NonNull
     public Movie getMovie() {
         return movie;
     }
 
-    @NonNull
     public User getUser() {
         return user;
-    }
-
-    @PreRemove
-    private void removeFromLinkedEntities() {
-        movie.getMovieRatings().remove(this);
-        user.getMovieRatings().remove(this);
     }
 
     @Override

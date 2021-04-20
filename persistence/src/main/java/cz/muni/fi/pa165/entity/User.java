@@ -32,7 +32,7 @@ public class User {
     @Column(nullable = false, unique = true)
     private String email;
 
-    @OneToMany(mappedBy = "movie", orphanRemoval = true)
+    @OneToMany(mappedBy = "movie",  orphanRemoval = true)
     private Set<MovieRating> movieRatings = new HashSet<>();
 
     public User(String name, String email) {
@@ -43,6 +43,7 @@ public class User {
     public void addRating(MovieRating rating) {
         this.movieRatings.add(rating);
     }
+
 
     @Override
     public boolean equals(Object other) {

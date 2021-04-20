@@ -47,13 +47,6 @@ public class Movie {
 
     //todo release data or year
 
-    @PreRemove
-    private void removeMovieFromActors() {
-        for (Actor actor: this.getCast()) {
-            actor.getMovies().remove(this);
-        }
-    }
-
     public Movie() {
     }
 
@@ -73,18 +66,33 @@ public class Movie {
         this.externalRef = externalRef;
     }
 
+    @PreRemove
+    private void removeMovieFromActors() {
+        for (Actor actor : this.getCast()) {
+            actor.removeMovie(this, false);
+        }
+    }
+
     public void addRating(MovieRating rating) {
         this.movieRatings.add(rating);
     }
 
     public void addCastMember(Actor actor) {
+        addCastMember(actor, true);
+    }
+
+    void addCastMember(Actor actor, Boolean propagate) {
         this.cast.add(actor);
-        actor.getMovies().add(this);
+        if (propagate) actor.addMovie(this, false);
     }
 
     public void removeCastMember(Actor actor) {
+        removeCastMember(actor, true);
+    }
+
+    void removeCastMember(Actor actor, boolean propagate) {
         this.cast.remove(actor);
-        actor.getMovies().remove(this);
+        if (propagate) actor.removeMovie(this, false);
     }
 
     @Override

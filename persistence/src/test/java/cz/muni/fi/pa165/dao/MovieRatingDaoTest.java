@@ -1,6 +1,7 @@
 package cz.muni.fi.pa165.dao;
 
 import cz.muni.fi.pa165.PersistenceConfig;
+import cz.muni.fi.pa165.entity.Actor;
 import cz.muni.fi.pa165.entity.Movie;
 import cz.muni.fi.pa165.entity.MovieRating;
 import cz.muni.fi.pa165.entity.User;
@@ -124,7 +125,6 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
         Assert.assertTrue(storedUser.getMovieRatings().isEmpty());
     }
 
-    @Ignore
     @Test
     public void testRemovingUserRemovesAllRatings() {
         val user = new User("testUser1", "user1@fi.muni.cz");
@@ -145,5 +145,28 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
         val storedMovie2 = movieDao.findById(movie2.getId()).get();
         Assert.assertTrue(storedMovie.getMovieRatings().isEmpty());
         Assert.assertTrue(storedMovie2.getMovieRatings().isEmpty());
+    }
+
+    @Test
+    public void testRemovingRatingDoesntWipeUncommitedChangesFromMovie() {
+        val user = new User("testUser1", "user1@fi.muni.cz");
+        val movie = new Movie("testMovie",  Set.of(), 10, Set.of(), "", "");
+        val movie2 = new Movie("testMovi2e", Set.of(), 10, Set.of(), "", "");
+
+        val rating = new MovieRating(movie, user, 2);
+        val rating2 = new MovieRating(movie2, user, 1);
+        userDao.store(user);
+        ratingDao.store(rating);
+        ratingDao.store(rating2);
+        em.flush();
+
+        movie.setCaption("testCaption");
+        // intentionally not flushing here
+
+        ratingDao.remove(rating);
+        em.flush();
+
+        val storedMovie = movieDao.findById(movie.getId()).get();
+        Assert.assertEquals(storedMovie.getCaption(), "testCaption");
     }
 }
