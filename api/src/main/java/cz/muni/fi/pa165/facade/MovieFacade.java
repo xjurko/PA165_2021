@@ -9,7 +9,7 @@ import java.util.Optional;
  * @author juraj
  */
 public interface MovieFacade {
-    Iterable<MovieDto> getSimilarMovies(MovieRatingDto movie);
+    Iterable<MovieDto> findOtherAlsoLikedMovies(Long movieId);
 
     Optional<MovieDto> findMovieByName(String name);
 }

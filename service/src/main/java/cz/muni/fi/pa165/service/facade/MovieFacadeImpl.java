@@ -2,7 +2,6 @@ package cz.muni.fi.pa165.service.facade;
 
 import cz.muni.fi.pa165.facade.MovieFacade;
 import cz.muni.fi.pa165.dto.MovieDto;
-import cz.muni.fi.pa165.dto.MovieRatingDto;
 
 import java.util.Optional;
 
@@ -11,7 +10,7 @@ import java.util.Optional;
  */
 public class MovieFacadeImpl implements MovieFacade {
     @Override
-    public Iterable<MovieDto> getSimilarMovies(MovieRatingDto movie) {
+    public Iterable<MovieDto> findOtherAlsoLikedMovies(Long movieId) {
         return null;
     }
 

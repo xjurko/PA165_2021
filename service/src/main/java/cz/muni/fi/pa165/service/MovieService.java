@@ -11,5 +11,5 @@ import java.util.List;
 
 @Service
 public interface MovieService {
-    List<Movie> findOtherAlsoLikedMovies(Movie likedMovie);
+    List<Movie> findOtherAlsoLikedMovies(Long movieId);
 }

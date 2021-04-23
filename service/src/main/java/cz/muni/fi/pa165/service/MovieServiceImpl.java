@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class MovieServiceImpl implements MovieService {
 
-    public List<Movie> findOtherAlsoLikedMovies(Movie likedMovie) {
+    public List<Movie> findOtherAlsoLikedMovies(Long movieId) {
         return null;
     }
 }
