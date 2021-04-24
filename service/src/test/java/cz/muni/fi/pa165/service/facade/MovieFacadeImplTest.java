@@ -30,7 +30,6 @@ import static org.mockito.Mockito.when;
 @ContextConfiguration(classes = ServiceConfig.class)
 public class MovieFacadeImplTest extends AbstractTransactionalTestNGSpringContextTests {
 
-
     @Inject
     BeanConverter converter;
 
@@ -44,7 +43,7 @@ public class MovieFacadeImplTest extends AbstractTransactionalTestNGSpringContex
 
     @BeforeClass
     public void init(){
-//        movieFacade = new MovieFacadeImpl(movieServiceMock, converter);
+        movieFacade = new MovieFacadeImpl(movieServiceMock, converter);
     }
 
     @Test
