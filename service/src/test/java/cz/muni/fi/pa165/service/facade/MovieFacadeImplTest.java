@@ -26,7 +26,6 @@ import static org.mockito.Mockito.when;
  * @author juraj
  */
 
-//@RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = ServiceConfig.class)
 public class MovieFacadeImplTest extends AbstractTransactionalTestNGSpringContextTests {
 
