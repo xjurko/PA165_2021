@@ -39,7 +39,7 @@ public class Movie {
     private Set<Genre> genres = new HashSet<>();
 
     @OneToMany(mappedBy = "movie", orphanRemoval = true)
-    private Set<MovieRating> movieRatings = new HashSet<>();
+    private Set<MovieRating> ratings = new HashSet<>();
 
     private String caption;
 
@@ -74,7 +74,7 @@ public class Movie {
     }
 
     public void addRating(MovieRating rating) {
-        this.movieRatings.add(rating);
+        this.ratings.add(rating);
     }
 
     public void addCastMember(Actor actor) {

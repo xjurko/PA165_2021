@@ -8,14 +8,15 @@ import java.util.Set;
  * @author juraj
  */
 
-@With
-@Value
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class MovieDto {
     Long id;
     String name;
     String caption;
-    Integer releaseYear;
-    Integer runtime;
+//    Integer releaseYear;
+    Integer runtimeMin;
     Set<ActorDto> cast;
     Set<DirectorDto> directors;
     Set<MovieRatingDto> ratings;
