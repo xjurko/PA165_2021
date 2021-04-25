@@ -1,7 +1,9 @@
 package cz.muni.fi.pa165.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
@@ -17,6 +19,8 @@ import java.util.Set;
 @Entity
 @Getter
 @Setter
+@AllArgsConstructor
+@ToString
 public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -4,6 +4,7 @@ import cz.muni.fi.pa165.dao.MovieDao;
 import cz.muni.fi.pa165.dao.MovieRatingDao;
 import cz.muni.fi.pa165.entity.Movie;
 import cz.muni.fi.pa165.entity.MovieRating;
+import cz.muni.fi.pa165.entity.Rating;
 import io.vavr.Function1;
 import io.vavr.Tuple;
 import io.vavr.Tuple2;
@@ -24,24 +25,30 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class MovieServiceImpl implements MovieService {
 
-    MovieDao movieDao;
-    MovieRatingDao ratingDao;
+    final MovieDao movieDao;
 
+//    TODO: currently deals in absolute values - potentially to be changed to like/dislike ratio
     @Override
     public java.util.List<Movie> findOtherAlsoLikedMovies(Long movieId) {
         return Option.ofOptional(movieDao.findById(movieId))
             .toList()
-            .flatMap(
-                m -> Vector.ofAll(m.getRatings())
-                    .flatMap(mrating -> Vector.ofAll(mrating.getUser().getMovieRatings())
+            .flatMap( m ->
+                Vector.ofAll(m.getRatings())
+                .filter(r -> r.getRating() == Rating.LIKED)
+                .flatMap( mrating ->
+                    Vector.ofAll(mrating.getUser().getMovieRatings())
+                        .filter(r -> r.getRating() == Rating.LIKED)
                         .map(urating -> urating.getMovie())
-                    )
-                    .groupBy(Function1.identity())
-                    .map((mov, movs) -> Tuple.of(mov, movs.length()))
-                    .toList()
-                    .sortBy(movCounts -> movCounts._2)
-                    .map(movCounts -> movCounts._1)
-            ).asJava();
+                )
+                .groupBy(x -> x)
+                .map((mov, movs) -> Tuple.of(mov, movs.length()))
+                .toList()
+                .sortBy(movCounts -> movCounts._2)
+                .map(movCounts -> movCounts._1)
+                .remove(m)
+            )
+            .reverse()
+            .asJava();
     }
 
     @Override

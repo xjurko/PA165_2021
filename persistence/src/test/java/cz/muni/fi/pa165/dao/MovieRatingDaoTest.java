@@ -3,6 +3,7 @@ package cz.muni.fi.pa165.dao;
 import cz.muni.fi.pa165.PersistenceConfig;
 import cz.muni.fi.pa165.entity.Movie;
 import cz.muni.fi.pa165.entity.MovieRating;
+import cz.muni.fi.pa165.entity.Rating;
 import cz.muni.fi.pa165.entity.User;
 import lombok.val;
 import org.springframework.test.context.ContextConfiguration;
@@ -48,7 +49,7 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
     public void testStoreRatingPreservesNewEntities() {
         val user = new User("testUser1", "user1@fi.muni.cz");
         val movie = new Movie("testMovie", Set.of(), 10, Set.of(), "", "");
-        val rating = new MovieRating(movie, user, 2);
+        val rating = new MovieRating(movie, user, Rating.LIKED);
 
         ratingDao.store(rating);
 
@@ -73,7 +74,7 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
         val user = new User("testUser1", "user1@fi.muni.cz");
         val movie = new Movie("testMovie", Set.of(), 10, Set.of(), "", "");
 
-        val rating = new MovieRating(movie, user, 2);
+        val rating = new MovieRating(movie, user, Rating.LIKED);
         ratingDao.store(rating);
         em.flush();
 
@@ -105,7 +106,7 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
         val user = new User("testUser1", "user1@fi.muni.cz");
         val movie = new Movie("testMovie", Set.of(), 10, Set.of(), "", "");
 
-        val rating = new MovieRating(movie, user, 2);
+        val rating = new MovieRating(movie, user, Rating.LIKED);
         ratingDao.store(rating);
         em.flush();
 
@@ -122,8 +123,8 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
         val movie = new Movie("testMovie",  Set.of(), 10, Set.of(), "", "");
         val movie2 = new Movie("testMovi2e", Set.of(), 10, Set.of(), "", "");
 
-        val rating = new MovieRating(movie, user, 2);
-        val rating2 = new MovieRating(movie2, user, 1);
+        val rating = new MovieRating(movie, user, Rating.LIKED);
+        val rating2 = new MovieRating(movie2, user, Rating.LIKED);
         userDao.store(user);
         ratingDao.store(rating);
         ratingDao.store(rating2);
@@ -144,8 +145,8 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
         val movie = new Movie("testMovie",  Set.of(), 10, Set.of(), "", "");
         val movie2 = new Movie("testMovi2e", Set.of(), 10, Set.of(), "", "");
 
-        val rating = new MovieRating(movie, user, 2);
-        val rating2 = new MovieRating(movie2, user, 1);
+        val rating = new MovieRating(movie, user, Rating.LIKED);
+        val rating2 = new MovieRating(movie2, user, Rating.LIKED);
         userDao.store(user);
         ratingDao.store(rating);
         ratingDao.store(rating2);
