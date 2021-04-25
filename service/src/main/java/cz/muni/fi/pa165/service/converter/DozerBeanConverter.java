@@ -18,13 +18,10 @@ import javax.inject.Named;
 @Named("DozerConverter")
 @RequiredArgsConstructor
 public class DozerBeanConverter implements BeanConverter {
-
-    final static Logger logger = LoggerFactory.getLogger(DozerBeanConverter.class);
     final Mapper mapper;
 
     @Override
     public <T, F> T convert(F from, Class<T> to) {
-        logger.error("converting {} to {}", from.getClass().toString(), to.toString());
         return mapper.map(from, to);
     }
 }
