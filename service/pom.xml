@@ -38,7 +38,6 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-test</artifactId>
-      <version>5.3.4</version>
       <scope>test</scope>
     </dependency>
 
@@ -62,12 +61,6 @@
     <dependency>
       <groupId>io.vavr</groupId>
       <artifactId>vavr</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>ma.glasnost.orika</groupId>
-      <artifactId>orika-core</artifactId>
-<!--      <version>1.4.2</version>&lt;!&ndash; or latest version &ndash;&gt;-->
     </dependency>
 
   </dependencies>
