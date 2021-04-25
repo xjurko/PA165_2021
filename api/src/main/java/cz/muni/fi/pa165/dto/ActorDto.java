@@ -1,10 +1,22 @@
 package cz.muni.fi.pa165.dto;
 
-import lombok.Value;
-import lombok.With;
+import lombok.*;
 
-@Value
-@With
+import java.time.LocalDate;
+import java.util.Set;
+
+/**
+ * @author alia
+ */
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ActorDto {
-// TODO stub
+    Long id;
+    String fullName;
+    Double height;
+    LocalDate birthDate;
+    LocalDate deathDate;
+    Set<MovieDto> movies; //todo do we need it? (bidirectional)
 }
