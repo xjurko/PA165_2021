@@ -14,4 +14,6 @@ public interface MovieService {
     List<Movie> findOtherAlsoLikedMovies(Long movieId);
 
     Optional<Movie> findMovieById(Long movieId);
+
+    List<Movie> getRecommendedMoviesForUser(Long userId);
 }

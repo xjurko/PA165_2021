@@ -1,6 +1,7 @@
 package cz.muni.fi.pa165.service;
 
 import cz.muni.fi.pa165.dao.MovieDao;
+import cz.muni.fi.pa165.dao.UserDao;
 import cz.muni.fi.pa165.entity.MovieRating;
 import cz.muni.fi.pa165.entity.Rating;
 import cz.muni.fi.pa165.service.config.ServiceConfig;
@@ -27,12 +28,13 @@ import static org.mockito.Mockito.when;
 public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringContextTests {
 
     MovieDao movieDaoMock = mock(MovieDao.class);
+    UserDao userDaoMock = mock(UserDao.class);
 
     MovieService movieService;
 
     @BeforeClass
     public void init() {
-        movieService = new MovieServiceImpl(movieDaoMock);
+        movieService = new MovieServiceImpl(movieDaoMock, userDaoMock);
     }
 
     @Test
