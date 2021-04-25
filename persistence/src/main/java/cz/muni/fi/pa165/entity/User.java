@@ -1,5 +1,6 @@
 package cz.muni.fi.pa165.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,6 +20,7 @@ import java.util.Set;
 @Table(name = "Users")
 @Getter
 @Setter
+@AllArgsConstructor
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

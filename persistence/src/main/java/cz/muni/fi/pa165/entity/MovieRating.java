@@ -26,9 +26,10 @@ public class MovieRating {
 
     @NotNull
     @Column(nullable = false)
-    private int rating;
+    @Enumerated(EnumType.STRING)
+    private Rating rating;
 
-    public MovieRating(Movie movie, User user, int rating) {
+    public MovieRating(Movie movie, User user, Rating rating) {
         this.movie = movie;
         this.user = user;
         this.rating = rating;
@@ -53,16 +54,14 @@ public class MovieRating {
 
         MovieRating that = (MovieRating) o;
 
-        if (rating != that.rating) return false;
-        if (!movie.equals(that.movie)) return false;
-        return user.equals(that.user);
+        if (!getId().equals(that.getId())) return false;
+        return getRating() == that.getRating();
     }
 
     @Override
     public int hashCode() {
-        int result = movie.hashCode();
-        result = 31 * result + user.hashCode();
-        result = 31 * result + rating;
+        int result = getId().hashCode();
+        result = 31 * result + getRating().hashCode();
         return result;
     }
 }

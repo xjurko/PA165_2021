@@ -12,4 +12,6 @@ public interface MovieFacade {
     Iterable<MovieDto> findOtherAlsoLikedMovies(Long movieId);
 
     Optional<MovieDto> findMovieByName(String name);
+
+    Optional<MovieDto> findMovieById(Long id);
 }

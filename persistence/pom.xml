@@ -19,6 +19,21 @@
   <dependencies>
 
     <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.inject</groupId>
+      <artifactId>javax.inject</artifactId>
+    </dependency>
+
+    <dependency>
       <groupId>org.springframework.data</groupId>
       <artifactId>spring-data-jpa</artifactId>
     </dependency>
@@ -45,7 +60,6 @@
       <artifactId>javax.el-api</artifactId>
       <version>3.0.0</version>
     </dependency>
-
 
     <!-- For embedded usage -->
     <dependency>

@@ -1,30 +1,22 @@
 package cz.muni.fi.pa165.dao;
 
 import cz.muni.fi.pa165.PersistenceConfig;
-import cz.muni.fi.pa165.entity.Actor;
 import cz.muni.fi.pa165.entity.Movie;
 import cz.muni.fi.pa165.entity.MovieRating;
+import cz.muni.fi.pa165.entity.Rating;
 import cz.muni.fi.pa165.entity.User;
 import lombok.val;
-import org.hibernate.Session;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestExecutionListeners;
-import org.springframework.test.context.event.annotation.BeforeTestClass;
-import org.springframework.test.context.event.annotation.BeforeTestMethod;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.test.context.transaction.TransactionalTestExecutionListener;
 import org.testng.Assert;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceContext;
-import javax.persistence.PersistenceUnit;
 import javax.transaction.Transactional;
-import javax.validation.constraints.AssertTrue;
-import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
@@ -57,7 +49,7 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
     public void testStoreRatingPreservesNewEntities() {
         val user = new User("testUser1", "user1@fi.muni.cz");
         val movie = new Movie("testMovie", Set.of(), 10, Set.of(), "", "");
-        val rating = new MovieRating(movie, user, 2);
+        val rating = new MovieRating(movie, user, Rating.LIKED);
 
         ratingDao.store(rating);
 
@@ -72,7 +64,7 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
 
         Assert.assertTrue(storedMovie.isPresent());
         Assert.assertEquals(storedMovie, Optional.of(movie));
-        Assert.assertTrue(storedMovie.get().getMovieRatings().contains(rating));
+        Assert.assertTrue(storedMovie.get().getRatings().contains(rating));
 
     }
 
@@ -82,12 +74,12 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
         val user = new User("testUser1", "user1@fi.muni.cz");
         val movie = new Movie("testMovie", Set.of(), 10, Set.of(), "", "");
 
-        val rating = new MovieRating(movie, user, 2);
+        val rating = new MovieRating(movie, user, Rating.LIKED);
         ratingDao.store(rating);
         em.flush();
 
         Assert.assertFalse(user.getMovieRatings().isEmpty());
-        Assert.assertFalse(movie.getMovieRatings().isEmpty());
+        Assert.assertFalse(movie.getRatings().isEmpty());
 
         ratingDao.remove(rating);
 
@@ -97,7 +89,7 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
         val storedUser = userDao.findById(user.getId());
 
         Assert.assertTrue(user.getMovieRatings().isEmpty());
-        Assert.assertTrue(movie.getMovieRatings().isEmpty());
+        Assert.assertTrue(movie.getRatings().isEmpty());
 
         Assert.assertTrue(storedUser.isPresent());
         Assert.assertEquals(storedUser.get().getMovieRatings(), user.getMovieRatings());
@@ -105,8 +97,8 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
 
 
         Assert.assertTrue(storedMovie.isPresent());
-        Assert.assertEquals(storedMovie.get().getMovieRatings(), movie.getMovieRatings());
-        Assert.assertTrue(storedMovie.get().getMovieRatings().isEmpty());
+        Assert.assertEquals(storedMovie.get().getRatings(), movie.getRatings());
+        Assert.assertTrue(storedMovie.get().getRatings().isEmpty());
     }
 
     @Test
@@ -114,7 +106,7 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
         val user = new User("testUser1", "user1@fi.muni.cz");
         val movie = new Movie("testMovie", Set.of(), 10, Set.of(), "", "");
 
-        val rating = new MovieRating(movie, user, 2);
+        val rating = new MovieRating(movie, user, Rating.LIKED);
         ratingDao.store(rating);
         em.flush();
 
@@ -131,8 +123,8 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
         val movie = new Movie("testMovie",  Set.of(), 10, Set.of(), "", "");
         val movie2 = new Movie("testMovi2e", Set.of(), 10, Set.of(), "", "");
 
-        val rating = new MovieRating(movie, user, 2);
-        val rating2 = new MovieRating(movie2, user, 1);
+        val rating = new MovieRating(movie, user, Rating.LIKED);
+        val rating2 = new MovieRating(movie2, user, Rating.LIKED);
         userDao.store(user);
         ratingDao.store(rating);
         ratingDao.store(rating2);
@@ -143,8 +135,8 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
 
         val storedMovie = movieDao.findById(movie.getId()).get();
         val storedMovie2 = movieDao.findById(movie2.getId()).get();
-        Assert.assertTrue(storedMovie.getMovieRatings().isEmpty());
-        Assert.assertTrue(storedMovie2.getMovieRatings().isEmpty());
+        Assert.assertTrue(storedMovie.getRatings().isEmpty());
+        Assert.assertTrue(storedMovie2.getRatings().isEmpty());
     }
 
     @Test
@@ -153,8 +145,8 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
         val movie = new Movie("testMovie",  Set.of(), 10, Set.of(), "", "");
         val movie2 = new Movie("testMovi2e", Set.of(), 10, Set.of(), "", "");
 
-        val rating = new MovieRating(movie, user, 2);
-        val rating2 = new MovieRating(movie2, user, 1);
+        val rating = new MovieRating(movie, user, Rating.LIKED);
+        val rating2 = new MovieRating(movie2, user, Rating.LIKED);
         userDao.store(user);
         ratingDao.store(rating);
         ratingDao.store(rating2);
