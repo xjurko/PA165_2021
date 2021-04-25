@@ -29,7 +29,7 @@ public class MovieFacadeImpl implements MovieFacade {
 
     @Override
     public Iterable<MovieDto> findOtherAlsoLikedMovies(Long movieId) {
-        return null;
+       return converter.convert(movieService.findOtherAlsoLikedMovies(movieId), MovieDto.class);
     }
 
     @Override

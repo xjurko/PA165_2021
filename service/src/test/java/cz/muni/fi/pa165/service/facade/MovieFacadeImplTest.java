@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import javax.inject.Inject;
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
@@ -52,5 +53,23 @@ public class MovieFacadeImplTest extends AbstractTransactionalTestNGSpringContex
         Assert.assertNotNull(converter);
         val movie = movieFacade.findMovieById(123L);
         Assert.assertEquals(movie.get(), testMovieDto);
+    }
+
+    @Test
+    public void testFindOtherAlsoLikedMoviesEmpty() {
+        when(movieServiceMock.findOtherAlsoLikedMovies(anyLong())).thenReturn(List.of());
+
+        Assert.assertNotNull(converter);
+        val movies = movieFacade.findOtherAlsoLikedMovies(123L);
+        Assert.assertEquals(movies, List.of());
+    }
+
+    @Test
+    public void testFindOtherAlsoLikedMoviesNonEmpty() {
+        when(movieServiceMock.findOtherAlsoLikedMovies(anyLong())).thenReturn(List.of(testMovie));
+
+        Assert.assertNotNull(converter);
+        val movies = movieFacade.findOtherAlsoLikedMovies(123L);
+        Assert.assertEquals(movies, List.of(testMovieDto));
     }
 }
