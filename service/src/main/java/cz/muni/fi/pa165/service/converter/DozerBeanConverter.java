@@ -1,13 +1,8 @@
 package cz.muni.fi.pa165.service.converter;
 
 import com.github.dozermapper.core.Mapper;
-import cz.muni.fi.pa165.service.facade.MovieFacadeImpl;
 import lombok.RequiredArgsConstructor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
 
-import javax.inject.Inject;
 import javax.inject.Named;
 
 
