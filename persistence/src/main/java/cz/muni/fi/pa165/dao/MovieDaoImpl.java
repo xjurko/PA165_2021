@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
-import javax.persistence.NonUniqueResultException;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 import java.util.Optional;
@@ -57,7 +56,7 @@ public class MovieDaoImpl implements MovieDao {
 
     @Override
     public void remove(Movie m) {
-        val ratings = m.getMovieRatings();
+        val ratings = m.getRatings();
         em.remove(m);
         em.flush();
         for (MovieRating rating : ratings) {

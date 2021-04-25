@@ -1,10 +1,11 @@
 package cz.muni.fi.pa165.dto;
 
-import lombok.Value;
-import lombok.With;
+import lombok.*;
 
-@Value
-@With
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ActorDto {
+    Long id;
 // TODO stub
 }

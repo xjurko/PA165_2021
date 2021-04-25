@@ -1,7 +1,9 @@
 package cz.muni.fi.pa165.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
@@ -17,6 +19,8 @@ import java.util.Set;
 @Entity
 @Getter
 @Setter
+@AllArgsConstructor
+@ToString
 public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -39,7 +43,7 @@ public class Movie {
     private Set<Genre> genres = new HashSet<>();
 
     @OneToMany(mappedBy = "movie", orphanRemoval = true)
-    private Set<MovieRating> movieRatings = new HashSet<>();
+    private Set<MovieRating> ratings = new HashSet<>();
 
     private String caption;
 
@@ -74,7 +78,7 @@ public class Movie {
     }
 
     public void addRating(MovieRating rating) {
-        this.movieRatings.add(rating);
+        this.ratings.add(rating);
     }
 
     public void addCastMember(Actor actor) {
