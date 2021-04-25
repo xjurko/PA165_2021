@@ -31,11 +31,18 @@ public class User {
     private String name;
 
     @NotNull
+    @Column(nullable = false)
+    private String passwordHash;
+
+    @NotNull
     @Column(nullable = false, unique = true)
     private String email;
 
     @OneToMany(mappedBy = "movie",  orphanRemoval = true)
     private Set<MovieRating> movieRatings = new HashSet<>();
+
+    // TODO: possibly replace with a separate roles entity
+    private boolean isAdmin;
 
     public User(String name, String email) {
         this.name = name;
