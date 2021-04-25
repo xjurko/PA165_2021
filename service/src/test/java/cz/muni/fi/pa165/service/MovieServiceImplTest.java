@@ -1,8 +1,10 @@
 package cz.muni.fi.pa165.service;
 
 import cz.muni.fi.pa165.dao.MovieDao;
-import cz.muni.fi.pa165.entity.*;
+import cz.muni.fi.pa165.entity.MovieRating;
+import cz.muni.fi.pa165.entity.Rating;
 import cz.muni.fi.pa165.service.config.ServiceConfig;
+import cz.muni.fi.pa165.service.util.TestUtil;
 import io.vavr.collection.List;
 import lombok.val;
 import org.springframework.test.context.ContextConfiguration;
@@ -11,9 +13,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.util.HashSet;
 import java.util.Optional;
-import java.util.Set;
 
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.mock;
@@ -30,16 +30,6 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
 
     MovieService movieService;
 
-
-    private Movie getFakeMovie(Long id, String name) {
-        return new Movie(id, name, new HashSet<>(), new HashSet<>(), 0, Set.of(Genre.ACTION), new HashSet<>(), "test caption", "test ref");
-    }
-
-
-    private User getFakeUser(Long id, String name) {
-        return new User(id, name, name + "@muni.cz", new HashSet<>());
-    }
-
     @BeforeClass
     public void init() {
         movieService = new MovieServiceImpl(movieDaoMock);
@@ -54,10 +44,10 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
 
     @Test
     public void testFindOtherAlsoLikedMoviesReturnsEmptyIfOnlyOriginalMovieIsLiked() {
-        val m1 = getFakeMovie(1L, "m1");
-        val u1 = getFakeUser(1L, "u1");
-        val u2 = getFakeUser(1L, "u2");
-        val u3 = getFakeUser(1L, "u3");
+        val m1 = TestUtil.getFakeMovie(1L, "m1");
+        val u1 = TestUtil.getFakeUser(1L, "u1");
+        val u2 = TestUtil.getFakeUser(1L, "u2");
+        val u3 = TestUtil.getFakeUser(1L, "u3");
 
         new MovieRating(m1, u1, Rating.LIKED);
         new MovieRating(m1, u2, Rating.LIKED);
@@ -71,18 +61,18 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
 
     @Test
     public void testFindOtherAlsoLikedMoviesReturnsOnlyMoviesLikedByOtherUsersOrderedByCounts() {
-        val m1 = getFakeMovie(1L, "m1");
-        val m2 = getFakeMovie(2L, "m2");
-        val m3 = getFakeMovie(3L, "m3");
-        val m4 = getFakeMovie(4L, "m4");
+        val m1 = TestUtil.getFakeMovie(1L, "m1");
+        val m2 = TestUtil.getFakeMovie(2L, "m2");
+        val m3 = TestUtil.getFakeMovie(3L, "m3");
+        val m4 = TestUtil.getFakeMovie(4L, "m4");
 
-        val u1 = getFakeUser(1L, "u1");
-        val u2 = getFakeUser(2L, "u2");
-        val u3 = getFakeUser(3L, "u3");
-        val u4 = getFakeUser(4L, "u4");
-        val u5 = getFakeUser(5L, "u5");
-        val u6 = getFakeUser(6L, "u6");
-        val u7 = getFakeUser(7L, "u7");
+        val u1 = TestUtil.getFakeUser(1L, "u1");
+        val u2 = TestUtil.getFakeUser(2L, "u2");
+        val u3 = TestUtil.getFakeUser(3L, "u3");
+        val u4 = TestUtil.getFakeUser(4L, "u4");
+        val u5 = TestUtil.getFakeUser(5L, "u5");
+        val u6 = TestUtil.getFakeUser(6L, "u6");
+        val u7 = TestUtil.getFakeUser(7L, "u7");
 
         //m1 expected not present in output
         new MovieRating(m1, u1, Rating.LIKED);
@@ -115,18 +105,18 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
 
     @Test
     public void testFindOtherAlsoLikedMoviesIgnoresDislikedMovies() {
-        val m1 = getFakeMovie(1L, "m1");
-        val m2 = getFakeMovie(2L, "m2");
-        val m3 = getFakeMovie(3L, "m3");
-        val m4 = getFakeMovie(4L, "m4");
+        val m1 = TestUtil.getFakeMovie(1L, "m1");
+        val m2 = TestUtil.getFakeMovie(2L, "m2");
+        val m3 = TestUtil.getFakeMovie(3L, "m3");
+        val m4 = TestUtil.getFakeMovie(4L, "m4");
 
-        val u1 = getFakeUser(1L, "u1");
-        val u2 = getFakeUser(2L, "u2");
-        val u3 = getFakeUser(3L, "u3");
-        val u4 = getFakeUser(4L, "u4");
-        val u5 = getFakeUser(5L, "u5");
-        val u6 = getFakeUser(6L, "u6");
-        val u7 = getFakeUser(7L, "u7");
+        val u1 = TestUtil.getFakeUser(1L, "u1");
+        val u2 = TestUtil.getFakeUser(2L, "u2");
+        val u3 = TestUtil.getFakeUser(3L, "u3");
+        val u4 = TestUtil.getFakeUser(4L, "u4");
+        val u5 = TestUtil.getFakeUser(5L, "u5");
+        val u6 = TestUtil.getFakeUser(6L, "u6");
+        val u7 = TestUtil.getFakeUser(7L, "u7");
 
         //m1 expected not present in output
         new MovieRating(m1, u1, Rating.LIKED);
@@ -161,18 +151,18 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
 
     @Test
     public void testFindOtherAlsoLikedMoviesIgnoresUsersThatDislikeOriginalMovie() {
-        val m1 = getFakeMovie(1L, "m1");
-        val m2 = getFakeMovie(2L, "m2");
-        val m3 = getFakeMovie(3L, "m3");
-        val m4 = getFakeMovie(4L, "m4");
+        val m1 = TestUtil.getFakeMovie(1L, "m1");
+        val m2 = TestUtil.getFakeMovie(2L, "m2");
+        val m3 = TestUtil.getFakeMovie(3L, "m3");
+        val m4 = TestUtil.getFakeMovie(4L, "m4");
 
-        val u1 = getFakeUser(1L, "u1");
-        val u2 = getFakeUser(2L, "u2");
-        val u3 = getFakeUser(3L, "u3");
-        val u4 = getFakeUser(4L, "u4");
-        val u5 = getFakeUser(5L, "u5");
-        val u6 = getFakeUser(6L, "u6");
-        val u7 = getFakeUser(7L, "u7");
+        val u1 = TestUtil.getFakeUser(1L, "u1");
+        val u2 = TestUtil.getFakeUser(2L, "u2");
+        val u3 = TestUtil.getFakeUser(3L, "u3");
+        val u4 = TestUtil.getFakeUser(4L, "u4");
+        val u5 = TestUtil.getFakeUser(5L, "u5");
+        val u6 = TestUtil.getFakeUser(6L, "u6");
+        val u7 = TestUtil.getFakeUser(7L, "u7");
 
         //m1 expected not present in output
         new MovieRating(m1, u1, Rating.LIKED);
