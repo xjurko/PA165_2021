@@ -11,7 +11,7 @@ import java.util.Optional;
 public interface UserService {
     Optional<User> findById(Long id);
     Optional<User> findByName(String name);
-    List<User> getAll();
+    List<User> getAllUsers();
     void registerUser(User u, String unencryptedPassword);
     boolean authenticate(User u, String password);
     boolean isAdmin(User u);
