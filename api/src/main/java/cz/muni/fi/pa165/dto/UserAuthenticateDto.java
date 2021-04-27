@@ -4,10 +4,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * A DTO with the authentication info of a user logging in
+ * @author lsolodkova
+ */
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserAuthenticateDto {
-    private Long id;
+    private String name;
     private String password;
 }

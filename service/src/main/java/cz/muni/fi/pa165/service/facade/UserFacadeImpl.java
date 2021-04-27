@@ -40,8 +40,8 @@ public class UserFacadeImpl implements UserFacade {
     }
 
     @Override
-    public Iterable<UserDto> getAll() {
-        return converter.convert(userService.getAll(), UserDto.class);
+    public Iterable<UserDto> getAllUsers() {
+        return converter.convert(userService.getAllUsers(), UserDto.class);
     }
 
     @Override
@@ -53,7 +53,7 @@ public class UserFacadeImpl implements UserFacade {
 
     @Override
     public boolean authenticate(UserAuthenticateDto u) {
-        Optional<User> user = userService.findById(u.getId());
+        Optional<User> user = userService.findByName(u.getName());
         if(user.isEmpty()) return false;
         return userService.authenticate(user.get(), u.getPassword());
     }

@@ -12,8 +12,9 @@ import java.util.Optional;
 public interface UserFacade {
     Optional<UserDto> findUserById(Long id);
     Optional<UserDto> findByName(String name);
-    Iterable<UserDto> getAll();
+    Iterable<UserDto> getAllUsers();
     void registerUser(UserDto userDto, String unencryptedPassword);
     boolean authenticate(UserAuthenticateDto u);
     boolean isAdmin(UserDto userDto);
+
 }
