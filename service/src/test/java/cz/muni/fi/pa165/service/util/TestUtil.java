@@ -17,7 +17,7 @@ public class TestUtil {
 
 
     public static User getFakeUser(Long id, String name) {
-        return new User(id, name, name + "@muni.cz", new HashSet<>());
+        return new User(id, name, "passw0rdhash", name + "@muni.cz", new HashSet<>(), false);
     }
 
 }

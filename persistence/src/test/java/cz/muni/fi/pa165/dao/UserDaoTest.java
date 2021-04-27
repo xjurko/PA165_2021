@@ -40,7 +40,7 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void testStoreAndFind() {
-        User user = new User("testUser1", "user1@fi.muni.cz");
+        User user = new User("testUser1", "user1@fi.muni.cz", "passw0rdhash");
         userDao.store(user);
 
         Optional<User> storedUser = userDao.findById(user.getId());
@@ -50,8 +50,8 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void testStoreAndFindAll() {
-        User user1 = new User("testUser1", "user1@fi.muni.cz");
-        User user2 = new User("testUser2", "user2@fi.muni.cz");
+        User user1 = new User("testUser1", "user1@fi.muni.cz", "passw0rdhash");
+        User user2 = new User("testUser2", "user2@fi.muni.cz", "passw0rdhash");
 
         userDao.store(user1);
         userDao.store(user2);
@@ -62,7 +62,7 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void testStoreAndRemove() {
-        User user = new User("testUser1", "user1@fi.muni.cz");
+        User user = new User("testUser1", "user1@fi.muni.cz", "passw0rdhash");
 
         userDao.store(user);
         Assert.assertTrue(userDao.findById(user.getId()).isPresent());
