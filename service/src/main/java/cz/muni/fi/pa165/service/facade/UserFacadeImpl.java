@@ -62,4 +62,9 @@ public class UserFacadeImpl implements UserFacade {
     public boolean isAdmin(UserDto userDto) {
         return userService.isAdmin(converter.convert(userDto, User.class));
     }
+
+    @Override
+    public void removeUser(UserDto userDto){
+        userService.removeUser(converter.convert(userDto, User.class));
+    }
 }

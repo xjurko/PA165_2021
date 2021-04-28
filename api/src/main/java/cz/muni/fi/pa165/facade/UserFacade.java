@@ -16,5 +16,6 @@ public interface UserFacade {
     void registerUser(UserDto userDto, String unencryptedPassword);
     boolean authenticate(UserAuthenticateDto u);
     boolean isAdmin(UserDto userDto);
+    void removeUser(UserDto userDto);
 
 }
