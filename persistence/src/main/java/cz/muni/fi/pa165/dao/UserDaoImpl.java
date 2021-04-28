@@ -60,6 +60,21 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
+    public Optional<User> findByEmail(String email) {
+        if (email.isBlank())
+            throw new IllegalArgumentException("Cannot search for an empty email");
+        try {
+            return Optional.ofNullable(
+                    em.createQuery("select u from User u where email=:email", User.class)
+                            .setParameter("email", email)
+                            .getSingleResult()
+            );
+        } catch (NoResultException ex) {
+            return Optional.empty();
+        }
+    }
+
+    @Override
     public void remove(User user) {
         val ratings = user.getMovieRatings();
         em.remove(user);

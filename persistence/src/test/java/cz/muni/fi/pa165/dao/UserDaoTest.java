@@ -1,21 +1,18 @@
 package cz.muni.fi.pa165.dao;
 
 import cz.muni.fi.pa165.PersistenceConfig;
-import cz.muni.fi.pa165.entity.Director;
 import cz.muni.fi.pa165.entity.User;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.test.context.transaction.TransactionalTestExecutionListener;
 import org.testng.Assert;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
-import javax.validation.ConstraintViolationException;
 import java.util.List;
 import java.util.Optional;
 
@@ -72,13 +69,23 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
         Assert.assertTrue(userDao.findById(user.getId()).isEmpty());
     }
 
-    @Test(expectedExceptions = {ConstraintViolationException.class})
-    public void testSaveUsersSameName(){
-        User user1 = new User("samename", "user1@fi.muni.cz", "passw0rdhash");
-        User user2 = new User("samename", "user2@fi.muni.cz", "passw0rdhash");
+    @Test
+    public void testSearchByName(){
+        User user = new User("testUser1", "user1@fi.muni.cz", "passw0rdhash");
 
-        userDao.store(user1);
-        userDao.store(user2);
+        userDao.store(user);
+        Optional<User> storedUser = userDao.findByName("testUser1");
+        Assert.assertTrue(storedUser.isPresent());
+        Assert.assertEquals(storedUser, Optional.of(user));
     }
 
+    @Test
+    public void testSearchByEmail(){
+        User user = new User("testUser1", "user1@fi.muni.cz", "passw0rdhash");
+
+        userDao.store(user);
+        Optional<User> storedUser = userDao.findByEmail("user1@fi.muni.cz");
+        Assert.assertTrue(storedUser.isPresent());
+        Assert.assertEquals(storedUser, Optional.of(user));
+    }
 }

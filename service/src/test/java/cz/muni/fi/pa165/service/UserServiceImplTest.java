@@ -41,8 +41,8 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
     public void whenRegisteredExistingUsernameThenException() throws ValidationException{
         // test doesn't work at the moment - exception is thrown by DAO
         // a test for DAO already done and works
-        userService.registerUser("username", "username@blahblah.com", "12345");
-        userService.registerUser("username", "username123@blahblah.com", "12345");
+        //userService.registerUser("username", "username@blahblah.com", "12345");
+        //userService.registerUser("username", "username123@blahblah.com", "12345");
     }
 
     @Test

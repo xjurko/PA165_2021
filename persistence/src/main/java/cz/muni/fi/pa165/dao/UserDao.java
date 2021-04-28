@@ -43,6 +43,14 @@ public interface UserDao {
     Optional<User> findByName(String name);
 
     /**
+     * Find a particular user by email
+     *
+     * @param email user email
+     * @return User entity which matches the particular email
+     */
+    Optional<User> findByEmail(String email);
+
+    /**
      * Removes a user from the database
      *
      * @param user user entity to be removed

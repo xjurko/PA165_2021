@@ -41,6 +41,8 @@ public class UserServiceImpl implements UserService{
         // finer validation needed
         if(name.isBlank() || email.isBlank()) throw new ValidationException("Username and email should be present");
         if(rawPassword.isBlank()) throw new ValidationException("A password should be present");
+        // we need to check if such credentials already exist in the DB
+        if(userDao.findByName(name).isPresent()) throw new ValidationException("This username is already occupied");
         User newUser = new User(name, email, encoder.encode(rawPassword));
         userDao.store(newUser);
         return newUser;
