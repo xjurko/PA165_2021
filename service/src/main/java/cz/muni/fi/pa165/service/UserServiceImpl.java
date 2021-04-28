@@ -3,10 +3,12 @@ package cz.muni.fi.pa165.service;
 import cz.muni.fi.pa165.dao.UserDao;
 import cz.muni.fi.pa165.entity.User;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.security.crypto.argon2.Argon2PasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+
+import javax.validation.ValidationException;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,7 +18,7 @@ public class UserServiceImpl implements UserService{
 
     final UserDao userDao;
 
-    private final PasswordEncoder encoder = new Argon2PasswordEncoder();
+    private final PasswordEncoder encoder = new BCryptPasswordEncoder();
 
     @Override
     public Optional<User> findById(Long id) {
@@ -34,9 +36,14 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public void registerUser(User u, String unencryptedPassword) {
-        u.setPasswordHash(encoder.encode(unencryptedPassword));
-        userDao.store(u);
+    public User registerUser(String name, String email, String rawPassword) throws ValidationException {
+        // username, email and password shouldn't be blank or null
+        // finer validation needed
+        if(name.isBlank() || email.isBlank()) throw new ValidationException("Username and email should be present");
+        if(rawPassword.isBlank()) throw new ValidationException("A password should be present");
+        User newUser = new User(name, email, encoder.encode(rawPassword));
+        userDao.store(newUser);
+        return newUser;
     }
 
     @Override

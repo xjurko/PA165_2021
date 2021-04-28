@@ -15,6 +15,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
+import javax.validation.ConstraintViolationException;
 import java.util.List;
 import java.util.Optional;
 
@@ -69,6 +70,15 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
 
         userDao.remove(user);
         Assert.assertTrue(userDao.findById(user.getId()).isEmpty());
+    }
+
+    @Test(expectedExceptions = {ConstraintViolationException.class})
+    public void testSaveUsersSameName(){
+        User user1 = new User("samename", "user1@fi.muni.cz", "passw0rdhash");
+        User user2 = new User("samename", "user2@fi.muni.cz", "passw0rdhash");
+
+        userDao.store(user1);
+        userDao.store(user2);
     }
 
 }
