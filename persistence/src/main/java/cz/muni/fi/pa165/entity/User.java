@@ -5,7 +5,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -26,7 +28,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull
+    @NotBlank
     @Column(nullable = false, unique = true)
     private String name;
 
@@ -34,7 +36,8 @@ public class User {
     @Column(nullable = false)
     private String passwordHash;
 
-    @NotNull
+    @NotBlank
+    @Pattern(regexp=".+@.+\\....?")
     @Column(nullable = false, unique = true)
     private String email;
 
