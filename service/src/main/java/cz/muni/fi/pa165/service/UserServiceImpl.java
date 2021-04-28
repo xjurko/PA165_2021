@@ -50,4 +50,9 @@ public class UserServiceImpl implements UserService{
         if (user.isEmpty()) return false;
         else return user.get().isAdmin();
     }
+
+    @Override
+    public void removeUser(User u){
+        userDao.remove(u);
+    }
 }

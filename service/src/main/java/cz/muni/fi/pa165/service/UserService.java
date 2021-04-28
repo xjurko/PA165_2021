@@ -15,4 +15,5 @@ public interface UserService {
     void registerUser(User u, String unencryptedPassword);
     boolean authenticate(User u, String password);
     boolean isAdmin(User u);
+    void removeUser(User u);
 }
