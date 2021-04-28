@@ -18,5 +18,4 @@ public class ActorDto {
     Double height;
     LocalDate birthDate;
     LocalDate deathDate;
-    Set<MovieDto> movies; //todo do we need it? (bidirectional)
 }

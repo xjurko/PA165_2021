@@ -2,43 +2,48 @@ package cz.muni.fi.pa165.service.facade;
 
 
 import cz.muni.fi.pa165.dto.ActorDto;
+import cz.muni.fi.pa165.entity.Actor;
+import cz.muni.fi.pa165.exceptions.ValidationException;
 import cz.muni.fi.pa165.facade.ActorFacade;
 import cz.muni.fi.pa165.service.ActorService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import cz.muni.fi.pa165.service.converter.BeanConverter;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
+import java.util.List;
 import java.util.Optional;
 
 /**
  * @author alia
  */
 
+@RequiredArgsConstructor
+@Service
+@Transactional
 public class ActorFacadeImpl implements ActorFacade {
 
     final ActorService actorService;
     final BeanConverter converter;
 
-    final static Logger logger = LoggerFactory.getLogger(ActorFacadeImpl.class);
-
-
     @Override
-    public Long createActor(ActorDto a) {
-        return null;
+    public Long createActor(ActorDto a) throws ValidationException {
+        return actorService.createActor(converter.convert(a, Actor.class));
     }
 
     @Override
-    public void deleteActor(Long actorId) {
-
+    public void deleteActor(Long actorId) throws ValidationException {
+        actorService.deleteActor(actorId);
     }
 
     @Override
     public Optional<ActorDto> findActorById(Long id) {
-        return Optional.empty();
+        return actorService.findActorById(id).map(a ->
+                converter.convert(a, ActorDto.class));
     }
 
     @Override
     public Iterable<ActorDto> findActorsByFullName(String fullName) {
-        return null;
+        return converter.convert(actorService.findActorsByFullName(fullName), ActorDto.class);
     }
-
 }
