@@ -10,7 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import javax.xml.bind.ValidationException;
+import javax.validation.ValidationException;
 import java.util.Optional;
 
 /**

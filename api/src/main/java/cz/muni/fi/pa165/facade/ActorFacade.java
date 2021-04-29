@@ -1,7 +1,7 @@
 package cz.muni.fi.pa165.facade;
 
 import cz.muni.fi.pa165.dto.ActorDto;
-import javax.xml.bind.ValidationException;
+import javax.validation.ValidationException;
 
 import java.util.Optional;
 

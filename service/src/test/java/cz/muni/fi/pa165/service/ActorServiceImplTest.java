@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import javax.xml.bind.ValidationException;
+import javax.validation.ValidationException;
 import java.time.LocalDate;
 import java.util.Optional;
 

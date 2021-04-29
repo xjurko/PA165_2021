@@ -3,7 +3,7 @@ package cz.muni.fi.pa165.service;
 import cz.muni.fi.pa165.entity.Actor;
 import org.springframework.dao.DataAccessException;
 
-import javax.xml.bind.ValidationException;
+import javax.validation.ValidationException;
 import java.util.List;
 import java.util.Optional;
 

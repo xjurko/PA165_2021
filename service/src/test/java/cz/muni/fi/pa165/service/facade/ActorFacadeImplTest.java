@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import javax.inject.Inject;
-import javax.xml.bind.ValidationException;
+import javax.validation.ValidationException;
 
 import java.util.List;
 import java.util.Optional;
