@@ -48,7 +48,7 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
     @Test
     public void testStoreRatingPreservesNewEntities() {
         val user = new User("testUser1", "user1@fi.muni.cz");
-        val movie = new Movie("testMovie", Set.of(), 10, Set.of(), "", "");
+        val movie = new Movie("testMovie", Set.of(), 10, Set.of(), 2000, "", "");
         val rating = new MovieRating(movie, user, Rating.LIKED);
 
         ratingDao.store(rating);
@@ -72,7 +72,7 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
     @Test
     public void testRemovingRatingRemovesItFromMovieAndUser() {
         val user = new User("testUser1", "user1@fi.muni.cz");
-        val movie = new Movie("testMovie", Set.of(), 10, Set.of(), "", "");
+        val movie = new Movie("testMovie", Set.of(), 10, Set.of(), 2000, "", "");
 
         val rating = new MovieRating(movie, user, Rating.LIKED);
         ratingDao.store(rating);
@@ -104,7 +104,7 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
     @Test
     public void testRemovingMovieRemovesAllRatings() {
         val user = new User("testUser1", "user1@fi.muni.cz");
-        val movie = new Movie("testMovie", Set.of(), 10, Set.of(), "", "");
+        val movie = new Movie("testMovie", Set.of(), 10, Set.of(), 2000, "", "");
 
         val rating = new MovieRating(movie, user, Rating.LIKED);
         ratingDao.store(rating);
@@ -120,8 +120,8 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
     @Test
     public void testRemovingUserRemovesAllRatings() {
         val user = new User("testUser1", "user1@fi.muni.cz");
-        val movie = new Movie("testMovie",  Set.of(), 10, Set.of(), "", "");
-        val movie2 = new Movie("testMovi2e", Set.of(), 10, Set.of(), "", "");
+        val movie = new Movie("testMovie", Set.of(), 10, Set.of(), 2000, "", "");
+        val movie2 = new Movie("testMovi2e", Set.of(), 10, Set.of(), 2000, "", "");
 
         val rating = new MovieRating(movie, user, Rating.LIKED);
         val rating2 = new MovieRating(movie2, user, Rating.LIKED);
@@ -142,8 +142,8 @@ public class MovieRatingDaoTest extends AbstractTestNGSpringContextTests {
     @Test
     public void testRemovingRatingDoesntWipeUncommitedChangesFromMovie() {
         val user = new User("testUser1", "user1@fi.muni.cz");
-        val movie = new Movie("testMovie",  Set.of(), 10, Set.of(), "", "");
-        val movie2 = new Movie("testMovi2e", Set.of(), 10, Set.of(), "", "");
+        val movie = new Movie("testMovie", Set.of(), 10, Set.of(), 2000, "", "");
+        val movie2 = new Movie("testMovi2e", Set.of(), 10, Set.of(), 2000, "", "");
 
         val rating = new MovieRating(movie, user, Rating.LIKED);
         val rating2 = new MovieRating(movie2, user, Rating.LIKED);

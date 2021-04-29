@@ -75,15 +75,15 @@ public class MovieDaoTest extends AbstractTestNGSpringContextTests {
         Set<Genre> genres = new HashSet<>();
         genres.add(Genre.COMEDY);
 
-        m1 = new Movie("TEst1", directors, 100, genres, "amazing movie",
-                "external reference");
-        m2 = new Movie("test2", directors, 100, genres, "amazing movie",
-                "external reference");
-
-        m3 = new Movie("123test11", directors, 100, genres, "amazing movie",
+        m1 = new Movie("TEst1", directors, 100, genres, 1999, "amazing movie",
+            "external reference");
+        m2 = new Movie("test2", directors, 100, genres, 1999, "amazing movie",
             "external reference");
 
-        m4 = new Movie("not match", directors, 100, genres, "amazing movie",
+        m3 = new Movie("123test11", directors, 100, genres, 1999, "amazing movie",
+            "external reference");
+
+        m4 = new Movie("not match", directors, 100, genres, 1999, "amazing movie",
             "external reference");
 
         m1.addCastMember(a1);
@@ -124,12 +124,12 @@ public class MovieDaoTest extends AbstractTestNGSpringContextTests {
         em.flush();
         Assert.assertTrue(movieDao.findById(m1.getId()).isEmpty());
         Assert.assertTrue(movieDao.findById(m2.getId()).isPresent());
-        Assert.assertEquals(movieDao.fetchAll().size(), 1);
+        Assert.assertEquals(Set.copyOf(movieDao.fetchAll()), Set.of(m2, m3, m4));
 
         movieDao.remove(m2);
         em.flush();
         Assert.assertTrue(movieDao.findById(m2.getId()).isEmpty());
-        Assert.assertEquals(movieDao.fetchAll().size(), 3);
+        Assert.assertEquals(Set.copyOf(movieDao.fetchAll()), Set.of(m3, m4));
     }
 
 
@@ -153,8 +153,8 @@ public class MovieDaoTest extends AbstractTestNGSpringContextTests {
         val storedMovies1 = movieDao.findByName("test");
         val storedMovies2 = movieDao.findByName("EsT");
 
-        Assert.assertEquals(Set.copyOf(storedMovies1), Set.of(m1,m2,m3));
-        Assert.assertEquals(Set.copyOf(storedMovies2), Set.of(m1,m2,m3));
+        Assert.assertEquals(Set.copyOf(storedMovies1), Set.of(m1, m2, m3));
+        Assert.assertEquals(Set.copyOf(storedMovies2), Set.of(m1, m2, m3));
     }
 }
 

@@ -117,7 +117,7 @@ public class ActorDaoTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void testDeletingActorRemovesItFromMovies() {
-        val movie = new Movie("testMovie", Set.of(), 10, Set.of(), "", "");
+        val movie = new Movie("testMovie", Set.of(), 10, Set.of(), 2000, "", "");
         movie.addCastMember(a1);
         movie.addCastMember(a2);
         movieDao.store(movie);

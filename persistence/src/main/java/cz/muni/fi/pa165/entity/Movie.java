@@ -57,6 +57,7 @@ public class Movie {
                  Set<Director> directors,
                  int runtimeMin,
                  Set<Genre> genres,
+                 Integer releaseYear,
                  String caption,
                  String externalRef
     ) {
@@ -67,6 +68,7 @@ public class Movie {
         this.genres = genres;
         this.caption = caption;
         this.externalRef = externalRef;
+        this.releaseYear = releaseYear;
     }
 
     @PreRemove

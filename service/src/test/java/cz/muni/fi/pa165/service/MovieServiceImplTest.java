@@ -199,12 +199,6 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
         Assert.assertEquals(similarMovies, List.of(m2, m3));
     }
 
-    @Test
-    public void testDaoExceptionRethrownAsDataAccessException() {
-        when(movieDaoMock.findById(anyLong())).thenThrow(new RuntimeException());
-
-        Assert.assertThrows(DataAccessException.class, () -> movieService.findRecommendedMoviesBasedOnMovie(123L));
-    }
 
 
 }
