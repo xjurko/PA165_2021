@@ -27,7 +27,7 @@ public class ActorFacadeImpl implements ActorFacade {
 
     @Override
     public Long createActor(ActorDto actor) throws ValidationException {
-        return actorService.createActor(converter.convert(actor, Actor.class));
+        return actorService.createActor(converter.convert(actor.withId(null), Actor.class));
     }
 
     @Override

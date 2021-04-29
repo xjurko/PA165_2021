@@ -12,6 +12,7 @@ import java.util.Set;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@With
 public class ActorDto {
     Long id;
     String fullName;
