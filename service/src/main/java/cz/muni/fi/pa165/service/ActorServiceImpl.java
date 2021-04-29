@@ -2,10 +2,12 @@ package cz.muni.fi.pa165.service;
 
 import cz.muni.fi.pa165.dao.ActorDao;
 import cz.muni.fi.pa165.entity.Actor;
-import cz.muni.fi.pa165.exceptions.ValidationException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.dao.DataRetrievalFailureException;
 import org.springframework.stereotype.Service;
+import org.springframework.dao.DataAccessException;
 
+import javax.xml.bind.ValidationException;
 import java.util.List;
 import java.util.Optional;
 
@@ -20,35 +22,35 @@ public class ActorServiceImpl implements ActorService{
     final ActorDao actorDao;
 
     @Override
-    public Long createActor(Actor a) throws ValidationException {
-        if (a.getFullName() == null)
+    public Long createActor(Actor actor) throws ValidationException {
+        if (actor.getFullName() == null)
             throw new ValidationException("name is null");
-        String fullNameTrimmed = a.getFullName().trim();
+        String fullNameTrimmed = actor.getFullName().trim();
         if (fullNameTrimmed.isEmpty())
             throw new ValidationException("name is empty");
-        if (a.getHeight() != null && a.getHeight() < 1)
-            throw new ValidationException("height is less than 1");
-        if (a.getBirthDate() != null && a.getDeathDate() != null && a.getBirthDate().isAfter(a.getDeathDate()))
+        if (actor.getHeight() < 0)
+            throw new ValidationException("height is less than 0");
+        if (actor.getBirthDate() != null && actor.getDeathDate() != null && actor.getBirthDate().isAfter(actor.getDeathDate()))
             throw new ValidationException("death is before birth");
-        a.setFullName(fullNameTrimmed);
-        actorDao.store(a);
-        return a.getId();
+        actor.setFullName(fullNameTrimmed);
+        actorDao.store(actor);
+        return actor.getId();
     }
 
     @Override
-    public void deleteActor(Long actorId) throws ValidationException {
+    public void deleteActor(Long actorId) throws DataAccessException {
         Optional<Actor> actor = actorDao.findById(actorId);
 
         if (actor.isEmpty())
-            throw new ValidationException(
+            throw new DataRetrievalFailureException(
                     String.format("no actor with id %d in database",
                             actorId));
         actorDao.remove(actor.get());
     }
 
     @Override
-    public Optional<Actor> findActorById(Long id) {
-        return actorDao.findById(id);
+    public Optional<Actor> findActorById(Long actorId) {
+        return actorDao.findById(actorId);
     }
 
     @Override

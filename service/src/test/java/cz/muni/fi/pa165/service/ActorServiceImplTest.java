@@ -2,8 +2,8 @@ package cz.muni.fi.pa165.service;
 
 import cz.muni.fi.pa165.dao.ActorDao;
 import cz.muni.fi.pa165.entity.Actor;
-import cz.muni.fi.pa165.exceptions.ValidationException;
 import cz.muni.fi.pa165.service.config.ServiceConfig;
+import org.springframework.dao.DataAccessException;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
 import org.testng.Assert;
@@ -11,12 +11,13 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import javax.xml.bind.ValidationException;
 import java.time.LocalDate;
-import java.util.List;
 import java.util.Optional;
 
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.ArgumentMatchers.anyLong;
+import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.times;
 
 /**
  * @author alia
@@ -28,7 +29,7 @@ public class ActorServiceImplTest extends AbstractTransactionalTestNGSpringConte
     ActorDao actorDaoMock = mock(ActorDao.class);
     ActorService actorService;
 
-    private Actor a = new Actor();
+    private Actor actor = new Actor();
 
     @BeforeClass
     public void init() {
@@ -37,63 +38,52 @@ public class ActorServiceImplTest extends AbstractTransactionalTestNGSpringConte
 
     @BeforeMethod
     public void setFields() {
-        a = new Actor("Toshiro Mifune", null, null, null);
-        a.setId(1L);
+        actor = new Actor("Toshiro Mifune", 0, null, null);
+        actor.setId(1L);
     }
 
     @Test
     public void testCreateActorThrowsExceptionWhenFullNameIsNull(){
-        a.setFullName(null);
-        Assert.assertThrows(ValidationException.class, () -> actorService.createActor(a));
+        actor.setFullName(null);
+        Assert.assertThrows(ValidationException.class, () -> actorService.createActor(actor));
     }
 
     @Test
     public void testCreateActorThrowsExceptionWhenFullNameIsEmpty(){
-        a.setFullName("");
-        Assert.assertThrows(ValidationException.class, () -> actorService.createActor(a));
+        actor.setFullName("");
+        Assert.assertThrows(ValidationException.class, () -> actorService.createActor(actor));
     }
 
     @Test
     public void testCreateActorThrowsExceptionWhenOnlySpacesFullName(){
-        a.setFullName("   ");
-        Assert.assertThrows(ValidationException.class, () -> actorService.createActor(a));
+        actor.setFullName("   ");
+        Assert.assertThrows(ValidationException.class, () -> actorService.createActor(actor));
     }
 
     @Test
     public void testCreateActorThrowsExceptionWhenNegativeHeight() {
-        a.setHeight(-5.0);
-        Assert.assertThrows(ValidationException.class, () -> actorService.createActor(a));
+        actor.setHeight(-5);
+        Assert.assertThrows(ValidationException.class, () -> actorService.createActor(actor));
     }
 
     @Test
     public void testCreateActorThrowsExceptionWhenDeathBeforeBirth() {
-        a.setBirthDate(LocalDate.of(2000, 1, 1));
-        a.setDeathDate(LocalDate.of(1999, 1, 1));
-        Assert.assertThrows(ValidationException.class, () -> actorService.createActor(a));
+        actor.setBirthDate(LocalDate.of(2000, 1, 1));
+        actor.setDeathDate(LocalDate.of(1999, 1, 1));
+        Assert.assertThrows(ValidationException.class, () -> actorService.createActor(actor));
     }
 
     @Test
-    public void testCreateActorTrimsFullNameProperly() {
-        a.setFullName("    Toshiro Mifune   ");
-
-        when(actorDaoMock.findById(a.getId())).thenReturn(Optional.of(a));
-
-        Long foundId = 100L;
-        try {
-            foundId = actorService.createActor(a);
-        } catch (ValidationException e) {
-            Assert.fail("No exception should be thrown" + e.getMessage());
-        }
-
-        Optional<Actor> found = actorService.findActorById(foundId);
-        Assert.assertTrue(found.isPresent());
-        Assert.assertEquals(found.get().getFullName(), "Toshiro Mifune");
+    public void testCreateActorTrimsFullNameProperly() throws ValidationException {
+        actor.setFullName("    Toshiro Mifune   ");
+        actorService.createActor(actor);
+        Assert.assertEquals(actor.getFullName(), "Toshiro Mifune");
+        verify(actorDaoMock, times(1)).store(actor);
     }
 
     @Test
     public void testDeleteActorThrowsExceptionWhenNoActorIdInDatabase() {
-        when(actorDaoMock.findById(1L)).thenReturn(Optional.empty());
-
-        Assert.assertThrows(ValidationException.class, () -> actorService.deleteActor(1L));
+        when(actorDaoMock.findById(anyLong())).thenReturn(Optional.empty());
+        Assert.assertThrows(DataAccessException.class, () -> actorService.deleteActor(1L));
     }
 }

@@ -14,7 +14,8 @@ import java.util.Optional;
 
 public interface ActorDao {
 
-    /** create an actor
+    /**
+     * Create an actor
      *
      * @param act actor to be created
      */

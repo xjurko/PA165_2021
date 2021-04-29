@@ -15,7 +15,7 @@ import java.util.Set;
 public class ActorDto {
     Long id;
     String fullName;
-    Double height;
+    int height;
     LocalDate birthDate;
     LocalDate deathDate;
 }
