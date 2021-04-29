@@ -8,6 +8,7 @@ import cz.muni.fi.pa165.service.config.ServiceConfig;
 import cz.muni.fi.pa165.service.util.TestUtil;
 import io.vavr.collection.List;
 import lombok.val;
+import org.springframework.dao.DataAccessException;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
 import org.testng.Assert;
@@ -40,7 +41,7 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
     @Test
     public void testFindOtherAlsoLikedMoviesReturnsEmptyIfOriginalMovieNotFound() {
         when(movieDaoMock.findById(anyLong())).thenReturn(Optional.empty());
-        val similarMovies = movieService.findOtherAlsoLikedMovies(123L);
+        val similarMovies = movieService.findRecommendedMoviesBasedOnMovie(123L);
         Assert.assertTrue(similarMovies.isEmpty());
     }
 
@@ -57,7 +58,7 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
 
         when(movieDaoMock.findById(m1.getId())).thenReturn(Optional.of(m1));
 
-        val similarMovies = movieService.findOtherAlsoLikedMovies(m1.getId());
+        val similarMovies = movieService.findRecommendedMoviesBasedOnMovie(m1.getId());
         Assert.assertTrue(similarMovies.isEmpty());
     }
 
@@ -100,7 +101,7 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
 
         when(movieDaoMock.findById(m1.getId())).thenReturn(Optional.of(m1));
 
-        val similarMovies = movieService.findOtherAlsoLikedMovies(m1.getId());
+        val similarMovies = movieService.findRecommendedMoviesBasedOnMovie(m1.getId());
         Assert.assertEquals(similarMovies, List.of(m3, m2));
     }
 
@@ -147,7 +148,7 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
 
         when(movieDaoMock.findById(m1.getId())).thenReturn(Optional.of(m1));
 
-        val similarMovies = movieService.findOtherAlsoLikedMovies(m1.getId());
+        val similarMovies = movieService.findRecommendedMoviesBasedOnMovie(m1.getId());
         Assert.assertEquals(similarMovies, List.of(m2, m3));
     }
 
@@ -194,8 +195,16 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
 
         when(movieDaoMock.findById(m1.getId())).thenReturn(Optional.of(m1));
 
-        val similarMovies = movieService.findOtherAlsoLikedMovies(m1.getId());
+        val similarMovies = movieService.findRecommendedMoviesBasedOnMovie(m1.getId());
         Assert.assertEquals(similarMovies, List.of(m2, m3));
     }
+
+    @Test
+    public void testDaoExceptionRethrownAsDataAccessException() {
+        when(movieDaoMock.findById(anyLong())).thenThrow(new RuntimeException());
+
+        Assert.assertThrows(DataAccessException.class, () -> movieService.findRecommendedMoviesBasedOnMovie(123L));
+    }
+
 
 }

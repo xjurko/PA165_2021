@@ -2,6 +2,7 @@ package cz.muni.fi.pa165.service;
 
 import cz.muni.fi.pa165.dao.MovieDao;
 import cz.muni.fi.pa165.dao.UserDao;
+import cz.muni.fi.pa165.dto.MovieDto;
 import cz.muni.fi.pa165.entity.Movie;
 import cz.muni.fi.pa165.entity.Rating;
 import io.vavr.Tuple;
@@ -29,28 +30,28 @@ public class MovieServiceImpl implements MovieService {
 
     private List<Tuple2<Movie, Integer>> getRecommendedMoviesBasedOnMovie(Movie movie) {
         return Vector.ofAll(movie.getRatings())
-                .filter(r -> r.getRating() == Rating.LIKED)
-                .flatMap(mrating ->
-                    Vector.ofAll(mrating.getUser().getMovieRatings())
-                        .filter(r -> r.getRating() == Rating.LIKED)
-                        .map(urating -> urating.getMovie())
-                )
-                .groupBy(x -> x)
-                .map((mov, movs) -> Tuple.of(mov, movs.length()))
-                .remove(movie)
-                .toList();
+            .filter(r -> r.getRating() == Rating.LIKED)
+            .flatMap(mrating ->
+                Vector.ofAll(mrating.getUser().getMovieRatings())
+                    .filter(r -> r.getRating() == Rating.LIKED)
+                    .map(urating -> urating.getMovie())
+            )
+            .groupBy(x -> x)
+            .map((mov, movs) -> Tuple.of(mov, movs.length()))
+            .remove(movie)
+            .toList();
     }
 
     //    TODO: currently deals in absolute values - potentially to be changed to like/dislike ratio
     @Override
-    public java.util.List<Movie> findOtherAlsoLikedMovies(Long movieId) {
+    public java.util.List<Movie> findRecommendedMoviesBasedOnMovie(Long movieId) {
         return Option.ofOptional(movieDao.findById(movieId))
-                .toList()
-                .flatMap(this::getRecommendedMoviesBasedOnMovie)
-                .sortBy(movCounts -> movCounts._2)
-                .map(movCounts -> movCounts._1)
-                .reverse()
-                .asJava();
+            .toList()
+            .flatMap(this::getRecommendedMoviesBasedOnMovie)
+            .sortBy(movCounts -> movCounts._2)
+            .map(movCounts -> movCounts._1)
+            .reverse()
+            .asJava();
     }
 
     @Override
@@ -59,17 +60,33 @@ public class MovieServiceImpl implements MovieService {
     }
 
     @Override
-    public java.util.List<Movie> getRecommendedMoviesForUser(Long userId) {
+    public java.util.List<Movie> findRecommendedMoviesForUser(Long userId) {
         return Option.ofOptional(userDao.findById(userId))
-                .toList()
-                .flatMap(user -> {
-                    val likedMovies = List.ofAll(user.getMovieRatings()).map(r -> r.getMovie());
-                    return likedMovies.flatMap(this::getRecommendedMoviesBasedOnMovie)
+            .toList()
+            .flatMap(user -> {
+                val likedMovies = List.ofAll(user.getMovieRatings()).map(r -> r.getMovie());
+                return likedMovies.flatMap(this::getRecommendedMoviesBasedOnMovie)
                     .sortBy(movCounts -> movCounts._2)
                     .map(movCounts -> movCounts._1)
                     .removeAll(likedMovies)
                     .reverse();
-                })
-                .asJava();
+            })
+            .asJava();
+    }
+
+    @Override
+    public java.util.List<Movie> findMoviesByName(String name) {
+        return movieDao.findByName(name);
+    }
+
+    @Override
+    public Long createMovie(Movie movie) {
+        movieDao.store(movie);
+        return movie.getId();
+    }
+
+    @Override
+    public void deleteMovie(Long movieId) {
+        movieDao.findById(movieId).ifPresent(movieDao::remove);
     }
 }

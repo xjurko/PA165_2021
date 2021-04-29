@@ -38,7 +38,7 @@ public class MovieFacadeImplTest extends AbstractTransactionalTestNGSpringContex
     MovieFacade movieFacade;
 
     private Movie testMovie = new Movie("test", Set.of(), 0, Set.of(Genre.ACTION), "test caption", "test ref");
-    private MovieDto testMovieDto = new MovieDto(null, "test", "test caption", 0, Set.of(), Set.of(), Set.of());
+    private MovieDto testMovieDto = new MovieDto(null, "test", "test caption", 0, Set.of(), Set.of());
 
 
     @BeforeClass
@@ -51,25 +51,25 @@ public class MovieFacadeImplTest extends AbstractTransactionalTestNGSpringContex
         when(movieServiceMock.findMovieById(anyLong())).thenReturn(Optional.of(testMovie));
 
         Assert.assertNotNull(converter);
-        val movie = movieFacade.findMovieById(123L);
+        val movie = movieFacade.getMovieById(123L);
         Assert.assertEquals(movie.get(), testMovieDto);
     }
 
     @Test
     public void testFindOtherAlsoLikedMoviesEmpty() {
-        when(movieServiceMock.findOtherAlsoLikedMovies(anyLong())).thenReturn(List.of());
+        when(movieServiceMock.findRecommendedMoviesBasedOnMovie(anyLong())).thenReturn(List.of());
 
         Assert.assertNotNull(converter);
-        val movies = movieFacade.findOtherAlsoLikedMovies(123L);
+        val movies = movieFacade.findRecommendedMoviesBasedOnMovie(123L);
         Assert.assertEquals(movies, List.of());
     }
 
     @Test
     public void testFindOtherAlsoLikedMoviesNonEmpty() {
-        when(movieServiceMock.findOtherAlsoLikedMovies(anyLong())).thenReturn(List.of(testMovie));
+        when(movieServiceMock.findRecommendedMoviesBasedOnMovie(anyLong())).thenReturn(List.of(testMovie));
 
         Assert.assertNotNull(converter);
-        val movies = movieFacade.findOtherAlsoLikedMovies(123L);
+        val movies = movieFacade.findRecommendedMoviesBasedOnMovie(123L);
         Assert.assertEquals(movies, List.of(testMovieDto));
     }
 }

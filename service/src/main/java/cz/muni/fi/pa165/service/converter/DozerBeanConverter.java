@@ -23,7 +23,7 @@ public class DozerBeanConverter implements BeanConverter {
     }
 
     @Override
-    public <T, F> Iterable<T> convert(Iterable<F> from, Class<T> to) {
-        return Vector.ofAll(from).map(e -> convert(e, to)).asJava();
+    public <T, F> java.util.List<T> convert(java.util.List<F> from, Class<T> to) {
+        return Vector.ofAll(from).map(e -> convert(e, to)).toList().asJava();
     }
 }

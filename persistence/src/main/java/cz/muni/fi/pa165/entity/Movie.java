@@ -48,7 +48,7 @@ public class Movie {
 
     private String externalRef;
 
-    //todo release data or year
+    private Integer releaseYear;
 
     public Movie() {
     }
