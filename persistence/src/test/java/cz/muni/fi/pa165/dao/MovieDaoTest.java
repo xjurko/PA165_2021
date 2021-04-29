@@ -129,7 +129,7 @@ public class MovieDaoTest extends AbstractTestNGSpringContextTests {
         movieDao.remove(m2);
         em.flush();
         Assert.assertTrue(movieDao.findById(m2.getId()).isEmpty());
-        Assert.assertEquals(movieDao.fetchAll().size(), 0);
+        Assert.assertEquals(movieDao.fetchAll().size(), 3);
     }
 
 
