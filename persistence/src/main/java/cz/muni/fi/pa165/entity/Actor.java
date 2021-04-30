@@ -1,9 +1,6 @@
 package cz.muni.fi.pa165.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.With;
+import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -22,6 +19,7 @@ import java.util.Set;
 @Setter
 @AllArgsConstructor
 @With
+@NoArgsConstructor
 public class Actor {
 
     @Id
@@ -51,9 +49,6 @@ public class Actor {
         this.height = height;
         this.birthDate = birthDate;
         this.deathDate = deathDate;
-    }
-
-    public Actor() {
     }
 
     public Actor(String fullName) {

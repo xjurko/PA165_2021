@@ -20,6 +20,9 @@ import javax.transaction.Transactional;
 import java.util.Optional;
 import java.util.Set;
 
+import static org.mockito.ArgumentMatchers.anyLong;
+import static org.mockito.Mockito.*;
+
 
 /**
  * Tests for MovieRatingDao
