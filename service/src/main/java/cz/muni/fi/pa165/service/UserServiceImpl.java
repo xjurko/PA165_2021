@@ -54,20 +54,20 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public boolean authenticate(User u, String password) {
-        return encoder.matches(password, u.getPasswordHash());
+    public boolean authenticate(User user, String password) {
+        return encoder.matches(password, user.getPasswordHash());
     }
 
     @Override
-    public boolean isAdmin(User u) {
-        Optional<User> user = findById(u.getId());
-        if (user.isEmpty()) return false;
-        else return user.get().isAdmin();
+    public boolean isAdmin(User user) {
+        Optional<User> found = findById(user.getId());
+        if (found.isEmpty()) return false;
+        else return found.get().isAdmin();
     }
 
     @Override
-    public void removeUser(User u){
-        User user = findById(u.getId()).orElseThrow(()->new DataRetrievalFailureException(String.format("no user with id %d", u.getId())));
-        userDao.remove(user);
+    public void removeUser(User user){
+        User found = findById(user.getId()).orElseThrow(()->new DataRetrievalFailureException(String.format("no user with id %d", user.getId())));
+        userDao.remove(found);
     }
 }
