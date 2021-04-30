@@ -20,7 +20,7 @@ import java.util.regex.Pattern;
  */
 @Service
 @RequiredArgsConstructor
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
     final UserDao userDao;
     final PasswordEncoder encoder;
@@ -41,13 +41,15 @@ public class UserServiceImpl implements UserService{
         // finer validation needed
         Pattern regexUsername = Pattern.compile("^[a-zA-Z]([._-](?![._-])|[a-zA-Z0-9]){5,15}[a-zA-Z0-9]$");
         Pattern regexEmail = Pattern.compile(".+@.+\\....?");
-        if(name.isBlank() || email.isBlank()) throw new ValidationException("Username and email should be present");
-        if(!regexUsername.matcher(name).matches()) throw new ValidationException("Invalid username: see the rules for usernames");
-        if(!regexEmail.matcher(email).matches()) throw new ValidationException("Wrong email string");
-        if(rawPassword.isBlank()) throw new ValidationException("A password should be present");
+        if (name.isBlank() || email.isBlank()) throw new ValidationException("Username and email should be present");
+        if (!regexUsername.matcher(name).matches())
+            throw new ValidationException("Invalid username: see the rules for usernames");
+        if (!regexEmail.matcher(email).matches()) throw new ValidationException("Wrong email string");
+        if (rawPassword.isBlank()) throw new ValidationException("A password should be present");
         // we need to check if such credentials already exist in the DB
-        if(userDao.findByName(name).isPresent()) throw new ValidationException("This username is already occupied");
-        if(userDao.findByEmail(email).isPresent()) throw new ValidationException("This email has been already registered");
+        if (userDao.findByName(name).isPresent()) throw new ValidationException("This username is already occupied");
+        if (userDao.findByEmail(email).isPresent())
+            throw new ValidationException("This email has been already registered");
         User newUser = new User(name, email, encoder.encode(rawPassword));
         userDao.store(newUser);
         return newUser;
@@ -66,8 +68,10 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public void removeUser(User user){
-        User found = findById(user.getId()).orElseThrow(()->new DataRetrievalFailureException(String.format("no user with id %d", user.getId())));
+    public void removeUser(User user) {
+        User found = findById(user.getId()).orElseThrow(() ->
+            new DataRetrievalFailureException(String.format("no user with id %d", user.getId()))
+        );
         userDao.remove(found);
     }
 }
