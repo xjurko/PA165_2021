@@ -48,7 +48,6 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
 
     @Test
     public void testFindOtherAlsoLikedMoviesReturnsEmptyIfOriginalMovieNotFound() {
-        when(movieDaoMock.findById(anyLong())).thenReturn(Optional.empty());
         val similarMovies = movieService.findRecommendedMoviesBasedOnMovie(123L);
         Assert.assertTrue(similarMovies.isEmpty());
     }
