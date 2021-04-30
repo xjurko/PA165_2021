@@ -8,12 +8,14 @@ import cz.muni.fi.pa165.entity.User;
 import cz.muni.fi.pa165.facade.MovieRatingFacade;
 import cz.muni.fi.pa165.service.MovieRatingService;
 import cz.muni.fi.pa165.service.config.ServiceConfig;
+import cz.muni.fi.pa165.service.converter.BeanConverter;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import javax.inject.Inject;
 import java.util.List;
 import java.util.Optional;
 
@@ -30,6 +32,9 @@ public class MovieRatingFacadeImplTest extends AbstractTransactionalTestNGSpring
 
     MovieRatingFacade movieRatingFacade;
 
+    @Inject
+    BeanConverter beanConverter;
+
     private final MovieRatingDto movieRatingDto = new MovieRatingDto(1L, 1L, Rating.LIKED);
     private MovieRating movieRating = new MovieRating();
 
@@ -41,13 +46,13 @@ public class MovieRatingFacadeImplTest extends AbstractTransactionalTestNGSpring
         User user = new User("Akira", "akira@muni.cz");
         user.setId(1L);
         movieRating = new MovieRating(movie, user, cz.muni.fi.pa165.entity.Rating.LIKED);
-        movieRatingFacade = new MovieRatingFacadeImpl(movieRatingServiceMock);
+        movieRatingFacade = new MovieRatingFacadeImpl(movieRatingServiceMock,  beanConverter);
     }
 
     @Test
     public void testSetRating() {
         when(movieRatingServiceMock.findRatingByUserAndMovie(1L, 1L)).thenReturn(Optional.of(movieRating));
-        MovieRatingDto movieRatingDto = movieRatingFacade.setRating(Rating.LIKED, 1L, 1L);
+        MovieRatingDto movieRatingDto = movieRatingFacade.setRating(new MovieRatingDto( 1L, 1L, Rating.LIKED));
         Optional<MovieRatingDto> found = movieRatingFacade.findRatingByUserAndMovie(1L, 1L);
         Assert.assertTrue(found.isPresent());
         Assert.assertEquals(found.get(), movieRatingDto);

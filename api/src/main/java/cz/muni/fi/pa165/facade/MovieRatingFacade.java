@@ -7,9 +7,8 @@ import java.util.Optional;
 
 /**
  * @author alia
- *
+ * <p>
  * MovieRating Facade layer interface
- *
  */
 
 public interface MovieRatingFacade {
@@ -17,12 +16,10 @@ public interface MovieRatingFacade {
     /**
      * Set rating for given user and movie.
      *
-     * @param rating value of rating
-     * @param userId id of the given user
-     * @param movieId id of the given movie
+     * @param rating rating to be set
      * @return newly created rating
      */
-    MovieRatingDto setRating(Rating rating, Long userId, Long movieId);
+    MovieRatingDto setRating(MovieRatingDto rating);
 
     /**
      * Find all ratings by movie
@@ -43,7 +40,7 @@ public interface MovieRatingFacade {
     /**
      * Find rating by user and movie
      *
-     * @param userId id of the given user
+     * @param userId  id of the given user
      * @param movieId id of the given movie
      * @return rating for the given user and movie
      */
@@ -52,7 +49,7 @@ public interface MovieRatingFacade {
     /**
      * Delete a rating by user and movie
      *
-     * @param userId id of the given user
+     * @param userId  id of the given user
      * @param movieId id of the given movie
      */
     void deleteRating(Long userId, Long movieId);
