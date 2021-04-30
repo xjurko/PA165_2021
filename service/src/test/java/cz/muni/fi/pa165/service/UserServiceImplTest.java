@@ -3,6 +3,7 @@ package cz.muni.fi.pa165.service;
 import cz.muni.fi.pa165.dao.UserDao;
 import cz.muni.fi.pa165.entity.User;
 import cz.muni.fi.pa165.service.config.ServiceConfig;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
 import org.testng.Assert;
@@ -21,11 +22,13 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
 
     UserDao userDaoMock;
     UserService userService;
+    BCryptPasswordEncoder encoder;
 
     @BeforeClass
     public void init() {
         userDaoMock = mock(UserDao.class);
         userService = new UserServiceImpl(userDaoMock);
+        encoder = new BCryptPasswordEncoder();
     }
 
     @BeforeMethod
@@ -41,10 +44,9 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
         // this is actually not needed mockito returns Optional.empty by defualt for methods that reutrn Optionals  so feel free to remove either this line of the reset before method
 //        important thing to realize here is that without either of these mock resets the test are flaky due to teh fact that the order in which they are run is not guaranteed
 
-        when(userDaoMock.findByName(anyString())).thenReturn(Optional.empty());
-
         User u = userService.registerUser("username", "username@blahblah.com", "password");
-        Assert.assertNotNull(u);
+        verify(userDaoMock, times(1)).store(new User("username", "username@blahblah.com", encoder.encode("password")));
+
     }
 
     @Test(expectedExceptions = {ValidationException.class})
@@ -66,6 +68,10 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
 
     @Test
     public void testFindById() {
+        User u = userService.registerUser("username", "username@blahblah.com", "password");
+        Optional<User> found = userService.findById(u.getId());
+        Assert.assertTrue(found.isPresent());
+        Assert.assertEquals(u, found.get());
     }
 
     @Test
