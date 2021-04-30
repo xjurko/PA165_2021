@@ -8,6 +8,7 @@ import cz.muni.fi.pa165.entity.MovieRating;
 import cz.muni.fi.pa165.dto.Rating;
 import cz.muni.fi.pa165.entity.User;
 import cz.muni.fi.pa165.service.config.ServiceConfig;
+import lombok.val;
 import org.springframework.dao.DataAccessException;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
@@ -38,7 +39,6 @@ public class MovieRatingServiceImplTest extends AbstractTransactionalTestNGSprin
 
     private final Movie movie = new Movie();
     private User user = new User("Akira", "akira@muni.cz");
-    private MovieRating movieRating = new MovieRating();
 
     @BeforeClass
     public void init() {
@@ -70,7 +70,7 @@ public class MovieRatingServiceImplTest extends AbstractTransactionalTestNGSprin
         when(movieDaoMock.findById(anyLong())).thenReturn(Optional.of(movie));
         when(userDaoMock.findById(anyLong())).thenReturn(Optional.of(user));
 
-        movieRating = movieRatingService.setRating(Rating.DISLIKED, user.getId(), movie.getId());
+        val movieRating = movieRatingService.setRating(Rating.DISLIKED, user.getId(), movie.getId());
         verify(movieRatingDaoMock, times(1)).store(movieRating);
         Assert.assertEquals(movieRating.getRating(), cz.muni.fi.pa165.entity.Rating.DISLIKED);
     }
@@ -80,7 +80,7 @@ public class MovieRatingServiceImplTest extends AbstractTransactionalTestNGSprin
         when(movieDaoMock.findById(anyLong())).thenReturn(Optional.of(movie));
         when(userDaoMock.findById(anyLong())).thenReturn(Optional.of(user));
 
-        movieRating = movieRatingService.setRating(Rating.LIKED, user.getId(), movie.getId());
+        val movieRating = movieRatingService.setRating(Rating.LIKED, user.getId(), movie.getId());
         Assert.assertEquals(movie.getRatings(), List.of(movieRating));
         Assert.assertEquals(user.getMovieRatings(), List.of(movieRating));
     }
