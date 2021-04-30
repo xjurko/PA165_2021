@@ -4,6 +4,7 @@ import cz.muni.fi.pa165.dao.MovieDao;
 import cz.muni.fi.pa165.dao.MovieRatingDao;
 import cz.muni.fi.pa165.dao.UserDao;
 import cz.muni.fi.pa165.entity.*;
+import cz.muni.fi.pa165.dto.Rating;
 import lombok.RequiredArgsConstructor;
 import org.springframework.dao.DataRetrievalFailureException;
 import org.springframework.stereotype.Service;
@@ -44,8 +45,23 @@ public class MovieRatingServiceImpl implements MovieRatingService {
 
     @Override
     public MovieRating setRating(Rating rating, Long userId, Long movieId) {
-        MovieRating movieRating = new MovieRating(checkMovie(movieId), checkUser(userId), rating);
+        Movie movie = checkMovie(movieId);
+        User user = checkUser(userId);
+
+        if (findRatingByUserAndMovie(userId, movieId).isPresent()) {
+            deleteRating(userId, movieId);
+        }
+
+        cz.muni.fi.pa165.entity.Rating convertedRating = cz.muni.fi.pa165.entity.Rating.LIKED;
+        if (rating == Rating.DISLIKED) {
+            convertedRating = cz.muni.fi.pa165.entity.Rating.DISLIKED;
+        }
+        MovieRating movieRating = new MovieRating(movie, user, convertedRating);
+
         movieRatingDao.store(movieRating);
+        movie.addRating(movieRating);
+        user.addRating(movieRating);
+
         return movieRating;
     }
 
