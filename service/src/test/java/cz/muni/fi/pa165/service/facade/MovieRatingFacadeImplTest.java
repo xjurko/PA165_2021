@@ -52,7 +52,7 @@ public class MovieRatingFacadeImplTest extends AbstractTransactionalTestNGSpring
     @Test
     public void testSetRating() {
         when(movieRatingServiceMock.findRatingByUserAndMovie(1L, 1L)).thenReturn(Optional.of(movieRating));
-        MovieRatingDto movieRatingDto = movieRatingFacade.setRating(new MovieRatingDto( 1L, 1L, Rating.LIKED));
+        movieRatingFacade.setRating(new MovieRatingDto( 1L, 1L, Rating.LIKED));
         verify(movieRatingServiceMock, times(1)).setRating(cz.muni.fi.pa165.entity.Rating.LIKED, 1L, 1L);
     }
 
