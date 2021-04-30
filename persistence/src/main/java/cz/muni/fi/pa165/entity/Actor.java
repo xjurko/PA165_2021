@@ -28,7 +28,7 @@ public class Actor {
     @Column(nullable = false)
     private String fullName;
 
-    private Double height;
+    private int height;
 
     private LocalDate birthDate;
 
@@ -38,7 +38,7 @@ public class Actor {
     private Set<Movie> movies = new HashSet<>();
 
     public Actor(String fullName,
-                 Double height,
+                 int height,
                  LocalDate birthDate,
                  LocalDate deathDate
     ) {
