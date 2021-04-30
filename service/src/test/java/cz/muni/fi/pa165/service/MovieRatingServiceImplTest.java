@@ -63,6 +63,9 @@ public class MovieRatingServiceImplTest extends AbstractTransactionalTestNGSprin
     @Test
     public void testSetRatingChangesPreviousRatingIfExisted() {
         val existingRating = new MovieRating(movie, user, Rating.LIKED);
+
+        when(movieDaoMock.findById(anyLong())).thenReturn(Optional.of(movie));
+        when(userDaoMock.findById(anyLong())).thenReturn(Optional.of(user));
         when(movieRatingDaoMock.findById(any(RatingId.class))).thenReturn(Optional.of(existingRating));
 
         val movieRating = movieRatingService.setRating(Rating.DISLIKED, user.getId(), movie.getId());
