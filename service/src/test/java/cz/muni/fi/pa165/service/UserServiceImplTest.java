@@ -117,4 +117,22 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
         Assert.assertFalse(userService.authenticate(user, ""));
     }
 
+    @Test
+    public void checkAdminOnAdmin(){
+        User admin = new User("admin", "admin@admin.com", "admin_passwdhash");
+        admin.setId(1L);
+        admin.setAdmin(true);
+        when(userDaoMock.findById(1L)).thenReturn(Optional.of(admin));
+        // not sure about this test, if it should be like that
+        Assert.assertTrue(userService.isAdmin(admin));
+    }
+    @Test
+    public void checkAdminOnNonAdmin(){
+        User user  = new User("user", "user@user.com", "user_passwdhash");
+        user.setId(3L);
+        when(userDaoMock.findById(3L)).thenReturn(Optional.of(user));
+        // not sure about this test, if it should be like that
+        Assert.assertFalse(userService.isAdmin(user));
+    }
+
 }

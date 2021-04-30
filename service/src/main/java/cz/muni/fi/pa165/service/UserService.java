@@ -13,7 +13,6 @@ import java.util.Optional;
 public interface UserService {
     Optional<User> findById(Long id);
     Optional<User> findByName(String name);
-    List<User> getAllUsers();
     User registerUser(String name, String email, String rawPassword) throws ValidationException;
     boolean authenticate(User u, String password);
     boolean isAdmin(User u);

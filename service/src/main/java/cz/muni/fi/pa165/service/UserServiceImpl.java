@@ -36,11 +36,6 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public List<User> getAllUsers() {
-        return userDao.fetchAll();
-    }
-
-    @Override
     public User registerUser(String name, String email, String rawPassword) throws ValidationException {
         // username, email and password shouldn't be blank or null
         // finer validation needed

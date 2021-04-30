@@ -13,7 +13,6 @@ import java.util.Optional;
 public interface UserFacade {
     Optional<UserDto> findUserById(Long id);
     Optional<UserDto> findByName(String name);
-    Iterable<UserDto> getAllUsers();
     Long registerUser(String name, String email, String rawPassword) throws ValidationException;
     boolean authenticate(UserAuthenticateDto u);
     boolean isAdmin(UserDto userDto);

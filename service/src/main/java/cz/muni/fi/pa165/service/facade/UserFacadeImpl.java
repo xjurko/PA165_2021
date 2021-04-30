@@ -38,11 +38,6 @@ public class UserFacadeImpl implements UserFacade {
     }
 
     @Override
-    public Iterable<UserDto> getAllUsers() {
-        return converter.convert(userService.getAllUsers(), UserDto.class);
-    }
-
-    @Override
     public Long registerUser(String name, String email, String rawPassword) throws ValidationException {
         User newUser = userService.registerUser(name, email, rawPassword);
         return newUser.getId();
