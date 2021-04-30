@@ -45,23 +45,17 @@ public class MovieRatingServiceImpl implements MovieRatingService {
 
     @Override
     public MovieRating setRating(Rating rating, Long userId, Long movieId) {
-        Movie movie = checkMovie(movieId);
-        User user = checkUser(userId);
-
-        if (findRatingByUserAndMovie(userId, movieId).isPresent()) {
-            deleteRating(userId, movieId);
-        }
 
         cz.muni.fi.pa165.entity.Rating convertedRating = cz.muni.fi.pa165.entity.Rating.LIKED;
         if (rating == Rating.DISLIKED) {
             convertedRating = cz.muni.fi.pa165.entity.Rating.DISLIKED;
         }
+
+        Movie movie = checkMovie(movieId);
+        User user = checkUser(userId);
+
         MovieRating movieRating = new MovieRating(movie, user, convertedRating);
-
         movieRatingDao.store(movieRating);
-        movie.addRating(movieRating);
-        user.addRating(movieRating);
-
         return movieRating;
     }
 

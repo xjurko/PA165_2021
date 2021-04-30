@@ -36,10 +36,9 @@ public class MovieRatingServiceImplTest extends AbstractTransactionalTestNGSprin
 
     MovieRatingService movieRatingService;
 
-    private MovieRating movieRating = new MovieRating();
-    private Movie movie = new Movie();
+    private final Movie movie = new Movie();
     private User user = new User("Akira", "akira@muni.cz");
-    private Rating rating = Rating.LIKED;
+    private MovieRating movieRating = new MovieRating();
 
     @BeforeClass
     public void init() {
@@ -52,28 +51,42 @@ public class MovieRatingServiceImplTest extends AbstractTransactionalTestNGSprin
         movie.setId(1L);
         user = new User("Akira", "akira@muni.cz");
         user.setId(1L);
-        rating = Rating.LIKED;
-
-        movieRating = new MovieRating(movie, user, cz.muni.fi.pa165.entity.Rating.LIKED);
     }
 
     @Test
     public void testSetRatingThrowsExceptionIfUserIsEmpty() {
         when(userDaoMock.findById(anyLong())).thenReturn(Optional.empty());
-        Assert.assertThrows(DataAccessException.class, () -> movieRatingService.setRating(rating, 1L, 1L));
+        Assert.assertThrows(DataAccessException.class, () -> movieRatingService.setRating(Rating.LIKED, 1L, 1L));
     }
 
     @Test
     public void testSetRatingThrowsExceptionIfMovieIsEmpty() {
         when(movieDaoMock.findById(anyLong())).thenReturn(Optional.empty());
-        Assert.assertThrows(DataAccessException.class, () -> movieRatingService.setRating(rating, 1L, 1L));
+        Assert.assertThrows(DataAccessException.class, () -> movieRatingService.setRating(Rating.LIKED, 1L, 1L));
     }
 
     @Test
-    public void testSetRatingAddRatingToMovieAndUser() {
-        movieRatingService.setRating(rating, 1L, 1L);
+    public void testSetRatingChangesPreviousRatingIfExisted() {
+        when(movieDaoMock.findById(anyLong())).thenReturn(Optional.of(movie));
+        when(userDaoMock.findById(anyLong())).thenReturn(Optional.of(user));
 
-        Assert.assertEquals(movie.getRatings(), List.of(rating));
-        Assert.assertEquals(user.getMovieRatings(), List.of(rating));
+        movieRating = movieRatingService.setRating(Rating.DISLIKED, user.getId(), movie.getId());
+        verify(movieRatingDaoMock, times(1)).store(movieRating);
+        Assert.assertEquals(movieRating.getRating(), cz.muni.fi.pa165.entity.Rating.DISLIKED);
+    }
+
+    @Test
+    public void testSetRatingAddsRatingToMovieAndUser() {
+        when(movieDaoMock.findById(anyLong())).thenReturn(Optional.of(movie));
+        when(userDaoMock.findById(anyLong())).thenReturn(Optional.of(user));
+
+        movieRating = movieRatingService.setRating(Rating.LIKED, user.getId(), movie.getId());
+        Assert.assertEquals(movie.getRatings(), List.of(movieRating));
+        Assert.assertEquals(user.getMovieRatings(), List.of(movieRating));
+    }
+
+    @Test
+    public void testDeleteRatingThrowsExceptionWhenNoRatingByMovieAndUser() {
+        Assert.assertThrows(DataAccessException.class, () -> movieRatingService.deleteRating(1L, 1L));
     }
 }
