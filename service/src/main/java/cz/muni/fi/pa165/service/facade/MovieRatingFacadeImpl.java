@@ -5,6 +5,8 @@ import cz.muni.fi.pa165.dto.Rating;
 import cz.muni.fi.pa165.entity.MovieRating;
 import cz.muni.fi.pa165.facade.MovieRatingFacade;
 import cz.muni.fi.pa165.service.MovieRatingService;
+import cz.muni.fi.pa165.service.converter.BeanConverter;
+import io.vavr.collection.Vector;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -23,30 +25,53 @@ import java.util.Optional;
 public class MovieRatingFacadeImpl implements MovieRatingFacade {
 
     final MovieRatingService movieRatingService;
+    final BeanConverter beanConverter;
 
-    private Rating convertRating(cz.muni.fi.pa165.entity.Rating rating) {
-        Rating convertedRating = Rating.LIKED;
-        if (rating == cz.muni.fi.pa165.entity.Rating.DISLIKED) {
-            convertedRating = Rating.DISLIKED;
-        }
-        return convertedRating;
+//    private Rating convertRating(cz.muni.fi.pa165.entity.Rating rating) {
+//        Rating convertedRating = Rating.LIKED;
+//        if (rating == cz.muni.fi.pa165.entity.Rating.DISLIKED) {
+//            convertedRating = Rating.DISLIKED;
+//        }
+//        return convertedRating;
+//    }
+
+    private Rating convertRatingValue(cz.muni.fi.pa165.entity.Rating rating) {
+       return beanConverter.convert(rating, Rating.class);
+    }
+//        Rating convertedRating = Rating.LIKED;
+//        if (rating == cz.muni.fi.pa165.entity.Rating.DISLIKED) {
+//            convertedRating = Rating.DISLIKED;
+//        }
+//        return convertedRating;
+//    }
+
+    private MovieRatingDto convertMovieRating(MovieRating rating) {
+        return new MovieRatingDto(rating.getMovie().getId(), rating.getUser().getId(), convertRatingValue(rating.getRating()));
+    }
+//
+//    private Iterable<MovieRatingDto> convertList(List<MovieRating> list) {
+//        List<MovieRatingDto> found = new ArrayList<>();
+//        for (MovieRating movieRating : list) {
+//            found.add(new MovieRatingDto(
+//                    movieRating.getMovie().getId(),
+//                    movieRating.getUser().getId(),
+//                    convertRating(movieRating.getRating())
+//            ));
+//        }
+//        return found;
+//    }
+//
+
+
+    private Iterable<MovieRatingDto> convertList(List<MovieRating> ratings) {
+        return Vector.ofAll(ratings).map(this::convertMovieRating);
     }
 
-    private Iterable<MovieRatingDto> convertList(List<MovieRating> list) {
-        List<MovieRatingDto> found = new ArrayList<>();
-        for (MovieRating movieRating : list) {
-            found.add(new MovieRatingDto(
-                    movieRating.getMovie().getId(),
-                    movieRating.getUser().getId(),
-                    convertRating(movieRating.getRating())
-            ));
-        }
-        return found;
-    }
 
     @Override
-    public MovieRatingDto setRating(Rating rating, Long userId,Long movieId) {
-        return new MovieRatingDto(movieId, userId, rating);
+    public MovieRatingDto setRating(MovieRatingDto rating) {
+        movieRatingService.setRating(rating.getRating(), rating.getUserId(), rating.getMovieId());
+        return rating;
     }
 
     @Override
