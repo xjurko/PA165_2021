@@ -28,6 +28,7 @@ import static org.mockito.Mockito.times;
 
 @ContextConfiguration(classes = ServiceConfig.class)
 public class DirectorFacadeImplTest extends AbstractTransactionalTestNGSpringContextTests {
+
     @Inject
     BeanConverter converter;
 
