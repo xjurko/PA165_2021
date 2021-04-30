@@ -8,11 +8,9 @@ import org.springframework.test.context.testng.AbstractTransactionalTestNGSpring
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import javax.validation.ValidationException;
-
 import java.util.Optional;
 
 import static org.mockito.ArgumentMatchers.anyString;
