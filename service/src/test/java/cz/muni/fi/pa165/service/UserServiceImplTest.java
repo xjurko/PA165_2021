@@ -64,6 +64,16 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
     }
 
     @Test(expectedExceptions = {ValidationException.class})
+    public void whenRegisteredBlankUsernameThenException() throws ValidationException {
+        userService.registerUser("", "blah@blah.com", "passw0rd");
+    }
+
+    @Test(expectedExceptions = {ValidationException.class})
+    public void whenRegisteredUsernameNotMatchPatternThenException() throws ValidationException {
+        userService.registerUser("01234'$'", "blah@blah.com", "passw0rd");
+    }
+
+    @Test(expectedExceptions = {ValidationException.class})
     public void whenRegisteredExistingUsernameThenException() throws ValidationException {
         // the reason this test was failing is because the userService.registerUser is calling mockDao so nothing is actually stored in any DB or persistence cotnext
         // when you call register user you do your duplicate validation by checking if the user already exists in DB but there is no DB to begin with

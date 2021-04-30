@@ -29,7 +29,9 @@ public class User {
     private Long id;
 
     @NotBlank
-    @Pattern(regexp="^[A-Za-z]\\\\w{5,15}$")    //starts with alphabetical, length from 5 to 15
+    //username starts with alphabetical, then any alphanumeric/dash/dot/underscore,
+    // ends with alphanumeric, length from 5 to 15
+    @Pattern(regexp="^[a-zA-Z]([._-](?![._-])|[a-zA-Z0-9]){5,15}[a-zA-Z0-9]$")
     @Column(nullable = false, unique = true)
     private String name;
 
