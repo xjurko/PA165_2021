@@ -66,31 +66,5 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
         userService.registerUser("username", "username@blahblah.com", "12345");
     }
 
-    @Test
-    public void testFindById() {
-        User u = userService.registerUser("username", "username@blahblah.com", "password");
-        Optional<User> found = userService.findById(u.getId());
-        Assert.assertTrue(found.isPresent());
-        Assert.assertEquals(u, found.get());
-    }
 
-    @Test
-    public void testFindByName() {
-    }
-
-    @Test
-    public void testGetAllUsers() {
-    }
-
-    @Test
-    public void testAuthenticate() {
-    }
-
-    @Test
-    public void testIsAdmin() {
-    }
-
-    @Test
-    public void testRemoveUser() {
-    }
 }
