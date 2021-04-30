@@ -1,6 +1,7 @@
 package cz.muni.fi.pa165.entity;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -9,6 +10,7 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
 public class MovieRating {
 
     @EmbeddedId
