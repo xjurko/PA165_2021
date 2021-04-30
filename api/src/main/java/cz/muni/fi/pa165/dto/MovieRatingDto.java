@@ -10,6 +10,7 @@ import lombok.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@With
 public class MovieRatingDto {
     Long movieId;
     Long userId;
