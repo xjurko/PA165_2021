@@ -2,10 +2,18 @@ package cz.muni.fi.pa165.dto;
 
 import lombok.*;
 
+import java.time.LocalDate;
+
+/**
+ * @author Richard Sanda
+ */
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@With
 public class DirectorDto {
     Long id;
-// TODO stub
+    String name;
+    LocalDate birthDate;
 }

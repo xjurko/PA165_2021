@@ -37,11 +37,16 @@ public class Director {
 
     private LocalDate birthDate;
 
-    public Director(String name) {
-        this.name = name;
+    public Director() {
     }
 
-    public Director() {
+    public Director(String name, LocalDate birthDate){
+        this.name = name;
+        this.birthDate = birthDate;
+    }
+
+    public Director(String name) {
+        this.name = name;
     }
 
     public void addMovie(Movie movie) {

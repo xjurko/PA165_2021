@@ -49,17 +49,10 @@ public class DirectorDaoImpl implements DirectorDao {
     }
 
     @Override
-    public Optional<Director> findByName(String name) {
-        try {
-            return Optional.ofNullable(
-                    em.createQuery("select d from Director d where d.name=:name", Director.class)
-                            .setParameter("name", name)
-                            .getSingleResult()
-            );
-
-        } catch (NoResultException e) {
-            return Optional.empty();
-        }
+    public List<Director> findByName(String name) {
+        return em.createQuery("select director from Director director where director.name = :name", Director.class)
+                .setParameter("name", name)
+                .getResultList();
     }
 
     @Override

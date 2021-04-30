@@ -41,7 +41,7 @@ public interface DirectorDao {
      * @param name name of director
      * @return director with the given name
      */
-    Optional<Director> findByName(String name);
+    List<Director> findByName(String name);
 
     /**
      * Delete a director
