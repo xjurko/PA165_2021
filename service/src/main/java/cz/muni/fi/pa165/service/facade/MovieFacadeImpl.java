@@ -19,6 +19,7 @@ import java.util.Optional;
 
 @RequiredArgsConstructor
 @Service
+@Transactional
 public class MovieFacadeImpl implements MovieFacade {
 
     final MovieService movieService;

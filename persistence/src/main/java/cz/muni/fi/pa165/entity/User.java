@@ -29,6 +29,7 @@ public class User {
     private Long id;
 
     @NotBlank
+    @Pattern(regexp="^[A-Za-z]\\\\w{5,15}$")    //starts with alphabetical, length from 5 to 15
     @Column(nullable = false, unique = true)
     private String name;
 

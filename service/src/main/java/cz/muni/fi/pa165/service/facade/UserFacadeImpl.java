@@ -9,6 +9,7 @@ import cz.muni.fi.pa165.service.converter.BeanConverter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import javax.validation.ValidationException;
 import java.util.Optional;
 
@@ -18,6 +19,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class UserFacadeImpl implements UserFacade {
 
     final UserService userService;
