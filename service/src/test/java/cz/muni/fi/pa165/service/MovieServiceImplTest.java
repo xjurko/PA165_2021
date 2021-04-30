@@ -230,6 +230,7 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
         new MovieRating(m2, u2, Rating.LIKED);
         new MovieRating(m4, u2, Rating.LIKED);
 
+//        none of these will be considered because u3 doesnt like any of the movies u1 does
         new MovieRating(m3, u3, Rating.LIKED);
         new MovieRating(m4, u3, Rating.LIKED);
         new MovieRating(m5, u3, Rating.LIKED);
@@ -242,7 +243,6 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
 
         new MovieRating(m1, u5, Rating.LIKED);
         new MovieRating(m4, u5, Rating.LIKED);
-        new MovieRating(m5, u5, Rating.LIKED);
         new MovieRating(m6, u5, Rating.LIKED);
 
 
@@ -251,6 +251,6 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
 
         val similarMovies = movieService.findRecommendedMoviesForUser(u1.getId());
         System.out.println(Vector.ofAll(similarMovies).map(Movie::getName));
-        Assert.assertEquals(similarMovies, List.of(m4, m5, m6));
+        Assert.assertEquals(similarMovies, List.of(m4, m6, m5));
     }
 }
