@@ -18,7 +18,7 @@ import java.util.Set;
 @Setter
 @AllArgsConstructor
 @With
-@ToString
+@NoArgsConstructor
 public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -48,9 +48,6 @@ public class Movie {
     private String externalRef;
 
     private Integer releaseYear;
-
-    public Movie() {
-    }
 
     public Movie(String name,
                  int runtimeMin,
