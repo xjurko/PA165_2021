@@ -135,4 +135,10 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
         Assert.assertFalse(userService.isAdmin(user));
     }
 
+    @Test
+    public void checkAdminOnNonExisting(){
+        when(userDaoMock.findById(anyLong())).thenReturn(Optional.empty());
+        Assert.assertFalse(userService.isAdmin(new User("user", "user@email.com", "passw0rdhash")));
+    }
+
 }
