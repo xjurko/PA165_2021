@@ -68,9 +68,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void removeUser(User user) {
-        User found = findById(user.getId()).orElseThrow(() ->
-            new DataRetrievalFailureException(String.format("no user with id %d", user.getId()))
+    public void removeUser(Long userId) {
+        User found = findById(userId).orElseThrow(() ->
+            new DataRetrievalFailureException(String.format("no user with id %d", userId))
         );
         userDao.remove(found);
     }

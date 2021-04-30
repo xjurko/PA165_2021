@@ -56,7 +56,7 @@ public class UserFacadeImpl implements UserFacade {
     }
 
     @Override
-    public void removeUser(UserDto userDto){
-        userService.removeUser(converter.convert(userDto, User.class));
+    public void removeUser(Long userId){
+        userService.removeUser(userId);
     }
 }

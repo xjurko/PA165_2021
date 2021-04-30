@@ -57,9 +57,9 @@ public interface UserFacade {
     /**
      * Removes a particular user
      *
-     * @param userDto DTO of user to be removed: id, name, email
+     * @param userId Id of user to be removed
      * @return nothing on success; throws an exception if such user does not exist in the system
      */
-    void removeUser(UserDto userDto);
+    void removeUser(Long userId);
 
 }

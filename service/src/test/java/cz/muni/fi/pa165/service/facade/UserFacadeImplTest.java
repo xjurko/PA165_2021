@@ -17,8 +17,7 @@ import org.testng.annotations.Test;
 import javax.inject.Inject;
 import java.util.Optional;
 
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 /**
  * @author lsolodkova
@@ -33,13 +32,11 @@ public class UserFacadeImplTest extends AbstractTransactionalTestNGSpringContext
     BeanConverter converter;
 
     private final UserDto userDto = new UserDto(1L, "user", "user@user.com");
-    private User user = new User();
+    private User user = new User("user", "user@user.com", "");
 
     @BeforeClass
     public void init(){
         userServiceMock = mock(UserService.class);
-        user = converter.convert(userDto, User.class);
-        user.setId(1L);
         userFacade = new UserFacadeImpl(userServiceMock, converter);
     }
 
@@ -71,5 +68,7 @@ public class UserFacadeImplTest extends AbstractTransactionalTestNGSpringContext
 
     @Test
     public void testRemoveUser() {
+        userFacade.removeUser(1L);
+        verify(userServiceMock, times(1)).removeUser(1L);
     }
 }

@@ -135,7 +135,7 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
     @Test
     public void whenRemoveNonExistingUserThenException(){
         when(userDaoMock.findById(anyLong())).thenReturn(Optional.empty());
-        Assert.assertThrows(DataRetrievalFailureException.class, () -> userService.removeUser(TestUtil.getFakeUser(1L, "user")));
+        Assert.assertThrows(DataRetrievalFailureException.class, () -> userService.removeUser(1L));
     }
 
 }

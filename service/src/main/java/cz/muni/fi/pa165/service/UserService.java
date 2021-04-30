@@ -58,8 +58,8 @@ public interface UserService {
     /**
      * Removes a particular user
      *
-     * @param user entity of user to be removed
+     * @param userId id of user to be removed
      * @return nothing on success; throws an exception if such user does not exist in the system
      */
-    void removeUser(User user);
+    void removeUser(Long userId);
 }
