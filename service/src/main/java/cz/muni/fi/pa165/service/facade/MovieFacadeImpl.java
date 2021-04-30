@@ -2,11 +2,19 @@ package cz.muni.fi.pa165.service.facade;
 
 import cz.muni.fi.pa165.dto.CreateMovieDto;
 import cz.muni.fi.pa165.dto.MovieDto;
+import cz.muni.fi.pa165.entity.Actor;
+import cz.muni.fi.pa165.entity.Director;
 import cz.muni.fi.pa165.entity.Movie;
 import cz.muni.fi.pa165.facade.MovieFacade;
+import cz.muni.fi.pa165.service.ActorService;
+import cz.muni.fi.pa165.service.DirectorService;
 import cz.muni.fi.pa165.service.MovieService;
 import cz.muni.fi.pa165.service.converter.BeanConverter;
+import io.vavr.collection.Vector;
+import io.vavr.control.Option;
 import lombok.RequiredArgsConstructor;
+import lombok.val;
+import org.springframework.dao.DataRetrievalFailureException;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -23,6 +31,8 @@ import java.util.Optional;
 public class MovieFacadeImpl implements MovieFacade {
 
     final MovieService movieService;
+    final DirectorService directorService;
+    final ActorService actorService;
     final BeanConverter converter;
 
     @Override
@@ -48,7 +58,18 @@ public class MovieFacadeImpl implements MovieFacade {
 
     @Override
     public Long createMovie(CreateMovieDto movie) {
-        return movieService.createMovie(converter.convert(movie, Movie.class));
+        val movieEntity = converter.convert(movie, Movie.class);
+        val directors = Vector.ofAll(movie.getDirectorIds()).flatMap(id -> Option.ofOptional(directorService.findById(id)));
+        val actors = Vector.ofAll(movie.getActorIds()).flatMap(id -> Option.ofOptional(actorService.findActorById(id)));
+
+        val missingDirectorsIds =  Vector.ofAll(movie.getDirectorIds()).toSet().diff( directors.map(Director::getId).toSet());
+        val missingActorsIds =  Vector.ofAll(movie.getActorIds()).toSet().diff( actors.map(Actor::getId).toSet());
+
+        if (missingActorsIds.nonEmpty()) throw new DataRetrievalFailureException("Couldnt create movie: couldnt find linked actors: " + missingActorsIds);
+        if (missingDirectorsIds.nonEmpty()) throw new DataRetrievalFailureException("Couldnt create movie: couldnt find linked directors: " + missingActorsIds);
+
+        val denormalizedMovie = movieEntity.withDirectors(directors.toJavaSet()).withCast(actors.toJavaSet());
+        return movieService.createMovie(denormalizedMovie);
     }
 
     @Override

@@ -8,10 +8,8 @@ import java.util.Optional;
 
 /**
  * @author juraj
- *
- *
+ * <p>
  * Interface for interacting with Movies
- *
  */
 public interface MovieFacade {
     /**
@@ -23,7 +21,7 @@ public interface MovieFacade {
     List<MovieDto> findRecommendedMoviesBasedOnMovie(Long movieId);
 
     /**
-     * Finds movies recommended for a user based on which movies they have seen already and which movies were liked
+     * Finds movies recommended for a user based on movies they have already seen and liked
      * by people who liked the same movies as this user
      *
      * @param userId Id of user for which to generate recommendations
@@ -32,7 +30,8 @@ public interface MovieFacade {
     List<MovieDto> findRecommendedMoviesForUser(Long userId);
 
     /**
-     * Returns movies taht contain the substring in their name
+     * Returns movies that contain the substring in their name
+     *
      * @param name substring that is searched for in the movies names
      * @return list of all movies that contain the substring in their name
      */
@@ -40,7 +39,8 @@ public interface MovieFacade {
 
 
     /**
-     *  Fetches specific movie by id if it exists
+     * Fetches specific movie by id if it exists
+     *
      * @param id id of movie to fetch
      * @return Optionally the movie with given id
      */
@@ -49,6 +49,7 @@ public interface MovieFacade {
 
     /**
      * Creates new movie
+     *
      * @param movie movie to be created
      * @return Id of newly generated Movie
      */
@@ -57,6 +58,7 @@ public interface MovieFacade {
 
     /**
      * Deletes a movie
+     *
      * @param movieId id of movie to be deleted
      */
     void removeMovie(Long movieId);

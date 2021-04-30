@@ -1,9 +1,6 @@
 package cz.muni.fi.pa165.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
@@ -20,6 +17,8 @@ import java.util.Set;
 @Getter
 @Setter
 @AllArgsConstructor
+@With
+@ToString
 public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -54,18 +53,14 @@ public class Movie {
     }
 
     public Movie(String name,
-                 Set<Director> directors,
                  int runtimeMin,
-                 Set<Genre> genres,
                  Integer releaseYear,
                  String caption,
                  String externalRef
     ) {
 
         this.name = name;
-        this.directors = directors;
         this.runtimeMin = runtimeMin;
-        this.genres = genres;
         this.caption = caption;
         this.externalRef = externalRef;
         this.releaseYear = releaseYear;

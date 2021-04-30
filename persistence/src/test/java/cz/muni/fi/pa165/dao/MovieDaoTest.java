@@ -75,16 +75,16 @@ public class MovieDaoTest extends AbstractTestNGSpringContextTests {
         Set<Genre> genres = new HashSet<>();
         genres.add(Genre.COMEDY);
 
-        m1 = new Movie("TEst1", directors, 100, genres, 1999, "amazing movie",
-            "external reference");
-        m2 = new Movie("test2", directors, 100, genres, 1999, "amazing movie",
-            "external reference");
+        m1 = new Movie("TEst1", 100, 1999, "amazing movie",
+            "external reference").withDirectors(directors).withGenres(genres);
+        m2 = new Movie("test2", 100, 1999, "amazing movie",
+            "external reference").withDirectors(directors).withGenres(genres);
 
-        m3 = new Movie("123test11", directors, 100, genres, 1999, "amazing movie",
-            "external reference");
+        m3 = new Movie("123test11", 100, 1999, "amazing movie",
+            "external reference").withDirectors(directors).withGenres(genres);
 
-        m4 = new Movie("not match", directors, 100, genres, 1999, "amazing movie",
-            "external reference");
+        m4 = new Movie("not match", 100, 1999, "amazing movie",
+            "external reference").withDirectors(directors).withGenres(genres);
 
         m1.addCastMember(a1);
         movieDao.store(m1);
