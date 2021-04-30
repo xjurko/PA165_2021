@@ -17,6 +17,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import javax.inject.Inject;
@@ -54,6 +55,13 @@ public class MovieFacadeImplTest extends AbstractTransactionalTestNGSpringContex
     @BeforeClass
     public void init() {
         movieFacade = new MovieFacadeImpl(movieServiceMock, directorServiceMock, actorsServiceMock, converter);
+    }
+
+    @BeforeMethod
+    public void resetMocks() {
+        reset(movieServiceMock);
+        reset(directorServiceMock);
+        reset(actorsServiceMock);
     }
 
     @Test
