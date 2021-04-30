@@ -12,7 +12,10 @@ import org.testng.annotations.Test;
 
 import javax.validation.ValidationException;
 
+import java.util.Optional;
+
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 @ContextConfiguration(classes = ServiceConfig.class)
 public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContextTests {
@@ -36,13 +39,16 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
         userService.registerUser("username", "username@blahblah.com", "");
     }
 
-    @Ignore
     @Test(expectedExceptions = {ValidationException.class})
     public void whenRegisteredExistingUsernameThenException() throws ValidationException{
-        // this test not working now
-        // other validation tests should be added
+        // the reason this test was failing is because the userService.registerUser is calling mockDao so nothing is actually stored in any DB or persistence cotnext
+        // when you call register user you do your duplicate validation by checking if the user already exists in DB but there is no DB to begin with
+        // in orther to test that logic we need to "pretend" that there already is user with that user name in DB - we do that by mocking the DAO to return
+        // some user when we use the findByNameMethod
+
+        when(userDaoMock.findByName("username")).thenReturn(Optional.of(new User("username", "email", "hash")));
+
         userService.registerUser("username", "username@blahblah.com", "12345");
-        userService.registerUser("username", "username123@blahblah.com", "12345");
     }
 
     @Test
