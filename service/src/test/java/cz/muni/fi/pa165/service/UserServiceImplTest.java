@@ -3,6 +3,7 @@ package cz.muni.fi.pa165.service;
 import cz.muni.fi.pa165.dao.UserDao;
 import cz.muni.fi.pa165.entity.User;
 import cz.muni.fi.pa165.service.config.ServiceConfig;
+import cz.muni.fi.pa165.service.util.TestUtil;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
@@ -74,15 +75,34 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
     }
 
     @Test(expectedExceptions = {ValidationException.class})
+    public void whenRegisteredEmailNotMatchPatternThenException() throws ValidationException {
+        userService.registerUser("newUser123", "blahblah.com", "passw0rd");
+    }
+
+    @Test(expectedExceptions = {ValidationException.class})
     public void whenRegisteredExistingUsernameThenException() throws ValidationException {
         // the reason this test was failing is because the userService.registerUser is calling mockDao so nothing is actually stored in any DB or persistence cotnext
         // when you call register user you do your duplicate validation by checking if the user already exists in DB but there is no DB to begin with
         // in orther to test that logic we need to "pretend" that there already is user with that user name in DB - we do that by mocking the DAO to return
         // some user when we use the findByNameMethod
 
-        when(userDaoMock.findByName("username")).thenReturn(Optional.of(new User("username", "email", "hash")));
+        when(userDaoMock.findByName("username")).thenReturn(Optional.of(new User("username", "email@email.com", "passwd")));
 
         userService.registerUser("username", "username@blahblah.com", "12345");
+    }
+
+    @Test(expectedExceptions = {ValidationException.class})
+    public void whenRegisteredExistingEmailThenException() throws ValidationException {
+
+        when(userDaoMock.findByEmail("blah@blah.com")).thenReturn(Optional.of(new User("username", "blah@blah.com", "passwd")));
+
+        userService.registerUser("usersameemail", "blah@blah.com", "12345");
+    }
+
+    @Test
+    public void authenticateExistingCredentials(){
+        User user= new User("username", "user@email.com", "passw0rd");
+        userService.authenticate(user, "passw0rd");
     }
 
 
