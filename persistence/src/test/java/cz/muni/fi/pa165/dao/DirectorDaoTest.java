@@ -75,10 +75,9 @@ public class DirectorDaoTest extends AbstractTestNGSpringContextTests {
         Director d1 = new Director("Zdenek Sverak");
         directorDao.store(d1);
 
-        Optional<Director> found = directorDao.findByName(d1.getName());
+        List<Director> found = directorDao.findByName(d1.getName());
 
-        assertTrue(found.isPresent());
-        assertEquals(Optional.of(d1), found);
+        assertEquals(List.of(d1), found);
 
         assertTrue(directorDao.findByName("Akira Kurosawa").isEmpty());
     }

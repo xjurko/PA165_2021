@@ -1,9 +1,6 @@
 package cz.muni.fi.pa165.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.With;
+import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -22,6 +19,7 @@ import java.util.Set;
 @Setter
 @AllArgsConstructor
 @With
+@NoArgsConstructor
 public class Director {
 
     @Id
@@ -41,7 +39,9 @@ public class Director {
         this.name = name;
     }
 
-    public Director() {
+    public Director(String name, LocalDate birthDate){
+        this.name = name;
+        this.birthDate = birthDate;
     }
 
     public void addMovie(Movie movie) {
