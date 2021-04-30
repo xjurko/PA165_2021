@@ -3,6 +3,9 @@ package cz.muni.fi.pa165.service;
 import cz.muni.fi.pa165.dao.UserDao;
 import cz.muni.fi.pa165.entity.User;
 import cz.muni.fi.pa165.service.config.ServiceConfig;
+import cz.muni.fi.pa165.service.util.TestUtil;
+import org.springframework.dao.DataRetrievalFailureException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
@@ -127,7 +130,6 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
         // not sure about this test, if it should be like that
         Assert.assertTrue(userService.isAdmin(admin));
     }
-
     @Test
     public void checkAdminOnNonAdmin() {
         User user = new User("user", "user@user.com", "user_passwdhash");
@@ -141,6 +143,12 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
     public void checkAdminOnNonExisting() {
         when(userDaoMock.findById(anyLong())).thenReturn(Optional.empty());
         Assert.assertFalse(userService.isAdmin(new User("user", "user@email.com", "passw0rdhash")));
+    }
+
+    @Test
+    public void whenRemoveNonExistingUserThenException(){
+        when(userDaoMock.findById(anyLong())).thenReturn(Optional.empty());
+        Assert.assertThrows(DataRetrievalFailureException.class, () -> userService.removeUser(TestUtil.getFakeUser(1L, "user")));
     }
 
 }

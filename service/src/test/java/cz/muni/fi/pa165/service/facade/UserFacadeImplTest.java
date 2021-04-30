@@ -7,6 +7,7 @@ import cz.muni.fi.pa165.facade.UserFacade;
 import cz.muni.fi.pa165.service.UserService;
 import cz.muni.fi.pa165.service.config.ServiceConfig;
 import cz.muni.fi.pa165.service.converter.BeanConverter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
 import org.testng.Assert;
@@ -39,7 +40,6 @@ public class UserFacadeImplTest extends AbstractTransactionalTestNGSpringContext
         userServiceMock = mock(UserService.class);
         user = converter.convert(userDto, User.class);
         user.setId(1L);
-        user.setPasswordHash("hash");
         userFacade = new UserFacadeImpl(userServiceMock, converter);
     }
 
