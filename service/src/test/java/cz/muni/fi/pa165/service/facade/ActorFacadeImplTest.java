@@ -37,25 +37,23 @@ public class ActorFacadeImplTest extends AbstractTransactionalTestNGSpringContex
     ActorFacade actorFacade;
 
     private final ActorDto actorDto = new ActorDto(1L, "Toshiro Mifune", 0, null, null);
-    private Actor actor = new Actor();
+    private final Actor actor = new Actor("Toshiro Mifune");
 
     @BeforeClass
     public void init() {
-        actor = converter.convert(actorDto, Actor.class);
         actorFacade = new ActorFacadeImpl(actorServiceMock, converter);
     }
 
     @BeforeMethod
     public void defineMocks() {
         when(actorServiceMock.findActorById(anyLong())).thenReturn(Optional.of(actor));
-        when(actorServiceMock.findActorsByFullName(actor.getFullName())).thenReturn(List.of(actor));
+        when(actorServiceMock.findActorsByFullName(actor.getFullName())).thenReturn(List.of(actor.withId(1L)));
     }
 
     @Test
     public void testCreateActor() throws ValidationException {
-        Optional<ActorDto> found = actorFacade.findActorById(actorFacade.createActor(actorDto));
-        Assert.assertTrue(found.isPresent());
-        Assert.assertEquals(found.get(), actorDto);
+        actorFacade.createActor(actorDto);
+        verify(actorServiceMock, times(1)).createActor(actor);
     }
 
     @Test
