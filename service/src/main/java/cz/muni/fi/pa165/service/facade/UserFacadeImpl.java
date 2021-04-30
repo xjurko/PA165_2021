@@ -44,10 +44,10 @@ public class UserFacadeImpl implements UserFacade {
     }
 
     @Override
-    public boolean authenticate(UserAuthenticateDto u) {
-        Optional<User> user = userService.findByName(u.getName());
+    public boolean authenticate(UserAuthenticateDto uAuthDto) {
+        Optional<User> user = userService.findByName(uAuthDto.getName());
         if(user.isEmpty()) return false;
-        return userService.authenticate(user.get(), u.getPassword());
+        return userService.authenticate(user.get(), uAuthDto.getPassword());
     }
 
     @Override

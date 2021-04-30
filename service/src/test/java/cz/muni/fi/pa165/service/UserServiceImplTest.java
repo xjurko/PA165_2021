@@ -5,7 +5,6 @@ import cz.muni.fi.pa165.entity.User;
 import cz.muni.fi.pa165.service.config.ServiceConfig;
 import cz.muni.fi.pa165.service.util.TestUtil;
 import org.springframework.dao.DataRetrievalFailureException;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
@@ -42,18 +41,12 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
 
     @BeforeMethod
     public void resetMock() {
-        // without this tests are flaky - we need to make sure we reset mock behavior between tests as otherwise the mocked behavior in one test persists in other tests
-        // this is expecially important since we are mocking the same method with different behaviours in different tests
-
         reset(userDaoMock);
     }
 
     @Test
     public void whenRegisteredNewThenSuccess() throws ValidationException {
-        // this is actually not needed mockito returns Optional.empty by defualt for methods that reutrn Optionals  so feel free to remove either this line of the reset before method
-//        important thing to realize here is that without either of these mock resets the test are flaky due to teh fact that the order in which they are run is not guaranteed
-
-        User u = userService.registerUser("username", "username@blahblah.com", "password");
+        userService.registerUser("username", "username@blahblah.com", "password");
         verify(userDaoMock, times(1)).store(new User("username", "username@blahblah.com", encoderMock.encode("password")));
 
     }
@@ -85,10 +78,6 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
 
     @Test(expectedExceptions = {ValidationException.class})
     public void whenRegisteredExistingUsernameThenException() throws ValidationException {
-        // the reason this test was failing is because the userService.registerUser is calling mockDao so nothing is actually stored in any DB or persistence cotnext
-        // when you call register user you do your duplicate validation by checking if the user already exists in DB but there is no DB to begin with
-        // in orther to test that logic we need to "pretend" that there already is user with that user name in DB - we do that by mocking the DAO to return
-        // some user when we use the findByNameMethod
 
         when(userDaoMock.findByName("username")).thenReturn(Optional.of(new User("username", "email@email.com", "passwd")));
 
@@ -127,7 +116,6 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
         admin.setId(1L);
         admin.setAdmin(true);
         when(userDaoMock.findById(1L)).thenReturn(Optional.of(admin));
-        // not sure about this test, if it should be like that
         Assert.assertTrue(userService.isAdmin(admin));
     }
     @Test
@@ -135,7 +123,6 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
         User user = new User("user", "user@user.com", "user_passwdhash");
         user.setId(3L);
         when(userDaoMock.findById(3L)).thenReturn(Optional.of(user));
-        // not sure about this test, if it should be like that
         Assert.assertFalse(userService.isAdmin(user));
     }
 
