@@ -4,7 +4,9 @@ import cz.muni.fi.pa165.dao.MovieDao;
 import cz.muni.fi.pa165.dao.MovieRatingDao;
 import cz.muni.fi.pa165.dao.UserDao;
 import cz.muni.fi.pa165.entity.*;
+import io.vavr.control.Option;
 import lombok.RequiredArgsConstructor;
+import lombok.val;
 import org.springframework.dao.DataRetrievalFailureException;
 import org.springframework.stereotype.Service;
 
@@ -38,9 +40,10 @@ public class MovieRatingServiceImpl implements MovieRatingService {
 
     @Override
     public MovieRating setRating(Rating rating, Long userId, Long movieId) {
-
         Movie movie = getMovieOrthrow(movieId);
         User user = getUserOrThrow(userId);
+
+        findRatingByUserAndMovie(userId, movieId).ifPresent(movieRatingDao::remove);
 
         MovieRating movieRating = new MovieRating(movie, user, rating);
         movieRatingDao.store(movieRating);
@@ -64,8 +67,9 @@ public class MovieRatingServiceImpl implements MovieRatingService {
 
     @Override
     public void deleteRating(Long userId, Long movieId) {
-        findRatingByUserAndMovie(userId, movieId).orElseThrow(() ->
+        val rating = findRatingByUserAndMovie(userId, movieId).orElseThrow(() ->
             new DataRetrievalFailureException(String.format("no rating for user with id %d and movie with id %d", userId, movieId))
         );
+        movieRatingDao.remove(rating);
     }
 }
