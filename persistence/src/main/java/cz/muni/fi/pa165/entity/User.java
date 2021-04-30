@@ -1,12 +1,11 @@
 package cz.muni.fi.pa165.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -23,25 +22,39 @@ import java.util.Set;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@With
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull
+    @NotBlank
+    //username starts with alphabetical, then any alphanumeric/dash/dot/underscore,
+    // ends with alphanumeric, length from 5 to 15
+    @Pattern(regexp="^[a-zA-Z]([._-](?![._-])|[a-zA-Z0-9]){5,15}[a-zA-Z0-9]$")
     @Column(nullable = false, unique = true)
     private String name;
 
     @NotNull
+    @Column(nullable = false)
+    private String passwordHash;
+
+    @NotBlank
+    @Pattern(regexp=".+@.+\\....?")
     @Column(nullable = false, unique = true)
     private String email;
 
     @OneToMany(mappedBy = "movie",  orphanRemoval = true)
     private Set<MovieRating> movieRatings = new HashSet<>();
 
-    public User(String name, String email) {
+    // TODO: possibly replace with a separate roles entity
+    private boolean isAdmin;
+
+    public User(String name, String email, String passwordHash) {
         this.name = name;
         this.email = email;
+        this.passwordHash = passwordHash;
+        this.isAdmin = false;
     }
 
     public void addRating(MovieRating rating) {

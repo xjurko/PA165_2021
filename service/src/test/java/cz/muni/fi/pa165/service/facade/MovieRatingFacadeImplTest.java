@@ -43,7 +43,7 @@ public class MovieRatingFacadeImplTest extends AbstractTransactionalTestNGSpring
         Movie movie = new Movie();
         movie.setName("Seven Samurai");
         movie.setId(1L);
-        User user = new User("Akira", "akira@muni.cz");
+        User user = new User("Akira", "akira@muni.cz", "passw0rdhash");
         user.setId(1L);
         movieRating = new MovieRating(movie, user, cz.muni.fi.pa165.entity.Rating.LIKED);
         movieRatingFacade = new MovieRatingFacadeImpl(movieRatingServiceMock,  beanConverter);

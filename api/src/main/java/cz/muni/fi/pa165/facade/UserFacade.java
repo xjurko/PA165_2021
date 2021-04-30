@@ -1,32 +1,32 @@
-package cz.muni.fi.pa165.service;
+package cz.muni.fi.pa165.facade;
 
-import cz.muni.fi.pa165.entity.User;
+import cz.muni.fi.pa165.dto.UserAuthenticateDto;
+import cz.muni.fi.pa165.dto.UserDto;
+
 
 import javax.validation.ValidationException;
-import java.util.List;
 import java.util.Optional;
 
 /**
- * Service layer for operations with user accounts
+ * User facade interface
  * @author lsolodkova
  */
-
-public interface UserService {
+public interface UserFacade {
     /**
      * Search for user by id
      *
      * @param id primary key assigned to a row in database
-     * @return entity of a user
+     * @return DTO of a user found
      */
-    Optional<User> findById(Long id);
+    Optional<UserDto> findUserById(Long id);
 
     /**
      * Search for user by username
      *
      * @param name username
-     * @return entity of a user
+     * @return DTO of a user found
      */
-    Optional<User> findByName(String name);
+    Optional<UserDto> findByName(String name);
 
     /**
      * registers a new user in the system
@@ -34,32 +34,32 @@ public interface UserService {
      * @param name username
      * @param email user's email
      * @param rawPassword plaintext password chosen by user
-     * @return entity of a newly registered user
+     * @return id of a newly registered user
      */
-    User registerUser(String name, String email, String rawPassword) throws ValidationException;
+    Long registerUser(String name, String email, String rawPassword) throws ValidationException;
 
     /**
      * Checks if a user with given credentials exists in the system
      *
-     * @param user entity of a user
-     * @param password plaintext password provided by user
-     * @return true, if such user exists and password matches the hash; otherwise false
+     * @param uAuthDto DTO of user credentials: name, password
+     * @return true, if user with given name exists and password matches the hash; otherwise false
      */
-    boolean authenticate(User user, String password);
+    boolean authenticate(UserAuthenticateDto uAuthDto);
 
     /**
      * Checks if a user with given credentials has administrative privileges
      *
-     * @param user entity of a user
+     * @param userDto DTO of user: id, name, email
      * @return true, if user exists AND has admin privileges; otherwise false
      */
-    boolean isAdmin(User user);
+    boolean isAdmin(UserDto userDto);
 
     /**
      * Removes a particular user
      *
-     * @param userId id of user to be removed
+     * @param userId Id of user to be removed
      * @return nothing on success; throws an exception if such user does not exist in the system
      */
     void removeUser(Long userId);
+
 }

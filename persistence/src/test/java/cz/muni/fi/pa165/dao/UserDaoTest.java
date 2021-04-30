@@ -41,7 +41,7 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void testStoreAndFind() {
-        User user = new User("testUser1", "user1@fi.muni.cz");
+        User user = new User("testUser1", "user1@fi.muni.cz", "password");
         userDao.store(user);
 
         Optional<User> storedUser = userDao.findById(user.getId());
@@ -51,8 +51,8 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void testStoreAndFindAll() {
-        User user1 = new User("testUser1", "user1@fi.muni.cz");
-        User user2 = new User("testUser2", "user2@fi.muni.cz");
+        User user1 = new User("testUser1", "user1@fi.muni.cz", "passw0rd");
+        User user2 = new User("testUser2", "user2@fi.muni.cz", "password");
 
         userDao.store(user1);
         userDao.store(user2);
@@ -63,7 +63,7 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void testStoreAndRemove() {
-        User user = new User("testUser1", "user1@fi.muni.cz");
+        User user = new User("testUser1", "user1@fi.muni.cz", "passw0rd");
 
         userDao.store(user);
         Assert.assertTrue(userDao.findById(user.getId()).isPresent());
@@ -80,6 +80,26 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
     @Test(expectedExceptions= DataAccessException.class)
     public void testIllegalArgumentExceptionRethrownAsDataAccessException() {
         userDao.findByName("");
+    }
+
+    @Test
+    public void testSearchByName(){
+        User user = new User("testUser1", "user1@fi.muni.cz", "passw0rdhash");
+
+        userDao.store(user);
+        Optional<User> storedUser = userDao.findByName("testUser1");
+        Assert.assertTrue(storedUser.isPresent());
+        Assert.assertEquals(storedUser, Optional.of(user));
+    }
+
+    @Test
+    public void testSearchByEmail(){
+        User user = new User("testUser1", "user1@fi.muni.cz", "passw0rdhash");
+
+        userDao.store(user);
+        Optional<User> storedUser = userDao.findByEmail("user1@fi.muni.cz");
+        Assert.assertTrue(storedUser.isPresent());
+        Assert.assertEquals(storedUser, Optional.of(user));
     }
 
 }
