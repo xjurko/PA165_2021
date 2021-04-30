@@ -12,6 +12,9 @@ import javax.validation.ValidationException;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * @author lsolodkova
+ */
 @Service
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService{

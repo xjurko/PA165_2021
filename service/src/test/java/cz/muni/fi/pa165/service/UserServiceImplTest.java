@@ -17,6 +17,10 @@ import java.util.Optional;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.*;
 
+
+/**
+ * @author lsolodkova
+ */
 @ContextConfiguration(classes = ServiceConfig.class)
 public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContextTests {
 
