@@ -1,6 +1,5 @@
 package cz.muni.fi.pa165.service.facade;
 
-import com.github.dozermapper.core.inject.Inject;
 import cz.muni.fi.pa165.dto.DirectorDto;
 import cz.muni.fi.pa165.entity.Director;
 import cz.muni.fi.pa165.facade.DirectorFacade;
@@ -14,6 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import javax.inject.Inject;
 import javax.validation.ValidationException;
 import java.util.List;
 import java.util.Optional;
