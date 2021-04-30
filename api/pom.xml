@@ -17,10 +17,8 @@
       <artifactId>lombok</artifactId>
     </dependency>
     <dependency>
-      <groupId>cz.muni.fi.pa165</groupId>
-      <artifactId>persistence</artifactId>
-      <version>0.1.0-SNAPSHOT</version>
-      <scope>compile</scope>
+      <groupId>org.hibernate.validator</groupId>
+      <artifactId>hibernate-validator</artifactId>
     </dependency>
   </dependencies>
 
