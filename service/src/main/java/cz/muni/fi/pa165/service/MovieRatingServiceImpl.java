@@ -25,22 +25,16 @@ public class MovieRatingServiceImpl implements MovieRatingService {
     final UserDao userDao;
     final MovieDao movieDao;
 
-    private User checkUser(Long userId) {
-        Optional<User> user = userDao.findById(userId);
-        if (user.isEmpty())
-            throw new DataRetrievalFailureException(
-                    String.format("no user with id %d", userId)
-            );
-        return user.get();
+    private User getUserOrThrow(Long userId) {
+        return userDao.findById(userId).orElseThrow(() ->
+            new DataRetrievalFailureException(String.format("no user with id %d", userId))
+        );
     }
 
-    private Movie checkMovie(Long movieId) {
-        Optional<Movie> movie = movieDao.findById(movieId);
-        if (movie.isEmpty())
-            throw new DataRetrievalFailureException(
-                    String.format("no movie with id %d", movieId)
-            );
-        return movie.get();
+    private Movie getMovieOrthrow(Long movieId) {
+        return movieDao.findById(movieId).orElseThrow(() ->
+            new DataRetrievalFailureException(String.format("no movie with id %d", movieId))
+        );
     }
 
     @Override
@@ -51,8 +45,8 @@ public class MovieRatingServiceImpl implements MovieRatingService {
             convertedRating = cz.muni.fi.pa165.entity.Rating.DISLIKED;
         }
 
-        Movie movie = checkMovie(movieId);
-        User user = checkUser(userId);
+        Movie movie = getMovieOrthrow(movieId);
+        User user = getUserOrThrow(userId);
 
         MovieRating movieRating = new MovieRating(movie, user, convertedRating);
         movieRatingDao.store(movieRating);
@@ -61,12 +55,12 @@ public class MovieRatingServiceImpl implements MovieRatingService {
 
     @Override
     public List<MovieRating> findRatingsByMovie(Long movieId) {
-        return new ArrayList<>(checkMovie(movieId).getRatings());
+        return new ArrayList<>(getMovieOrthrow(movieId).getRatings());
     }
 
     @Override
     public List<MovieRating> findRatingsByUser(Long userId) {
-        return new ArrayList<>(checkUser(userId).getMovieRatings());
+        return new ArrayList<>(getUserOrThrow(userId).getMovieRatings());
     }
 
     @Override
@@ -79,7 +73,7 @@ public class MovieRatingServiceImpl implements MovieRatingService {
         Optional<MovieRating> movieRating = findRatingByUserAndMovie(userId, movieId);
         if (movieRating.isEmpty())
             throw new DataRetrievalFailureException(
-                    String.format("no rating for user with id %d and movie with id %d", userId, movieId)
+                String.format("no rating for user with id %d and movie with id %d", userId, movieId)
             );
         movieRatingDao.remove(movieRating.get());
     }
