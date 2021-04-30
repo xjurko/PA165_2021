@@ -1,7 +1,7 @@
 package cz.muni.fi.pa165.service;
 
 import cz.muni.fi.pa165.entity.MovieRating;
-import cz.muni.fi.pa165.dto.Rating;
+import cz.muni.fi.pa165.entity.Rating;
 
 import java.util.List;
 import java.util.Optional;

@@ -4,8 +4,7 @@ import cz.muni.fi.pa165.dao.MovieDao;
 import cz.muni.fi.pa165.dao.MovieRatingDao;
 import cz.muni.fi.pa165.dao.UserDao;
 import cz.muni.fi.pa165.entity.Movie;
-import cz.muni.fi.pa165.entity.MovieRating;
-import cz.muni.fi.pa165.dto.Rating;
+import cz.muni.fi.pa165.entity.Rating;
 import cz.muni.fi.pa165.entity.User;
 import cz.muni.fi.pa165.service.config.ServiceConfig;
 import lombok.val;
@@ -22,7 +21,6 @@ import java.util.Optional;
 
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.*;
-import static org.mockito.Mockito.times;
 
 /**
  * @author alia

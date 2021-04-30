@@ -28,17 +28,21 @@ public class MovieRatingFacadeImpl implements MovieRatingFacade {
 
     private MovieRatingDto convertMovieRating(MovieRating rating) {
         return beanConverter.convert(rating, MovieRatingDto.class)
-                .withMovieId(rating.getMovie().getId())
-                .withUserId(rating.getUser().getId());
+            .withMovieId(rating.getMovie().getId())
+            .withUserId(rating.getUser().getId());
     }
 
     private Iterable<MovieRatingDto> convertList(List<MovieRating> ratings) {
         return Vector.ofAll(ratings).map(this::convertMovieRating);
     }
 
+    private cz.muni.fi.pa165.entity.Rating convertRatingValue(Rating rating) {
+        return cz.muni.fi.pa165.entity.Rating.valueOf(rating.toString());
+    }
+
     @Override
     public MovieRatingDto setRating(MovieRatingDto rating) {
-        movieRatingService.setRating(rating.getRating(), rating.getUserId(), rating.getMovieId());
+        movieRatingService.setRating(convertRatingValue(rating.getRating()), rating.getUserId(), rating.getMovieId());
         return rating;
     }
 
@@ -55,7 +59,7 @@ public class MovieRatingFacadeImpl implements MovieRatingFacade {
     @Override
     public Optional<MovieRatingDto> findRatingByUserAndMovie(Long userId, Long movieId) {
         return movieRatingService.findRatingByUserAndMovie(userId, movieId)
-                .map(this::convertMovieRating);
+            .map(this::convertMovieRating);
     }
 
     @Override
