@@ -82,4 +82,24 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
         userDao.findByName("");
     }
 
+    @Test
+    public void testSearchByName(){
+        User user = new User("testUser1", "user1@fi.muni.cz", "passw0rdhash");
+
+        userDao.store(user);
+        Optional<User> storedUser = userDao.findByName("testUser1");
+        Assert.assertTrue(storedUser.isPresent());
+        Assert.assertEquals(storedUser, Optional.of(user));
+    }
+
+    @Test
+    public void testSearchByEmail(){
+        User user = new User("testUser1", "user1@fi.muni.cz", "passw0rdhash");
+
+        userDao.store(user);
+        Optional<User> storedUser = userDao.findByEmail("user1@fi.muni.cz");
+        Assert.assertTrue(storedUser.isPresent());
+        Assert.assertEquals(storedUser, Optional.of(user));
+    }
+
 }
