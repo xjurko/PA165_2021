@@ -41,13 +41,13 @@ public class UserFacadeImplTest extends AbstractTransactionalTestNGSpringContext
 
     @Test
     public void testFindUserById() {
-        when(userServiceMock.findById(1L)).thenReturn(Optional.of(user));
+        when(userServiceMock.findById(1L)).thenReturn(Optional.of(user.withId(1L)));
         Assert.assertEquals(userDto, userFacade.findUserById(1L).get());
     }
 
     @Test
     public void testFindByName() {
-        when(userServiceMock.findByName("user")).thenReturn(Optional.of(user));
+        when(userServiceMock.findByName("user")).thenReturn(Optional.of(user.withId(1L)));
         Assert.assertEquals(userDto, userFacade.findByName("user").get());
     }
 
