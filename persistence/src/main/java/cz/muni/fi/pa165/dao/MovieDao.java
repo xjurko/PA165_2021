@@ -1,6 +1,7 @@
 package cz.muni.fi.pa165.dao;
 
 import cz.muni.fi.pa165.entity.Movie;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,6 +12,7 @@ import java.util.Optional;
  * @author juraj
  */
 
+@Repository
 public interface MovieDao {
 
     /**
@@ -28,9 +30,9 @@ public interface MovieDao {
     List<Movie> fetchAll();
 
     /**
-     * Find all movies with the given name
+     * Find all movies containing substring in name
      *
-     * @param name name of the movie
+     * @param name substring that is contained in the name
      * @return movies matching the name
      */
     List<Movie> findByName(String name);

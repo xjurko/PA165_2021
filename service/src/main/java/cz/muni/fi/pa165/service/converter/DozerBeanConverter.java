@@ -1,11 +1,11 @@
 package cz.muni.fi.pa165.service.converter;
 
 import com.github.dozermapper.core.Mapper;
-import io.vavr.collection.List;
 import io.vavr.collection.Vector;
 import lombok.RequiredArgsConstructor;
 
 import javax.inject.Named;
+import java.util.List;
 
 
 /**
@@ -23,7 +23,7 @@ public class DozerBeanConverter implements BeanConverter {
     }
 
     @Override
-    public <T, F> Iterable<T> convert(Iterable<F> from, Class<T> to) {
-        return Vector.ofAll(from).map(e -> convert(e, to)).asJava();
+    public <T, F> List<T> convert(List<F> from, Class<T> to) {
+        return Vector.ofAll(from).map(e -> convert(e, to)).toList().asJava();
     }
 }
