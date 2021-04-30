@@ -7,7 +7,9 @@ import cz.muni.fi.pa165.entity.Movie;
 import cz.muni.fi.pa165.entity.Rating;
 import cz.muni.fi.pa165.entity.User;
 import cz.muni.fi.pa165.service.config.ServiceConfig;
+import io.vavr.collection.Vector;
 import lombok.val;
+import org.mockito.Mockito;
 import org.springframework.dao.DataAccessException;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
@@ -49,17 +51,16 @@ public class MovieRatingServiceImplTest extends AbstractTransactionalTestNGSprin
         movie.setId(1L);
         user = new User("Akira", "akira@muni.cz");
         user.setId(1L);
+        Vector.of(movieRatingDaoMock, userDaoMock, movieDaoMock).forEach(Mockito::reset);
     }
 
     @Test
     public void testSetRatingThrowsExceptionIfUserIsEmpty() {
-        when(userDaoMock.findById(anyLong())).thenReturn(Optional.empty());
         Assert.assertThrows(DataAccessException.class, () -> movieRatingService.setRating(Rating.LIKED, 1L, 1L));
     }
 
     @Test
     public void testSetRatingThrowsExceptionIfMovieIsEmpty() {
-        when(movieDaoMock.findById(anyLong())).thenReturn(Optional.empty());
         Assert.assertThrows(DataAccessException.class, () -> movieRatingService.setRating(Rating.LIKED, 1L, 1L));
     }
 
