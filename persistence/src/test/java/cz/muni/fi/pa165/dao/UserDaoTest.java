@@ -1,12 +1,15 @@
 package cz.muni.fi.pa165.dao;
 
 import cz.muni.fi.pa165.PersistenceConfig;
+import cz.muni.fi.pa165.entity.Director;
 import cz.muni.fi.pa165.entity.User;
+import org.springframework.dao.DataAccessException;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.test.context.transaction.TransactionalTestExecutionListener;
 import org.testng.Assert;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import javax.inject.Inject;
@@ -38,7 +41,7 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void testStoreAndFind() {
-        User user = new User("testUser1", "user1@fi.muni.cz", "passw0rdhash");
+        User user = new User("testUser1", "user1@fi.muni.cz");
         userDao.store(user);
 
         Optional<User> storedUser = userDao.findById(user.getId());
@@ -48,8 +51,8 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void testStoreAndFindAll() {
-        User user1 = new User("testUser1", "user1@fi.muni.cz", "passw0rdhash");
-        User user2 = new User("testUser2", "user2@fi.muni.cz", "passw0rdhash");
+        User user1 = new User("testUser1", "user1@fi.muni.cz");
+        User user2 = new User("testUser2", "user2@fi.muni.cz");
 
         userDao.store(user1);
         userDao.store(user2);
@@ -60,7 +63,7 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void testStoreAndRemove() {
-        User user = new User("testUser1", "user1@fi.muni.cz", "passw0rdhash");
+        User user = new User("testUser1", "user1@fi.muni.cz");
 
         userDao.store(user);
         Assert.assertTrue(userDao.findById(user.getId()).isPresent());
@@ -69,23 +72,14 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
         Assert.assertTrue(userDao.findById(user.getId()).isEmpty());
     }
 
-    @Test
-    public void testSearchByName(){
-        User user = new User("testUser1", "user1@fi.muni.cz", "passw0rdhash");
-
-        userDao.store(user);
-        Optional<User> storedUser = userDao.findByName("testUser1");
-        Assert.assertTrue(storedUser.isPresent());
-        Assert.assertEquals(storedUser, Optional.of(user));
+    @Test(expectedExceptions= DataAccessException.class)
+    public void testNpeRethrownAsDataAccessException() {
+        userDao.store(null);
     }
 
-    @Test
-    public void testSearchByEmail(){
-        User user = new User("testUser1", "user1@fi.muni.cz", "passw0rdhash");
-
-        userDao.store(user);
-        Optional<User> storedUser = userDao.findByEmail("user1@fi.muni.cz");
-        Assert.assertTrue(storedUser.isPresent());
-        Assert.assertEquals(storedUser, Optional.of(user));
+    @Test(expectedExceptions= DataAccessException.class)
+    public void testIllegalArgumentExceptionRethrownAsDataAccessException() {
+        userDao.findByName("");
     }
+
 }

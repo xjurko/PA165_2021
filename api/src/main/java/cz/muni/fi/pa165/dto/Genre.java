@@ -1,4 +1,5 @@
-package cz.muni.fi.pa165.entity;
+package cz.muni.fi.pa165.dto;
+
 
 /**
  * @author juraj
