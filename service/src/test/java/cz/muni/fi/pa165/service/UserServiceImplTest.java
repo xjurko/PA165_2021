@@ -101,9 +101,20 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
 
     @Test
     public void authenticateExistingCredentials(){
-        User user= new User("username", "user@email.com", "passw0rd");
-        userService.authenticate(user, "passw0rd");
+        User user= userService.registerUser("username", "user@email.com", "passw0rd");
+        Assert.assertTrue(userService.authenticate(user, "passw0rd"));
     }
 
+    @Test
+    public void authenticateWrongPassword(){
+        User user= userService.registerUser("username", "user@email.com", "passw0rd");
+        Assert.assertFalse(userService.authenticate(user, "$passw0rd$"));
+    }
+
+    @Test
+    public void authenticateBlankPassword() {
+        User user= userService.registerUser("username", "user@email.com", "passw0rd");
+        Assert.assertFalse(userService.authenticate(user, ""));
+    }
 
 }
