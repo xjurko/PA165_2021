@@ -22,8 +22,7 @@ import java.util.regex.Pattern;
 public class UserServiceImpl implements UserService{
 
     final UserDao userDao;
-
-    private final PasswordEncoder encoder = new BCryptPasswordEncoder();
+    final PasswordEncoder encoder;
 
     @Override
     public Optional<User> findById(Long id) {

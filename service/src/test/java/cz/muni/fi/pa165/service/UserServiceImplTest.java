@@ -3,8 +3,7 @@ package cz.muni.fi.pa165.service;
 import cz.muni.fi.pa165.dao.UserDao;
 import cz.muni.fi.pa165.entity.User;
 import cz.muni.fi.pa165.service.config.ServiceConfig;
-import cz.muni.fi.pa165.service.util.TestUtil;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
 import org.testng.Assert;
@@ -27,13 +26,15 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
 
     UserDao userDaoMock;
     UserService userService;
-    BCryptPasswordEncoder encoder;
+    PasswordEncoder encoderMock;
 
     @BeforeClass
     public void init() {
         userDaoMock = mock(UserDao.class);
-        userService = new UserServiceImpl(userDaoMock);
-        encoder = new BCryptPasswordEncoder();
+        encoderMock = mock(PasswordEncoder.class);
+        when(encoderMock.encode(anyString())).thenAnswer(invocation -> invocation.getArgument(0, String.class));
+        when(encoderMock.matches(anyString(), anyString())).thenAnswer(invocation -> invocation.getArgument(0, String.class).equals(invocation.getArgument(1, String.class)));
+        userService = new UserServiceImpl(userDaoMock, encoderMock);
     }
 
     @BeforeMethod
@@ -50,7 +51,7 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
 //        important thing to realize here is that without either of these mock resets the test are flaky due to teh fact that the order in which they are run is not guaranteed
 
         User u = userService.registerUser("username", "username@blahblah.com", "password");
-        verify(userDaoMock, times(1)).store(new User("username", "username@blahblah.com", encoder.encode("password")));
+        verify(userDaoMock, times(1)).store(new User("username", "username@blahblah.com", encoderMock.encode("password")));
 
     }
 
@@ -100,25 +101,25 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
     }
 
     @Test
-    public void authenticateExistingCredentials(){
-        User user= userService.registerUser("username", "user@email.com", "passw0rd");
+    public void authenticateExistingCredentials() {
+        User user = userService.registerUser("username", "user@email.com", "passw0rd");
         Assert.assertTrue(userService.authenticate(user, "passw0rd"));
     }
 
     @Test
-    public void authenticateWrongPassword(){
-        User user= userService.registerUser("username", "user@email.com", "passw0rd");
+    public void authenticateWrongPassword() {
+        User user = userService.registerUser("username", "user@email.com", "passw0rd");
         Assert.assertFalse(userService.authenticate(user, "$passw0rd$"));
     }
 
     @Test
     public void authenticateBlankPassword() {
-        User user= userService.registerUser("username", "user@email.com", "passw0rd");
+        User user = userService.registerUser("username", "user@email.com", "passw0rd");
         Assert.assertFalse(userService.authenticate(user, ""));
     }
 
     @Test
-    public void checkAdminOnAdmin(){
+    public void checkAdminOnAdmin() {
         User admin = new User("admin", "admin@admin.com", "admin_passwdhash");
         admin.setId(1L);
         admin.setAdmin(true);
@@ -126,9 +127,10 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
         // not sure about this test, if it should be like that
         Assert.assertTrue(userService.isAdmin(admin));
     }
+
     @Test
-    public void checkAdminOnNonAdmin(){
-        User user  = new User("user", "user@user.com", "user_passwdhash");
+    public void checkAdminOnNonAdmin() {
+        User user = new User("user", "user@user.com", "user_passwdhash");
         user.setId(3L);
         when(userDaoMock.findById(3L)).thenReturn(Optional.of(user));
         // not sure about this test, if it should be like that
@@ -136,7 +138,7 @@ public class UserServiceImplTest extends AbstractTransactionalTestNGSpringContex
     }
 
     @Test
-    public void checkAdminOnNonExisting(){
+    public void checkAdminOnNonExisting() {
         when(userDaoMock.findById(anyLong())).thenReturn(Optional.empty());
         Assert.assertFalse(userService.isAdmin(new User("user", "user@email.com", "passw0rdhash")));
     }
