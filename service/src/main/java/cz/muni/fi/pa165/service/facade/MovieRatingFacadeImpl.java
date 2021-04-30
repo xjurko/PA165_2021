@@ -48,7 +48,7 @@ public class MovieRatingFacadeImpl implements MovieRatingFacade {
 
     @Override
     public Iterable<MovieRatingDto> findRatingsByMovie(Long movieId) {
-        return convertList(movieRatingService.findRatingsByMovie(movieId));
+        return convertList(movieRatingService.findRatingsForMovie(movieId));
     }
 
     @Override

@@ -60,7 +60,7 @@ public class MovieRatingFacadeImplTest extends AbstractTransactionalTestNGSpring
 
     @Test
     public void testFindRatingsByMovie() {
-        when(movieRatingServiceMock.findRatingsByMovie(1L)).thenReturn(List.of(movieRating));
+        when(movieRatingServiceMock.findRatingsForMovie(1L)).thenReturn(List.of(movieRating));
         Assert.assertEquals(List.of(movieRatingDto), movieRatingFacade.findRatingsByMovie(1L));
     }
 

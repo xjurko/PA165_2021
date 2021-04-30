@@ -48,7 +48,7 @@ public class MovieRatingServiceImpl implements MovieRatingService {
     }
 
     @Override
-    public List<MovieRating> findRatingsByMovie(Long movieId) {
+    public List<MovieRating> findRatingsForMovie(Long movieId) {
         return new ArrayList<>(getMovieOrthrow(movieId).getRatings());
     }
 
@@ -64,11 +64,8 @@ public class MovieRatingServiceImpl implements MovieRatingService {
 
     @Override
     public void deleteRating(Long userId, Long movieId) {
-        Optional<MovieRating> movieRating = findRatingByUserAndMovie(userId, movieId);
-        if (movieRating.isEmpty())
-            throw new DataRetrievalFailureException(
-                String.format("no rating for user with id %d and movie with id %d", userId, movieId)
-            );
-        movieRatingDao.remove(movieRating.get());
+        findRatingByUserAndMovie(userId, movieId).orElseThrow(() ->
+            new DataRetrievalFailureException(String.format("no rating for user with id %d and movie with id %d", userId, movieId))
+        );
     }
 }

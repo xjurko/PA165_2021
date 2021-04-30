@@ -31,7 +31,7 @@ public interface MovieRatingService {
      * @param movieId id of the given movie
      * @return ratings for the given movie
      */
-    List<MovieRating> findRatingsByMovie(Long movieId);
+    List<MovieRating> findRatingsForMovie(Long movieId);
 
     /**
      * Find all ratings by user
