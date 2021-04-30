@@ -36,7 +36,7 @@ public class MovieRatingServiceImplTest extends AbstractTransactionalTestNGSprin
     MovieRatingService movieRatingService;
 
     private final Movie movie = new Movie().withName("Seven Samurai").withId(1L);
-    private User user = new User("Akira", "akira@muni.cz");
+    private User user = new User("Akira", "akira@muni.cz", "passwordhash");
 
     @BeforeClass
     public void init() {
@@ -45,7 +45,7 @@ public class MovieRatingServiceImplTest extends AbstractTransactionalTestNGSprin
 
     @BeforeMethod
     public void setFields() {
-        user = new User("Akira", "akira@muni.cz");
+        user = new User("Akira", "akira@muni.cz", "passwordhash");
         user.setId(1L);
         Vector.of(movieRatingDaoMock, userDaoMock, movieDaoMock).forEach(Mockito::reset);
     }
