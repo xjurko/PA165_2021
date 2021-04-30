@@ -37,6 +37,8 @@ public class User {
     @OneToMany(mappedBy = "movie",  orphanRemoval = true)
     private Set<MovieRating> movieRatings = new HashSet<>();
 
+    //public User() {}
+
     public User(String name, String email) {
         this.name = name;
         this.email = email;
