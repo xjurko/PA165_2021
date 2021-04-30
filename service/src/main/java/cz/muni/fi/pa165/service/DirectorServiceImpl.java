@@ -43,13 +43,7 @@ public class DirectorServiceImpl implements DirectorService{
 
     @Override
     public void deleteDirector(Long directorId) throws DataAccessException {
-        Optional<Director> director = directorDao.findById(directorId);
-
-        if (director.isEmpty())
-            throw new DataRetrievalFailureException(
-                    String.format("No director with id %d in database.!",
-                            directorId));
-        directorDao.remove(director.get());
+        directorDao.findById(directorId).ifPresent(directorDao::remove);
     }
 
     @Override

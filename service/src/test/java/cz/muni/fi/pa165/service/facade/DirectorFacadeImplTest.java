@@ -37,25 +37,23 @@ public class DirectorFacadeImplTest extends AbstractTransactionalTestNGSpringCon
     DirectorFacade directorFacade;
 
     private final DirectorDto directorDto = new DirectorDto(1L, "Quentin Tarantino", null);
-    private Director director = new Director();
+    private final Director director = new Director("Quentin Tarantino");
 
     @BeforeClass
     public void init() {
-        director = converter.convert(directorDto, Director.class);
         directorFacade = new DirectorFacadeImpl(directorServiceMock, converter);
     }
 
     @BeforeMethod
     public void defineMocks() {
         when(directorServiceMock.findById(anyLong())).thenReturn(Optional.of(director));
-        when(directorServiceMock.findByName(director.getName())).thenReturn(List.of(director));
+        when(directorServiceMock.findByName(director.getName())).thenReturn(List.of(director.withId(1L)));
     }
 
     @Test
     public void testCreateDirector() throws ValidationException {
-        Optional<DirectorDto> found = directorFacade.findById(directorFacade.createDirector(directorDto));
-        Assert.assertTrue(found.isPresent());
-        Assert.assertEquals(found.get(), directorDto);
+        directorFacade.createDirector(directorDto);
+        verify(directorServiceMock, times(1)).createDirector(director);
     }
 
     @Test
