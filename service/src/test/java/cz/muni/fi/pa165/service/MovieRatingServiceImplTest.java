@@ -3,9 +3,7 @@ package cz.muni.fi.pa165.service;
 import cz.muni.fi.pa165.dao.MovieDao;
 import cz.muni.fi.pa165.dao.MovieRatingDao;
 import cz.muni.fi.pa165.dao.UserDao;
-import cz.muni.fi.pa165.entity.Movie;
-import cz.muni.fi.pa165.entity.Rating;
-import cz.muni.fi.pa165.entity.User;
+import cz.muni.fi.pa165.entity.*;
 import cz.muni.fi.pa165.service.config.ServiceConfig;
 import io.vavr.collection.Vector;
 import lombok.val;
@@ -64,22 +62,13 @@ public class MovieRatingServiceImplTest extends AbstractTransactionalTestNGSprin
 
     @Test
     public void testSetRatingChangesPreviousRatingIfExisted() {
-        when(movieDaoMock.findById(anyLong())).thenReturn(Optional.of(movie));
-        when(userDaoMock.findById(anyLong())).thenReturn(Optional.of(user));
+        val existingRating = new MovieRating(movie, user, Rating.LIKED);
+        when(movieRatingDaoMock.findById(any(RatingId.class))).thenReturn(Optional.of(existingRating));
 
         val movieRating = movieRatingService.setRating(Rating.DISLIKED, user.getId(), movie.getId());
+
+        verify(movieRatingDaoMock, times(1)).remove(existingRating);
         verify(movieRatingDaoMock, times(1)).store(movieRating);
-        Assert.assertEquals(movieRating.getRating(), cz.muni.fi.pa165.entity.Rating.DISLIKED);
-    }
-
-    @Test
-    public void testSetRatingAddsRatingToMovieAndUser() {
-        when(movieDaoMock.findById(anyLong())).thenReturn(Optional.of(movie));
-        when(userDaoMock.findById(anyLong())).thenReturn(Optional.of(user));
-
-        val movieRating = movieRatingService.setRating(Rating.LIKED, user.getId(), movie.getId());
-        Assert.assertEquals(movie.getRatings(), List.of(movieRating));
-        Assert.assertEquals(user.getMovieRatings(), List.of(movieRating));
     }
 
     @Test
