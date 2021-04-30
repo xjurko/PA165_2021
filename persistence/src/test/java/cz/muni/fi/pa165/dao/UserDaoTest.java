@@ -3,6 +3,7 @@ package cz.muni.fi.pa165.dao;
 import cz.muni.fi.pa165.PersistenceConfig;
 import cz.muni.fi.pa165.entity.Director;
 import cz.muni.fi.pa165.entity.User;
+import org.springframework.dao.DataAccessException;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
@@ -69,6 +70,16 @@ public class UserDaoTest extends AbstractTestNGSpringContextTests {
 
         userDao.remove(user);
         Assert.assertTrue(userDao.findById(user.getId()).isEmpty());
+    }
+
+    @Test(expectedExceptions= DataAccessException.class)
+    public void testNpeRethrownAsDataAccessException() {
+        userDao.store(null);
+    }
+
+    @Test(expectedExceptions= DataAccessException.class)
+    public void testIllegalArgumentExceptionRethrownAsDataAccessException() {
+        userDao.findByName("");
     }
 
 }

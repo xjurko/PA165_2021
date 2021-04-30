@@ -198,7 +198,4 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
         val similarMovies = movieService.findRecommendedMoviesBasedOnMovie(m1.getId());
         Assert.assertEquals(similarMovies, List.of(m2, m3));
     }
-
-
-
 }
