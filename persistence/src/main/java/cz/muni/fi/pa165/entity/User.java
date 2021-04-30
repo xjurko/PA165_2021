@@ -1,9 +1,6 @@
 package cz.muni.fi.pa165.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -25,6 +22,7 @@ import java.util.Set;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@With
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

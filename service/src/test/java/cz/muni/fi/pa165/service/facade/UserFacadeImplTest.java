@@ -7,7 +7,7 @@ import cz.muni.fi.pa165.facade.UserFacade;
 import cz.muni.fi.pa165.service.UserService;
 import cz.muni.fi.pa165.service.config.ServiceConfig;
 import cz.muni.fi.pa165.service.converter.BeanConverter;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import lombok.val;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
 import org.testng.Assert;
@@ -25,17 +25,16 @@ import static org.mockito.Mockito.*;
 @ContextConfiguration(classes = ServiceConfig.class)
 public class UserFacadeImplTest extends AbstractTransactionalTestNGSpringContextTests {
 
+    private final UserDto userDto = new UserDto(1L, "user", "user@user.com");
     UserService userServiceMock;
     UserFacade userFacade;
-
     @Inject
     BeanConverter converter;
 
-    private final UserDto userDto = new UserDto(1L, "user", "user@user.com");
     private User user = new User("user", "user@user.com", "");
 
     @BeforeClass
-    public void init(){
+    public void init() {
         userServiceMock = mock(UserService.class);
         userFacade = new UserFacadeImpl(userServiceMock, converter);
     }
@@ -59,11 +58,11 @@ public class UserFacadeImplTest extends AbstractTransactionalTestNGSpringContext
     }
 
     @Test
-    public void testAuthenticate() {
-    }
-
-    @Test
     public void testIsAdmin() {
+        when(userServiceMock.isAdmin(any(User.class))).thenReturn(true);
+        val isAdmin = userFacade.isAdmin(userDto);
+        verify(userServiceMock, times(1)).isAdmin(user.withId(1L));
+        Assert.assertTrue(isAdmin);
     }
 
     @Test
