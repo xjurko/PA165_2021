@@ -85,7 +85,7 @@ def writeMovieActorMappings(mappings: Set[Tuple[str, str]]):
 
   with open("./imdb/out/actor_movie.sql", 'w') as file:
     for m in mappings:
-      file.write(f"INSERT INTO Actor_Movie (cast_id, movies_id) VALUES ({m[1][2:]}, {m[0][2:]});\n")
+      file.write(f"INSERT INTO Actor_Movie (cast_id, movies_id) VALUES ({int(m[1][2:])}, {int(m[0][2:])});\n")
 
 
 def writeMovieDirectorMappings(mappings: Set[Tuple[str, str]]):
@@ -99,4 +99,4 @@ def writeMovieDirectorMappings(mappings: Set[Tuple[str, str]]):
 
   with open("./imdb/out/director_movie.sql", 'w') as file:
     for m in mappings:
-      file.write(f"INSERT INTO Director_Movie (directors_id, movies_id) VALUES ({m[1][2:]}, {m[0][2:]});\n")
+      file.write(f"INSERT INTO Director_Movie (directors_id, movies_id) VALUES ({int(m[1][2:])}, {int(m[0][2:])});\n")
