@@ -2,11 +2,12 @@ package cz.muni.fi.pa165.dto;
 
 import lombok.*;
 
+import java.util.List;
 import java.util.Set;
 
 /**
  * @author juraj
- *
+ * <p>
  * DTO to be used as a return type when retrieving movies
  */
 
@@ -23,4 +24,5 @@ public class MovieDto {
     Set<DirectorDto> directors;
     String externalRef;
     String posterUrl;
+    List<Genre> genres;
 }
