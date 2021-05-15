@@ -54,7 +54,7 @@ def writeActors(actors: List[Actor]):
   with open("./imdb/out/actors.sql", 'w') as file:
     for a in actors:
       file.write(
-        f"INSERT INTO Actor (id, birthDate, deathDate, fullName, extenralRef, posterUrl) VALUES ({a.id}, {nullable(a.birthYear)}, {nullable(a.deathYear)}, '{a.name}', '{a.externalRef}', '{a.posterUrl}');\n")
+        f"INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES ({a.id}, {nullable(a.birthYear)}, {nullable(a.deathYear)}, '{a.name}', '{a.externalRef}', '{a.posterUrl}');\n")
 
 
 def writeDirectors(directors: List[Director]):
@@ -71,7 +71,7 @@ def writeDirectors(directors: List[Director]):
   with open("./imdb/out/directors.sql", 'w') as file:
     for d in directors:
       file.write(
-        f"INSERT INTO Director (id, birthDate, deathDate, name, extenralRef, posterUrl) VALUES ({d.id}, {nullable(d.birthYear)}, {nullable(d.deathYear)}, '{d.name}', '{d.externalRef}', '{d.posterUrl}');\n")
+        f"INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES ({d.id}, {nullable(d.birthYear)}, {nullable(d.deathYear)}, '{d.name}', '{d.externalRef}', '{d.posterUrl}');\n")
 
 
 def writeMovieActorMappings(mappings: Set[Tuple[str, str]]):
@@ -85,7 +85,7 @@ def writeMovieActorMappings(mappings: Set[Tuple[str, str]]):
 
   with open("./imdb/out/actor_movie.sql", 'w') as file:
     for m in mappings:
-      file.write(f"INSERT INTO Actor_Movie (cast_id, movies_id) VALUES ({m[1][2:]}, {m[0][2:]});\n")
+      file.write(f"INSERT INTO Actor_Movie (cast_id, movies_id) VALUES ({int(m[1][2:])}, {int(m[0][2:])});\n")
 
 
 def writeMovieDirectorMappings(mappings: Set[Tuple[str, str]]):
@@ -99,4 +99,4 @@ def writeMovieDirectorMappings(mappings: Set[Tuple[str, str]]):
 
   with open("./imdb/out/director_movie.sql", 'w') as file:
     for m in mappings:
-      file.write(f"INSERT INTO Director_Movie (directors_id, movies_id) VALUES ({m[1][2:]}, {m[0][2:]});\n")
+      file.write(f"INSERT INTO Director_Movie (directors_id, movies_id) VALUES ({int(m[1][2:])}, {int(m[0][2:])});\n")
