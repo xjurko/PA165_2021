@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Import;
  * @author juraj
  */
 @Configuration
-@Import({ServiceConfig.class, PersistenceConfig.class})
+@Import({ServiceConfig.class})
 public class RestConfig {
 }
 

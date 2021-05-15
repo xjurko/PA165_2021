@@ -12,7 +12,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import javax.validation.ValidationException;
-import java.time.LocalDate;
 import java.util.Optional;
 
 import static org.mockito.ArgumentMatchers.anyLong;
@@ -62,8 +61,8 @@ public class ActorServiceImplTest extends AbstractTransactionalTestNGSpringConte
 
     @Test
     public void testCreateActorThrowsExceptionWhenDeathBeforeBirth() {
-        actor.setBirthDate(2000);
-        actor.setDeathDate(1999);
+        actor.setBirthYear(2000);
+        actor.setDeathYear(1999);
         Assert.assertThrows(ValidationException.class, () -> actorService.createActor(actor));
     }
 

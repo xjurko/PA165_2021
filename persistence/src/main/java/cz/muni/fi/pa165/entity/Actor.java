@@ -29,9 +29,9 @@ public class Actor {
     @Column(nullable = false)
     private String fullName;
 
-    private Integer birthDate;
+    private Integer birthYear;
 
-    private Integer deathDate;
+    private Integer deathYear;
 
     private String externalRef;
 
@@ -46,8 +46,8 @@ public class Actor {
     ) {
 
         this.fullName = fullName;
-        this.birthDate = birthYear;
-        this.deathDate = deathDate;
+        this.birthYear = birthYear;
+        this.deathYear = deathDate;
     }
 
     public Actor(String fullName) {
@@ -87,13 +87,13 @@ public class Actor {
         Actor actor = (Actor) o;
 
         if (!fullName.equals(actor.fullName)) return false;
-        return birthDate != null ? birthDate.equals(actor.birthDate) : actor.birthDate == null;
+        return birthYear != null ? birthYear.equals(actor.birthYear) : actor.birthYear == null;
     }
 
     @Override
     public int hashCode() {
         int result = fullName.hashCode();
-        result = 31 * result + (birthDate != null ? birthDate.hashCode() : 0);
+        result = 31 * result + (birthYear != null ? birthYear.hashCode() : 0);
         return result;
     }
 }
