@@ -73,20 +73,22 @@ def getMoviePrincipalMappings(filter):
 
 
 def createMovie(csvMovie, omdbMovie) -> Movie:
-  normalizedUrl = urlNormalize(omdbMovie[0], 400)
+  posterUrl = urlNormalize(omdbMovie[0], 400)
   return Movie(int(csvMovie[0][2:]), csvMovie[2].replace("'", "''"), csvMovie[5],
-               caption=omdbMovie[1].replace("'", "''"), posterUrl=normalizedUrl,
+               caption=omdbMovie[1].replace("'", "''"), posterUrl=posterUrl,
                genres=csvMovie[8].split(','), externalRef=csvMovie[0], runtimeMin=csvMovie[7])
 
 
 def createActor(csvActor, poster) -> Actor:
-  return Actor(int(csvActor[0][2:]), csvActor[0], csvActor[2], nullable(csvActor[3]), csvActor[1].replace("'", "''"),
-               urlNormalize(poster, 400))
+  posterUrl = urlNormalize(poster, 400) if poster else "https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png"
+  return Actor(int(csvActor[0][2:]), csvActor[0], nullable(csvActor[2]), nullable(csvActor[3]), csvActor[1].replace("'", "''"),
+               posterUrl)
 
 
 def createDirector(csvDirector, poster) -> Director:
-  return Director(int(csvDirector[0][2:]), csvDirector[0], csvDirector[1].replace("'", "''"), csvDirector[2], nullable(csvDirector[3]),
-                  urlNormalize(poster, 400))
+  posterUrl = urlNormalize(poster, 400) if poster else "https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png"
+  return Director(int(csvDirector[0][2:]), csvDirector[0], csvDirector[1].replace("'", "''"), nullable(csvDirector[2]), nullable(csvDirector[3]),
+                  posterUrl)
 
 
 def getOmdbMovies(ids):
@@ -157,8 +159,8 @@ if __name__ == '__main__':
   print(f"going to fetch {len(topMoviesDirectorIds.union(topMoviesActorIds))} photos")
   principalsPosters = getImdbPhotosUrls(list(topMoviesDirectorIds.union(topMoviesActorIds)).copy())
 
-  decoratedActors = [createActor(a, principalsPosters.get(a[0], "")) for a in actors]
-  decoratedDirectors = [createDirector(d, principalsPosters.get(d[0], "")) for d in directors]
+  decoratedActors = [createActor(a, principalsPosters.get(a[0])) for a in actors]
+  decoratedDirectors = [createDirector(d, principalsPosters.get(d[0])) for d in directors]
 
   for a in decoratedActors:
     print(a)

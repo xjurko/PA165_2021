@@ -15,6 +15,7 @@ def writeMovies(movies: List[Movie]):
         name varchar(255) not null,
         releaseYear integer,
         runtimeMin integer not null,
+        posterUrl varchar, //ADD to abckend
         primary key (id)
     )
 
@@ -28,7 +29,7 @@ def writeMovies(movies: List[Movie]):
   with open("./imdb/out/movies.sql", 'w') as file:
     for m in movies:
       file.write(
-        f"INSERT INTO Movie (id, caption, externalRef, name, releaseYear, runtimeMin) VALUES ({m.id},'{m.caption}','{m.externalRef}','{m.title}',{m.year},{m.runtimeMin});\n")
+        f"INSERT INTO Movie (id, caption, externalRef, name, releaseYear, runtimeMin, posterUrl) VALUES ({m.id},'{m.caption}','{m.externalRef}','{m.title}',{m.year},{m.runtimeMin}, '{m.posterUrl}');\n")
 
   with open("./imdb/out/movies_genres.sql", 'w') as file:
     for m in movies:
