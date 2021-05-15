@@ -1,40 +1,15 @@
 import csv
 from concurrent.futures.thread import ThreadPoolExecutor
-from dataclasses import dataclass
-from typing import List, Optional
-from bs4 import BeautifulSoup as Soup
 
 import requests
+from bs4 import BeautifulSoup as Soup
+
+from model import *
+from write_sql import *
 
 
-@dataclass
-class Movie:
-  id: int
-  title: str
-  year: int
-  caption: Optional[str]
-  genres: List[str]
-  externalRef: str
-  posterUrl: Optional[str]
-
-
-@dataclass
-class Actor:
-  id: int
-  externalRef: str
-  birthYear: int
-  name: str
-  posterUrl: str
-
-
-@dataclass
-class Director:
-  id: int
-  externalRef: str
-  name: str
-  yearofbirth: int
-  posterUrl: str
-
+def nullable(v):
+  return None if v == '\\N' else v
 
 def getImdbPhotosUrls(ids):
   buffer = dict()
@@ -46,7 +21,7 @@ def getImdbPhotosUrls(ids):
 
 
 def fetchImdbPosterUrl(id, buffer):
-  print(f"fetching actor {id}")
+  print(f"fetching principal {id}")
   resp = requests.get(f"https://www.imdb.com/name/{id}/")
   if resp.ok:
     html = resp.content
@@ -65,8 +40,8 @@ def getMovieRatings():
 
 
 def getMovies():
-  with open("./imdb/csv/title_basics.csv", newline='') as csvfile:
-    csv_reader = csv.reader(csvfile, delimiter=',')
+  with open("./imdb/csv/title_basics.tsv", newline='') as csvfile:
+    csv_reader = csv.reader(csvfile, delimiter='\t')
     next(csv_reader)
 
     return {x[0]: x for x in csv_reader if x[1] == "movie"}
@@ -99,12 +74,19 @@ def getMoviePrincipalMappings(filter):
 
 def createMovie(csvMovie, omdbMovie) -> Movie:
   normalizedUrl = urlNormalize(omdbMovie[0], 400)
-  return Movie(int(csvMovie[0][2:]), csvMovie[2], csvMovie[5], caption=omdbMovie[1], posterUrl=normalizedUrl,
-               genres=csvMovie[8:], externalRef=csvMovie[0])
+  return Movie(int(csvMovie[0][2:]), csvMovie[2].replace("'", "''"), csvMovie[5],
+               caption=omdbMovie[1].replace("'", "''"), posterUrl=normalizedUrl,
+               genres=csvMovie[8].split(','), externalRef=csvMovie[0], runtimeMin=csvMovie[7])
 
 
 def createActor(csvActor, poster) -> Actor:
-  return Actor(int(csvActor[0][2:]), csvActor[0], csvActor[2], csvActor[1], urlNormalize(poster, 400))
+  return Actor(int(csvActor[0][2:]), csvActor[0], csvActor[2], nullable(csvActor[3]), csvActor[1].replace("'", "''"),
+               urlNormalize(poster, 400))
+
+
+def createDirector(csvDirector, poster) -> Director:
+  return Director(int(csvDirector[0][2:]), csvDirector[0], csvDirector[1].replace("'", "''"), csvDirector[2], nullable(csvDirector[3]),
+                  urlNormalize(poster, 400))
 
 
 def getOmdbMovies(ids):
@@ -140,15 +122,17 @@ def urlNormalize(url: str, size: int) -> str:
 
 
 if __name__ == '__main__':
+  moviesToGenerate = 500
+
   movies = getMovies()
-  print("moveis loaded")
+  print("movies loaded")
 
   ratings = getMovieRatings()
   print("ratings loaded")
 
   topMovies = list(filter(lambda x: int(ratings.get(x[0], [0, 0, 0])[2]) > 50000, movies.items()))
   topMovies.sort(key=lambda x: float(ratings.get(x[0], [0, 0])[1]), reverse=True)
-  topMovies = topMovies[:500]
+  topMovies = topMovies[:moviesToGenerate]
   topMoviesIds = {m[0] for m in topMovies}
 
   moviePrincipalMappings = getMoviePrincipalMappings(topMoviesIds)
@@ -158,12 +142,11 @@ if __name__ == '__main__':
   movieDirectorMappings = {(x[0], x[1]) for x in moviePrincipalMappings if int(x[2]) == 2}
   print("mappins2 loaded")
 
-  #
-  filteredMovieActorMappings = {mapping for mapping in movieActorsMappings if mapping[0] in topMoviesIds}
-  filteredMovieDirectorMappings = {mapping for mapping in movieDirectorMappings if mapping[0] in topMoviesIds}
+  topMoviesActorIds = {mapping[1] for mapping in movieActorsMappings}
+  topMoviesDirectorIds = {mapping[1] for mapping in movieDirectorMappings}
 
-  topMoviesActorIds = {mapping[1] for mapping in filteredMovieActorMappings}
-  topMoviesDirectorIds = {mapping[1] for mapping in filteredMovieDirectorMappings}
+  omdbMovies = getOmdbMovies(topMoviesIds.copy())
+  decoratedMovies = [createMovie(movie[1], omdbMovies.get(movie[0])) for movie in topMovies if movie[0] in omdbMovies]
 
   principals = getPrincipals(topMoviesActorIds.union(topMoviesDirectorIds))
   print("principals basics loaded")
@@ -175,84 +158,33 @@ if __name__ == '__main__':
   principalsPosters = getImdbPhotosUrls(list(topMoviesDirectorIds.union(topMoviesActorIds)).copy())
 
   decoratedActors = [createActor(a, principalsPosters.get(a[0], "")) for a in actors]
-  # decoratedDirectors = [createDirector(a, principalsPosters.get(a[0], "")) for a in actors]
+  decoratedDirectors = [createDirector(d, principalsPosters.get(d[0], "")) for d in directors]
 
   for a in decoratedActors:
     print(a)
 
-  omdbMovies = getOmdbMovies(topMoviesIds.copy())
-
-  decoratedMovies = [createMovie(movie[1], omdbMovies.get(movie[0])) for movie in topMovies if movie[0] in omdbMovies]
   for m in decoratedMovies:
     print(m)
 
-  print(f"total of {len(decoratedMovies)} movies  with {len(decoratedActors)} actors ")
+  for a in decoratedDirectors:
+    print(a)
 
-  #
-  #
-  #
-  #
-  #
-  #
-  #
-  #
-  #
-  #
-  #
-  #
-  #
-  #
-  #
-  #
-  #
-  #
-  #
-  #
-  #
-  #     create table Actor (
-  #        id bigint generated by default as identity,
-  #         birthDate date,
-  #         deathDate date,
-  #         fullName varchar(255) not null,
-  #         height integer not null,
-  #         primary key (id)
-  #     )
-  # Hibernate:
-  #
-  #     create table Actor_Movie (
-  #        cast_id bigint not null,
-  #         movies_id bigint not null,
-  #         primary key (cast_id, movies_id)
-  #     )
-  # Hibernate:
-  #
-  #     create table Director (
-  #        id bigint generated by default as identity,
-  #         birthDate date,
-  #         name varchar(255) not null,
-  #         primary key (id)
-  #     )
-  # Hibernate:
-  #
-  #     create table Director_Movie (
-  #        directors_id bigint not null,
-  #         movies_id bigint not null,
-  #         primary key (directors_id, movies_id)
-  #     )
-  # Hibernate:
-  #
-  #     create table Movie (
-  #        id bigint generated by default as identity,
-  #         caption varchar(255),
-  #         externalRef varchar(255),
-  #         name varchar(255) not null,
-  #         releaseYear integer,
-  #         runtimeMin integer not null,
-  #         primary key (id)
-  #     )
-  # Hibernate:
-  #
-  #     create table Movie_genres (
-  #        Movie_id bigint not null,
-  #         genres varchar(255)
-  #     )
+  for m in movieDirectorMappings:
+    print(m)
+
+  for m in movieActorsMappings:
+    print(m)
+
+  print(f"total of {len(decoratedMovies)} "
+        f"movies  with {len(decoratedActors)} actors, "
+        f"{len(decoratedDirectors)} directors "
+        f"{len(movieActorsMappings)} actor mappings "
+        f"{len(movieDirectorMappings)} director mappings")
+
+
+  print("writing movies")
+  writeMovies(decoratedMovies)
+  writeActors(decoratedActors)
+  writeDirectors(decoratedDirectors)
+  writeMovieDirectorMappings(movieDirectorMappings)
+  writeMovieActorMappings(movieActorsMappings)
