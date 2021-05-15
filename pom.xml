@@ -71,7 +71,7 @@
       <dependency>
         <groupId>io.vavr</groupId>
         <artifactId>vavr</artifactId>
-        <version>1.0.0-alpha-3</version>
+        <version>0.10.2</version>
       </dependency>
 
       <dependency>
@@ -88,6 +88,7 @@
     <module>api</module>
     <module>persistence</module>
     <module>service</module>
+    <module>rest</module>
   </modules>
 
 </project>
