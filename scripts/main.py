@@ -116,8 +116,8 @@ def urlNormalize(url: str, size: int) -> str:
 
 
 if __name__ == '__main__':
-  moviesToGenerate = 3000
-  offset = 3500
+  moviesToGenerate = 5000
+  offset = 0
 
   movies = getMovies()
   print("movies loaded")
