@@ -36,7 +36,7 @@ public class ActorFacadeImplTest extends AbstractTransactionalTestNGSpringContex
 
     ActorFacade actorFacade;
 
-    private final ActorDto actorDto = new ActorDto(1L, "Toshiro Mifune", 0, null, null);
+    private final ActorDto actorDto = new ActorDto(1L, "Toshiro Mifune", null, null, "");
     private final Actor actor = new Actor("Toshiro Mifune");
 
     @BeforeClass

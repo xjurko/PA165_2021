@@ -36,7 +36,7 @@ public class DirectorFacadeImplTest extends AbstractTransactionalTestNGSpringCon
 
     DirectorFacade directorFacade;
 
-    private final DirectorDto directorDto = new DirectorDto(1L, "Quentin Tarantino", null);
+    private final DirectorDto directorDto = new DirectorDto(1L, "Quentin Tarantino", null, null, "");
     private final Director director = new Director("Quentin Tarantino");
 
     @BeforeClass
