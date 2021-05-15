@@ -116,7 +116,8 @@ def urlNormalize(url: str, size: int) -> str:
 
 
 if __name__ == '__main__':
-  moviesToGenerate = 500
+  moviesToGenerate = 3000
+  offset = 500
 
   movies = getMovies()
   print("movies loaded")
@@ -126,7 +127,7 @@ if __name__ == '__main__':
 
   topMovies = list(filter(lambda x: int(ratings.get(x[0], [0, 0, 0])[2]) > 50000, movies.items()))
   topMovies.sort(key=lambda x: float(ratings.get(x[0], [0, 0])[1]), reverse=True)
-  topMovies = topMovies[:moviesToGenerate]
+  topMovies = topMovies[offset:(offset + moviesToGenerate)]
   topMoviesIds = {m[0] for m in topMovies}
 
   moviePrincipalMappings = getMoviePrincipalMappings(topMoviesIds)
