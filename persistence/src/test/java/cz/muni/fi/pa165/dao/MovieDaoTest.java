@@ -19,7 +19,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 import java.util.HashSet;
-import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -57,13 +56,13 @@ public class MovieDaoTest extends AbstractTestNGSpringContextTests {
     public void createMovies() {
         a1 = new Actor();
         a1.setFullName("Vivien Leigh");
-        a1.setBirthDate(1913);
-        a1.setDeathDate(1967);
+        a1.setBirthYear(1913);
+        a1.setDeathYear(1967);
 
         a2 = new Actor();
         a2.setFullName("Bela Lugosi");
-        a2.setBirthDate(1882);
-        a2.setDeathDate(1956);
+        a2.setBirthYear(1882);
+        a2.setDeathYear(1956);
 
         actorDao.store(a1);
         actorDao.store(a2);
