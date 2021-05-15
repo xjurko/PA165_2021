@@ -47,14 +47,6 @@ def getMovies():
     return {x[0]: x for x in csv_reader if x[1] == "movie"}
 
 
-def getPrincipals2():
-  with open("./imdb/csv/name_basics.csv", newline='') as csvfile:
-    csv_reader = csv.reader(csvfile, delimiter=',')
-    next(csv_reader)
-
-    return {x[0]: x[:4] for x in csv_reader}
-
-
 def getPrincipals(filterIds):
   with open("./imdb/csv/name_basics.csv", newline='') as csvfile:
     lines = csvfile.readlines()

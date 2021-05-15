@@ -54,7 +54,7 @@ def writeActors(actors: List[Actor]):
   with open("./imdb/out/actors.sql", 'w') as file:
     for a in actors:
       file.write(
-        f"INSERT INTO Actor (id, birthDate, deathDate, fullName, extenralRef, posterUrl) VALUES ({a.id}, {a.birthYear}, {nullable(a.deathYear)}, '{a.name}', '{a.externalRef}', '{a.posterUrl}');\n")
+        f"INSERT INTO Actor (id, birthDate, deathDate, fullName, extenralRef, posterUrl) VALUES ({a.id}, {nullable(a.birthYear)}, {nullable(a.deathYear)}, '{a.name}', '{a.externalRef}', '{a.posterUrl}');\n")
 
 
 def writeDirectors(directors: List[Director]):
@@ -71,7 +71,7 @@ def writeDirectors(directors: List[Director]):
   with open("./imdb/out/directors.sql", 'w') as file:
     for d in directors:
       file.write(
-        f"INSERT INTO Director (id, birthDate, deathDate, name, extenralRef, posterUrl) VALUES ({d.id}, {d.birthYear}, {nullable(d.deathYear)}, '{d.name}', '{d.externalRef}', '{d.posterUrl}');\n")
+        f"INSERT INTO Director (id, birthDate, deathDate, name, extenralRef, posterUrl) VALUES ({d.id}, {nullable(d.birthYear)}, {nullable(d.deathYear)}, '{d.name}', '{d.externalRef}', '{d.posterUrl}');\n")
 
 
 def writeMovieActorMappings(mappings: Set[Tuple[str, str]]):
