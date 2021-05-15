@@ -4,7 +4,6 @@ import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -30,24 +29,24 @@ public class Actor {
     @Column(nullable = false)
     private String fullName;
 
-    private int height;
+    private Integer birthDate;
 
-    private LocalDate birthDate;
+    private Integer deathDate;
 
-    private LocalDate deathDate;
+    private String externalRef;
+
+    private String posterUrl;
 
     @ManyToMany
     private Set<Movie> movies = new HashSet<>();
 
     public Actor(String fullName,
-                 int height,
-                 LocalDate birthDate,
-                 LocalDate deathDate
+                 Integer birthYear,
+                 Integer deathDate
     ) {
 
         this.fullName = fullName;
-        this.height = height;
-        this.birthDate = birthDate;
+        this.birthDate = birthYear;
         this.deathDate = deathDate;
     }
 
