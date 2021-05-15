@@ -29,8 +29,6 @@ public class DirectorServiceImpl implements DirectorService{
         String nameTrimmed = director.getName().trim();
         if (nameTrimmed.isEmpty())
             throw new ValidationException("You cannot create Director with empty name!");
-        if (director.getBirthDate() != null && director.getBirthDate().isBefore(LocalDate.now()))
-            throw new ValidationException("You cannot create Director with empty or future birthdate.");
         director.setName(nameTrimmed);
         directorDao.store(director);
         return director.getId();

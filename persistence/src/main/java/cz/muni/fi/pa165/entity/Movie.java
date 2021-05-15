@@ -43,11 +43,15 @@ public class Movie {
     @OneToMany(mappedBy = "movie", orphanRemoval = true)
     private Set<MovieRating> ratings = new HashSet<>();
 
+    @Lob
+    @Column(length=1024)
     private String caption;
 
     private String externalRef;
 
     private Integer releaseYear;
+
+    private String posterUrl;
 
     public Movie(String name,
                  int runtimeMin,
