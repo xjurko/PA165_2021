@@ -21,4 +21,6 @@ public class MovieDto {
     Integer runtimeMin;
     Set<ActorDto> cast;
     Set<DirectorDto> directors;
+    String externalRef;
+    String posterUrl;
 }
