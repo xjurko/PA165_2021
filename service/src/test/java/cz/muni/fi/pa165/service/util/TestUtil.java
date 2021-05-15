@@ -12,7 +12,7 @@ import java.util.Set;
  */
 public class TestUtil {
     public static Movie getFakeMovie(Long id, String name) {
-        return new Movie(id, name, new HashSet<>(), new HashSet<>(), 0, Set.of(Genre.ACTION), new HashSet<>(), "test caption", "test ref", 1990);
+        return new Movie(id, name, new HashSet<>(), new HashSet<>(), 0, Set.of(Genre.ACTION), new HashSet<>(), "test caption", "test ref", 1990, "");
     }
 
 

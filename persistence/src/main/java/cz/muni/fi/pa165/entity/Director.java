@@ -4,7 +4,6 @@ import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -33,15 +32,21 @@ public class Director {
     @ManyToMany
     private Set<Movie> movies = new HashSet<>();
 
-    private LocalDate birthDate;
+    private Integer birthYear;
+
+    private Integer deathYear;
+
+    private String externalRef;
+
+    private String posterUrl;
 
     public Director(String name) {
         this.name = name;
     }
 
-    public Director(String name, LocalDate birthDate){
+    public Director(String name, Integer birthYear){
         this.name = name;
-        this.birthDate = birthDate;
+        this.birthYear = birthYear;
     }
 
     public void addMovie(Movie movie) {
@@ -61,13 +66,13 @@ public class Director {
         Director director = (Director) o;
 
         if (!name.equals(director.name)) return false;
-        return birthDate != null ? birthDate.equals(director.birthDate) : director.birthDate == null;
+        return birthYear != null ? birthYear.equals(director.birthYear) : director.birthYear == null;
     }
 
     @Override
     public int hashCode() {
         int result = name.hashCode();
-        result = 31 * result + (birthDate != null ? birthDate.hashCode() : 0);
+        result = 31 * result + (birthYear != null ? birthYear.hashCode() : 0);
         return result;
     }
 }
