@@ -98,13 +98,13 @@ def getMoviePrincipalMappings(filter):
 
 
 def createMovie(csvMovie, omdbMovie) -> Movie:
-  normalizedUrl = urlNormalize(300, omdbMovie[0])
+  normalizedUrl = urlNormalize(omdbMovie[0], 400)
   return Movie(int(csvMovie[0][2:]), csvMovie[2], csvMovie[5], caption=omdbMovie[1], posterUrl=normalizedUrl,
                genres=csvMovie[8:], externalRef=csvMovie[0])
 
 
 def createActor(csvActor, poster) -> Actor:
-  return Actor(int(csvActor[0][2:]), csvActor[0], csvActor[2], csvActor[1], poster)
+  return Actor(int(csvActor[0][2:]), csvActor[0], csvActor[2], csvActor[1], urlNormalize(poster, 400))
 
 
 def getOmdbMovies(ids):
@@ -138,56 +138,55 @@ def urlNormalize(url: str, size: int) -> str:
   base = url.split("_V1")[0]
   return f"{base}_V1_UX{size}.jpg"
 
-if __name__ == '__main__':
-  # movies = getMovies()
-  # print("moveis loaded")
-  #
-  # ratings = getMovieRatings()
-  # print("ratings loaded")
-  #
-  # topMovies = list(filter(lambda x: int(ratings.get(x[0], [0, 0, 0])[2]) > 50000, movies.items()))
-  # topMovies.sort(key=lambda x: float(ratings.get(x[0], [0, 0])[1]), reverse=True)
-  # topMovies = topMovies[:500]
-  # topMoviesIds = {m[0] for m in topMovies}
-  #
-  # moviePrincipalMappings = getMoviePrincipalMappings(topMoviesIds)
-  # movieActorsMappings = {(x[0], x[1]) for x in moviePrincipalMappings if int(x[2]) in {7, 8}}
-  # print("mappins1 loaded")
-  #
-  # movieDirectorMappings = {(x[0], x[1]) for x in moviePrincipalMappings if int(x[2]) == 2}
-  # print("mappins2 loaded")
-  #
-  # #
-  # filteredMovieActorMappings = {mapping for mapping in movieActorsMappings if mapping[0] in topMoviesIds}
-  # filteredMovieDirectorMappings = {mapping for mapping in movieDirectorMappings if mapping[0] in topMoviesIds}
-  #
-  # topMoviesActorIds = {mapping[1] for mapping in filteredMovieActorMappings}
-  # topMoviesDirectorIds = {mapping[1] for mapping in filteredMovieDirectorMappings}
-  #
-  # principals = getPrincipals(topMoviesActorIds.union(topMoviesDirectorIds))
-  # print("principals basics loaded")
-  #
-  # actors = [a[1] for a in principals.items() if a[0] in topMoviesActorIds]
-  # directors = [d[1] for d in principals.items() if d[0] in topMoviesDirectorIds]
-  #
-  # print(f"going to fetch {len(topMoviesDirectorIds.union(topMoviesActorIds))} photos")
-  # principalsPosters = getImdbPhotosUrls(list(topMoviesDirectorIds.union(topMoviesActorIds)).copy())
-  #
-  # decoratedActors = [createActor(a, principalsPosters.get(a[0], "")) for a in actors]
-  # # decoratedDirectors = [createDirector(a, principalsPosters.get(a[0], "")) for a in actors]
-  #
-  # for a in decoratedActors:
-  #   print(a)
-  #
-  # omdbMovies = getOmdbMovies(topMoviesIds.copy())
-  #
-  # decoratedMovies = [createMovie(movie[1], omdbMovies.get(movie[0])) for movie in topMovies if movie[0] in omdbMovies]
-  # for m in decoratedMovies:
-  #   print(m)
-  #
-  # print(f"total of {len(decoratedMovies)} movies  with {len(decoratedActors)} actors ")
 
-  print(urlNormalize("https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX190_CR0,0,190,281_.jpg", 500))
+if __name__ == '__main__':
+  movies = getMovies()
+  print("moveis loaded")
+
+  ratings = getMovieRatings()
+  print("ratings loaded")
+
+  topMovies = list(filter(lambda x: int(ratings.get(x[0], [0, 0, 0])[2]) > 50000, movies.items()))
+  topMovies.sort(key=lambda x: float(ratings.get(x[0], [0, 0])[1]), reverse=True)
+  topMovies = topMovies[:500]
+  topMoviesIds = {m[0] for m in topMovies}
+
+  moviePrincipalMappings = getMoviePrincipalMappings(topMoviesIds)
+  movieActorsMappings = {(x[0], x[1]) for x in moviePrincipalMappings if int(x[2]) in {7, 8}}
+  print("mappins1 loaded")
+
+  movieDirectorMappings = {(x[0], x[1]) for x in moviePrincipalMappings if int(x[2]) == 2}
+  print("mappins2 loaded")
+
+  #
+  filteredMovieActorMappings = {mapping for mapping in movieActorsMappings if mapping[0] in topMoviesIds}
+  filteredMovieDirectorMappings = {mapping for mapping in movieDirectorMappings if mapping[0] in topMoviesIds}
+
+  topMoviesActorIds = {mapping[1] for mapping in filteredMovieActorMappings}
+  topMoviesDirectorIds = {mapping[1] for mapping in filteredMovieDirectorMappings}
+
+  principals = getPrincipals(topMoviesActorIds.union(topMoviesDirectorIds))
+  print("principals basics loaded")
+
+  actors = [a[1] for a in principals.items() if a[0] in topMoviesActorIds]
+  directors = [d[1] for d in principals.items() if d[0] in topMoviesDirectorIds]
+
+  print(f"going to fetch {len(topMoviesDirectorIds.union(topMoviesActorIds))} photos")
+  principalsPosters = getImdbPhotosUrls(list(topMoviesDirectorIds.union(topMoviesActorIds)).copy())
+
+  decoratedActors = [createActor(a, principalsPosters.get(a[0], "")) for a in actors]
+  # decoratedDirectors = [createDirector(a, principalsPosters.get(a[0], "")) for a in actors]
+
+  for a in decoratedActors:
+    print(a)
+
+  omdbMovies = getOmdbMovies(topMoviesIds.copy())
+
+  decoratedMovies = [createMovie(movie[1], omdbMovies.get(movie[0])) for movie in topMovies if movie[0] in omdbMovies]
+  for m in decoratedMovies:
+    print(m)
+
+  print(f"total of {len(decoratedMovies)} movies  with {len(decoratedActors)} actors ")
 
   #
   #
