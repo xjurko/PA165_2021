@@ -71,7 +71,7 @@ def writeActors(actors: List[Actor], append):
 
   with open("./imdb/out/actors.sql", writeMode(append)) as file:
     for c in chunks(actors):
-      file.write(f"INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES ")
+      file.write(f"INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES ")
       values = [
         f"({a.id}, {nullable(a.birthYear)}, {nullable(a.deathYear)}, '{a.name}', '{a.externalRef}', '{a.posterUrl}')"
         for a in c]
@@ -92,7 +92,7 @@ def writeDirectors(directors: List[Director], append):
   """
   with open("./imdb/out/directors.sql", writeMode(append)) as file:
     for c in chunks(directors):
-      file.write(f"INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES ")
+      file.write(f"INSERT INTO Director (id, birthYear, deathYear, name, externalRef, posterUrl) VALUES ")
       values = [
         f"({d.id}, {nullable(d.birthYear)}, {nullable(d.deathYear)}, '{d.name}', '{d.externalRef}', '{d.posterUrl}')"
         for d in c]
