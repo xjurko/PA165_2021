@@ -1,4 +1,4 @@
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (2, 1924, 2014, 'Lauren Bacall', 'nm0000002', 'https://m.media-amazon.com/images/M/MV5BMzg2OTk3MzU0OF5BMl5BanBnXkFtZTYwMzE3MzU2._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (2, 1924, 2014, 'Lauren Bacall', 'nm0000002', 'https://m.media-amazon.com/images/M/MV5BMzg2OTk3MzU0OF5BMl5BanBnXkFtZTYwMzE3MzU2._V1_UX400.jpg'),
 (4, 1949, 1982, 'John Belushi', 'nm0000004', 'https://m.media-amazon.com/images/M/MV5BMTU5MDcwODczOV5BMl5BanBnXkFtZTYwMTk5NzM2._V1_UX400.jpg'),
 (6, 1915, 1982, 'Ingrid Bergman', 'nm0000006', 'https://m.media-amazon.com/images/M/MV5BMTYzMTgzMTIwOV5BMl5BanBnXkFtZTYwNzI5MzI2._V1_UX400.jpg'),
 (7, 1899, 1957, 'Humphrey Bogart', 'nm0000007', 'https://m.media-amazon.com/images/M/MV5BMTIyOTE3MDM5Ml5BMl5BanBnXkFtZTYwMzA2MTM2._V1_UX400.jpg'),
@@ -98,7 +98,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (144, 1962, NULL, 'Cary Elwes', 'nm0000144', 'https://m.media-amazon.com/images/M/MV5BOTUxNzY3NTAxNF5BMl5BanBnXkFtZTgwNjU4MDU0NzE@._V1_UX400.jpg'),
 (146, 1962, NULL, 'Ralph Fiennes', 'nm0000146', 'https://m.media-amazon.com/images/M/MV5BMzc5MjE1NDgyN15BMl5BanBnXkFtZTcwNzg2ODgwNA@@._V1_UX400.jpg'),
 (147, 1960, NULL, 'Colin Firth', 'nm0000147', 'https://m.media-amazon.com/images/M/MV5BMTUxMDMwMTI4MF5BMl5BanBnXkFtZTcwMzE2MzQxMw@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (148, 1942, NULL, 'Harrison Ford', 'nm0000148', 'https://m.media-amazon.com/images/M/MV5BMTY4Mjg0NjIxOV5BMl5BanBnXkFtZTcwMTM2NTI3MQ@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (148, 1942, NULL, 'Harrison Ford', 'nm0000148', 'https://m.media-amazon.com/images/M/MV5BMTY4Mjg0NjIxOV5BMl5BanBnXkFtZTcwMTM2NTI3MQ@@._V1_UX400.jpg'),
 (149, 1962, NULL, 'Jodie Foster', 'nm0000149', 'https://m.media-amazon.com/images/M/MV5BMTM3MjgyOTQwNF5BMl5BanBnXkFtZTcwMDczMzEwNA@@._V1_UX400.jpg'),
 (150, 1961, NULL, 'Michael J. Fox', 'nm0000150', 'https://m.media-amazon.com/images/M/MV5BMTcwNzM0MjE4NF5BMl5BanBnXkFtZTcwMDkxMzEwMw@@._V1_UX400.jpg'),
 (151, 1937, NULL, 'Morgan Freeman', 'nm0000151', 'https://m.media-amazon.com/images/M/MV5BMTc0MDMyMzI2OF5BMl5BanBnXkFtZTcwMzM2OTk1MQ@@._V1_UX400.jpg'),
@@ -198,7 +198,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (270, 1970, NULL, 'Gabrielle Anwar', 'nm0000270', 'https://m.media-amazon.com/images/M/MV5BMjRlYWQ5MDUtM2YwNS00MTk2LWFhMGItOWE5OGJkNjVkNTQ0XkEyXkFqcGdeQXVyNjkxNjE2NTE@._V1_UX400.jpg'),
 (271, 1947, NULL, 'Anne Archer', 'nm0000271', 'https://m.media-amazon.com/images/M/MV5BZTY1MTUzMjQtMjI5NC00MDk4LWJkMjAtODEyYzQxOGUyNjI3XkEyXkFqcGdeQXVyMTg2MTM5OTM@._V1_UX400.jpg'),
 (272, 1949, NULL, 'Fanny Ardant', 'nm0000272', 'https://m.media-amazon.com/images/M/MV5BMTc4NzI4MTMwOF5BMl5BanBnXkFtZTcwODcwMTAxMw@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (273, 1934, NULL, 'Alan Arkin', 'nm0000273', 'https://m.media-amazon.com/images/M/MV5BMjA4NDk5Njc3MF5BMl5BanBnXkFtZTYwNjc5NDc0._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (273, 1934, NULL, 'Alan Arkin', 'nm0000273', 'https://m.media-amazon.com/images/M/MV5BMjA4NDk5Njc3MF5BMl5BanBnXkFtZTYwNjc5NDc0._V1_UX400.jpg'),
 (274, 1971, NULL, 'David Arquette', 'nm0000274', 'https://m.media-amazon.com/images/M/MV5BMjEzODYyNjg3NV5BMl5BanBnXkFtZTcwMzYwOTgyNg@@._V1_UX400.jpg'),
 (275, 1959, NULL, 'Rosanna Arquette', 'nm0000275', 'https://m.media-amazon.com/images/M/MV5BNTI0MjYxMzQ0OF5BMl5BanBnXkFtZTcwMTk0OTE3NQ@@._V1_UX400.jpg'),
 (276, 1971, NULL, 'Sean Astin', 'nm0000276', 'https://m.media-amazon.com/images/M/MV5BMjEzMjczOTQ1NF5BMl5BanBnXkFtZTcwMzI2NzYyMQ@@._V1_UX400.jpg'),
@@ -298,7 +298,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (415, 1965, NULL, 'Jami Gertz', 'nm0000415', 'https://m.media-amazon.com/images/M/MV5BMTgzNDYzNDcwMV5BMl5BanBnXkFtZTcwMzIwOTg1MQ@@._V1_UX400.jpg'),
 (416, 1940, NULL, 'Terry Gilliam', 'nm0000416', 'https://m.media-amazon.com/images/M/MV5BODAyMDM0NjEwOF5BMl5BanBnXkFtZTcwMTUyMDY5Mg@@._V1_UX400.jpg'),
 (417, 1964, NULL, 'Crispin Glover', 'nm0000417', 'https://m.media-amazon.com/images/M/MV5BNjNjMzg2YWEtOTY4Ny00MDJiLTg1NWYtOGI5NmU2ZTE5OTI4XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (418, 1946, NULL, 'Danny Glover', 'nm0000418', 'https://m.media-amazon.com/images/M/MV5BMTI4ODM2MzQwN15BMl5BanBnXkFtZTcwMjY2OTI5MQ@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (418, 1946, NULL, 'Danny Glover', 'nm0000418', 'https://m.media-amazon.com/images/M/MV5BMTI4ODM2MzQwN15BMl5BanBnXkFtZTcwMjY2OTI5MQ@@._V1_UX400.jpg'),
 (420, 1965, NULL, 'Valeria Golino', 'nm0000420', 'https://m.media-amazon.com/images/M/MV5BMjE3MDAwMDk1N15BMl5BanBnXkFtZTYwNTAyNDk0._V1_UX400.jpg'),
 (421, 1968, NULL, 'Cuba Gooding Jr.', 'nm0000421', 'https://m.media-amazon.com/images/M/MV5BMTIzMzk4NjQ2Ml5BMl5BanBnXkFtZTYwNzc3ODI4._V1_UX400.jpg'),
 (422, 1952, NULL, 'John Goodman', 'nm0000422', 'https://m.media-amazon.com/images/M/MV5BOTk1MzAzMDUxMF5BMl5BanBnXkFtZTgwODgyMTQxNjM@._V1_UX400.jpg'),
@@ -398,7 +398,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (554, 1947, NULL, 'Sam Neill', 'nm0000554', 'https://m.media-amazon.com/images/M/MV5BMjUyMTU0MzA0MF5BMl5BanBnXkFtZTgwNTA4MTQ4NjM@._V1_UX400.jpg'),
 (555, 1959, NULL, 'Judd Nelson', 'nm0000555', 'https://m.media-amazon.com/images/M/MV5BMTg3ODUwODQ5OV5BMl5BanBnXkFtZTcwMTUzNzQyMg@@._V1_UX400.jpg'),
 (556, 1948, NULL, 'Olivia Newton-John', 'nm0000556', 'https://m.media-amazon.com/images/M/MV5BMTk3ODEyODM4OV5BMl5BanBnXkFtZTcwMzM1Mzc1MQ@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (557, 1963, NULL, 'Brigitte Nielsen', 'nm0000557', 'https://m.media-amazon.com/images/M/MV5BZmM0YmE0ZjUtMWRkMy00MDU5LTlkNmQtZjExNjJkOWYzZWMyXkEyXkFqcGdeQXVyOTAyMDgxODQ@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (557, 1963, NULL, 'Brigitte Nielsen', 'nm0000557', 'https://m.media-amazon.com/images/M/MV5BZmM0YmE0ZjUtMWRkMy00MDU5LTlkNmQtZjExNjJkOWYzZWMyXkEyXkFqcGdeQXVyOTAyMDgxODQ@._V1_UX400.jpg'),
 (558, 1926, 2010, 'Leslie Nielsen', 'nm0000558', 'https://m.media-amazon.com/images/M/MV5BMTI3MTE1NjM4N15BMl5BanBnXkFtZTYwNzI3MTI0._V1_UX400.jpg'),
 (559, 1931, 2015, 'Leonard Nimoy', 'nm0000559', 'https://m.media-amazon.com/images/M/MV5BMTIzMzY1MzEyNV5BMl5BanBnXkFtZTYwNjU4MTg1._V1_UX400.jpg'),
 (560, 1941, NULL, 'Nick Nolte', 'nm0000560', 'https://m.media-amazon.com/images/M/MV5BMTU1ODAzMDk3Ml5BMl5BanBnXkFtZTYwOTEzMzE0._V1_UX400.jpg'),
@@ -498,7 +498,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (698, 1933, 2016, 'Gene Wilder', 'nm0000698', 'https://m.media-amazon.com/images/M/MV5BMTIzMTAxMzczNl5BMl5BanBnXkFtZTYwMjEwOTg2._V1_UX400.jpg'),
 (699, 1958, NULL, 'Michael Wincott', 'nm0000699', 'https://m.media-amazon.com/images/M/MV5BODY2NjNlNDMtYTFhZS00MTVjLWJlYWQtNzdhYzg2Y2JiMjFmXkEyXkFqcGdeQXVyMTg3ODg0MTA@._V1_UX400.jpg'),
 (700, 1955, NULL, 'Debra Winger', 'nm0000700', 'https://m.media-amazon.com/images/M/MV5BMTgwNTQ2ODMwN15BMl5BanBnXkFtZTYwNjc5ODUz._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (701, 1975, NULL, 'Kate Winslet', 'nm0000701', 'https://m.media-amazon.com/images/M/MV5BODgzMzM2NTE0Ml5BMl5BanBnXkFtZTcwMTcyMTkyOQ@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (701, 1975, NULL, 'Kate Winslet', 'nm0000701', 'https://m.media-amazon.com/images/M/MV5BODgzMzM2NTE0Ml5BMl5BanBnXkFtZTcwMTcyMTkyOQ@@._V1_UX400.jpg'),
 (702, 1976, NULL, 'Reese Witherspoon', 'nm0000702', 'https://m.media-amazon.com/images/M/MV5BMTc3MDcxMDA5Ml5BMl5BanBnXkFtZTgwNDM1NTU5MDE@._V1_UX400.jpg'),
 (703, 1960, NULL, 'BD Wong', 'nm0000703', 'https://m.media-amazon.com/images/M/MV5BMTYxNTEyMjEyOF5BMl5BanBnXkFtZTcwNjAwNTMwNA@@._V1_UX400.jpg'),
 (704, 1981, NULL, 'Elijah Wood', 'nm0000704', 'https://m.media-amazon.com/images/M/MV5BMTM0NDIxMzQ5OF5BMl5BanBnXkFtZTcwNzAyNTA4Nw@@._V1_UX400.jpg'),
@@ -598,7 +598,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (962, 1957, NULL, 'Carole Bouquet', 'nm0000962', 'https://m.media-amazon.com/images/M/MV5BMTM1MjAzODUyNl5BMl5BanBnXkFtZTcwNzAxNzczNA@@._V1_UX400.jpg'),
 (963, 1931, 1977, 'Stephen Boyd', 'nm0000963', 'https://m.media-amazon.com/images/M/MV5BNzViZTliMjItOWNmYS00YmIxLTk2MzItMGQ1YWQwOTM5OGZjXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UX400.jpg'),
 (966, 1954, NULL, 'Lorraine Bracco', 'nm0000966', 'https://m.media-amazon.com/images/M/MV5BMzU0NTc3OTExOF5BMl5BanBnXkFtZTcwMjM0MjcxNQ@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (969, 1976, NULL, 'Lillo Brancato', 'nm0000969', 'https://m.media-amazon.com/images/M/MV5BMTY2NjkyMjA0NV5BMl5BanBnXkFtZTYwNjM4NTc3._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (969, 1976, NULL, 'Lillo Brancato', 'nm0000969', 'https://m.media-amazon.com/images/M/MV5BMTY2NjkyMjA0NV5BMl5BanBnXkFtZTYwNjM4NTc3._V1_UX400.jpg'),
 (971, 1960, NULL, 'Nicoletta Braschi', 'nm0000971', 'https://m.media-amazon.com/images/M/MV5BMTcyMjUxNzMzOF5BMl5BanBnXkFtZTYwMzM1NDM3._V1_UX400.jpg'),
 (973, 1963, NULL, 'Benjamin Bratt', 'nm0000973', 'https://m.media-amazon.com/images/M/MV5BMTUwNDIwOTI5N15BMl5BanBnXkFtZTcwMDcwMjQyNg@@._V1_UX400.jpg'),
 (977, 1941, NULL, 'Beau Bridges', 'nm0000977', 'https://m.media-amazon.com/images/M/MV5BMjA5MTY4NzEzOF5BMl5BanBnXkFtZTYwNjgyNTIz._V1_UX400.jpg'),
@@ -698,7 +698,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (1143, 1965, NULL, 'Kevin Dillon', 'nm0001143', 'https://m.media-amazon.com/images/M/MV5BMTk1Njg4NTEwMV5BMl5BanBnXkFtZTYwODU0ODcz._V1_UX400.jpg'),
 (1147, 1971, NULL, 'Shannen Doherty', 'nm0001147', 'https://m.media-amazon.com/images/M/MV5BMTQyNzcyOTM4OF5BMl5BanBnXkFtZTcwMDc1ODkzMg@@._V1_UX400.jpg'),
 (1150, 1920, 2005, 'James Doohan', 'nm0001150', 'https://m.media-amazon.com/images/M/MV5BMTYzODkyOTg1Nl5BMl5BanBnXkFtZTYwOTA5ODUz._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (1151, 1973, NULL, 'Stephen Dorff', 'nm0001151', 'https://m.media-amazon.com/images/M/MV5BMjA5MzY3NjcyN15BMl5BanBnXkFtZTcwNjEzMzEwNA@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (1151, 1973, NULL, 'Stephen Dorff', 'nm0001151', 'https://m.media-amazon.com/images/M/MV5BMjA5MzY3NjcyN15BMl5BanBnXkFtZTcwNjEzMzEwNA@@._V1_UX400.jpg'),
 (1152, 1965, NULL, 'Illeana Douglas', 'nm0001152', 'https://m.media-amazon.com/images/M/MV5BMzVjNTdmZGEtYjBmNC00YTUzLWE4MDQtOGVhYWQ1NGVhZWQzXkEyXkFqcGdeQXVyMzg3MjUyOQ@@._V1_UX400.jpg'),
 (1156, 1931, 2021, 'Olympia Dukakis', 'nm0001156', 'https://m.media-amazon.com/images/M/MV5BY2Y2ZmIxNWMtOWIxYi00ZDAyLWJiMWItZDYyMWMyMjZhZWEyXkEyXkFqcGdeQXVyMTEwODg2MDY@._V1_UX400.jpg'),
 (1158, 1936, NULL, 'Keir Dullea', 'nm0001158', 'https://m.media-amazon.com/images/M/MV5BMTczODgxNDU1NV5BMl5BanBnXkFtZTYwMzQxOTI2._V1_UX400.jpg'),
@@ -798,7 +798,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (1348, 1942, NULL, 'Werner Herzog', 'nm0001348', 'https://m.media-amazon.com/images/M/MV5BNzQ4Njc3MTQ0NF5BMl5BanBnXkFtZTcwMTg4NzY5Mg@@._V1_UX400.jpg'),
 (1349, 1979, NULL, 'Jennifer Love Hewitt', 'nm0001349', 'https://m.media-amazon.com/images/M/MV5BNjIyNzI0MTAyOV5BMl5BanBnXkFtZTcwMDM3MTUwNw@@._V1_UX400.jpg'),
 (1354, 1953, NULL, 'Ciarán Hinds', 'nm0001354', 'https://m.media-amazon.com/images/M/MV5BMTIyNjM0MzU0NF5BMl5BanBnXkFtZTcwOTIxMzg1MQ@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (1357, 1939, NULL, 'Paul Hogan', 'nm0001357', 'https://m.media-amazon.com/images/M/MV5BMTI3NzE5MTU3NV5BMl5BanBnXkFtZTcwNjMwMTM3Mg@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (1357, 1939, NULL, 'Paul Hogan', 'nm0001357', 'https://m.media-amazon.com/images/M/MV5BMTI3NzE5MTU3NV5BMl5BanBnXkFtZTcwNjMwMTM3Mg@@._V1_UX400.jpg'),
 (1358, 1925, 2021, 'Hal Holbrook', 'nm0001358', 'https://m.media-amazon.com/images/M/MV5BMTgyNTMwNjE3NV5BMl5BanBnXkFtZTcwNTQzMjc1MQ@@._V1_UX400.jpg'),
 (1359, 1905, 1992, 'Sterling Holloway', 'nm0001359', 'https://m.media-amazon.com/images/M/MV5BMTg2MDIwNzg5MV5BMl5BanBnXkFtZTcwNzU1ODcxOA@@._V1_UX400.jpg'),
 (1364, 1942, 2014, 'Bob Hoskins', 'nm0001364', 'https://m.media-amazon.com/images/M/MV5BMTc5MTE0ODQyM15BMl5BanBnXkFtZTYwMTIyNTk1._V1_UX400.jpg'),
@@ -898,7 +898,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (1522, 1928, 1998, 'Roddy McDowall', 'nm0001522', 'https://m.media-amazon.com/images/M/MV5BMTI2NjI3NzE1OV5BMl5BanBnXkFtZTYwNjk2MzU2._V1_UX400.jpg'),
 (1523, 1969, NULL, 'Natascha McElhone', 'nm0001523', 'https://m.media-amazon.com/images/M/MV5BN2Y2Yzg3MTktMDI0Yi00MTRhLWI5YzQtMmVmN2I3MTcwNzY2L2ltYWdlXkEyXkFqcGdeQXVyMzI1NjU1NTA@._V1_UX400.jpg'),
 (1524, 1959, NULL, 'Paul McGann', 'nm0001524', 'https://m.media-amazon.com/images/M/MV5BMTY3NzA2MjAxMF5BMl5BanBnXkFtZTcwNTYzNDg5Nw@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (1525, 1959, NULL, 'John C. McGinley', 'nm0001525', 'https://m.media-amazon.com/images/M/MV5BMTM5NjQ2OTIwMV5BMl5BanBnXkFtZTcwMjcxOTYyMQ@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (1525, 1959, NULL, 'John C. McGinley', 'nm0001525', 'https://m.media-amazon.com/images/M/MV5BMTM5NjQ2OTIwMV5BMl5BanBnXkFtZTcwMjcxOTYyMQ@@._V1_UX400.jpg'),
 (1526, 1928, 2009, 'Patrick McGoohan', 'nm0001526', 'https://m.media-amazon.com/images/M/MV5BMTY3MTAzMTExOF5BMl5BanBnXkFtZTcwNzEwNjUyMg@@._V1_UX400.jpg'),
 (1527, 1961, NULL, 'Elizabeth McGovern', 'nm0001527', 'https://m.media-amazon.com/images/M/MV5BMjI3MzM5ODYyNF5BMl5BanBnXkFtZTcwODIwNzk4Ng@@._V1_UX400.jpg'),
 (1530, 1965, NULL, 'William McNamara', 'nm0001530', 'https://m.media-amazon.com/images/M/MV5BOTc0YzlkMzYtMGU0YS00ZjZmLTg0NjMtN2M0ZGNhOGI1ODAwXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX400.jpg'),
@@ -998,7 +998,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (1687, 1930, NULL, 'Gena Rowlands', 'nm0001687', 'https://m.media-amazon.com/images/M/MV5BMjA4MzAwMTQ1Ml5BMl5BanBnXkFtZTYwMzQyNjMz._V1_UX400.jpg'),
 (1688, 1956, NULL, 'Alan Ruck', 'nm0001688', 'https://m.media-amazon.com/images/M/MV5BMjA3MTc0NDE2MF5BMl5BanBnXkFtZTcwMzQzNzQzMg@@._V1_UX400.jpg'),
 (1691, 1951, NULL, 'Geoffrey Rush', 'nm0001691', 'https://m.media-amazon.com/images/M/MV5BMTg2MjkxNDU0NV5BMl5BanBnXkFtZTcwOTk3MDQ0NA@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (1693, 1924, NULL, 'Eva Marie Saint', 'nm0001693', 'https://m.media-amazon.com/images/M/MV5BMjg4NDU4OTI4NF5BMl5BanBnXkFtZTcwODYxNjk0MQ@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (1693, 1924, NULL, 'Eva Marie Saint', 'nm0001693', 'https://m.media-amazon.com/images/M/MV5BMjg4NDU4OTI4NF5BMl5BanBnXkFtZTcwODYxNjk0MQ@@._V1_UX400.jpg'),
 (1695, 1906, 1972, 'George Sanders', 'nm0001695', 'https://m.media-amazon.com/images/M/MV5BMTgyODU3MDQ4NV5BMl5BanBnXkFtZTcwOTgwOTkxOA@@._V1_UX400.jpg'),
 (1696, 1958, NULL, 'Julian Sands', 'nm0001696', 'https://m.media-amazon.com/images/M/MV5BNzQ1MmJkYjEtNzZiNi00NTQ2LWJiN2EtODA0NjFlZGM0ZGZhXkEyXkFqcGdeQXVyMTIzODM0NTEx._V1_UX400.jpg'),
 (1697, 1942, NULL, 'Chris Sarandon', 'nm0001697', 'https://m.media-amazon.com/images/M/MV5BZTY0NTAxNzYtODcyMy00MmYzLTlkYzMtNDZmZGYxZDIwZWZiXkEyXkFqcGdeQXVyNDc0NTQ1Mw@@._V1_UX400.jpg'),
@@ -1098,7 +1098,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (1859, 1920, 2006, 'Shelley Winters', 'nm0001859', 'https://m.media-amazon.com/images/M/MV5BMjExNjMzNjQ3MF5BMl5BanBnXkFtZTYwMzcxMDI2._V1_UX400.jpg'),
 (1860, 1975, NULL, 'Alicia Witt', 'nm0001860', 'https://m.media-amazon.com/images/M/MV5BNzkxNzI5NDkyNl5BMl5BanBnXkFtZTcwMDc1MTgyNw@@._V1_UX400.jpg'),
 (1863, 1967, NULL, 'Kari Wuhrer', 'nm0001863', 'https://m.media-amazon.com/images/M/MV5BMjE1NDYwMDI3N15BMl5BanBnXkFtZTcwMTc5OTgyMQ@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (1865, 1962, NULL, 'Amy Yasbeck', 'nm0001865', 'https://m.media-amazon.com/images/M/MV5BMjEwNjMyODk0MF5BMl5BanBnXkFyZXN1bWU@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (1865, 1962, NULL, 'Amy Yasbeck', 'nm0001865', 'https://m.media-amazon.com/images/M/MV5BMjEwNjMyODk0MF5BMl5BanBnXkFyZXN1bWU@._V1_UX400.jpg'),
 (1868, 1942, NULL, 'Michael York', 'nm0001868', 'https://m.media-amazon.com/images/M/MV5BMTQ1NzgzNTg0OF5BMl5BanBnXkFtZTYwOTk3ODM1._V1_UX400.jpg'),
 (1872, 1967, NULL, 'Steve Zahn', 'nm0001872', 'https://m.media-amazon.com/images/M/MV5BMzc0MzcxMDgtMTIzNy00MmZkLTk5Y2EtYWQ1NWYzNDcyOGEzXkEyXkFqcGdeQXVyNjk1MjYyNTA@._V1_UX400.jpg'),
 (1876, 1969, NULL, 'Catherine Zeta-Jones', 'nm0001876', 'https://m.media-amazon.com/images/M/MV5BZGE4MzUwMTYtYTFmNi00ZTRhLThjNDEtY2FlMTgyZmVmYTQwXkEyXkFqcGdeQXVyODczMzQ3NjY@._V1_UX400.jpg'),
@@ -1198,7 +1198,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (4569, 1959, NULL, 'Sanjay Dutt', 'nm0004569', 'https://m.media-amazon.com/images/M/MV5BNzU2NTgwNzY1OF5BMl5BanBnXkFtZTcwMjQxNzcxOA@@._V1_UX400.jpg'),
 (4570, 1930, 2005, 'Sunil Dutt', 'nm0004570', 'https://m.media-amazon.com/images/M/MV5BNzM0OTA3MDAxN15BMl5BanBnXkFtZTgwMzg2OTczOTE@._V1_UX400.jpg'),
 (4626, 1980, NULL, 'Kareena Kapoor', 'nm0004626', 'https://m.media-amazon.com/images/M/MV5BMjAyNjM4NTAwN15BMl5BanBnXkFtZTcwNDkxNzQzNg@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (4650, 1946, NULL, 'Marisa Paredes', 'nm0004650', 'https://m.media-amazon.com/images/M/MV5BMTgyMzY1NzU3OF5BMl5BanBnXkFtZTcwMTY2Nzg0NA@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (4650, 1946, NULL, 'Marisa Paredes', 'nm0004650', 'https://m.media-amazon.com/images/M/MV5BMTgyMzY1NzU3OF5BMl5BanBnXkFtZTcwMTY2Nzg0NA@@._V1_UX400.jpg'),
 (4691, 1979, 2001, 'Aaliyah', 'nm0004691', 'https://m.media-amazon.com/images/M/MV5BMTY2OTU3MDQzNV5BMl5BanBnXkFtZTYwMzM4Mjkz._V1_UX400.jpg'),
 (4692, 1964, NULL, 'Mark Addy', 'nm0004692', 'https://m.media-amazon.com/images/M/MV5BNjkyMzUyNDYyN15BMl5BanBnXkFtZTYwODc3Nzk1._V1_UX400.jpg'),
 (4694, 1980, NULL, 'Christina Aguilera', 'nm0004694', 'https://m.media-amazon.com/images/M/MV5BMTQ3MTgxMDM1Ml5BMl5BanBnXkFtZTcwNTU5MzQzNA@@._V1_UX400.jpg'),
@@ -1298,7 +1298,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (5152, 1946, 2019, 'Peggy Lipton', 'nm0005152', 'https://m.media-amazon.com/images/M/MV5BMTY5MTYwMTk3NF5BMl5BanBnXkFtZTYwNjU4MzMz._V1_UX400.jpg'),
 (5154, 1968, NULL, 'Lucy Liu', 'nm0005154', 'https://m.media-amazon.com/images/M/MV5BOTgxODE0MjI5Ml5BMl5BanBnXkFtZTcwMjkxMzMzMg@@._V1_UX400.jpg'),
 (5156, 1986, NULL, 'Eric Lloyd', 'nm0005156', 'https://m.media-amazon.com/images/M/MV5BMTIxNjE5MTIwNV5BMl5BanBnXkFtZTYwNTEzMDY0._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (5157, 1989, NULL, 'Jake Lloyd', 'nm0005157', 'https://m.media-amazon.com/images/M/MV5BMTk2MDExNzQwN15BMl5BanBnXkFtZTgwMzM2NzQwNjE@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (5157, 1989, NULL, 'Jake Lloyd', 'nm0005157', 'https://m.media-amazon.com/images/M/MV5BMTk2MDExNzQwN15BMl5BanBnXkFtZTgwMzM2NzQwNjE@._V1_UX400.jpg'),
 (5159, 1966, NULL, 'Tone Loc', 'nm0005159', 'https://m.media-amazon.com/images/M/MV5BMTE5NjM5MjY0OF5BMl5BanBnXkFtZTYwNTY5ODA0._V1_UX400.jpg'),
 (5162, 1930, 2015, 'Robert Loggia', 'nm0005162', 'https://m.media-amazon.com/images/M/MV5BMTc4NTQzODU0Nl5BMl5BanBnXkFtZTcwMzczNDgwMw@@._V1_UX400.jpg'),
 (5170, 1957, 2008, 'Bernie Mac', 'nm0005170', 'https://m.media-amazon.com/images/M/MV5BMjA5MjIwMDk4Ml5BMl5BanBnXkFtZTYwNTA5NTI1._V1_UX400.jpg'),
@@ -1398,7 +1398,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (6713, 1968, NULL, 'Rachael Harris', 'nm0006713', 'https://m.media-amazon.com/images/M/MV5BZWExMGViNzktOTM2ZS00ZTIyLWI5YjEtY2YzZWMwNDMxMTJiXkEyXkFqcGdeQXVyNDk4NzYxOA@@._V1_UX400.jpg'),
 (6795, 1965, NULL, 'Salman Khan', 'nm0006795', 'https://m.media-amazon.com/images/M/MV5BMjMwNTIxODg0OF5BMl5BanBnXkFtZTgwODg2NzM0OTE@._V1_UX400.jpg'),
 (6800, 1937, 1992, 'Sandy Dennis', 'nm0006800', 'https://m.media-amazon.com/images/M/MV5BMTY2NTMzMDYyOV5BMl5BanBnXkFtZTcwMzEyOTkxOA@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (6801, 1975, NULL, 'Antoine Monot Jr.', 'nm0006801', 'https://m.media-amazon.com/images/M/MV5BMTI5MDkwMzc1NF5BMl5BanBnXkFtZTcwMDk1MTEzMQ@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (6801, 1975, NULL, 'Antoine Monot Jr.', 'nm0006801', 'https://m.media-amazon.com/images/M/MV5BMTI5MDkwMzc1NF5BMl5BanBnXkFtZTcwMDk1MTEzMQ@@._V1_UX400.jpg'),
 (6888, 1951, NULL, 'Tom Noonan', 'nm0006888', 'https://m.media-amazon.com/images/M/MV5BMTMzMjk5NTM2NV5BMl5BanBnXkFtZTcwNzY4MzQzMg@@._V1_UX400.jpg'),
 (6890, 1922, 2008, 'Paul Scofield', 'nm0006890', 'https://m.media-amazon.com/images/M/MV5BMjA1ODg0NjA0OF5BMl5BanBnXkFtZTcwNzA5ODM2MQ@@._V1_UX400.jpg'),
 (6958, 1982, NULL, 'Jonathan Tucker', 'nm0006958', 'https://m.media-amazon.com/images/M/MV5BMTk5OTk0MDc5Ml5BMl5BanBnXkFtZTcwMDcwMzA2OA@@._V1_UX400.jpg'),
@@ -1498,7 +1498,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (44073, 1973, NULL, 'Lubna Azabal', 'nm0044073', 'https://m.media-amazon.com/images/M/MV5BMzE2NzU0MzEzMF5BMl5BanBnXkFtZTgwODc5NDcxMjE@._V1_UX400.jpg'),
 (44762, 1951, NULL, 'Obba Babatundé', 'nm0044762', 'https://m.media-amazon.com/images/M/MV5BMTkxMDQ0NDg5NV5BMl5BanBnXkFtZTYwMTQ2NDEz._V1_UX400.jpg'),
 (45379, 1970, NULL, 'Dian Bachar', 'nm0045379', 'https://m.media-amazon.com/images/M/MV5BMDFkNDZlMjQtYzJlNS00ZWIzLWFjZDgtMWY4YTQwNDkyN2NlL2ltYWdlXkEyXkFqcGdeQXVyNzAzNzgzNTI@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (45813, NULL, NULL, 'Nick Bacon', 'nm0045813', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (45813, NULL, NULL, 'Nick Bacon', 'nm0045813', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (45937, 1954, NULL, 'Michael Badalucco', 'nm0045937', 'https://m.media-amazon.com/images/M/MV5BMTQxNTAxMjI3N15BMl5BanBnXkFtZTYwODY4MTg1._V1_UX400.jpg'),
 (46112, 1986, NULL, 'Penn Badgley', 'nm0046112', 'https://m.media-amazon.com/images/M/MV5BMTc0NjI2Nzg4M15BMl5BanBnXkFtZTcwODE3OTcxNA@@._V1_UX400.jpg'),
 (46277, 1979, NULL, 'Bae Doona', 'nm0046277', 'https://m.media-amazon.com/images/M/MV5BNDA3Njc0MzQ4Ml5BMl5BanBnXkFtZTcwMjM4MTA2OA@@._V1_UX400.jpg'),
@@ -1598,7 +1598,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (81560, 1929, 2001, 'Ramon Bieri', 'nm0081560', 'https://m.media-amazon.com/images/M/MV5BMDkyOWI4ZDgtNzRlNS00ZWUwLWFhODgtZjkwYzNiMzcyYTY5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyOTA4NDY2Mw@@._V1_UX400.jpg'),
 (81572, 1964, NULL, 'Craig Bierko', 'nm0081572', 'https://m.media-amazon.com/images/M/MV5BMTI5NTY0NTc1NV5BMl5BanBnXkFtZTcwNzA3NDYyMQ@@._V1_UX400.jpg'),
 (81801, 1983, NULL, 'Sean Biggerstaff', 'nm0081801', 'https://m.media-amazon.com/images/M/MV5BMTIwNjI1NzM4OF5BMl5BanBnXkFtZTYwMTU1NTY2._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (82517, 1960, NULL, 'John Billingsley', 'nm0082517', 'https://m.media-amazon.com/images/M/MV5BMTkxMjgwNTcyOV5BMl5BanBnXkFtZTcwNTAxNjMzMQ@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (82517, 1960, NULL, 'John Billingsley', 'nm0082517', 'https://m.media-amazon.com/images/M/MV5BMTkxMjgwNTcyOV5BMl5BanBnXkFtZTcwNTAxNjMzMQ@@._V1_UX400.jpg'),
 (82526, 1971, NULL, 'Peter Billingsley', 'nm0082526', 'https://m.media-amazon.com/images/M/MV5BMTA4NDg5MTc4NzNeQTJeQWpwZ15BbWU3MDEyMDIwNjE@._V1_UX400.jpg'),
 (82884, 1889, 1947, 'Herman Bing', 'nm0082884', 'https://m.media-amazon.com/images/M/MV5BNzdiMTM4MmQtMDNiMy00ZDllLThmNzQtMGQzOWUwNDQyNmE4XkEyXkFqcGdeQXVyNTk5NzQ5Ng@@._V1_UX400.jpg'),
 (83655, 1953, NULL, 'Gil Birmingham', 'nm0083655', 'https://m.media-amazon.com/images/M/MV5BMjUzODM2Nzk1NF5BMl5BanBnXkFtZTcwODc5OTQwOA@@._V1_UX400.jpg'),
@@ -1698,7 +1698,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (123553, 1955, NULL, 'Corey Burton', 'nm0123553', 'https://m.media-amazon.com/images/M/MV5BMTY1MTkzNTA2NV5BMl5BanBnXkFtZTcwMzUyODc3OA@@._V1_UX400.jpg'),
 (123632, 1957, NULL, 'Kate Burton', 'nm0123632', 'https://m.media-amazon.com/images/M/MV5BMjExMDE1MTMzMV5BMl5BanBnXkFtZTYwMDQ2NDIz._V1_UX400.jpg'),
 (123680, 1923, 2003, 'Norman Burton', 'nm0123680', 'https://m.media-amazon.com/images/M/MV5BMTczNjU3ODQ0MV5BMl5BanBnXkFtZTgwMTMyMTM0MjE@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (123733, 1970, NULL, 'Steve Burton', 'nm0123733', 'https://m.media-amazon.com/images/M/MV5BMTU4NjQxMTA4Ml5BMl5BanBnXkFtZTYwNTY0NjIz._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (123733, 1970, NULL, 'Steve Burton', 'nm0123733', 'https://m.media-amazon.com/images/M/MV5BMTU4NjQxMTA4Ml5BMl5BanBnXkFtZTYwNTY0NjIz._V1_UX400.jpg'),
 (123785, 1948, NULL, 'Ben Burtt', 'nm0123785', 'https://m.media-amazon.com/images/M/MV5BMTg5NTY4NjY1OV5BMl5BanBnXkFtZTcwNjQwNzkyMg@@._V1_UX400.jpg'),
 (124208, 1982, NULL, 'Sophia Bush', 'nm0124208', 'https://m.media-amazon.com/images/M/MV5BODI2MzM0MTkzM15BMl5BanBnXkFtZTgwMjQxMzgwNTM@._V1_UX400.jpg'),
 (124930, 1969, NULL, 'Gerard Butler', 'nm0124930', 'https://m.media-amazon.com/images/M/MV5BMjE4NDMwMzc4Ml5BMl5BanBnXkFtZTcwMDg4Nzg4Mg@@._V1_UX400.jpg'),
@@ -1798,7 +1798,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (166972, 1900, 1937, 'Colin Clive', 'nm0166972', 'https://m.media-amazon.com/images/M/MV5BNGEwMzAzZmEtZTllZS00YjY0LTgwNmQtMTdjOWQ2N2NmZWRkXkEyXkFqcGdeQXVyMzI5NDcxNzI@._V1_UX400.jpg'),
 (167028, 1968, NULL, 'Kristen Cloke', 'nm0167028', 'https://m.media-amazon.com/images/M/MV5BMjAwMTk2NTgzOF5BMl5BanBnXkFtZTcwODc0NzUwMw@@._V1_UX400.jpg'),
 (167243, 1913, 1960, 'Véra Clouzot', 'nm0167243', 'https://m.media-amazon.com/images/M/MV5BMzgzOTYxNzUzOF5BMl5BanBnXkFtZTcwMzg0MTc4Ng@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (167388, 1955, NULL, 'François Cluzet', 'nm0167388', 'https://m.media-amazon.com/images/M/MV5BMTkyNjcyNjE0Nl5BMl5BanBnXkFtZTcwMTY5NTc1NA@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (167388, 1955, NULL, 'François Cluzet', 'nm0167388', 'https://m.media-amazon.com/images/M/MV5BMTkyNjcyNjE0Nl5BMl5BanBnXkFtZTcwMTY5NTc1NA@@._V1_UX400.jpg'),
 (167501, 1969, NULL, 'Suzanne Clément', 'nm0167501', 'https://m.media-amazon.com/images/M/MV5BMjEwNDA0NzE5NF5BMl5BanBnXkFtZTgwMDc4Mzg4MTE@._V1_UX400.jpg'),
 (167649, 1958, NULL, 'Kim Coates', 'nm0167649', 'https://m.media-amazon.com/images/M/MV5BMjM5NjU3NjcxNF5BMl5BanBnXkFtZTgwODAwNjkwMjE@._V1_UX400.jpg'),
 (167850, 1934, NULL, 'Bill Cobbs', 'nm0167850', 'https://m.media-amazon.com/images/M/MV5BMTUwMzMzODc2NV5BMl5BanBnXkFtZTYwNjIxNTc2._V1_UX400.jpg'),
@@ -1898,7 +1898,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (199006, 1974, NULL, 'Linh Dan Pham', 'nm0199006', 'https://m.media-amazon.com/images/M/MV5BMTQzMDU3MTQ1NV5BMl5BanBnXkFtZTcwNjY5MjgwOA@@._V1_UX400.jpg'),
 (199215, 1975, NULL, 'Hugh Dancy', 'nm0199215', 'https://m.media-amazon.com/images/M/MV5BMTUzNTgxMDM2OV5BMl5BanBnXkFtZTcwMTQ1Mzc3Mg@@._V1_UX400.jpg'),
 (199312, 1972, NULL, 'Eric Dane', 'nm0199312', 'https://m.media-amazon.com/images/M/MV5BMTk3NDE1ODczMV5BMl5BanBnXkFtZTcwMzE2MDU1Mw@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (199590, 1976, NULL, 'Brittany Daniel', 'nm0199590', 'https://m.media-amazon.com/images/M/MV5BMTkyNzQ0NTQxMV5BMl5BanBnXkFtZTcwNjgzMDcyMQ@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (199590, 1976, NULL, 'Brittany Daniel', 'nm0199590', 'https://m.media-amazon.com/images/M/MV5BMTkyNzQ0NTQxMV5BMl5BanBnXkFtZTcwNjgzMDcyMQ@@._V1_UX400.jpg'),
 (199774, 1937, NULL, 'Isa Danieli', 'nm0199774', 'https://m.media-amazon.com/images/M/MV5BMTJlZTBlOTQtZTRhNy00ZGY5LWJlMjMtOWViNTBiM2I0YTg4XkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_UX400.jpg'),
 (199787, 1894, 1963, 'Henry Daniell', 'nm0199787', 'https://m.media-amazon.com/images/M/MV5BMTYxNDk5NzQ1OF5BMl5BanBnXkFtZTcwNTg5MjgwOA@@._V1_UX400.jpg'),
 (199840, NULL, NULL, 'Beau Daniels', 'nm0199840', 'https://m.media-amazon.com/images/M/MV5BZDczMjQyYzMtZTI5Yy00NjFjLTliZGYtMThiMDRiYmExZjEyXkEyXkFqcGdeQXVyMzAxMjU5MjM@._V1_UX400.jpg'),
@@ -1998,7 +1998,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (241748, 1952, NULL, 'Dennis Dun', 'nm0241748', 'https://m.media-amazon.com/images/M/MV5BMDljNTMwMGYtNTBiZC00MjBiLTk4ZDgtNzc4ZGZkMDBkMWI0XkEyXkFqcGdeQXVyMTExMTQ0MzE0._V1_UX400.jpg'),
 (241759, 1940, NULL, 'Deanna Dunagan', 'nm0241759', 'https://m.media-amazon.com/images/M/MV5BMTA4MDM2MDc0NTFeQTJeQWpwZ15BbWU4MDI1OTQxMjcx._V1_UX400.jpg'),
 (242026, 1950, NULL, 'Lindsay Duncan', 'nm0242026', 'https://m.media-amazon.com/images/M/MV5BMTYwNTkxOTQzMV5BMl5BanBnXkFtZTcwODQ3ODIyOA@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (242295, 1964, 2012, 'Stephen Dunham', 'nm0242295', 'https://m.media-amazon.com/images/M/MV5BZjQyYzdmZmQtNzQzMC00MWZmLThhNTctNzE2NWM2MDQ1YzI1XkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (242295, 1964, 2012, 'Stephen Dunham', 'nm0242295', 'https://m.media-amazon.com/images/M/MV5BZjQyYzdmZmQtNzQzMC00MWZmLThhNTctNzE2NWM2MDQ1YzI1XkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_UX400.jpg'),
 (242319, NULL, NULL, 'Jim Dunk', 'nm0242319', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (242882, 1969, NULL, 'Max Martini', 'nm0242882', 'https://m.media-amazon.com/images/M/MV5BNWE5NzUzYWItMWU0ZC00YjZjLTk5ZTYtNGFlMzJkNWI4OGU2XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX400.jpg'),
 (243233, 1976, NULL, 'Mark Duplass', 'nm0243233', 'https://m.media-amazon.com/images/M/MV5BNzlhNjUwMTQtMWRlZC00N2VlLTk0MjctMjI0NmI2ZWRkMDkzXkEyXkFqcGdeQXVyMjA5MTEzMA@@._V1_UX400.jpg'),
@@ -2098,7 +2098,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (277975, 1926, 2016, 'Frank Finlay', 'nm0277975', 'https://m.media-amazon.com/images/M/MV5BMTM1MTc1MzExOV5BMl5BanBnXkFtZTcwNDI5MDkwOA@@._V1_UX400.jpg'),
 (278767, 1966, NULL, 'Andrew Fiscella', 'nm0278767', 'https://m.media-amazon.com/images/M/MV5BNzdjNTgyNjUtYmZjNi00YTZjLTkzZDEtYWVlNmY1MDQwMzIxXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX400.jpg'),
 (278979, 1974, NULL, 'Jenna Fischer', 'nm0278979', 'https://m.media-amazon.com/images/M/MV5BMTMyOTYzODQ5MF5BMl5BanBnXkFtZTcwMjE3MDgzMQ@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (279545, 1976, NULL, 'Isla Fisher', 'nm0279545', 'https://m.media-amazon.com/images/M/MV5BODY3MDQ4MTQ4Nl5BMl5BanBnXkFtZTgwNDU2NzU1MDE@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (279545, 1976, NULL, 'Isla Fisher', 'nm0279545', 'https://m.media-amazon.com/images/M/MV5BODY3MDQ4MTQ4Nl5BMl5BanBnXkFtZTgwNDU2NzU1MDE@._V1_UX400.jpg'),
 (279702, 1983, NULL, 'Miles Fisher', 'nm0279702', 'https://m.media-amazon.com/images/M/MV5BMTk2NDA4MzA5Nl5BMl5BanBnXkFtZTgwOTA3NzcwOTE@._V1_UX400.jpg'),
 (279720, 1984, NULL, 'Noel Fisher', 'nm0279720', 'https://m.media-amazon.com/images/M/MV5BMTcyMTc3NzQ2OV5BMl5BanBnXkFtZTcwNjAxNzExOA@@._V1_UX400.jpg'),
 (280199, 1972, NULL, 'Christopher Fitzgerald', 'nm0280199', 'https://m.media-amazon.com/images/M/MV5BNzBiYTk1ODQtOTU4MS00NzhmLWExM2ItMzEzOTU2YzFiMzZlXkEyXkFqcGdeQXVyOTAyMDgxODQ@._V1_UX400.jpg'),
@@ -2198,7 +2198,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (317970, 1894, 1971, 'Billy Gilbert', 'nm0317970', 'https://m.media-amazon.com/images/M/MV5BMTcyNTAxODg1MF5BMl5BanBnXkFtZTcwNzA2OTkwOA@@._V1_UX400.jpg'),
 (318821, 1968, NULL, 'Aidan Gillen', 'nm0318821', 'https://m.media-amazon.com/images/M/MV5BMjMwNzE4MzMxNl5BMl5BanBnXkFtZTgwOTYwMTEyMDE@._V1_UX400.jpg'),
 (318884, NULL, NULL, 'Liz Giles', 'nm0318884', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (319843, 1961, NULL, 'Daniel Giménez Cacho', 'nm0319843', 'https://m.media-amazon.com/images/M/MV5BMTU2MDIwNjcxMV5BMl5BanBnXkFtZTYwMzAyMzg3._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (319843, 1961, NULL, 'Daniel Giménez Cacho', 'nm0319843', 'https://m.media-amazon.com/images/M/MV5BMTU2MDIwNjcxMV5BMl5BanBnXkFtZTYwMzAyMzg3._V1_UX400.jpg'),
 (320760, 1931, 2011, 'Annie Girardot', 'nm0320760', 'https://m.media-amazon.com/images/M/MV5BMjE3Mjg4Mjg3NF5BMl5BanBnXkFtZTcwNjUzOTkxOA@@._V1_UX400.jpg'),
 (321294, 1924, 2010, 'Aldo Giuffrè', 'nm0321294', 'https://m.media-amazon.com/images/M/MV5BMjIzMzgzNTQzMl5BMl5BanBnXkFtZTcwODY2NzEyMw@@._V1_UX400.jpg'),
 (322299, 1882, 1959, 'James Gleason', 'nm0322299', 'https://m.media-amazon.com/images/M/MV5BMTkxNTY0MDEzMF5BMl5BanBnXkFtZTcwOTk3OTkwOA@@._V1_UX400.jpg'),
@@ -2298,7 +2298,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (358180, 1960, NULL, 'Suzanna Hamilton', 'nm0358180', 'https://m.media-amazon.com/images/M/MV5BMzBhNTA5NmYtNjk2Yy00MDAyLTk3YmItMWM0MTY3NzhkNDM1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX400.jpg'),
 (358316, 1971, NULL, 'Jon Hamm', 'nm0358316', 'https://m.media-amazon.com/images/M/MV5BNzg0MzA4MTY5M15BMl5BanBnXkFtZTcwODg2MTIwOQ@@._V1_UX400.jpg'),
 (358390, 1967, NULL, 'Gustaf Hammarsten', 'nm0358390', 'https://m.media-amazon.com/images/M/MV5BMTgzNTM2MzgyMl5BMl5BanBnXkFtZTcwMDgyMzY2Mw@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (358899, 1879, 1955, 'Walter Hampden', 'nm0358899', 'https://m.media-amazon.com/images/M/MV5BNDMxN2EyMzgtM2E1Mi00MmQ2LTk2MzItZjY3MGE1ZDU0OTQyXkEyXkFqcGdeQXVyMzI5NDcxNzI@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (358899, 1879, 1955, 'Walter Hampden', 'nm0358899', 'https://m.media-amazon.com/images/M/MV5BNDMxN2EyMzgtM2E1Mi00MmQ2LTk2MzItZjY3MGE1ZDU0OTQyXkEyXkFqcGdeQXVyMzI5NDcxNzI@._V1_UX400.jpg'),
 (359398, 1973, NULL, 'Martin Hancock', 'nm0359398', 'https://m.media-amazon.com/images/M/MV5BNjk0MTMxMDM4OV5BMl5BanBnXkFtZTgwMTIyOTQyMDI@._V1_UX400.jpg'),
 (359623, 1984, NULL, 'Taylor Handley', 'nm0359623', 'https://m.media-amazon.com/images/M/MV5BYzc1MmU3NTEtMGM1NS00N2IxLTg4MDctNzllNTA4MDk0ZjI4XkEyXkFqcGdeQXVyNjE4NTQ5NA@@._V1_UX400.jpg'),
 (360598, 1970, NULL, 'Glen Hansard', 'nm0360598', 'https://m.media-amazon.com/images/M/MV5BNzk3MTU2Nzc1Nl5BMl5BanBnXkFtZTcwODc0NTA2MQ@@._V1_UX400.jpg'),
@@ -2398,7 +2398,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (395067, 1911, 2003, 'Victoria Horne', 'nm0395067', 'https://m.media-amazon.com/images/M/MV5BMzRmNzUzZWUtOGM0MS00ODJkLThjMTUtYWY3ZGNmMzM3MTlmXkEyXkFqcGdeQXVyMDMxMjQwMw@@._V1_UX400.jpg'),
 (396558, 1989, NULL, 'Nicholas Hoult', 'nm0396558', 'https://m.media-amazon.com/images/M/MV5BMTUxMTYxNzMzNF5BMl5BanBnXkFtZTcwMTU0NTcxOQ@@._V1_UX400.jpg'),
 (396812, 1962, NULL, 'Danny Huston', 'nm0396812', 'https://m.media-amazon.com/images/M/MV5BMTA1MTk4NDA0NjZeQTJeQWpwZ15BbWU3MDQ5NzIzNTk@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (396924, 1976, NULL, 'Carice van Houten', 'nm0396924', 'https://m.media-amazon.com/images/M/MV5BNWYzYjI3YmYtNzc0OC00YTYyLTliOTAtZmYwOGZiOGFmNjQ0XkEyXkFqcGdeQXVyMTY1ODY0NDA@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (396924, 1976, NULL, 'Carice van Houten', 'nm0396924', 'https://m.media-amazon.com/images/M/MV5BNWYzYjI3YmYtNzc0OC00YTYyLTliOTAtZmYwOGZiOGFmNjQ0XkEyXkFqcGdeQXVyMTY1ODY0NDA@._V1_UX400.jpg'),
 (397110, 1969, NULL, 'Andrew Howard', 'nm0397110', 'https://m.media-amazon.com/images/M/MV5BOWMzNjEwMzYtNjkzZS00MGNiLWI0ZWQtY2M4ZDgyMGZlZjNiXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX400.jpg'),
 (397171, 1981, NULL, 'Bryce Dallas Howard', 'nm0397171', 'https://m.media-amazon.com/images/M/MV5BNzExZDkyNWItMDYzNS00MGVlLTllZTctMjYyZGE1MmY0MThhXkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_UX400.jpg'),
 (397788, NULL, NULL, 'Brian Howe', 'nm0397788', 'https://m.media-amazon.com/images/M/MV5BYjhhYWRmNGUtOTZkZi00MjI5LWJiZGItMmM0M2VkNTQ0MzRlL2ltYWdlXkEyXkFqcGdeQXVyMDAyODEwMw@@._V1_UX400.jpg'),
@@ -2498,7 +2498,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (434879, NULL, NULL, 'Marco Khan', 'nm0434879', 'https://m.media-amazon.com/images/M/MV5BMzljYTNiYWQtNmY3My00OWVmLThkNzktNTM2YjhlZGY5ZjA4XkEyXkFqcGdeQXVyNDE1MzY2OA@@._V1_UX400.jpg'),
 (435289, 1946, 1995, 'Aleksandr Kaydanovskiy', 'nm0435289', 'https://m.media-amazon.com/images/M/MV5BMTA5ODY4NTk3MTdeQTJeQWpwZ15BbWU4MDU0ODEyNjEx._V1_UX400.jpg'),
 (436639, 1940, NULL, 'Tsunehiko Kamijô', 'nm0436639', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (437283, 1972, NULL, 'Christian Kane', 'nm0437283', 'https://m.media-amazon.com/images/M/MV5BMTUxMzYzNDQ0MV5BMl5BanBnXkFtZTcwMjY5Mzk0Mw@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (437283, 1972, NULL, 'Christian Kane', 'nm0437283', 'https://m.media-amazon.com/images/M/MV5BMTUxMzYzNDQ0MV5BMl5BanBnXkFtZTcwMjY5Mzk0Mw@@._V1_UX400.jpg'),
 (437454, 1962, NULL, 'Tom Kane', 'nm0437454', 'https://m.media-amazon.com/images/M/MV5BMjQzNDE2ODc2NV5BMl5BanBnXkFtZTcwNTUyNjMzMg@@._V1_UX400.jpg'),
 (437520, 1923, 1995, 'Nobuo Kaneko', 'nm0437520', 'https://m.media-amazon.com/images/M/MV5BNGM5MWU3NTAtMjcxZS00YTVhLWE2NjYtNTNjNDQ2ODkzZWNhL2ltYWdlXkEyXkFqcGdeQXVyNDAxOTExNTM@._V1_UX400.jpg'),
 (437580, 1973, NULL, 'Takeshi Kaneshiro', 'nm0437580', 'https://m.media-amazon.com/images/M/MV5BMTIxNjI5ODg2OV5BMl5BanBnXkFtZTYwODQ5NDc2._V1_UX400.jpg'),
@@ -2598,7 +2598,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (470328, 1884, 1959, 'Werner Krauss', 'nm0470328', 'https://m.media-amazon.com/images/M/MV5BMTA1MTcyNzM0ODNeQTJeQWpwZ15BbWU4MDYwODYxNDMx._V1_UX400.jpg'),
 (470385, 1969, NULL, 'Aleksey Kravchenko', 'nm0470385', 'https://m.media-amazon.com/images/M/MV5BMjIyODk0OTIzMF5BMl5BanBnXkFtZTgwNTM4MTI2MTE@._V1_UX400.jpg'),
 (470981, 1962, NULL, 'Thomas Kretschmann', 'nm0470981', 'https://m.media-amazon.com/images/M/MV5BMTY1Njc5MzE1OF5BMl5BanBnXkFtZTcwMTc1NDM4Nw@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (471447, 1970, NULL, 'Ramya Krishnan', 'nm0471447', 'https://m.media-amazon.com/images/M/MV5BZThmMmJlZGQtZDgyMy00YmIyLTk1NDQtMGQ0N2EzYzUxMWNiXkEyXkFqcGdeQXVyMjYwMDk5NjE@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (471447, 1970, NULL, 'Ramya Krishnan', 'nm0471447', 'https://m.media-amazon.com/images/M/MV5BZThmMmJlZGQtZDgyMy00YmIyLTk1NDQtMGQ0N2EzYzUxMWNiXkEyXkFqcGdeQXVyMjYwMDk5NjE@._V1_UX400.jpg'),
 (472234, 1925, 2001, 'Margaretha Krook', 'nm0472234', 'https://m.media-amazon.com/images/M/MV5BZTI0ODQwNjktZmZiNS00M2EwLTlmOWQtNDUzZTE2MDc2OWZiXkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_UX400.jpg'),
 (472710, 1978, NULL, 'David Krumholtz', 'nm0472710', 'https://m.media-amazon.com/images/M/MV5BYjYxMTQ5NTUtYTU1Yy00MjY1LWI4YTctNjQ3OGE0MmJjZjJjXkEyXkFqcGdeQXVyMjA2NTA5NzA@._V1_UX400.jpg'),
 (472756, 1935, NULL, 'Mara Krupp', 'nm0472756', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
@@ -2698,7 +2698,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (511798, 1920, 1995, 'Viveca Lindfors', 'nm0511798', 'https://m.media-amazon.com/images/M/MV5BMTM0NjcyNzk5MV5BMl5BanBnXkFtZTcwODkxMDIxOA@@._V1_UX400.jpg'),
 (512934, 1976, NULL, 'Hamish Linklater', 'nm0512934', 'https://m.media-amazon.com/images/M/MV5BMjA1MzgzMDExN15BMl5BanBnXkFtZTgwOTg2MjAwMDE@._V1_UX400.jpg'),
 (513281, 1989, NULL, 'Alex D. Linz', 'nm0513281', 'https://m.media-amazon.com/images/M/MV5BMjA4MjAwNzU4NF5BMl5BanBnXkFtZTYwNjY5MjQ3._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (515116, 1987, NULL, 'Blake Lively', 'nm0515116', 'https://m.media-amazon.com/images/M/MV5BMTU2Njk0NTUyNl5BMl5BanBnXkFtZTcwODE0OTgyNw@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (515116, 1987, NULL, 'Blake Lively', 'nm0515116', 'https://m.media-amazon.com/images/M/MV5BMTU2Njk0NTUyNl5BMl5BanBnXkFtZTcwODE0OTgyNw@@._V1_UX400.jpg'),
 (515128, 1968, NULL, 'Jason Lively', 'nm0515128', 'https://m.media-amazon.com/images/M/MV5BY2U4MWNiMTUtOTM2OC00OTNmLTk1ZTItZmZjNGYwNTYwOGFjXkEyXkFqcGdeQXVyNjUxMjc1OTM@._V1_UX400.jpg'),
 (515207, NULL, NULL, 'Ruth Livier', 'nm0515207', 'https://m.media-amazon.com/images/M/MV5BMjI5NzEwNzI2N15BMl5BanBnXkFtZTgwMDU5OTU4NTE@._V1_UX400.jpg'),
 (515296, 1967, NULL, 'Ron Livingston', 'nm0515296', 'https://m.media-amazon.com/images/M/MV5BMjIxODk2NDUzOF5BMl5BanBnXkFtZTgwNTI2ODg1NDE@._V1_UX400.jpg'),
@@ -2798,7 +2798,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (546816, 1941, NULL, 'Miriam Margolyes', 'nm0546816', 'https://m.media-amazon.com/images/M/MV5BMTIwMzgxNTQzNV5BMl5BanBnXkFtZTcwNjA2MzYzMQ@@._V1_UX400.jpg'),
 (547349, 1986, NULL, 'Eli Marienthal', 'nm0547349', 'https://m.media-amazon.com/images/M/MV5BMjIwOTc5MTE1Nl5BMl5BanBnXkFtZTcwODI4MTcyOA@@._V1_UX400.jpg'),
 (549280, 1911, 1982, 'Hugh Marlowe', 'nm0549280', 'https://m.media-amazon.com/images/M/MV5BOTE5NDQ3MDgyN15BMl5BanBnXkFtZTcwMjcyMDMxOA@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (549682, 1964, 2014, 'Peter Marquardt', 'nm0549682', 'https://m.media-amazon.com/images/M/MV5BY2Q0ZGY1ZjMtZDBkNS00MGI5LTgwYjMtOTZhMmNjMzhjZDhhXkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (549682, 1964, 2014, 'Peter Marquardt', 'nm0549682', 'https://m.media-amazon.com/images/M/MV5BY2Q0ZGY1ZjMtZDBkNS00MGI5LTgwYjMtOTZhMmNjMzhjZDhhXkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_UX400.jpg'),
 (549992, NULL, NULL, 'Jo Marr', 'nm0549992', 'https://m.media-amazon.com/images/M/MV5BODliZjY2YWMtZWIzMy00YjM1LTg0ZDgtZTQ4M2NhZjE3MjkyXkEyXkFqcGdeQXVyMTAwNjgzNzA1._V1_UX400.jpg'),
 (550318, 1935, 2011, 'Kenneth Mars', 'nm0550318', 'https://m.media-amazon.com/images/M/MV5BMTU4ODQ1NTIwNF5BMl5BanBnXkFtZTcwMzIxOTQ3MQ@@._V1_UX400.jpg'),
 (550371, 1968, NULL, 'Eddie Marsan', 'nm0550371', 'https://m.media-amazon.com/images/M/MV5BMTYyMTA0MTYwOF5BMl5BanBnXkFtZTgwMjY5MzkzNzM@._V1_UX400.jpg'),
@@ -2898,7 +2898,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (587061, 1907, 1991, 'Bernard Miles', 'nm0587061', 'https://m.media-amazon.com/images/M/MV5BOTkxNzIxNjM3OF5BMl5BanBnXkFtZTcwMTM1NDYxOA@@._V1_UX400.jpg'),
 (587234, 1941, NULL, 'Sarah Miles', 'nm0587234', 'https://m.media-amazon.com/images/M/MV5BMTYzMTc0NDc4NF5BMl5BanBnXkFtZTcwMzYyOTkxOA@@._V1_UX400.jpg'),
 (587249, 1924, 2019, 'Sylvia Miles', 'nm0587249', 'https://m.media-amazon.com/images/M/MV5BZTZiN2YxZGUtZWU5Ny00OWM4LTg3ZWEtNjRmNzcyZjZkMmM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (587256, 1929, NULL, 'Vera Miles', 'nm0587256', 'https://m.media-amazon.com/images/M/MV5BMTgwOTY2MTk4MF5BMl5BanBnXkFtZTcwMTAwNjYwNA@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (587256, 1929, NULL, 'Vera Miles', 'nm0587256', 'https://m.media-amazon.com/images/M/MV5BMTgwOTY2MTk4MF5BMl5BanBnXkFtZTcwMTAwNjYwNA@@._V1_UX400.jpg'),
 (587331, NULL, NULL, 'David Milford', 'nm0587331', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (587884, 1969, NULL, 'Andrew Miller', 'nm0587884', 'https://m.media-amazon.com/images/M/MV5BMTg3MDgyOTY3M15BMl5BanBnXkFtZTcwMDY4OTIyOA@@._V1_UX400.jpg'),
 (587944, 1958, NULL, 'Barry Miller', 'nm0587944', 'https://m.media-amazon.com/images/M/MV5BMjM5NTUwMjk2MV5BMl5BanBnXkFtZTgwOTQ1NDMwMjE@._V1_UX400.jpg'),
@@ -2998,7 +2998,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (620981, 1958, NULL, 'Igal Naor', 'nm0620981', 'https://m.media-amazon.com/images/M/MV5BOTIwMGIxY2EtZTJmMi00N2FmLTgxNDMtMDg2YWM4ZDk2ZGE0XkEyXkFqcGdeQXVyMTcyNTI5MTc@._V1_UX400.jpg'),
 (621008, 1936, 2011, 'Charles Napier', 'nm0621008', 'https://m.media-amazon.com/images/M/MV5BMTMyODc4NjY0OF5BMl5BanBnXkFtZTcwNzk1NTg4Ng@@._V1_UX400.jpg'),
 (622544, 1951, NULL, 'David Naughton', 'nm0622544', 'https://m.media-amazon.com/images/M/MV5BMTQ5ZTUyMTYtMmMzMi00NDM0LWJhZmMtNmFhZDJmYTQ4YzEwXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (623214, 1929, 2013, 'Gorô Naya', 'nm0623214', 'https://m.media-amazon.com/images/M/MV5BZjBmMmJkMmItNDYxYi00YTc2LWI2YjgtMTZkNTU2N2I1YmJjXkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (623214, 1929, 2013, 'Gorô Naya', 'nm0623214', 'https://m.media-amazon.com/images/M/MV5BZjBmMmJkMmItNDYxYi00YTc2LWI2YjgtMTZkNTU2N2I1YmJjXkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_UX400.jpg'),
 (623605, 1945, NULL, 'Edwin Neal', 'nm0623605', 'https://m.media-amazon.com/images/M/MV5BMTk2ODc3ODg4MV5BMl5BanBnXkFtZTcwODIwMDkyMQ@@._V1_UX400.jpg'),
 (623658, 1926, 2010, 'Patricia Neal', 'nm0623658', 'https://m.media-amazon.com/images/M/MV5BMTgzMjk3OTkwN15BMl5BanBnXkFtZTYwMDM5NDM2._V1_UX400.jpg'),
 (625075, 1950, NULL, 'Kate Nelligan', 'nm0625075', 'https://m.media-amazon.com/images/M/MV5BOTc3MTc5OTUxOF5BMl5BanBnXkFtZTcwMDE4OTgyMQ@@._V1_UX400.jpg'),
@@ -3098,7 +3098,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (664238, 1970, NULL, 'Adam Pascal', 'nm0664238', 'https://m.media-amazon.com/images/M/MV5BMTIwNDg2ODU5Nl5BMl5BanBnXkFtZTYwNjUyNjM0._V1_UX400.jpg'),
 (665114, 1946, NULL, 'Vincent Pastore', 'nm0665114', 'https://m.media-amazon.com/images/M/MV5BMjE2MDMxNDA3NV5BMl5BanBnXkFtZTYwNDE3OTU1._V1_UX400.jpg'),
 (665265, NULL, NULL, 'Patcharawan Patarakijjanon', 'nm0665265', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (666398, 1958, NULL, 'Scott Patterson', 'nm0666398', 'https://m.media-amazon.com/images/M/MV5BMTQ4NjQ5MjI0Ml5BMl5BanBnXkFtZTYwOTg3Mjg1._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (666398, 1958, NULL, 'Scott Patterson', 'nm0666398', 'https://m.media-amazon.com/images/M/MV5BMTQ4NjQ5MjI0Ml5BMl5BanBnXkFtZTYwOTg3Mjg1._V1_UX400.jpg'),
 (666593, 1959, NULL, 'Mark Patton', 'nm0666593', 'https://m.media-amazon.com/images/M/MV5BNTAxZmZhMTEtNWYwNC00YmRmLWIyYWYtZDUyNzExMmEwYjlmXkEyXkFqcGdeQXVyNjUxMjc1OTM@._V1_UX400.jpg'),
 (666739, 1979, NULL, 'Aaron Paul', 'nm0666739', 'https://m.media-amazon.com/images/M/MV5BMTY1OTY5NjI5NV5BMl5BanBnXkFtZTcwODA4MjM0OA@@._V1_UX400.jpg'),
 (667186, 1969, NULL, 'Viveca Paulin', 'nm0667186', 'https://m.media-amazon.com/images/M/MV5BMTQzNjczNDg5MV5BMl5BanBnXkFtZTcwMzg2NTUwOA@@._V1_UX400.jpg'),
@@ -3198,7 +3198,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (711864, 1977, NULL, 'Devin Ratray', 'nm0711864', 'https://m.media-amazon.com/images/M/MV5BYjRjZmY1MTgtNDVhZS00YWVkLTk1OGEtMTI3YmE0MTdjODc3XkEyXkFqcGdeQXVyMTUyODIwNDE@._V1_UX400.jpg'),
 (712404, 1943, NULL, 'Lorna Raver', 'nm0712404', 'https://m.media-amazon.com/images/M/MV5BNDY2ZmQ2MDItZTZiMi00MmViLThjZTYtOGZkOWQ1N2EyZDEwL2ltYWdlXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_UX400.jpg'),
 (712546, 1950, NULL, 'Paresh Rawal', 'nm0712546', 'https://m.media-amazon.com/images/M/MV5BMjI4Mjg2MjgxMV5BMl5BanBnXkFtZTgwNDYyMTIzOTE@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (712562, NULL, NULL, 'Raad Rawi', 'nm0712562', 'https://m.media-amazon.com/images/M/MV5BMTkzMzM0OTYxM15BMl5BanBnXkFtZTcwNzY1NTgyNA@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (712562, NULL, NULL, 'Raad Rawi', 'nm0712562', 'https://m.media-amazon.com/images/M/MV5BMTkzMzM0OTYxM15BMl5BanBnXkFtZTcwNzY1NTgyNA@@._V1_UX400.jpg'),
 (713747, NULL, NULL, 'Iain Rea', 'nm0713747', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (714147, 1975, NULL, 'Elizabeth Reaser', 'nm0714147', 'https://m.media-amazon.com/images/M/MV5BMTkzMTYwMjI0OF5BMl5BanBnXkFtZTcwMzcwOTUzMQ@@._V1_UX400.jpg'),
 (714164, 1979, NULL, 'J.L. Reate', 'nm0714164', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
@@ -3298,7 +3298,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (751426, 1907, 1976, 'Rosalind Russell', 'nm0751426', 'https://m.media-amazon.com/images/M/MV5BMTI0NTA4NTI2N15BMl5BanBnXkFtZTYwNDE4NjQ2._V1_UX400.jpg'),
 (751518, 1986, NULL, 'Wyatt Russell', 'nm0751518', 'https://m.media-amazon.com/images/M/MV5BNzA2YjljZTgtNmMzMi00NzU4LWExYTUtOTdkMmJiMzAxNTllXkEyXkFqcGdeQXVyMjUxNTU5MTg@._V1_UX400.jpg'),
 (751638, 1953, NULL, 'James Russo', 'nm0751638', 'https://m.media-amazon.com/images/M/MV5BNzk1M2RhNmUtZWRiMS00ZDcyLTgwZmYtOGJjZTg5ZDc3ZDkwXkEyXkFqcGdeQXVyMTEyNTY5NjYx._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (751798, 1982, NULL, 'Mathias Rust', 'nm0751798', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (751798, 1982, NULL, 'Mathias Rust', 'nm0751798', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (752379, 1935, 2014, 'David Ryall', 'nm0752379', 'https://m.media-amazon.com/images/M/MV5BMTY3NjQ2NDUyNF5BMl5BanBnXkFtZTcwODgyOTgxOA@@._V1_UX400.jpg'),
 (752407, 1968, NULL, 'Amy Ryan', 'nm0752407', 'https://m.media-amazon.com/images/M/MV5BMTY0MTcwMzM0Nl5BMl5BanBnXkFtZTcwODIyMjM3NA@@._V1_UX400.jpg'),
 (752436, 1967, NULL, 'Blanchard Ryan', 'nm0752436', 'https://m.media-amazon.com/images/M/MV5BMDViMGIxNDUtNDFkNi00M2UxLTlmYmMtYjY5MDhkZWE0ZDc5XkEyXkFqcGdeQXVyNjI4MDMxMw@@._V1_UX400.jpg'),
@@ -3398,7 +3398,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (791226, 1969, NULL, 'Rachel Shelley', 'nm0791226', 'https://m.media-amazon.com/images/M/MV5BMTgzMTQwMzg1MF5BMl5BanBnXkFtZTcwNTQ2NzQ3MQ@@._V1_UX400.jpg'),
 (791570, 1968, NULL, 'Ben Shenkman', 'nm0791570', 'https://m.media-amazon.com/images/M/MV5BOTc4Nzg4OTQ1NV5BMl5BanBnXkFtZTcwOTU4NDMwNw@@._V1_UX400.jpg'),
 (791864, NULL, NULL, 'Scott Shepherd', 'nm0791864', 'https://m.media-amazon.com/images/M/MV5BMTM4NDA2NjQzOF5BMl5BanBnXkFtZTcwNzMzNjc1OA@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (792116, 1970, NULL, 'Jimmy Sheirgill', 'nm0792116', 'https://m.media-amazon.com/images/M/MV5BMjM2MTc1NTk5OF5BMl5BanBnXkFtZTgwOTI4NDczMDE@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (792116, 1970, NULL, 'Jimmy Sheirgill', 'nm0792116', 'https://m.media-amazon.com/images/M/MV5BMjM2MTc1NTk5OF5BMl5BanBnXkFtZTgwOTI4NDczMDE@._V1_UX400.jpg'),
 (792202, 1976, NULL, 'Kirsten Sheridan', 'nm0792202', 'https://m.media-amazon.com/images/M/MV5BYjUxNjUyZjUtYjc2NC00MWZjLTg4MDAtNWI5MjhiZjczMzc4XkEyXkFqcGdeQXVyMzU4MzU2MA@@._V1_UX400.jpg'),
 (792911, 1961, NULL, 'Sunil Shetty', 'nm0792911', 'https://m.media-amazon.com/images/M/MV5BODUwMzUyNTUxMl5BMl5BanBnXkFtZTcwNDM2ODIyOA@@._V1_UX400.jpg'),
 (793069, 1981, NULL, 'Ko Shibasaki', 'nm0793069', 'https://m.media-amazon.com/images/M/MV5BODY2MzQwMTE2N15BMl5BanBnXkFtZTcwNzMzNzEzOA@@._V1_UX400.jpg'),
@@ -3498,7 +3498,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (831601, 1962, NULL, 'Christian Stolte', 'nm0831601', 'https://m.media-amazon.com/images/M/MV5BODQ5OTQ3MGYtZmJlOS00MzNhLWJmZjUtZDdmYTczZDYzNDFkXkEyXkFqcGdeQXVyNTA5MTc2NQ@@._V1_UX400.jpg'),
 (832314, 1971, NULL, 'Eric Stonestreet', 'nm0832314', 'https://m.media-amazon.com/images/M/MV5BNjY0Mjc2MTUyM15BMl5BanBnXkFtZTcwMzUzNTEzMQ@@._V1_UX400.jpg'),
 (832509, 1960, NULL, 'Dennis Storhøi', 'nm0832509', 'https://m.media-amazon.com/images/M/MV5BNjFiNjEyNWMtZTZjNi00ZmU4LTkxODUtZDcwNjM4NDIwNTMyXkEyXkFqcGdeQXVyMzMzODYzNDI@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (832792, 1955, NULL, 'Ken Stott', 'nm0832792', 'https://m.media-amazon.com/images/M/MV5BMTY5NTc5OTczMF5BMl5BanBnXkFtZTcwMTYyNjg3Ng@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (832792, 1955, NULL, 'Ken Stott', 'nm0832792', 'https://m.media-amazon.com/images/M/MV5BMTY5NTc5OTczMF5BMl5BanBnXkFtZTcwMTYyNjg3Ng@@._V1_UX400.jpg'),
 (833152, 1914, 2001, 'Beatrice Straight', 'nm0833152', 'https://m.media-amazon.com/images/M/MV5BMjA2NTc5NjUyNF5BMl5BanBnXkFtZTcwOTc5MDAxMw@@._V1_UX400.jpg'),
 (833519, 1948, 2014, 'Marcia Strassman', 'nm0833519', 'https://m.media-amazon.com/images/M/MV5BMTQ2MDQ4NzAxOV5BMl5BanBnXkFtZTcwMjY0OTgyMQ@@._V1_UX400.jpg'),
 (833865, 1913, 1975, 'Robert Strauss', 'nm0833865', 'https://m.media-amazon.com/images/M/MV5BNTUzMzU0Mzg5OV5BMl5BanBnXkFtZTcwNTQwODkxOA@@._V1_UX400.jpg'),
@@ -3598,7 +3598,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (865119, 1946, NULL, 'Beverly Todd', 'nm0865119', 'https://m.media-amazon.com/images/M/MV5BMjIwMjc1MTczMl5BMl5BanBnXkFtZTcwOTcxNTI4Mw@@._V1_UX400.jpg'),
 (865286, 1959, NULL, 'Sonia Todd', 'nm0865286', 'https://m.media-amazon.com/images/M/MV5BMjE1OTgzMTgwMl5BMl5BanBnXkFtZTcwMjIwOTA4Nw@@._V1_UX400.jpg'),
 (865302, 1954, NULL, 'Tony Todd', 'nm0865302', 'https://m.media-amazon.com/images/M/MV5BMTUzNTI1Njc4NV5BMl5BanBnXkFtZTcwMDg4NzcyNg@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (865411, 1965, NULL, 'Srdjan ''Zika'' Todorovic', 'nm0865411', 'https://m.media-amazon.com/images/M/MV5BMTUwNjgzNzI2M15BMl5BanBnXkFtZTcwMzkzNDE0NQ@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (865411, 1965, NULL, 'Srdjan ''Zika'' Todorovic', 'nm0865411', 'https://m.media-amazon.com/images/M/MV5BMTUwNjgzNzI2M15BMl5BanBnXkFtZTcwMzkzNDE0NQ@@._V1_UX400.jpg'),
 (865949, 1969, NULL, 'Goya Toledo', 'nm0865949', 'https://m.media-amazon.com/images/M/MV5BY2U0YTYwZTItYzQ3OS00NzQzLWE4NjktMzkzMjY1ZjdmYThhXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX400.jpg'),
 (866835, 1917, 2000, 'David Tomlinson', 'nm0866835', 'https://m.media-amazon.com/images/M/MV5BMTU0MDAxODMxM15BMl5BanBnXkFtZTcwMTExNDUyOA@@._V1_UX400.jpg'),
 (867391, 1907, 1994, 'Eijirô Tôno', 'nm0867391', 'https://m.media-amazon.com/images/M/MV5BYTYxOWJhNjItYjA0ZS00MTdmLTk1ZWUtOWRiMDdlNzMyMmYzXkEyXkFqcGdeQXVyMTI3MDk3MzQ@._V1_UX400.jpg'),
@@ -3698,7 +3698,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (909768, 1964, NULL, 'Matt Walsh', 'nm0909768', 'https://m.media-amazon.com/images/M/MV5BZDI4YjAxYjYtZjc2ZS00ZjhlLWFhMTQtODZhMjQzNzFlOWQzXkEyXkFqcGdeQXVyOTIxNTgwNjc@._V1_UX400.jpg'),
 (910278, 1950, NULL, 'Julie Walters', 'nm0910278', 'https://m.media-amazon.com/images/M/MV5BMTM3NDA2NjE0M15BMl5BanBnXkFtZTcwMjk2ODIyOA@@._V1_UX400.jpg'),
 (910559, 1968, NULL, 'Mark Walton', 'nm0910559', 'https://m.media-amazon.com/images/M/MV5BMTExMjQyNTE5NDReQTJeQWpwZ15BbWU3MDM0MDc5MjI@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (910607, 1956, NULL, 'Christoph Waltz', 'nm0910607', 'https://m.media-amazon.com/images/M/MV5BMTM4MDk3OTYxOF5BMl5BanBnXkFtZTcwMDk5OTUwOQ@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (910607, 1956, NULL, 'Christoph Waltz', 'nm0910607', 'https://m.media-amazon.com/images/M/MV5BMTM4MDk3OTYxOF5BMl5BanBnXkFtZTcwMDk5OTUwOQ@@._V1_UX400.jpg'),
 (910947, 1969, NULL, 'Faye Wong', 'nm0910947', 'https://m.media-amazon.com/images/M/MV5BZjgyODFmZTItMTZjYy00NTUzLTg0MDctNWY0YmRmNWM0ZTIwXkEyXkFqcGdeQXVyMjg0MTI5NzQ@._V1_UX400.jpg'),
 (910966, 1976, NULL, 'Leehom Wang', 'nm0910966', 'https://m.media-amazon.com/images/M/MV5BNmY1OTQ3N2ItMjdiMS00ZTExLWJkOGYtNDViMmE1ZWUzNDQzXkEyXkFqcGdeQXVyMjM5MzkxNDg@._V1_UX400.jpg'),
 (911320, 1964, NULL, 'Patrick Warburton', 'nm0911320', 'https://m.media-amazon.com/images/M/MV5BMTgyNzc5OTExN15BMl5BanBnXkFtZTcwOTU0MzYwNw@@._V1_UX400.jpg'),
@@ -3798,7 +3798,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (939836, 1946, NULL, 'Lana Wood', 'nm0939836', 'https://m.media-amazon.com/images/M/MV5BMTU3NjgwMDk2OV5BMl5BanBnXkFtZTcwOTU2NjUzNw@@._V1_UX400.jpg'),
 (939943, NULL, NULL, 'Rachel Wood', 'nm0939943', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (940158, 1973, NULL, 'Bokeem Woodbine', 'nm0940158', 'https://m.media-amazon.com/images/M/MV5BODY0MjQ0MDQyNl5BMl5BanBnXkFtZTgwMTgxNzQxNjM@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (940362, 1991, NULL, 'Shailene Woodley', 'nm0940362', 'https://m.media-amazon.com/images/M/MV5BOTIxNTE2NTQ3Nl5BMl5BanBnXkFtZTcwMzMwOTk2Nw@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (940362, 1991, NULL, 'Shailene Woodley', 'nm0940362', 'https://m.media-amazon.com/images/M/MV5BOTIxNTE2NTQ3Nl5BMl5BanBnXkFtZTcwMzMwOTk2Nw@@._V1_UX400.jpg'),
 (940627, 1929, 2010, 'Ilene Woods', 'nm0940627', 'https://m.media-amazon.com/images/M/MV5BZjNmNTczNWQtNGJhYi00MmNlLWIwNzAtNDYwZjQ1Y2MzZjY5XkEyXkFqcGdeQXVyMTQxMjk0Mg@@._V1_UX400.jpg'),
 (940919, 1930, 2009, 'Edward Woodward', 'nm0940919', 'https://m.media-amazon.com/images/M/MV5BMTY3NDU5NzQwOV5BMl5BanBnXkFtZTcwMjgxMTk5Nw@@._V1_UX400.jpg'),
 (941777, 1976, NULL, 'Sam Worthington', 'nm0941777', 'https://m.media-amazon.com/images/M/MV5BMTc5NTMyMjIwMV5BMl5BanBnXkFtZTcwNTMyNjYwMw@@._V1_UX400.jpg'),
@@ -3898,7 +3898,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (10183124, NULL, NULL, 'Arjun Das', 'nm10183124', 'https://m.media-amazon.com/images/M/MV5BZDAxY2NlYjAtZTE4ZC00MjMxLTg5ZjUtZWQwYmZlNGRkYjhiXkEyXkFqcGdeQXVyMTEwODcyNDcy._V1_UX400.jpg'),
 (1018488, 1969, NULL, 'Wendi McLendon-Covey', 'nm1018488', 'https://m.media-amazon.com/images/M/MV5BNWY4MDkyNGMtN2U1MS00MGNkLWFkMTctMDAzMDIxNjVjNTUyXkEyXkFqcGdeQXVyOTg2MjUwNQ@@._V1_UX400.jpg'),
 (1018679, 1976, NULL, 'Steven Pasquale', 'nm1018679', 'https://m.media-amazon.com/images/M/MV5BMTQ1NTc4NDc3MV5BMl5BanBnXkFtZTcwMTM2MjIzMQ@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (1020089, 1976, NULL, 'Sally Hawkins', 'nm1020089', 'https://m.media-amazon.com/images/M/MV5BODE4MDE0MDEzMl5BMl5BanBnXkFtZTgwNjI1NTU5MDE@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (1020089, 1976, NULL, 'Sally Hawkins', 'nm1020089', 'https://m.media-amazon.com/images/M/MV5BODE4MDE0MDEzMl5BMl5BanBnXkFtZTgwNjI1NTU5MDE@._V1_UX400.jpg'),
 (1020124, 1972, NULL, 'Sarah Clarke', 'nm1020124', 'https://m.media-amazon.com/images/M/MV5BMTc3NzI4NjkyM15BMl5BanBnXkFtZTcwNTU2NzkyMQ@@._V1_UX400.jpg'),
 (10201625, NULL, NULL, 'Kawsar Al Haddad', 'nm10201625', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (1024677, 1979, NULL, 'John Krasinski', 'nm1024677', 'https://m.media-amazon.com/images/M/MV5BMTc3MzY3MjQ3OV5BMl5BanBnXkFtZTcwODI3NjQxMw@@._V1_UX400.jpg'),
@@ -3998,7 +3998,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (1125878, NULL, NULL, 'John Lloyd Fillingham', 'nm1125878', 'https://m.media-amazon.com/images/M/MV5BMGNiYmQ2ODUtZWNjOS00YmNlLWEyYzktMDhhOGIwODg2MWJkXkEyXkFqcGdeQXVyMDkyNTQyMg@@._V1_UX400.jpg'),
 (1126340, 1993, NULL, 'Ryûnosuke Kamiki', 'nm1126340', 'https://m.media-amazon.com/images/M/MV5BNzlkYzdjYWEtOTkyNC00NDNhLWIyNTItZmFjNWQxZDZmNzFlXkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_UX400.jpg'),
 (1126657, 1992, NULL, 'George MacKay', 'nm1126657', 'https://m.media-amazon.com/images/M/MV5BMTQ4NjQ0NTEwOV5BMl5BanBnXkFtZTgwODQyMzIyMTI@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (1128572, 1979, NULL, 'Lake Bell', 'nm1128572', 'https://m.media-amazon.com/images/M/MV5BMTcyMzMzMDk5NV5BMl5BanBnXkFtZTgwNTEzODY3MDE@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (1128572, 1979, NULL, 'Lake Bell', 'nm1128572', 'https://m.media-amazon.com/images/M/MV5BMTcyMzMzMDk5NV5BMl5BanBnXkFtZTgwNTEzODY3MDE@._V1_UX400.jpg'),
 (1129884, 1978, NULL, 'Leandro Firmino', 'nm1129884', 'https://m.media-amazon.com/images/M/MV5BMTQ5MjM3ODIyM15BMl5BanBnXkFtZTcwNTMzNDY3Mw@@._V1_UX400.jpg'),
 (1129962, NULL, NULL, 'Cori Gonzalez-Macuer', 'nm1129962', 'https://m.media-amazon.com/images/M/MV5BYTVkMDM1NDUtYWJmMy00NTMwLTljMDEtYjg0OWJhOTMyYTA0XkEyXkFqcGdeQXVyODAzMDQxMw@@._V1_UX400.jpg'),
 (1130617, 1990, NULL, 'Wesley Singerman', 'nm1130617', 'https://m.media-amazon.com/images/M/MV5BMTI0NDY4MTEyOF5BMl5BanBnXkFtZTYwODgwMzA3._V1_UX400.jpg'),
@@ -4098,7 +4098,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (1242688, 1992, NULL, 'Josh Hutcherson', 'nm1242688', 'https://m.media-amazon.com/images/M/MV5BMTI4OTk0MjQ1OV5BMl5BanBnXkFtZTcwNTE3NjM3Mw@@._V1_UX400.jpg'),
 (1245863, 1983, NULL, 'Rafe Spall', 'nm1245863', 'https://m.media-amazon.com/images/M/MV5BNzU3OTIzMzM1OF5BMl5BanBnXkFtZTcwMDc1MDkwOQ@@._V1_UX400.jpg'),
 (12465818, NULL, NULL, 'Baransel Arguz', 'nm12465818', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (1246724, NULL, NULL, 'Su-an Kim', 'nm1246724', 'https://m.media-amazon.com/images/M/MV5BNjA0ODYxMTItNzhmYi00ZDY5LWE3MTctNWU4YzMyMjdhNDMzXkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (1246724, NULL, NULL, 'Su-an Kim', 'nm1246724', 'https://m.media-amazon.com/images/M/MV5BNjA0ODYxMTItNzhmYi00ZDY5LWE3MTctNWU4YzMyMjdhNDMzXkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_UX400.jpg'),
 (1248393, 1990, NULL, 'Rachel Hurd-Wood', 'nm1248393', 'https://m.media-amazon.com/images/M/MV5BMjEyNjA1NTg1Ml5BMl5BanBnXkFtZTcwNzIxMTk4Mw@@._V1_UX400.jpg'),
 (1249052, 1979, NULL, 'Riccardo Scamarcio', 'nm1249052', 'https://m.media-amazon.com/images/M/MV5BMTIwNzk5MjE5OF5BMl5BanBnXkFtZTcwODU2NTIzMQ@@._V1_UX400.jpg'),
 (1249256, 1963, NULL, 'Larry the Cable Guy', 'nm1249256', 'https://m.media-amazon.com/images/M/MV5BMTY5MjA0MjQ4Ml5BMl5BanBnXkFtZTcwNTIwMTc2NQ@@._V1_UX400.jpg'),
@@ -4198,7 +4198,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (1382207, 1985, NULL, 'Robert Hoffman', 'nm1382207', 'https://m.media-amazon.com/images/M/MV5BMTYwNDI1OTkyNl5BMl5BanBnXkFtZTcwMDQ4OTM3MQ@@._V1_UX400.jpg'),
 (1382799, 1980, NULL, 'Juliette Danielle', 'nm1382799', 'https://m.media-amazon.com/images/M/MV5BODYxMzgzNDYzNV5BMl5BanBnXkFtZTYwNzkzMzky._V1_UX400.jpg'),
 (1384413, 1970, NULL, 'Saswata Chatterjee', 'nm1384413', 'https://m.media-amazon.com/images/M/MV5BZDRiZmUxMWYtOWYyMC00Mjc5LTgwNTEtNjg1OTAwYTNhNDFiL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (1385871, 1979, NULL, 'Olga Kurylenko', 'nm1385871', 'https://m.media-amazon.com/images/M/MV5BMTkyMzIwMjY1OF5BMl5BanBnXkFtZTcwNzA3MDkwOQ@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (1385871, 1979, NULL, 'Olga Kurylenko', 'nm1385871', 'https://m.media-amazon.com/images/M/MV5BMTkyMzIwMjY1OF5BMl5BanBnXkFtZTcwNzA3MDkwOQ@@._V1_UX400.jpg'),
 (1388074, 1976, NULL, 'Tony Jaa', 'nm1388074', 'https://m.media-amazon.com/images/M/MV5BMTg1NjE3NDcxMF5BMl5BanBnXkFtZTYwODU1Njg2._V1_UX400.jpg'),
 (1388463, NULL, NULL, 'Prakash Belawadi', 'nm1388463', 'https://m.media-amazon.com/images/M/MV5BNGNiMDU4ODEtOGU0Ni00MjY3LWJjNDYtNDAxNDBjNTk0ZTY1L2ltYWdlXkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_UX400.jpg'),
 (1388927, 1993, NULL, 'Miranda Cosgrove', 'nm1388927', 'https://m.media-amazon.com/images/M/MV5BZTdhMmJjNDktMzU1Yi00Mjk1LTk1MTYtNDZlOTkwNjY3NTNiXkEyXkFqcGdeQXVyMjc2NjA1Mw@@._V1_UX400.jpg'),
@@ -4298,7 +4298,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (1536605, 1983, NULL, 'Jesse Moss', 'nm1536605', 'https://m.media-amazon.com/images/M/MV5BNjY3ZWVhYTYtYWVjZC00ODVkLThkMTktM2IzMjNiZjE3OTA5XkEyXkFqcGdeQXVyMzc0NjAzMTA@._V1_UX400.jpg'),
 (1537825, 1980, NULL, 'Sam Heughan', 'nm1537825', 'https://m.media-amazon.com/images/M/MV5BMTUwNzAyMzA2MF5BMl5BanBnXkFtZTgwNzA0MjQ1ODE@._V1_UX400.jpg'),
 (1538116, NULL, NULL, 'Tisca Chopra', 'nm1538116', 'https://m.media-amazon.com/images/M/MV5BZTU4NzkyN2YtMDZkMy00NzJhLWFiYWQtOGU1NmUwMjk0NjgxXkEyXkFqcGdeQXVyMTE5NzgxOTM@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (1538675, 1980, NULL, 'Emayatzy Corinealdi', 'nm1538675', 'https://m.media-amazon.com/images/M/MV5BYTI2YzA3NmItZDYzMS00ODA0LThhM2MtZmIxMTQ5N2I0ZWYwXkEyXkFqcGdeQXVyMzIwOTEwMw@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (1538675, 1980, NULL, 'Emayatzy Corinealdi', 'nm1538675', 'https://m.media-amazon.com/images/M/MV5BYTI2YzA3NmItZDYzMS00ODA0LThhM2MtZmIxMTQ5N2I0ZWYwXkEyXkFqcGdeQXVyMzIwOTEwMw@@._V1_UX400.jpg'),
 (1539666, 1977, NULL, 'Gayatri Joshi', 'nm1539666', 'https://m.media-amazon.com/images/M/MV5BYjhlZWVlYjMtOTViOC00NDRhLWI5YzUtYjgyNDAyN2FlMzcyXkEyXkFqcGdeQXVyNTE0MDc0NTM@._V1_UX400.jpg'),
 (1540244, NULL, NULL, 'Vidya Malvade', 'nm1540244', 'https://m.media-amazon.com/images/M/MV5BMzE4NTEwMjk4N15BMl5BanBnXkFtZTgwNzMyMDU0OTE@._V1_UX400.jpg'),
 (1540404, 1985, NULL, 'Max Minghella', 'nm1540404', 'https://m.media-amazon.com/images/M/MV5BMTQ4OTEwNTcwN15BMl5BanBnXkFtZTgwNDU4MDgxMTE@._V1_UX400.jpg'),
@@ -4398,7 +4398,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (1690482, 1979, NULL, 'Damaine Radcliff', 'nm1690482', 'https://m.media-amazon.com/images/M/MV5BMDljYzdlNWItNGQ1Yi00NzFiLWI4ODEtMWE1OWY0YTU1MTQ1XkEyXkFqcGdeQXVyMTE2Njc2ODM4._V1_UX400.jpg'),
 (1693019, 1976, NULL, 'Laura Vasiliu', 'nm1693019', 'https://m.media-amazon.com/images/M/MV5BZDZjMWJmOTEtMzZlMS00ZjQ4LWE5NmQtYzI0MWYwY2QwZDI5XkEyXkFqcGdeQXVyNDkzNTM2ODg@._V1_UX400.jpg'),
 (1693432, 1982, NULL, 'Jan Cornet', 'nm1693432', 'https://m.media-amazon.com/images/M/MV5BNjJjN2M0ZDktZDVhMC00MDNiLTk5YTItYjBlNzNlNzIyYjY4XkEyXkFqcGdeQXVyMTEwNjg1MzI@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (1703577, 1987, NULL, 'Yifei Liu', 'nm1703577', 'https://m.media-amazon.com/images/M/MV5BMjQ4MjEyNTE4M15BMl5BanBnXkFtZTgwMzcyNDE0NDM@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (1703577, 1987, NULL, 'Yifei Liu', 'nm1703577', 'https://m.media-amazon.com/images/M/MV5BMjQ4MjEyNTE4M15BMl5BanBnXkFtZTgwMzcyNDE0NDM@._V1_UX400.jpg'),
 (1705720, NULL, NULL, 'Tessa Mitchell', 'nm1705720', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (1706767, 1983, NULL, 'Jonah Hill', 'nm1706767', 'https://m.media-amazon.com/images/M/MV5BMTUyNDU0NzAwNl5BMl5BanBnXkFtZTcwMzQxMzIzNw@@._V1_UX400.jpg'),
 (1707018, 1998, NULL, 'Ryan Whitney', 'nm1707018', 'https://m.media-amazon.com/images/M/MV5BMzQzMWJhOWMtZTQ3YS00YTQyLTliZTQtNGQ4NGFmY2ZlYWE3XkEyXkFqcGdeQXVyMzg4ODc5Mg@@._V1_UX400.jpg'),
@@ -4498,7 +4498,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (1894655, 1971, NULL, 'John Hodgman', 'nm1894655', 'https://m.media-amazon.com/images/M/MV5BMTgzMDE1NjIxN15BMl5BanBnXkFtZTcwNDU3MjU4Mg@@._V1_UX400.jpg'),
 (1897007, 1987, NULL, 'Takuya Ishida', 'nm1897007', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (1898448, 1968, NULL, 'Eythor Gudjonsson', 'nm1898448', 'https://m.media-amazon.com/images/M/MV5BMTQwODc1NjI4NF5BMl5BanBnXkFtZTcwMDIxNDIzMQ@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (1901220, NULL, NULL, 'Sarah Burns', 'nm1901220', 'https://m.media-amazon.com/images/M/MV5BMjEyMDYzOTI1NV5BMl5BanBnXkFtZTcwMTE4MDg3Nw@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (1901220, NULL, NULL, 'Sarah Burns', 'nm1901220', 'https://m.media-amazon.com/images/M/MV5BMjEyMDYzOTI1NV5BMl5BanBnXkFtZTcwMTE4MDg3Nw@@._V1_UX400.jpg'),
 (1902766, 1978, NULL, 'Donny Alamsyah', 'nm1902766', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (1904886, 1996, NULL, 'Mia Stallard', 'nm1904886', 'https://m.media-amazon.com/images/M/MV5BZTgyZDU2OWYtZjVhMC00MGMzLWE1YWMtNDM5ZjFjNmVhZWJmXkEyXkFqcGdeQXVyMTAwMzUyMzUy._V1_UX400.jpg'),
 (1907066, 1981, NULL, 'Lisa Hannigan', 'nm1907066', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
@@ -4598,7 +4598,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (2104166, NULL, NULL, 'Mark Fredrichs', 'nm2104166', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (2105255, 1984, NULL, 'Sarah Roemer', 'nm2105255', 'https://m.media-amazon.com/images/M/MV5BMTk3OTQ1MzAxMV5BMl5BanBnXkFtZTcwNDIyOTkzMQ@@._V1_UX400.jpg'),
 (2106637, 1983, NULL, 'Aziz Ansari', 'nm2106637', 'https://m.media-amazon.com/images/M/MV5BMjE5NzYwNDQwN15BMl5BanBnXkFtZTgwNDA2NjQwODE@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (2107837, 1992, NULL, 'Nate Hartley', 'nm2107837', 'https://m.media-amazon.com/images/M/MV5BYjViNDEyNGItY2Y5MS00NDFjLWIwYzEtODMxYWU3MDVhMzcyXkEyXkFqcGdeQXVyODg4NTE5OTM@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (2107837, 1992, NULL, 'Nate Hartley', 'nm2107837', 'https://m.media-amazon.com/images/M/MV5BYjViNDEyNGItY2Y5MS00NDFjLWIwYzEtODMxYWU3MDVhMzcyXkEyXkFqcGdeQXVyODg4NTE5OTM@._V1_UX400.jpg'),
 (2110418, 1982, NULL, 'Gemma Chan', 'nm2110418', 'https://m.media-amazon.com/images/M/MV5BYTI3ZDEwYjktZjVhYS00NTlhLTkwOWEtNjM1MzEyMWU5M2QyXkEyXkFqcGdeQXVyMTE3ODY2Nzk@._V1_UX400.jpg'),
 (2110485, 1983, NULL, 'Manish Dayal', 'nm2110485', 'https://m.media-amazon.com/images/M/MV5BNGI5MDY4ZmMtNDZhNi00YjA2LTg2NjgtMjhkMTczYTcwYjJjXkEyXkFqcGdeQXVyMTE4MDAyNzA@._V1_UX400.jpg'),
 (2111748, 1982, NULL, 'Li Sun', 'nm2111748', 'https://m.media-amazon.com/images/M/MV5BY2NmMmRhOTEtNmRjZC00NDZiLWFkZTMtZTRkOTBmYzg4MWM1XkEyXkFqcGdeQXVyMjg0MTI5NzQ@._V1_UX400.jpg'),
@@ -4698,7 +4698,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (2397866, 1990, NULL, 'Matt Shively', 'nm2397866', 'https://m.media-amazon.com/images/M/MV5BNTM0Y2YzODgtZmRiMS00MmVjLWIyZWItNjAyY2IyZDU2MjA3XkEyXkFqcGdeQXVyMTk3NzQ0MQ@@._V1_UX400.jpg'),
 (2399383, 1998, NULL, 'Annalise Basso', 'nm2399383', 'https://m.media-amazon.com/images/M/MV5BYTE2ZmYyMjAtNTY0Ni00ZjFmLWE2ZmEtMDRkZWU5MjQ5NTlhXkEyXkFqcGdeQXVyMTAyOTk1NTU@._V1_UX400.jpg'),
 (2400045, 1989, NULL, 'Nina Dobrev', 'nm2400045', 'https://m.media-amazon.com/images/M/MV5BMzliNzA0OTktMTE3Ny00OWY2LTllY2ItY2UwZmI2OGRmYTI2XkEyXkFqcGdeQXVyMTM5NDMzMjY@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (2401020, 1993, NULL, 'Will Poulter', 'nm2401020', 'https://m.media-amazon.com/images/M/MV5BOTIwZDUwZjAtZDc0OS00MmY0LWFmNGItMzRhZDhmNjZmNWE1XkEyXkFqcGdeQXVyNTU0MDcwMzg@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (2401020, 1993, NULL, 'Will Poulter', 'nm2401020', 'https://m.media-amazon.com/images/M/MV5BOTIwZDUwZjAtZDc0OS00MmY0LWFmNGItMzRhZDhmNjZmNWE1XkEyXkFqcGdeQXVyNTU0MDcwMzg@._V1_UX400.jpg'),
 (2403277, 1989, NULL, 'Alden Ehrenreich', 'nm2403277', 'https://m.media-amazon.com/images/M/MV5BNjY5ODY0MDE5Nl5BMl5BanBnXkFtZTgwODg2NDM4ODE@._V1_UX400.jpg'),
 (2412823, 1968, NULL, 'Kim Yoon-seok', 'nm2412823', 'https://m.media-amazon.com/images/M/MV5BMTQwNzk5MzI5M15BMl5BanBnXkFtZTcwMzEzOTc0Mg@@._V1_UX400.jpg'),
 (2415554, NULL, NULL, 'Mohamed Akhzam', 'nm2415554', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
@@ -4798,7 +4798,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (2797744, 1990, NULL, 'Himesh Patel', 'nm2797744', 'https://m.media-amazon.com/images/M/MV5BNzYzN2NhMjYtYWJhYS00NjkxLWEzM2UtMzRhNThmMzhiNGEwXkEyXkFqcGdeQXVyOTM3ODc5OTU@._V1_UX400.jpg'),
 (2798112, 1981, NULL, 'Allison Tolman', 'nm2798112', 'https://m.media-amazon.com/images/M/MV5BMmU5ZTJmN2ItZmI0OC00NTQ3LWI0YzktMDNkNjkwNDg2OTVlL2ltYWdlXkEyXkFqcGdeQXVyMTkyNjMwNzc@._V1_UX400.jpg'),
 (2799219, 1973, NULL, 'Sakshi Tanwar', 'nm2799219', 'https://m.media-amazon.com/images/M/MV5BMTg1NDU0Njg4Ml5BMl5BanBnXkFtZTgwNDM1ODA0OTE@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (2804503, 1981, NULL, 'Matt Jones', 'nm2804503', 'https://m.media-amazon.com/images/M/MV5BNTNiMTRhYWItYWU3Ni00OGVlLWE4NGEtYmUyMjJjNGM0NWQ1XkEyXkFqcGdeQXVyMjM0NDQ2MTQ@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (2804503, 1981, NULL, 'Matt Jones', 'nm2804503', 'https://m.media-amazon.com/images/M/MV5BNTNiMTRhYWItYWU3Ni00OGVlLWE4NGEtYmUyMjJjNGM0NWQ1XkEyXkFqcGdeQXVyMjM0NDQ2MTQ@._V1_UX400.jpg'),
 (2809577, 1982, NULL, 'Jenny Slate', 'nm2809577', 'https://m.media-amazon.com/images/M/MV5BODE0NTkyMDgxOV5BMl5BanBnXkFtZTgwMjExNTc1NDE@._V1_UX400.jpg'),
 (2810190, 1958, NULL, 'Jin-mo Joo', 'nm2810190', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (2828435, 1999, NULL, 'Natasha Calis', 'nm2828435', 'https://m.media-amazon.com/images/M/MV5BNGUxZGY0ODYtMjlhZS00ODQyLTgzNGEtNTZiNTVkZGY2NThmXkEyXkFqcGdeQXVyMTY4ODIxOTI@._V1_UX400.jpg'),
@@ -4898,7 +4898,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (3147751, 1991, NULL, 'LaKeith Stanfield', 'nm3147751', 'https://m.media-amazon.com/images/M/MV5BMTU3NTg3MTc5NV5BMl5BanBnXkFtZTgwNzUzMzg1MzI@._V1_UX400.jpg'),
 (3150488, 1992, NULL, 'Douglas Booth', 'nm3150488', 'https://m.media-amazon.com/images/M/MV5BNjczM2NmMDAtOTY4Yy00ZjZlLWFmOTQtYTM2MDgyMjlhODU0XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX400.jpg'),
 (3152605, 1983, NULL, 'Gwilym Lee', 'nm3152605', 'https://m.media-amazon.com/images/M/MV5BNzNmM2M4ZjAtNzkzNy00NzczLWE3MmItMjkyMmI2MGQ2ODNhXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (3154303, 1995, NULL, 'Timothée Chalamet', 'nm3154303', 'https://m.media-amazon.com/images/M/MV5BOWU1Nzg0M2ItYjEzMi00ODliLThkODAtNGEyYzRkZTBmMmEzXkEyXkFqcGdeQXVyNDk2Mzk2NDg@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (3154303, 1995, NULL, 'Timothée Chalamet', 'nm3154303', 'https://m.media-amazon.com/images/M/MV5BOWU1Nzg0M2ItYjEzMi00ODliLThkODAtNGEyYzRkZTBmMmEzXkEyXkFqcGdeQXVyNDk2Mzk2NDg@._V1_UX400.jpg'),
 (3159825, NULL, NULL, 'Maricel Álvarez', 'nm3159825', 'https://m.media-amazon.com/images/M/MV5BMTI4NzU5NzI4Ml5BMl5BanBnXkFtZTcwMzk2MDE1Mw@@._V1_UX400.jpg'),
 (3169069, 1985, NULL, 'Aditya Roy Kapoor', 'nm3169069', 'https://m.media-amazon.com/images/M/MV5BZmNlODEzM2YtOTUyOS00MDVmLTk4YzgtMzAxZmQ2ZDBkNTAyXkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_UX400.jpg'),
 (3169819, NULL, NULL, 'Gustavo Muñoz', 'nm3169819', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
@@ -4998,7 +4998,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (3735190, NULL, NULL, 'Harriet Minto-Day', 'nm3735190', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (3768523, 1991, NULL, 'Miori Takimoto', 'nm3768523', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (3769935, NULL, NULL, 'Luke Vanek', 'nm3769935', 'https://m.media-amazon.com/images/M/MV5BMjI0NTYwODgwMV5BMl5BanBnXkFtZTcwNzUyMDMyOA@@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (3772243, 1984, NULL, 'Theo James', 'nm3772243', 'https://m.media-amazon.com/images/M/MV5BODc4ZWI3OWYtMGRhYi00MGJkLThjYWUtYjk3MmU5MTQzOTY2XkEyXkFqcGdeQXVyMTgzNjAyMjM@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (3772243, 1984, NULL, 'Theo James', 'nm3772243', 'https://m.media-amazon.com/images/M/MV5BODc4ZWI3OWYtMGRhYi00MGJkLThjYWUtYjk3MmU5MTQzOTY2XkEyXkFqcGdeQXVyMTgzNjAyMjM@._V1_UX400.jpg'),
 (3785503, 2000, NULL, 'Chloe Csengery', 'nm3785503', 'https://m.media-amazon.com/images/M/MV5BMzNjNWUwZWEtOGQ1Yy00ZWJmLThlZmItOTdhYWMzMTcyN2RhXkEyXkFqcGdeQXVyMTg1NjE3MTM@._V1_UX400.jpg'),
 (3799669, 1982, NULL, 'Hannah Ware', 'nm3799669', 'https://m.media-amazon.com/images/M/MV5BMTk1NTQzMjMwNF5BMl5BanBnXkFtZTgwNTU2MjU1NjE@._V1_UX400.jpg'),
 (3815288, NULL, NULL, 'Jack Taylor', 'nm3815288', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
@@ -5098,7 +5098,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (4544251, NULL, NULL, 'DJ Flava', 'nm4544251', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (4554428, 1987, NULL, 'Ryan Guzman', 'nm4554428', 'https://m.media-amazon.com/images/M/MV5BMTQ0MDE5MTk5OF5BMl5BanBnXkFtZTgwNTQ3MjA1NjE@._V1_UX400.jpg'),
 (4563869, 2000, NULL, 'Sophie Nélisse', 'nm4563869', 'https://m.media-amazon.com/images/M/MV5BYzA1YmIzYzUtZDgxMy00N2RkLWI5NjktYmQ5ZDQ0YmQ5NmNhXkEyXkFqcGdeQXVyMTEwMTU2NDc5._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (4565815, 1991, NULL, 'Mena Massoud', 'nm4565815', 'https://m.media-amazon.com/images/M/MV5BOTAzYWNiMWYtOTk2Zi00MGU4LWE1NjItNDJkMGYxMTc3M2Y2XkEyXkFqcGdeQXVyMjc2MTIzNjg@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (4565815, 1991, NULL, 'Mena Massoud', 'nm4565815', 'https://m.media-amazon.com/images/M/MV5BOTAzYWNiMWYtOTk2Zi00MGU4LWE1NjItNDJkMGYxMTc3M2Y2XkEyXkFqcGdeQXVyMjc2MTIzNjg@._V1_UX400.jpg'),
 (4583512, NULL, NULL, 'Katie Chang', 'nm4583512', 'https://m.media-amazon.com/images/M/MV5BMzc4YjQwM2QtZjQ0YS00MTM2LWFjODMtNjJkMjYwNDFmNWNiXkEyXkFqcGdeQXVyMjgxMTkyOTk@._V1_UX400.jpg'),
 (4590837, 2001, NULL, 'Ed Oxenbould', 'nm4590837', 'https://m.media-amazon.com/images/M/MV5BMzc0YjljMzctYmMzYS00NjFmLWFjMzgtZmViM2M3YWVmMTVmXkEyXkFqcGdeQXVyNjEzNzg2ODY@._V1_UX400.jpg'),
 (4608165, 1997, NULL, 'Antoine Olivier Pilon', 'nm4608165', 'https://m.media-amazon.com/images/M/MV5BODBkMmIyMWItYjVjZS00OTQzLWI5ZjMtYThjNDJlZGEwOTE4XkEyXkFqcGdeQXVyNzIzMzYxMDA@._V1_UX400.jpg'),
@@ -5198,7 +5198,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (5611121, 2004, NULL, 'Millie Bobby Brown', 'nm5611121', 'https://m.media-amazon.com/images/M/MV5BMjA5NzA0NzQzMF5BMl5BanBnXkFtZTgwMTQxNjUzNjM@._V1_UX400.jpg'),
 (5619620, NULL, NULL, 'X Mayo', 'nm5619620', 'https://m.media-amazon.com/images/M/MV5BNThjMGNkNzAtNGU5OS00Y2EzLTgwZTktNTBhYjhlZTAzZTVkXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX400.jpg'),
 (5623883, 1990, NULL, 'Phillipa Soo', 'nm5623883', 'https://m.media-amazon.com/images/M/MV5BYjM0MmQ1NzMtMzNkMi00YjFkLWJmZWQtNmJhY2VkODIwYzFlXkEyXkFqcGdeQXVyNTA5OTkyNDI@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (5637553, 1990, NULL, 'Laura Harrier', 'nm5637553', 'https://m.media-amazon.com/images/M/MV5BNWNiYTJiZTctNTk4Zi00OWVlLTgxZmMtNjc5ZWMwNjIwYjBmXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (5637553, 1990, NULL, 'Laura Harrier', 'nm5637553', 'https://m.media-amazon.com/images/M/MV5BNWNiYTJiZTctNTk4Zi00OWVlLTgxZmMtNjc5ZWMwNjIwYjBmXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX400.jpg'),
 (5645519, NULL, NULL, 'Anthony Gonzalez', 'nm5645519', 'https://m.media-amazon.com/images/M/MV5BNDY0ZDZiZWQtZTE0OC00NjgxLWEwZDgtOWEwOTEwMjhlOGVhXkEyXkFqcGdeQXVyNjY5NDgzNjQ@._V1_UX400.jpg'),
 (5652167, NULL, NULL, 'Kenneisha Thompson', 'nm5652167', 'https://m.media-amazon.com/images/M/MV5BOTc0MjI2NTUtM2Q0Zi00ZjMzLWIwYzUtMjAwMmEwOTE1YTdmXkEyXkFqcGdeQXVyNDM3OTQwMzE@._V1_UX400.jpg'),
 (5679763, 1993, NULL, 'Fatih Yasin', 'nm5679763', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
@@ -5298,7 +5298,7 @@ INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) V
 (7708571, NULL, NULL, 'Antonia Ribero', 'nm7708571', 'https://m.media-amazon.com/images/M/MV5BNThiMjYwNzItMzg3OC00OTFiLTg5YWEtZmFhMTQxNTZhM2I5XkEyXkFqcGdeQXVyMTEzNzczMA@@._V1_UX400.jpg'),
 (7712734, 1992, NULL, 'Sasha Luss', 'nm7712734', 'https://m.media-amazon.com/images/M/MV5BOTEyYWVmYjItZDU3OC00M2RkLWI0ZTktZGZiZjJiYTQxMGZkXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_UX400.jpg'),
 (7737419, NULL, NULL, 'Brooklynn Prince', 'nm7737419', 'https://m.media-amazon.com/images/M/MV5BMzIzYTkwYzItMGM2OC00MTJmLTkxMTUtN2RlNWNlMDRlMWQ2XkEyXkFqcGdeQXVyNjM3MDkwOTY@._V1_UX400.jpg');
-INSERT INTO Actor (id, birthDate, deathDate, fullName, externalRef, posterUrl) VALUES (7738797, 2005, NULL, 'Kyliegh Curran', 'nm7738797', 'https://m.media-amazon.com/images/M/MV5BYjdlMzIyMTktODYxNS00NzVhLWFlY2YtZDdjODY1NzU3N2UwXkEyXkFqcGdeQXVyNjM4ODQ1MjM@._V1_UX400.jpg'),
+INSERT INTO Actor (id, birthYear, deathYear, fullName, externalRef, posterUrl) VALUES (7738797, 2005, NULL, 'Kyliegh Curran', 'nm7738797', 'https://m.media-amazon.com/images/M/MV5BYjdlMzIyMTktODYxNS00NzVhLWFlY2YtZDdjODY1NzU3N2UwXkEyXkFqcGdeQXVyNjM4ODQ1MjM@._V1_UX400.jpg'),
 (7752797, NULL, NULL, 'Jack Madigan', 'nm7752797', 'https://m.media-amazon.com/images/M/MV5BODQwYTlhYTAtZTkyYy00Y2ZiLWI4NDktODU2MzU0NmE5ZWI5XkEyXkFqcGdeQXVyNDAxOTExNTM@._V1_UX400.jpg'),
 (7752798, NULL, NULL, 'Frank Madigan', 'nm7752798', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (7784671, NULL, NULL, 'Briana Shann', 'nm7784671', 'https://m.media-amazon.com/images/M/MV5BMjQ1OTg3MjgzNV5BMl5BanBnXkFtZTgwNTYxMDc5MDI@._V1_UX400.jpg'),
