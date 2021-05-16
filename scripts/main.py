@@ -11,6 +11,7 @@ from write_sql import *
 def nullable(v):
   return None if v == '\\N' else v
 
+
 def getImdbPhotosUrls(ids):
   buffer = dict()
   with ThreadPoolExecutor(80) as pool:
@@ -73,13 +74,15 @@ def createMovie(csvMovie, omdbMovie) -> Movie:
 
 def createActor(csvActor, poster) -> Actor:
   posterUrl = urlNormalize(poster, 400) if poster else "https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png"
-  return Actor(int(csvActor[0][2:]), csvActor[0], nullable(csvActor[2]), nullable(csvActor[3]), csvActor[1].replace("'", "''"),
+  return Actor(int(csvActor[0][2:]), csvActor[0], nullable(csvActor[2]), nullable(csvActor[3]),
+               csvActor[1].replace("'", "''"),
                posterUrl)
 
 
 def createDirector(csvDirector, poster) -> Director:
   posterUrl = urlNormalize(poster, 400) if poster else "https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png"
-  return Director(int(csvDirector[0][2:]), csvDirector[0], csvDirector[1].replace("'", "''"), nullable(csvDirector[2]), nullable(csvDirector[3]),
+  return Director(int(csvDirector[0][2:]), csvDirector[0], csvDirector[1].replace("'", "''"), nullable(csvDirector[2]),
+                  nullable(csvDirector[3]),
                   posterUrl)
 
 
@@ -116,7 +119,7 @@ def urlNormalize(url: str, size: int) -> str:
 
 
 if __name__ == '__main__':
-  moviesToGenerate = 5000
+  moviesToGenerate = 10_000
   offset = 0
 
   movies = getMovies()
@@ -176,10 +179,11 @@ if __name__ == '__main__':
         f"{len(movieActorsMappings)} actor mappings "
         f"{len(movieDirectorMappings)} director mappings")
 
+  append = True if offset > 0 else False
 
   print("writing movies")
-  writeMovies(decoratedMovies)
-  writeActors(decoratedActors)
-  writeDirectors(decoratedDirectors)
-  writeMovieDirectorMappings(movieDirectorMappings)
-  writeMovieActorMappings(movieActorsMappings)
+  writeMovies(decoratedMovies, append)
+  writeActors(decoratedActors, append)
+  writeDirectors(decoratedDirectors, append)
+  writeMovieDirectorMappings(list(movieDirectorMappings), append)
+  writeMovieActorMappings(list(movieActorsMappings), append)
