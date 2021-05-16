@@ -28,7 +28,7 @@ public class ActorServiceImpl implements ActorService{
         String fullNameTrimmed = actor.getFullName().trim();
         if (fullNameTrimmed.isEmpty())
             throw new ValidationException("name is empty");
-        if (actor.getBirthYear() != null && actor.getDeathYear() != null && actor.getBirthYear() < (actor.getDeathYear()))
+        if (actor.getBirthYear() != null && actor.getDeathYear() != null && actor.getBirthYear() > (actor.getDeathYear()))
             throw new ValidationException("death is before birth");
         actor.setFullName(fullNameTrimmed);
         actorDao.store(actor);
