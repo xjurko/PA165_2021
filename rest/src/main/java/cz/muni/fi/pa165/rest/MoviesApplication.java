@@ -2,7 +2,6 @@ package cz.muni.fi.pa165.rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.test.context.jdbc.Sql;
 
 /**
  * @author juraj
