@@ -1,3709 +1,3709 @@
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0423646, 0087553);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0629334, 1596350);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0393799, 0810819);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0962729, 1121931);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0942367, 0365748);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000965, 1010048);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0814085, 0209163);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1031639, 2381991);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001081, 0181875);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1834213, 1448755);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0318916, 1438176);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0594503, 0104652);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001486, 0072890);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0267512, 0449059);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0107774, 0289879);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2391575, 1313092);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000691, 0099329);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0275629, 2381941);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002657, 0120789);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 0475290);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0730860, 0033563);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751102, 0964517);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000694, 0093191);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001532, 0099810);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0848414, 0435705);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0464911, 0113824);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1174251, 5442430);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005101, 2101441);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0753382, 0238546);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1890845, 5657846);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1464314, 10189514);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0313623, 4776998);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0393799, 1504320);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1853544, 1690953);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0397174, 0397892);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0142286, 1059786);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0453518, 1588170);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001353, 0080120);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1356588, 5052474);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0724938, 0398712);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0855035, 0386588);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0399853, 0082158);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3646390, 5113040);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1197971, 0758746);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000915, 0150377);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0476064, 2345759);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0715636, 0204946);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001675, 0458481);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000361, 0120832);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0262693, 0108037);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0936838, 0318627);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005069, 1798709);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 0100150);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0229694, 0300471);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0959062, 0162346);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0664756, 0111070);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1413364, 1778304);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1349522, 1306980);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0905152, 1617661);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1093039, 5022702);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0606439, 1341167);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0038432, 0166813);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003418, 0116136);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0920274, 2503944);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0230032, 0198781);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 2316204);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0919363, 0385752);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001708, 0112462);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0043742, 1742334);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1837748, 2205697);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1224299, 1051904);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2588606, 0986233);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004217, 1740707);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001723, 0119528);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0955443, 0299977);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006846, 1117385);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0442109, 2401878);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002120, 0108550);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0574625, 0434409);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1293863, 0347618);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0319213, 9243946);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005363, 0365686);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005190, 1598822);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1052791, 1029234);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0386246, 1187043);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0221133, 0115641);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0431918, 0151804);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0352524, 1132626);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001068, 0422720);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0253819, 0271367);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000019, 0047528);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0318916, 5580036);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000570, 0084503);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0440604, 1954470);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0634240, 0816692);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0914132, 1686821);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0291205, 0822832);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0848414, 0246460);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000005, 0050976);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0088955, 1535108);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005509, 0368891);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0336695, 1212428);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0881279, 2380307);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0525303, 0203009);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001274, 0093894);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0169806, 4698684);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002653, 0317648);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000881, 0418279);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 0116282);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0154819, 0106387);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2888554, 3470600);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003458, 1242432);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000040, 0093058);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000484, 0080455);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0160840, 3110958);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0070594, 2125608);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000338, 0086066);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0802248, 0209958);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0231596, 1764234);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000264, 0441909);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2676052, 3829920);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0664756, 0385307);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0476201, 2400463);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0796117, 0167404);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1242054, 4287320);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0103744, 0302640);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0847223, 0095327);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0926919, 0056197);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000142, 1616195);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001469, 0093105);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000118, 0080749);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (5358492, 2948372);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000116, 0103064);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0905152, 0234215);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000233, 0462322);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001675, 0116367);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1396121, 5311514);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001149, 0081573);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1154886, 3416828);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1364790, 3262342);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0798899, 0198781);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003343, 0295700);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000934, 0309987);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005190, 0163187);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0710020, 0317219);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0911910, 0120889);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0885249, 1172049);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0747849, 0356618);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000399, 0119174);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1429471, 2199571);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0286975, 0419887);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0327944, 1164999);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0640334, 2140479);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0327944, 0245712);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0610831, 0454921);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0400436, 0120681);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001756, 1409024);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0591450, 0865556);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0637615, 0290673);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002653, 0458339);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0080120, 0356680);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2035886, 1758692);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718646, 1193138);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0946521, 7752126);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001565, 0109831);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000040, 0056193);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0774325, 0024216);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000965, 1542344);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0761498, 0481499);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000386, 2334879);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0190859, 0119223);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0783139, 0116683);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0836328, 0057115);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000601, 0107048);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 0243133);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0118333, 4520988);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001226, 4477536);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001878, 0095705);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 2042568);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0414144, 0046183);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0105169, 0423294);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0484907, 8155288);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359457, 0070608);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005190, 0247638);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0741262, 0103919);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0831557, 0800039);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0499724, 0243736);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0206760, 4622512);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001024, 2203939);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000265, 0066026);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0227540, 0371606);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003620, 0873886);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000180, 0050212);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 0475290);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001565, 0330373);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001675, 0437086);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0402597, 0064757);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0381478, 0457510);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0959062, 0307987);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0022768, 0839980);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0566788, 1591479);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0601781, 1772341);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0716347, 0780504);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000033, 0038787);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2480587, 1645089);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0220600, 1211837);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004303, 0458525);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000231, 3774114);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001408, 0127536);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0283816, 3717252);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0775447, 0264935);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0815070, 1070874);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005237, 0134119);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000142, 0418689);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0891216, 4649466);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000455, 0093748);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000406, 0032551);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003418, 0295701);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751577, 4154756);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2308774, 2370248);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0634240, 5013056);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001317, 0116908);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001243, 0067116);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0784061, 0107302);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0314671, 0042332);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0769874, 0066206);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0827750, 2357129);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0314671, 0053285);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000583, 0118571);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005540, 0381707);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (4023702, 6343314);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001741, 1351685);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0680846, 1231583);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0609236, 0141926);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005366, 0145660);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0073688, 0356150);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0802248, 1253864);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359734, 0808279);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000916, 1860357);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2419470, 2105044);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0788202, 0209475);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0268380, 0129387);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0948159, 1386932);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (4816401, 1502397);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0930261, 0397892);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001403, 0110148);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001628, 0089755);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0083348, 0129167);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0268380, 0109686);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001756, 0113161);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1343394, 5727208);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005222, 0257044);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1676223, 1298649);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0773603, 0401383);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001469, 0120885);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1443502, 6857112);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1653753, 1109624);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1104118, 0423866);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0590122, 1532503);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000916, 0390022);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1601644, 2294629);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2497546, 5140878);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0205157, 0465602);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001639, 0343818);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001486, 0292963);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0609549, 0829482);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1224299, 0307453);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001675, 2002718);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0155528, 2709768);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0041161, 0499556);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000127, 0120082);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0783536, 1213644);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0970447, 1277953);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0971239, 0389790);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0501185, 0304669);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0348181, 1512235);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0911061, 0252076);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0939182, 0118694);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0426059, 0393109);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0657372, 0472160);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0688636, 4044364);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0640466, 0230838);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0868219, 1663662);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718646, 0427944);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1224299, 0892782);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0382956, 0117631);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0357891, 0070328);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1490123, 0804461);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0223522, 10280276);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0680846, 0302886);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0178997, 0120888);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 0116282);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0817447, 1711525);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0387706, 0251114);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0300866, 1800302);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005062, 0099700);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001060, 0295297);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0460206, 1840417);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 0093822);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0414423, 2268016);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001408, 0414055);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0844358, 0077766);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0908824, 0277434);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0487166, 3464902);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 0096933);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000591, 0253474);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001675, 0113101);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1989536, 1022603);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0905154, 1617661);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000095, 2870756);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0962729, 1034032);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000233, 7131622);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0609236, 0986263);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0527109, 0272020);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0286975, 0371257);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0615780, 0780521);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001102, 0087363);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0339004, 0265208);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0518836, 4034228);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0677953, 0397078);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0228147, 0120177);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0853238, 3631112);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001756, 0449089);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0551076, 1020558);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1093039, 4361050);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1228976, 1800741);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0236226, 1456635);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0024622, 1186830);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1702145, 1634106);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001532, 0264395);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0586281, 1436045);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0906476, 0243655);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0733263, 5726086);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0919369, 0970866);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0893659, 0236493);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0577647, 2170593);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0905592, 1023111);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0604392, 0029583);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001885, 4003440);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000110, 1661199);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0939182, 0212712);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 0162661);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0506613, 1371150);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0132709, 0113189);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000464, 0165798);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0850733, 2510894);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0637615, 8359848);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001328, 0032599);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001532, 0120657);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0132709, 0386140);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000231, 0096969);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0831557, 4438848);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0181903, 6998518);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1429471, 1401152);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0132709, 1226273);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0662529, 1235124);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000881, 0399201);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0175775, 0346156);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0634240, 1345836);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2688320, 1971325);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751577, 0463034);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000361, 0106519);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0393799, 1707386);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0457565, 0805570);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (4469445, 4954522);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0080235, 3390572);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000416, 0101889);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000600, 0316654);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0007082, 0378109);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001232, 0086879);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751577, 3498820);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0038432, 0298148);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001837, 0120382);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004306, 0079501);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001661, 0092005);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000233, 1028528);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0024622, 0230600);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1890845, 1232200);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0190780, 0398808);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001351, 0070735);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0064181, 1418377);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001880, 0110322);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0905154, 0234215);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000142, 2179136);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001104, 0120689);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000709, 0338348);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0300174, 3713166);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0635759, 0311429);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2497546, 0448115);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0012541, 0347304);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 0268978);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751577, 4154796);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0533691, 2277860);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000916, 0327850);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001382, 0111438);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001880, 0325710);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0878638, 1411250);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0687042, 1245112);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0510912, 2660888);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2308774, 4916630);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001988, 0112682);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001226, 4465564);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0531817, 0455590);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0038432, 0377981);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1429471, 1590193);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0322242, 1441395);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1906430, 1764183);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001880, 0097441);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0622112, 0123755);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027271, 1855325);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001331, 2402927);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0878638, 0296572);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0715346, 0041959);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0661791, 0451094);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1950086, 3281548);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1191481, 6499752);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002044, 0412080);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0936374, 0116583);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718645, 0465624);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 0109707);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0011470, 0126029);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0215455, 2096673);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000985, 0119822);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0181579, 1462758);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0862911, 1700841);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006487, 0765010);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0423626, 1726592);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0680846, 2005151);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000033, 0047396);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0269463, 3040964);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0043742, 1386697);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001081, 0368709);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0510674, 0461770);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001415, 0044081);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1049433, 1605717);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001112, 0406816);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0939128, 1098327);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003620, 0424345);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0593610, 0405325);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004410, 1071875);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0951975, 5657856);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0711840, 0289765);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000520, 0091474);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000269, 0215750);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0570912, 1386588);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000033, 0046912);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 6294822);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0930261, 2245084);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1135423, 0890870);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001149, 0096061);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0179697, 2058673);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001675, 0133751);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000750, 0137494);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0610831, 0814314);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0588340, 0401792);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 0133152);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0414144, 0042332);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000829, 0253754);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0862211, 3416828);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000759, 0118749);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000976, 0119643);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1026778, 1355631);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0106226);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0711840, 1267297);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1698571, 2788710);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 0093822);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0711840, 0218967);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1093053, 0816442);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0836328, 0054047);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1417392, 1241317);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000386, 0443649);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0716347, 1172570);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0881279, 0435761);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0923736, 0379786);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0654868, 0046438);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0744834, 0450278);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003620, 0300051);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0240797, 1375670);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0577647, 4846340);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001466, 0058461);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3102998, 7014006);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000520, 0140352);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0109359, 0280590);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001741, 3385516);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1853544, 3469046);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (5820154, 7888964);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000095, 1605783);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0942367, 3890160);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000600, 0099365);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0085794);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0153078, 0443453);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0254786, 0417148);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1226871, 4500922);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0777881, 2908446);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0796923, 0066999);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (4017355, 1703199);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0213450, 0275847);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000941, 0267626);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000233, 1853728);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005436, 0162650);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0650905, 0962726);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0166256, 0119282);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0291082, 0365907);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1099918, 2359024);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0593610, 0892791);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1490123, 1477834);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2816668, 1058017);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006487, 0097937);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0330347, 0889573);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2676052, 1104001);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0781842, 0110622);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 1528100);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0538320, 0338564);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0898288, 1255953);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0615780, 0133240);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000362, 0266489);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000399, 0443706);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001885, 1937390);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1560977, 1365050);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0228542, 1292566);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0784061, 0479997);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000076, 0053198);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0180428, 1478964);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0319659, 2872718);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3611349, 2179116);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000386, 0120685);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000416, 0081633);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000108, 0119116);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004303, 0804522);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027572, 0115734);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001789, 0069293);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0970179);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000466, 0211915);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001661, 0104257);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1630273, 0795421);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001490, 0119558);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1349818, 4154664);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0525659, 0369735);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0094435, 1216496);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0853380, 0120679);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002340, 0089885);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0788202, 0281358);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0387706, 0119099);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0661751, 0177789);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0014960, 8364368);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001878, 0131857);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359457, 0029583);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000466, 0112682);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006969, 2848292);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0327944, 2562232);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001716, 0453467);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001837, 0097165);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027271, 1509767);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0522028, 0076618);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002031, 0034583);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001587, 0107798);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0942504, 0821642);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0436284, 0112461);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2153088, 2265171);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0738796, 1334260);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0149491, 0467200);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000033, 0040746);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001008, 0038650);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0281508, 1321870);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0781842, 0343660);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001149, 0089218);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000783, 0076786);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0504495, 0088944);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 0103074);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001008, 0025316);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0327273, 0799934);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1220140, 1020530);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3094978, 1273235);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001243, 0070047);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005363, 8367814);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0970447, 0892782);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005222, 8579674);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000697, 0051201);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1413364, 2109184);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2134474, 3322420);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000231, 0091763);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000209, 0112818);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0957772, 0251736);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0031976, 0405422);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0181902, 0108358);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1461392, 4777008);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0149446, 0401711);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0634240, 0372784);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005303, 1939659);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000231, 0110632);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001708, 0481369);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1294036, 3316948);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0304541, 1063669);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0118333, 2294629);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002653, 0113497);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002653, 0132477);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003506, 1013743);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000142, 1057500);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0418982, 0416508);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1294962, 2397535);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0109359, 0185431);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3215397, 4034354);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0481418, 0431308);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0764601, 1053424);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001639, 0448011);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2482088, 1278340);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0651706, 0441773);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000570, 0289992);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1349522, 2139881);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0770942, 0756683);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000965, 0163978);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0958969, 1538403);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001716, 0120660);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0906476, 1655460);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1164861, 2024432);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0796117, 3567288);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000455, 0088847);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000682, 3716530);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0533284, 6679794);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0176905, 1430607);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1193346, 0460740);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000343, 1571222);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0373429, 0032910);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000682, 0093870);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0950109, 0059800);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0178376, 1206543);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000600, 0092991);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0629334, 2172934);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0796117, 1815862);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001716, 1111422);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1989536, 4481414);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0329650, 0456554);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001723, 0109040);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0563301, 0426592);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0867127, 1582507);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000568, 0091419);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000600, 0219699);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001317, 0095742);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0322515, 0086034);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1653753, 4468740);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0662086, 1991245);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1285613, 1175709);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0338751);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1291105, 4881806);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0813164, 0981227);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001532, 0155267);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1002424, 3850590);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0179221, 1440728);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005366, 0290002);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000709, 3640424);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001024, 1078588);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001675, 0401792);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0307497, 0470752);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0218621, 2975578);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003506, 1430132);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0104193, 0106697);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0082450, 2404463);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0601382, 0159273);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1026778, 2364841);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0197636, 0274558);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0075528, 5164432);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0235719, 1314655);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006916, 0091129);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0591171, 0082418);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0950226, 0181984);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0158984, 0401711);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0788202, 0395699);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0384825, 0421238);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0574625, 1486192);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0618680, 0988047);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0750857, 0139809);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0510674, 0120855);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000264, 0275491);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000500, 1065073);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0734319, 0113101);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0668247, 1389072);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0680846, 0335438);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0611683, 0432021);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0602104, 2910904);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1103162, 2869728);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0525659, 1103153);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001068, 0335266);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0922346, 1764651);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0504642, 0293662);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0035899, 0032455);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0744834, 3605418);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0500610, 6806448);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000264, 8291806);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000108, 0100263);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 3659388);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0821432, 2911666);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0720135, 3553442);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000985, 0371246);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000041, 0055630);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000500, 2209418);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0637615, 1191111);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0281507, 0070723);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000095, 0091167);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718645, 0096320);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005540, 0257106);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0908824, 0120744);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0141961, 0206275);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005421, 0105812);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 0190590);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0294997, 0799949);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0603628, 6850820);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027572, 0362270);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0178376, 5478478);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0138809, 0907657);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0132709, 0190865);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000186, 0080678);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0101385, 0253556);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000040, 0072684);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000694, 0087884);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027271, 1921064);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0428600, 0396752);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002892, 2209764);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1960322, 1687901);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002657, 0329575);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 0401711);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0868219, 0187738);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004303, 1731141);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0576987, 8404614);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359734, 0254686);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0082450, 3079380);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003506, 0172493);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2477891, 8350360);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0946734, 0373889);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0811583, 0409459);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1783265, 6450804);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0167241, 0046911);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001837, 0311113);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1256143, 6921996);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1714255, 1297919);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1732981, 0780536);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359457, 0032455);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000186, 0087182);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000881, 0120591);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0108132, 6802400);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000431, 0350258);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1170855, 2017038);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0067457, 0493464);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000916, 0448157);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0871860, 0322802);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001317, 0297284);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0007045, 0443473);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001878, 0362120);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1883257, 1619029);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0371059, 0080801);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001392, 0103873);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000520, 2717822);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003418, 0116040);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2158772, 1935179);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002132, 0089670);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002030, 0032138);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 3691740);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0088680);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0337773, 0910936);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1375358, 1605630);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0622112, 1017460);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1197971, 0324216);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027271, 0452608);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0878763, 1614989);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1135423, 0489270);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000386, 6924650);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000186, 0166896);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000591, 1692486);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0456732, 0327084);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0404606, 0065207);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1349376, 1951266);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0524190, 1711425);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0651706, 0345950);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005124, 1216475);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0271402, 1623288);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000019, 0056801);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000399, 1285016);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0878756, 0130827);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000233, 0378194);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0527217, 0048280);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000759, 1791528);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0587518, 0087985);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0893659, 0384680);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0833780, 0758730);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001628, 0373926);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 1935859);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1481493, 0970411);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000709, 0118884);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3109770, 1280558);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1375358, 0481536);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001226, 0104348);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002045, 0056923);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0586281, 0235198);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000777, 0370986);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006854, 0120347);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0769874, 0063442);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000464, 0412019);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1500577, 1990314);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0388198, 0080745);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0936374, 0230011);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005190, 0100405);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004056, 0910970);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1519353, 1467304);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1840064, 5093026);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0785227, 2388771);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0637518, 0944835);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0784061, 0244244);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0576987, 0317248);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0629272, 0399295);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0719208, 2709768);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0142286, 1293847);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001675, 0227538);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001490, 0093010);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0896542, 0032138);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0496969, 7282468);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001120, 0040522);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1012501, 1318514);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2556572, 1527788);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001716, 0112740);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0515005, 4853102);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1108007, 2788732);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0230032, 2096673);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000600, 0145487);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0761498, 0892769);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0286975, 1586752);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 0955308);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001392, 0110005);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2379028, 5814060);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0671957, 0061418);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0382956, 0481141);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1084488, 2283748);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000500, 0405296);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001149, 0122151);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001988, 0101700);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0576987, 0387131);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000824, 0091949);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000709, 1907668);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0851930, 1340138);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000231, 0102138);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000386, 1628841);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001741, 0114814);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000941, 0102685);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0138927, 4566758);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1301035, 0348333);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000264, 0287467);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0527217, 0032910);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0727754, 1335975);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0190859, 0206634);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002120, 0402894);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0798899, 0462538);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000709, 0161081);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0167241, 0046268);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001219, 0119468);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 1130884);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0230032, 1049413);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1844237, 0413267);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2341611, 11464826);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0712444, 0138304);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0777881, 0408790);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1018426, 1772240);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1325899, 4701182);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0661791, 1682180);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0138620, 0429493);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004716, 0180093);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1108007, 6265828);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0815070, 4209788);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0936404, 0055614);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0037708, 0403702);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1349376, 2873282);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0526199, 0317248);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0477129, 0403508);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1053530, 1315981);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006476, 0425210);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0814716, 0384116);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001661, 0112346);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2329165, 1985966);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0314671, 0057546);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0201509, 0120587);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 0190590);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1218281, 6320628);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0915304, 2369135);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0036582, 0092675);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001130, 0221027);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (4139472, 1291570);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000568, 0795368);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2937122, 2380307);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0339004, 0255798);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0074426, 0307453);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0161834, 2547584);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1868917, 2267968);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0031976, 3152624);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000682, 0164052);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0318150, 0079574);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0118333, 0120855);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000568, 0103241);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0525659, 0478087);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000576, 0758758);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001348, 0068182);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0899121, 10288566);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1659741, 1860353);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0275698, 0454945);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0500610, 5463162);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000464, 0112817);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 0088933);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2366012, 2105044);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000231, 0346491);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1302591, 1606389);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0009942, 0472033);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0413875, 0103855);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0245888, 0328828);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001024, 0251160);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0946734, 4123430);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0650905, 0107120);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005190, 0093693);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0240797, 0142342);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0490215);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0151540, 0377818);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0885249, 2305051);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0281396, 4154664);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000957, 0120179);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000341, 0070909);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0583600, 1230414);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0396074, 0808506);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000583, 0409182);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0580351, 6513120);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0788234, 0918927);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0267512, 1839492);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 0870111);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0716347, 1602613);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0744035, 0054997);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0082450, 1478338);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005436, 0430105);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001675, 0462322);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0281508, 1270797);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0339030, 0440963);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000110, 0800369);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0462895, 3045616);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0337773, 1240982);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0695937, 0052561);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2128335, 2304933);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005222, 0418763);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0384825, 0898367);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000736, 0056687);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0440913, 0228786);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000682, 0120201);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000600, 0114214);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003506, 3315342);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0844896, 0185937);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0400441, 1235522);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001403, 0104036);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0970447, 0298148);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0958387, 0099653);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0294379, 0463854);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000568, 0227445);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0455741, 0046183);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0235719, 2870612);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0200005, 1327773);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0122427, 2452386);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0378893, 0104868);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0366004, 0144084);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0540532, 0185371);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0959034, 0259446);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0400436, 4244998);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000033, 0048728);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000399, 10618286);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0781842, 0398165);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000343, 0086541);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1093039, 2388715);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0619599, 0271027);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000965, 8079248);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0021249, 0400717);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0611683, 0091203);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001741, 1727824);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1218281, 2250912);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0378144, 0330793);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0525303, 0117509);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002657, 5164214);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000591, 0142688);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0917188, 0358082);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359734, 0119167);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0591171, 0139414);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0525659, 1142988);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0426059, 1276104);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0649117, 2101341);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1429471, 1148204);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001081, 0116695);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0615780, 3521164);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0344496, 1206885);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006904, 1194173);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000466, 0101700);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000265, 0105151);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0829820, 2387433);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002645, 4901306);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000118, 0113409);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000591, 0063522);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0757858, 0358082);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0185848, 1465522);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1047532, 8688634);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0744834, 0498353);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0811583, 0363547);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002120, 1702439);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0562645, 0181316);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001068, 5592248);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0049633, 1482459);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003088, 0112431);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000487, 0388795);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000484, 0082010);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0506613, 2692250);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0906548, 0145531);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0711110, 1727388);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0201509, 0479952);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0382072, 0356634);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0211823, 0111301);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0407887);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (4014166, 7713068);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0449984, 0086006);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000184, 0121766);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001741, 0985699);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0175730, 0097659);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0510731, 0356910);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0371755, 1075747);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1098493, 0364725);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 0086979);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005436, 1600195);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0163988);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0629334, 0160127);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0126096, 2866360);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0797869, 0112642);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0298807, 3766354);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0506613, 0305711);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000697, 0047437);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0886976, 1226837);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0655683, 1555149);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1206844, 6628394);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2161247, 2091935);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0345174, 1034415);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0319659, 7043012);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001752, 5439796);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001723, 0413099);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0049371, 1038988);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1490123, 1591095);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0815204, 3312830);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0339030, 0372183);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001752, 0098724);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1032521, 1307068);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0048918, 5649144);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0608714, 2709692);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0400441, 0120681);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1226871, 4046784);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3363032, 2334649);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000277, 0083987);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001093, 0128442);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001149, 0450232);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0698184, 0242519);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0380705, 0098206);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001241, 4136084);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0426333, 0327084);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0088955, 1136608);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0873779, 0101414);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0322515, 0093428);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0011470, 0499448);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000759, 0469494);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0250410, 0443536);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0438090, 1424432);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0862211, 1667889);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2284484, 0831387);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0625458, 0277027);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001878, 0102510);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000343, 0091064);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (4170048, 7784604);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0942367, 1213663);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000916, 1091191);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0958387, 0088286);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001880, 3393786);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000040, 0066921);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1206844, 1259521);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1002424, 0862856);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0170719, 0391304);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0536632, 0243155);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001008, 0031679);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000814, 0075148);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001460, 0119874);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0783536, 1073498);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000976, 0105323);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001402, 0071853);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005540, 0430304);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0717678, 1985949);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0421776, 0307453);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0101385, 0357277);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0464804, 0156887);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1890845, 1135985);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004810, 0443701);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0777881, 0452694);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1244760, 0986264);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0933505, 0124298);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0587955, 0379725);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0790715, 0105793);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1780037, 8613070);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0405632, 1211956);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1032521, 5503686);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0893659, 0383574);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0640334, 0482572);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0898288, 2543164);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1312919, 2614684);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000485, 0022100);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0851930, 1981115);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0574625, 1186367);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0056725, 0372824);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0569891, 3874544);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0677953, 0251127);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0349183, 0362165);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0758574, 0382628);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0125803, 2096672);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0197855, 1524930);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3809021, 5813916);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0809877, 1430607);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0863387, 1433108);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (4155547, 1703199);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0286975, 4575576);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1723225, 4430212);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1349376, 1951265);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000500, 2937696);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0087469);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0302778, 0277371);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1490123, 2226417);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000583, 0177971);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001415, 0047296);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001005, 0107822);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003021, 4116284);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0873779, 0230011);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0878756, 1371111);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0313623, 0395169);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3227090, 1213641);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001392, 0116365);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0533284, 2582782);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0095497);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0009190, 1408101);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0891216, 0375912);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0721817, 0114898);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001102, 0099700);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0588087, 1232829);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000416, 0096764);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0935095, 0337563);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000095, 1178663);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0820934, 0787474);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1512910, 0803096);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0855035, 0770752);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001232, 0117318);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1991847, 6214928);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2618764, 6133466);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001603, 0065214);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3425513, 1703199);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 0119173);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0936404, 0043456);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000916, 8629748);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0327273, 0338013);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002657, 1392170);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0684336, 0384793);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0899121, 0154420);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000464, 0379217);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0384825, 1712261);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001603, 0067800);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0570912, 0415306);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000776, 0980970);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005366, 0427152);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004056, 0401729);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2301412, 2105044);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000233, 0110912);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0817447, 0445934);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001789, 0079944);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0936482, 0320691);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0322515, 0082398);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0318150, 0076752);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0440458, 1956620);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359734, 0387898);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 1578275);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0891216, 2802144);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0603628, 0936501);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 1568911);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0190859, 0245574);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 0086979);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0769840, 0356150);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001587, 0118972);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0166256, 0103639);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000517, 0120863);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0505152, 0103786);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0426059, 8946378);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0132709, 1615160);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1793079, 1288558);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0155528, 2709692);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0572562, 0416315);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 0101410);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0267512, 4622512);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0339030, 0947810);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0871428, 0443274);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005237, 0116209);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0504642, 0800080);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1093039, 5606664);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0178376, 1355683);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0716347, 0862467);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0536632, 1473832);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0424103, 1188996);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0617523, 1496025);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000736, 0061578);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001188, 1135503);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000776, 0143145);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0661791, 4016934);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000040, 0057012);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0142286, 0364045);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0192446, 0080761);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000829, 0116253);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0286975, 0816711);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003506, 0309698);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006854, 0098536);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0378893, 0096928);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1847738, 1666801);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0861703, 0032138);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1170855, 2937898);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001716, 0477080);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (4824763, 2674426);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0327273, 0990407);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000386, 0116629);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0667734, 2718492);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0094435, 3967856);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001060, 0107614);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0438394, 0115641);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001716, 0421054);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001752, 0120780);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0431918, 0387808);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0065615, 0301357);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000118, 0090728);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001060, 0182789);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0891216, 1250777);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0848414, 1270262);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0330140, 0245686);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359387, 10016180);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000040, 0049406);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0307497, 2798920);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001661, 0817177);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0569891, 1277953);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1600872, 1840417);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0492909, 0758766);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001469, 0120184);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000361, 0094226);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027572, 2278388);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004410, 1121931);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000186, 0090756);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000965, 1924429);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0387706, 0186151);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005222, 1176740);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0428600, 1586265);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0094435, 1706620);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000490, 0097216);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0923736, 0848228);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000247, 0245562);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0946734, 3183660);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2125482, 9770150);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1058247, 0477139);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1703612, 0211933);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1191481, 1051906);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000485, 0017136);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0043742, 0433387);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001338, 0183790);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0229694, 0396269);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1174251, 1599348);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000583, 0082096);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718627, 0061852);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0788202, 1336608);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000436, 0388125);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000490, 1321511);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002120, 0124315);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001708, 0118688);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001878, 0080339);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0655053, 4729430);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3453283, 4034354);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000343, 0120907);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004217, 3387520);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0336620, 4630562);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 0104231);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0893659, 4731136);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718627, 0055254);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0009190, 2488496);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0573589, 0200550);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004675, 0164184);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005647, 0165929);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0885249, 0962736);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001814, 0102494);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0469694, 0404390);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0336620, 1197624);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0948159, 1220719);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0240797, 0960144);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000500, 0106677);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0230859, 3612616);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0809321, 0118689);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0851537, 0032138);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2391575, 7984766);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005509, 0963966);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0222043, 0191397);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001675, 0104815);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0410494, 0211443);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0386570, 0363163);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718645, 1411238);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0108132, 8526872);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000797, 0067185);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0689852, 0382077);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1108556, 5688932);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1902232, 4877122);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000233, 3460252);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 0088161);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0769135, 0790628);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001752, 0307479);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0442241, 0077745);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0898288, 1856101);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0914132, 0425123);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0661791, 0364569);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0276169, 0089175);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0868219, 0457430);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001885, 0870984);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0487166, 5715874);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0240627, 0144117);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001401, 1809398);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001741, 0120903);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2436566, 4364194);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0850733, 5220122);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0829038, 0058331);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0035899, 0034492);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0181902, 0090859);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0592400, 0125022);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0252135, 1618442);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0634240, 0154506);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0318150, 0062512);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001353, 0083511);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0891216, 0486655);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0174374, 2771200);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0601680, 1024255);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1079776, 1385826);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002120, 1753383);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006846, 4633690);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001752, 0496806);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0024622, 0369702);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0677037, 1049413);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0868219, 0411477);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0070379);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0269542, 1727388);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027459, 0396555);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (4170048, 8772262);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0962729, 0479884);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001241, 2431286);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1224299, 5884052);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000338, 0071562);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0576298, 1657507);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001708, 0134273);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000343, 0399146);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000386, 0187393);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0075314);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006960, 1412386);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 0099487);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0831557, 2004420);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0125803, 0116778);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000142, 0824747);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0708903, 5742374);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000583, 0107206);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001403, 0476964);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001392, 0380510);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0634240, 0482571);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0658837, 0406759);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001532, 0107362);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0392237, 2390361);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0109359, 0817538);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0362566, 1486185);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1793079, 4160708);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718645, 0099938);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0531817, 0473705);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0588087, 1490017);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0673400, 1637706);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003620, 0118842);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3109770, 3848892);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0428600, 0780511);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359457, 0034492);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0865918, 1675434);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0119567);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0222043, 0091790);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0637518, 0435651);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1372836, 10886166);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0705535, 0087803);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0191147, 1961175);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1500577, 3622592);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0719208, 1323594);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0339030, 0475276);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1026778, 1189340);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0794791, 0089686);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1410815, 1832382);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0881279, 0120363);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0828970, 0441773);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2366012, 7798634);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0515891, 0118615);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0766402, 0034492);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1142073, 4547056);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0134176, 0113492);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0934578, 0106965);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000338, 0078788);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0188165, 0218922);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0723704, 0082406);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0825407, 1496025);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0905152, 0811080);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0228542, 1638002);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001565, 0119008);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001149, 0093409);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3211470, 7984734);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000316, 0107977);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0757858, 3411444);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0757858, 1080016);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001566, 0111742);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0594503, 0119698);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1716636, 3224458);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001508, 0104694);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0732430, 0376136);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1697112, 1323045);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0594503, 0092067);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000709, 0096874);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0330140, 0286788);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027271, 2592614);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001338, 0453562);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000957, 0171363);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001752, 0240772);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0679031, 1397514);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000118, 0120877);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000041, 0042876);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001353, 0116830);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0153078, 0815241);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0993846);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 0212985);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0142286, 1464540);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000033, 0032976);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0462895, 0363988);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001466, 0059578);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000338, 0099674);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004217, 3289956);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0294997, 0466342);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0509448, 0420294);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001302, 0218839);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003418, 0859163);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0268380, 2096672);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1016428, 1155592);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005366, 0295178);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000709, 0088011);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0326246, 1524930);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001885, 0276919);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 0083658);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000816, 1034331);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001460, 0223897);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0792263, 5362988);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0414144, 0032910);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751080, 0110475);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0492909, 0313737);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0619923, 1675434);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000338, 0116669);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000041, 0044741);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1442514, 2631186);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0878638, 0134847);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0448768, 2321549);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001661, 0100157);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000186, 0116922);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0024912, 0871510);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001661, 0398375);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000709, 0096438);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005366, 1790886);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0797526, 0089822);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001566, 0061722);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1160962, 1778304);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000887, 0120749);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2503633, 1706593);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0159147, 0112870);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003160, 2381249);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0744834, 0303816);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000233, 0361748);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0916424, 0367959);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0783139, 0107688);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0923736, 2395427);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000118, 0228333);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1349818, 0804497);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1512910, 0945513);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0442109, 0383028);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1119880, 0369610);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0661791, 0310775);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0019282, 0032455);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000436, 0298203);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0298807, 0455944);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0344259, 0289879);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0649117, 1132620);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001878, 0088286);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 0265086);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1147588, 1783232);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1174251, 1014763);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000916, 4572514);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0298807, 0822854);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0936482, 0337978);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001060, 0241527);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0697656, 7556122);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000709, 0099088);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000957, 0325703);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000416, 0355295);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002045, 0045152);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0297935, 0266308);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1069989, 1220198);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0957772, 0395584);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0601337, 1981677);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0576987, 0861689);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0711840, 0120812);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000941, 0114558);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000361, 0086250);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001887, 0086200);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 0325805);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0950109, 0057076);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001410, 0285531);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (9054338, 0120794);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002728, 1305806);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0272568, 0032910);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0177170, 0166813);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0509448, 1646987);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005366, 0212338);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1140492, 1592525);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000095, 4513674);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 1014759);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0587955, 1100089);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001878, 0306047);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000517, 0402399);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1098493, 1723121);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0711840, 0471042);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005509, 1204975);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 0094721);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1119079, 1865505);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0099685);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001752, 0349903);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0357891, 0071807);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0443272);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000720, 0102059);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004675, 0097351);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0712947, 0048545);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0644695, 0089530);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000484, 0077975);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005509, 0117333);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0601859, 4651520);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004410, 1034032);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0082971);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0831557, 4624424);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0153078, 1645170);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1367933, 0364517);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3483756, 0762125);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000965, 0111149);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0400436, 0107554);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000127, 0134084);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0781842, 1661382);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0570912, 1596363);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0905152, 0133093);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0587518, 0082198);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1052162, 0482606);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000406, 0049730);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0588087, 2294449);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0397174, 2948356);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0853546, 0089370);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0281598, 0115963);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0230666, 1679335);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0142286, 0486822);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0802248, 0460791);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004332, 0455538);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001532, 0093773);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0339004, 0491152);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0784061, 0187078);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 0335245);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0268380, 0480687);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0509448, 1291150);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1396121, 0983213);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0191712, 1355630);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0849164, 1010048);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0271402, 0424095);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 2042568);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1170855, 1615147);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001392, 1170358);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000709, 0162222);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000487, 0190332);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0264236, 0465551);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001752, 0195685);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1170286, 0800069);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002030, 0031381);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0386570, 0250258);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000934, 0070849);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 0320661);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005124, 0120623);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0855035, 0120631);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0591450, 0243585);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000568, 0327162);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751102, 0120188);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1729171, 1253863);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001469, 0117665);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0553942, 0451079);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0917188, 0268380);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1314116, 0864761);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0425756, 1185416);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000033, 0053125);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000487, 0286716);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0031976, 0478311);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 0121164);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0711840, 0266915);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0585011, 1126618);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0666802, 0138749);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0814085, 0120616);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0588087, 0844471);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002044, 0200465);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0551076, 0280609);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000484, 0094898);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0550881, 0099052);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 0382625);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1164755, 0465494);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1272773, 0368909);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0601781, 2948356);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0601382, 1606378);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0942367, 0462322);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000570, 0092563);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 0808151);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2158772, 2649554);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006960, 4540710);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001469, 0219965);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0049633, 2293640);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0509448, 1217613);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000976, 0095631);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2320658, 2245084);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0264464);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0905154, 0811080);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001532, 0112864);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001219, 0313542);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0690597, 0058946);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0345615, 1259528);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000127, 0117571);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0842339, 4624424);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0304541, 3522806);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001425, 0111507);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1637768, 0815236);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0105169, 0120363);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1349376, 1951264);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0939128, 0267804);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0574625, 0427392);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0420941, 7126948);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000091, 0152930);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1137264, 2105044);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0936404, 0059742);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000697, 0046359);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0594503, 0347149);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0702797, 1622979);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0942504, 4555426);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0680846, 1951261);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005366, 3203606);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000127, 0087800);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001639, 0109506);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001843, 0021884);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0796117, 0452637);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0727960, 5109280);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0811583, 12361974);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000116, 0499549);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0570912, 6266538);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0591450, 0864835);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2127650, 0963794);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001756, 0106220);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006476, 1976009);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0083348, 1229238);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 6412452);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0583292, 0084726);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0123379, 1322312);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0268380, 6966692);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001175, 0054698);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000231, 1027718);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1334526, 6565702);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0088939);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0936404, 0079945);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000343, 0115964);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1160962, 7550000);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000108, 2872732);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718646, 5610554);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359734, 1602620);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3078140, 6292852);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1290515, 7395114);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000116, 0090605);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000876, 0367089);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0213450, 1646971);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0576298, 1397280);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751648, 1843866);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0268380, 0116778);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027271, 0119081);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1064048, 1648190);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001047, 0077416);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1369708, 0165982);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2008067, 8228288);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0228262, 0097659);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0422484, 0093565);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0970447, 1700841);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3582089, 4729430);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1481493, 1029360);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0945026, 0210945);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000934, 0093389);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0500610, 2406566);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1676223, 0787475);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0109359, 2463288);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001068, 0159097);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001681, 0077402);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001188, 0108160);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1630273, 1007029);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001885, 2382009);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 1077368);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1224299, 1320261);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0109359, 1333125);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001716, 0092099);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001331, 9071322);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1760911, 5988370);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0166256, 0097757);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0043742, 0421073);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0014960, 0338095);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1242054, 1714206);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0086431, 0328880);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0019247, 1340800);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0340436, 1233227);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1827931, 2910814);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0700760, 1217209);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0812200, 0272152);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000770, 0108002);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 1302006);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0197636, 0477302);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (4318159, 5074352);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0339030, 6878306);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1168657, 2802154);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0811583, 0770828);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0518644, 0408345);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0583600, 0120783);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000720, 0088286);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0637518, 0145681);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718627, 0053285);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0915304, 1591479);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0174374, 1324999);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000033, 0056869);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0911334, 3169706);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006846, 7737786);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001675, 0285823);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 0335245);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0922903, 3316960);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 0352248);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000965, 0117951);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1757777, 3949660);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003620, 1007028);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0408306);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0463359, 6791096);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0455078, 1000774);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0362566, 0328538);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0946734, 0918940);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0812200, 0113243);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0103187, 1234719);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001880, 0133952);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0771054, 1563738);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0487166, 1379182);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0422484, 0061811);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0619836, 3300542);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001716, 0092644);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1732981, 5027774);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001239, 0056218);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751080, 0093629);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718646, 0467406);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0178260, 0024216);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0510912, 1596343);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0922346, 0144214);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0070436, 0453451);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0527217, 0043274);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1134029, 3470600);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0905592, 1650554);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2128363, 5109280);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000040, 0120663);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0178997, 1648179);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1720541, 0424136);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0515891, 0111255);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001188, 0128853);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0464846, 0098439);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0510731, 0117802);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006452, 0055031);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0930261, 3521164);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0125803, 0480687);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0569891, 1001526);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002120, 2980648);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1960428, 2005374);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001628, 0106918);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0387706, 0488120);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0326040, 1837709);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1016428, 2980516);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000406, 0056217);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0009190, 0796366);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0510912, 1905041);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004716, 0947798);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000343, 0765443);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005237, 0159365);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000040, 0050825);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0905154, 0133093);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0948159, 2888046);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0601382, 0377062);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359610, 0032455);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0551128, 2180411);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1547964, 1440292);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0381478, 2461150);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1139726, 1840309);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001756, 0101272);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 0118715);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005509, 0465234);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0240797, 0810913);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000149, 2241351);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0811583, 0974015);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0911486, 0097815);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0452319, 0317198);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0878638, 0971209);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0824882, 1374989);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0671210, 0137363);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0851281, 0834001);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0348181, 2015381);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002030, 0058385);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0877078, 0116231);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001681, 0063350);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2410311, 2436386);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0586281, 0296042);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001129, 0102926);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0935863, 0380389);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0833889, 1268799);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1490123, 0387564);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 0110074);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000277, 0103939);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0073195);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005069, 0120601);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000416, 0088846);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0600409, 1242422);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001317, 0106582);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 6412452);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0453518, 1549920);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000881, 2109248);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0567620, 2234003);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0850733, 0837562);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1701024, 8267604);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0516360, 5168192);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0178997, 1086772);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0449984, 0080684);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000601, 0289848);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001060, 2120120);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3699790, 3262342);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000108, 7456310);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0510912, 0463985);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0518644, 0360201);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001402, 0079470);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001708, 0183649);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1158544, 2948356);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027271, 0370263);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000264, 0185125);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000416, 0120669);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0812626, 1374992);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0922346, 0472399);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000386, 0105698);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0609236, 0181852);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0298807, 0314353);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0275698, 1075417);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0943758, 0036868);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1481618, 3322364);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0298807, 1798684);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000881, 4172430);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000343, 0085407);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000108, 0110413);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0684342, 0382932);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1729303, 0844479);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0958387, 0250687);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0167195, 0070034);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0101385, 0120902);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001752, 1915581);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0612322, 0056592);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005190, 0817230);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 1677720);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0389591, 0119738);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0210320, 0481499);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000095, 0795493);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006625, 0106598);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0083348, 3606756);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0103785, 2568862);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0817447, 0889573);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004306, 0089530);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001661, 0825232);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0323239, 1282140);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000824, 0086567);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 0089469);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1804518, 1846589);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0906476, 0430922);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0939992, 0031381);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0594503, 0096283);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0254178, 0978762);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0412465, 0107943);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0086301, 5710514);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001232, 0125664);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0286975, 0420223);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0788202, 0960731);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2086105, 1333125);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0192090, 1333125);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0783139, 0327597);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0082450, 7040874);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0782900, 0285492);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0891114, 1033643);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2021516, 2823054);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0743093, 0356470);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005363, 6139732);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0019247, 1758810);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001241, 0146882);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0919514, 0312528);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0318916, 0805564);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0327273, 0354899);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1509478, 5727208);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0757858, 2357291);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005509, 4779682);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004056, 2277860);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005363, 1638355);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0477035, 0293662);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0007181, 2176013);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002339, 1403981);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0634240, 0278504);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002044, 0292506);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1410815, 5186714);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0528381, 0365830);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000095, 0497465);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0298807, 0139654);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1977355, 0398286);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0197636, 0249462);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1148550, 1020072);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0141222, 0111280);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0254120, 1674771);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001060, 0104431);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0918873, 0119190);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0716257, 1228987);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0476201, 0402022);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2284484, 1470827);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0281945, 1041829);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0265363, 0090555);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0336695, 0498399);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0510731, 1631867);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0318916, 2025690);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0345294, 0815245);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0094435, 0468492);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0588340, 0831887);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0587955, 1210166);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000466, 0118583);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1732981, 1931533);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0855035, 1038919);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0082526, 1078940);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002132, 0112697);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0106230, 0351977);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2419470, 7798634);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000601, 0080487);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0201509, 1911658);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0756983, 0173840);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0114226, 0787524);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0023355, 0795351);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001149, 0078346);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001639, 0118929);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0668247, 0126886);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0644203, 0112281);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (4761826, 2105044);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000095, 0416320);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0174374, 0443489);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000127, 0421239);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 0118715);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0554249, 0056197);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000431, 0118971);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000116, 0096754);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0583600, 0207201);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0873779, 0116583);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0026442, 4332232);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0711840, 0376994);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0161834, 1120985);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0594503, 0097814);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002191, 1235166);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1325899, 4302938);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0510731, 0139239);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000490, 0454848);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0444244, 2278871);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2503633, 1502712);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0149446, 0286499);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0425843, 0121164);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000520, 0430357);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 0110074);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0011470, 0298148);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001915, 0105417);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3109770, 2377938);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0298807, 0349683);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0281508, 1622547);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000759, 0272338);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0634240, 1375666);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006846, 0882977);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000602, 0110932);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0639321, 0089907);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2128335, 9893250);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0629658, 2140619);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1443502, 5052448);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001661, 0093779);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1381100, 0489049);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000338, 0119978);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000581, 0042192);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000709, 1067106);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000316, 0072431);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 0408236);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0179221, 0421082);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0240797, 1564367);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0567620, 1540133);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003506, 0118887);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1074107, 0328880);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000570, 0077928);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 0116996);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1166926, 0315983);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0423646, 0091530);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0176905, 0120762);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0914132, 0322330);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0796923, 0079116);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000816, 0411061);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0108094, 0373051);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000881, 1399103);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1455688, 1294226);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0389591, 1093908);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000361, 0117060);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0166256, 0780521);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0742341, 0061512);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000184, 0120915);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004056, 0266543);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0083348, 1964418);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 1979320);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0112641);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1837748, 4682266);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0716257, 1060277);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0344496, 1567609);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0513974, 0084827);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0191717, 0400717);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0500444, 0366551);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0506613, 0433035);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1223910, 1821480);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3734458, 2273657);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000965, 0448134);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000709, 0104070);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0339004, 1924435);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0781842, 0305224);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001149, 0300556);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0426333, 2224026);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0946734, 0926084);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0011470, 0363771);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0254786, 0337921);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0680846, 1411697);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0160840, 1583421);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0500343, 0130623);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0601382, 0467197);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0687042, 1038988);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 1403865);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000464, 5247022);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2752098, 1623288);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (5507490, 2679042);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1103162, 0486576);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 5294550);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0466349, 1272878);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0286975, 0308644);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0970606, 1985966);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0287198, 0120770);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0371890, 1655442);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006889, 0087277);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0939182, 0109424);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004306, 0366548);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000958, 0068473);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0955443, 2034800);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0878756, 0963178);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0440458, 7975244);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006498, 0118849);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1135423, 0432348);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0958387, 0080339);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0336620, 1398426);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0049633, 3469046);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1552637, 0837563);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0075528, 1055292);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0510731, 0489099);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0275629, 1045772);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001331, 0368794);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0019282, 0034492);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0149131, 7668842);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0942367, 0446029);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001081, 1389137);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000976, 0086960);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0920425, 0268695);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001676, 0069995);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0442109, 7939766);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0462895, 0164181);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 3682448);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0720135, 2381941);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0629334, 0438488);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2573005, 6663582);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0384722, 0952640);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000517, 0069762);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0193485, 1131729);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1164861, 0369436);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0721817, 0102798);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002120, 1028532);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0721817, 0375154);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000118, 0077651);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0023355, 1188729);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000965, 0289043);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0551128, 0397535);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0525303, 0455824);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1440846, 0401711);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 0170016);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0629272, 0258153);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003418, 0232500);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0160840, 1702443);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0108132, 0462200);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027572, 0265666);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0336620, 2283336);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003620, 0120655);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000436, 0185014);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0181689);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002159, 0410297);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (7992231, 10579952);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1012501, 2039393);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0593610, 1679335);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0811583, 0416449);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0446819, 0362478);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001708, 0109446);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (5820154, 3072482);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0387706, 0117381);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1301264, 0115641);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0102057);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0600546, 0150662);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005363, 1032755);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1908892, 1592525);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359457, 0082406);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0882330, 0132347);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000570, 0095647);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0235719, 1082868);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0160840, 3104988);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0562645, 0119137);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005363, 0120735);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0331532, 0119303);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000591, 1139328);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0276349, 0480025);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0943758, 0052618);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0083348, 0382932);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0885249, 0790636);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0036349, 1232776);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0230032, 2948372);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0154716, 2543472);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1888091, 7775622);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027572, 1748122);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0413875, 0120461);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1706767, 5613484);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001466, 0087843);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0594503, 0876563);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0318947, 0119345);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0853380, 0445922);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0551128, 0299658);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0414144, 0033563);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0021249, 0110357);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000040, 0062622);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001068, 2132285);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0634240, 0209144);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718645, 0251075);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0917992, 0866439);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0721817, 0245844);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0418883, 0108358);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1417392, 1853739);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0583292, 0102975);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0551076, 2274648);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0425756, 0287978);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0914132, 1396218);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000338, 0103874);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0205542, 0112508);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0125803, 0256380);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0661751, 0369441);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0939128, 0195714);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0797869, 0457400);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0459170, 0077631);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0449984, 0100502);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000095, 3715320);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1400426, 1152398);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0281808, 0031381);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0950775, 2267968);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005363, 1515091);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1312575, 1489887);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005222, 0959337);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0948488, 1568921);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0088955, 1823672);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0476201, 1131734);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0357891, 0066995);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005363, 0988045);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1226871, 1790864);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0788202, 0427327);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2676052, 1483013);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0083866);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0420941, 0451279);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0398185, 0120148);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0269463, 0319343);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0384825, 1212450);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0744834, 1137450);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005124, 0317219);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 0477348);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000600, 0120324);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0422484, 0174856);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0455741, 0032910);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1349376, 0360486);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0917188, 0848537);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004675, 0105435);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0747849, 0102945);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0442241, 0086197);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718645, 0110216);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0166256, 0133240);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001112, 0105690);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3230448, 1800246);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 1403865);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0730860, 0034492);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004234, 2582496);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0145309, 0106701);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0459552, 0091251);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000487, 0114388);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751080, 0116213);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0831557, 1226229);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001716, 0102266);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1531934, 0844708);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0222043, 0327247);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001214, 0113627);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000399, 0114369);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0528718, 0104952);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0024622, 0125659);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 1446714);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0504642, 1670345);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3613566, 5700672);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0719208, 1482459);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000876, 2347569);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0272568, 0033563);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1170339, 4530422);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0506613, 2234155);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0651706, 1754656);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0388817, 0199753);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2193504, 9620292);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001392, 0903624);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000040, 0081505);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 3778644);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0220600, 2377322);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0617130, 0185937);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0771228, 0997152);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0564827, 0327137);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0942504, 0993842);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001710, 0425413);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0276169, 0094862);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001348, 0462504);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0905152, 0242653);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0091076, 1121096);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001756, 0119654);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000431, 1904996);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000500, 0243017);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1853544, 1323594);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0331532, 0331632);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718645, 0087332);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0919369, 0276751);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000484, 0109254);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002132, 0097778);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1294961, 3348730);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000915, 0097239);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0220600, 0970416);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0997291, 2884018);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027271, 0120804);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0128883, 0096487);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0878763, 2084970);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004306, 1392190);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0689343, 0423977);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000824, 0076666);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1164861, 1469304);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0193485, 2194499);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1846132, 2265398);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1291105, 3416532);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2153088, 1899353);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2588606, 4218572);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0957505, 8244784);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001756, 0120912);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000487, 0454876);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0484907, 5308322);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000759, 5776858);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0281945, 0988595);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0090386, 1204342);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004306, 0082694);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001661, 0098635);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0593610, 0205000);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0440458, 0841046);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000269, 0091605);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0811583, 0978764);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0781842, 0425061);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0679031, 2126355);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000720, 0107144);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0067457, 1611224);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0009190, 2527338);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0322242, 0203119);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0362736, 0070917);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0281945, 0462590);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0935095, 0901476);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0158984, 0286244);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1968474, 0032455);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1349376, 1067583);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0811583, 1219342);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0504642, 0800320);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0506613, 0349205);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0802248, 2140379);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2648685, 2884206);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000601, 1045778);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0087595, 0146336);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0700301, 0489237);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0821432, 4425200);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0950775, 1302011);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1220140, 1596365);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0031976, 1201167);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1749112, 0808417);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0858525, 0118998);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000231, 0094291);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 3062096);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0796124, 0101862);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000233, 0105236);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0240797, 0762107);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004716, 0414993);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0943758, 0046250);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0025978, 0113101);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000033, 0052357);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0477129, 1001508);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0133899, 0362225);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0204628, 3741834);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001814, 1013753);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0708903, 1242460);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000500, 0381681);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0414144, 0043274);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0160840, 1023481);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0425756, 0259324);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0606688, 0366548);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001149, 0104714);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1266897, 2932536);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000520, 0113277);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0075666, 2481498);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006625, 0100758);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0946327, 0477071);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000600, 1127180);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0171253, 0366548);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0771054, 1174732);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000464, 8695030);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0082450, 8623904);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0401203, 0413267);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003506, 0035423);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0179542, 2051879);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000682, 0389557);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001112, 0311289);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0089940, 0118617);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001752, 1598778);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000127, 0111686);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000231, 1615065);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1410159, 5638642);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0768959, 7146812);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0134224, 2531344);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0783536, 0799949);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0564586, 0462465);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001716, 0099371);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0520488, 1232829);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001708, 0099582);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0300866, 0365737);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1134029, 0371724);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0863387, 2726560);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0154716, 1659337);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0015359, 0347048);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0527217, 0053285);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0220600, 1922777);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001345, 0091369);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 0477348);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003506, 1950186);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0294997, 1213644);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0275629, 1570728);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000709, 0088763);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001566, 0376541);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000142, 1212419);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0601382, 0466909);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718627, 0057546);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0667734, 6543652);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0629272, 1637688);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000500, 1704573);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0314671, 0048280);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000583, 0332452);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001878, 0795461);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1018493, 2356180);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0585011, 0264472);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0629334, 0305357);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0323239, 1632708);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000682, 0114436);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003418, 0382992);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1490123, 2820852);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0939128, 0414982);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751648, 4154756);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001675, 0338459);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002657, 1124037);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001219, 2312718);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000033, 0036342);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001129, 0107818);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0565336, 1895587);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0743671, 3553976);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000233, 0266697);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000709, 0442933);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0635759, 0120611);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0243231, 1588334);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0820934, 0400717);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1092087, 8936646);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2371802, 8503618);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0362566, 1099212);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0936482, 1386703);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0421776, 0126029);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 1019452);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1093039, 3748172);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0629272, 0119177);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1481493, 0385880);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0178997, 0120484);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0083348, 0317705);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001486, 0050083);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0502954, 3322940);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0542450, 0985694);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0339030, 1535109);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2158772, 1675192);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1429471, 4052882);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1804614, 2574698);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0426059, 2527336);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0835799, 0067992);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0218621, 4094724);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0300265, 0114148);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2905562, 1289406);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000431, 0228750);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002044, 0114508);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0269463, 0371746);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1196684, 2279373);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2947553, 5215952);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0490487, 0338564);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0161152, 0814022);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000464, 0102536);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0919363, 1259571);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0336620, 0113118);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1119880, 1862079);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0331532, 0472181);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0218621, 2184339);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0200005, 0929632);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0327944, 0449467);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006487, 1462041);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0569891, 0351283);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000095, 2334873);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000958, 0082348);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0462895, 0995039);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0905152, 0115736);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001681, 0418819);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0379179, 0914798);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001814, 0181536);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001129, 0368008);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2285536, 5461944);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0466153, 8075192);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0576298, 2446042);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3792134, 7668870);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006854, 0216216);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0405632, 0398017);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0332950, 0169102);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0325776, 0118617);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0015295, 1562872);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000682, 0100802);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0030735, 1424381);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000484, 0092086);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0789313, 0033563);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000184, 0121765);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0796117, 4972582);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0506613, 0383216);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000399, 2267998);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0245888, 0278488);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0081398);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000881, 0213149);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0533284, 1439572);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718645, 2223990);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0772259, 0064665);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005116, 0098084);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0161834, 1817273);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0771923, 4226388);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000269, 0120102);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000231, 0469641);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0553942, 1667889);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0181902, 0089880);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0887452, 1850397);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003160, 4912910);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0919363, 0276751);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1002424, 3741700);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001675, 0985694);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005076, 0138749);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000338, 0068646);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2411495, 0829150);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0891216, 1270798);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0415207, 0428803);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0205542, 0120693);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005540, 0175142);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0905154, 0242653);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0286975, 0830515);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0637518, 0105112);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000361, 0183523);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0565336, 3203616);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000265, 0280707);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0920425, 0120794);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000247, 0120755);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0268380, 0256380);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1890845, 2170439);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0565336, 0340377);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000108, 0151137);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0115669, 0017925);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001466, 0060196);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0812200, 0494238);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0174374, 3168230);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0637518, 0109444);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0322515, 0090264);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1490123, 3065204);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751648, 0463034);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0858525, 0455967);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004716, 1125849);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000033, 0054215);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0637615, 3774694);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718645, 0097428);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1140275, 2692904);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000487, 1025100);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000277, 0075784);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0946734, 0417741);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0957772, 0373883);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751648, 3498820);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001353, 0095963);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2171633, 3042408);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0617042, 0284837);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006476, 0324554);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0959774, 4139588);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000361, 0074285);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000600, 0083907);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0951975, 2494362);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0179221, 1972571);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0394280, 0100403);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001814, 0119217);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0429964, 0914863);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0371955, 1258197);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000466, 0344510);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005008, 0104940);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0336620, 0317740);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001351, 0064115);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1128037, 2121382);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0335138, 1399683);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005436, 0101507);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751102, 0356721);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1219963, 0406759);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1294036, 1636826);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0139867, 1333125);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0853238, 1454029);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0097576);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000520, 1152836);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002191, 2053425);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000600, 0413300);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000386, 1190080);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0051643, 0120762);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000416, 1054606);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000801, 0401711);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0335138, 3892172);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0223359, 0184894);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0957798, 0130623);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000583, 0088323);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751648, 4154796);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1433996, 0492044);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000264, 1189073);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027572, 0838221);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006487, 0107207);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0878763, 1355644);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004410, 0479884);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0400436, 1037705);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0620378, 0377109);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0269463, 1228705);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0183183, 0029583);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001081, 0259711);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0101047, 0424095);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000965, 2080374);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0138620, 0475394);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 1019452);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000255, 0452623);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0065284, 0245674);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0781842, 0114694);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005363, 0208092);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004716, 1959490);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005303, 0171804);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 0103776);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000247, 0119094);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0269463, 0406375);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0146341, 0119164);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1436693, 1166100);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0914132, 0416236);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0272568, 0032455);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001741, 0348150);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0520488, 1490017);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1989536, 1872181);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0953123, 0056197);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (4263190, 1502397);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001379, 0043265);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0324875, 0093692);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2788015, 5109280);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0406334, 4686844);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005222, 2379713);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0787601, 0274812);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0197636, 0976051);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1068186, 0970452);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005363, 1972591);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0031078, 1126591);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1349522, 3530002);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0789313, 0029583);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0240797, 0116483);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1012501, 5968394);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0134176, 0130018);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0922346, 0146316);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0414144, 0048280);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2782185, 1219827);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1376383, 1605630);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0950109, 0055928);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0474955, 0139134);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0266777, 0449010);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000386, 0111282);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0281808, 0032138);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0585011, 0125439);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0551076, 0435625);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000601, 0230030);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005069, 0268126);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000154, 0472043);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1160962, 3531824);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000816, 0101921);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000786, 0119229);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005387, 0265029);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004303, 2057392);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2410311, 3717490);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001355, 1972779);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0382072, 0101452);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1376383, 0481536);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2130108, 4633694);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0467396, 0042546);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001723, 0117218);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0615592, 2023587);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0685759, 0327554);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001460, 0120647);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0503777, 0032138);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1018493, 0405508);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000591, 0071315);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0796117, 0938283);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0330347, 1711525);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1329166, 4387040);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0276062, 0404203);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0745247, 4633694);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027271, 1220634);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0768959, 1453405);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001508, 0094737);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006476, 0465580);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1139726, 0443543);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001994, 0119395);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0615592, 7349950);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002653, 0780653);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0938471, 13143964);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000341, 0120657);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1461392, 1790809);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000850, 0093177);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001425, 0111495);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000814, 0100507);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0275286, 0359013);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0629334, 0758794);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0612816, 1032846);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 0887883);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0125803, 0183505);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3350420, 1413492);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0362227);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002077, 2066051);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2482088, 1428538);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001081, 0098258);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000759, 1560747);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0026442, 0261983);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000916, 0431197);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0448900, 0374102);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0357453, 0343135);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0506977, 1216475);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000116, 0111503);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0920274, 1322269);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718627, 0082406);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3592235, 2350496);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0905154, 0115736);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0814085, 0338526);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0796117, 0286106);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0474955, 0433400);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1762961, 2854926);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0736930, 0252866);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0541635, 0356150);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0166256, 3521164);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0213450, 0892769);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000399, 0258000);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1404307, 3661210);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0504642, 0388482);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002653, 0163025);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1103162, 1408253);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0893659, 0298130);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001060, 0120686);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0506613, 0477347);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1479803, 3799232);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0440458, 1284575);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0601781, 5848272);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0729701, 1502712);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359387, 0878804);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1396048, 1185834);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0510731, 3532216);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003506, 0358273);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0958387, 0113071);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001452, 0048424);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0637518, 0120053);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0223359, 0427229);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0733263, 5886046);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0406334, 1226774);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0041474, 0401711);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0019242, 1343097);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0019242, 1216487);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0236226, 0810922);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001723, 0315327);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0601337, 1850457);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0893659, 1192628);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001915, 0092890);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0893659, 1210819);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 0112384);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000881, 0112442);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0065608, 0283111);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001837, 0090329);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0179697, 0445990);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 0101393);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1000113, 2561572);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000720, 0080339);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001317, 0149261);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0551128, 5028340);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027572, 0128445);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0935095, 0892318);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0229694, 8580274);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0506613, 1078912);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000487, 0119349);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0138620, 1601913);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0180257, 0092493);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0811583, 2975590);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001565, 0304415);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0353673, 1458175);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0254786, 0309593);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1601882, 5848272);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001681, 0088993);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0788940, 0073629);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0601859, 1711425);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0815204, 2358891);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001486, 0071877);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0848414, 0164334);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001566, 0061184);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001149, 0112401);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000500, 0332379);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0955443, 0385004);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000881, 3371366);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0797869, 0339291);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000180, 0056172);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005509, 0106611);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751080, 0277296);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0440913, 0364970);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0315065, 0975645);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001566, 0115685);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000118, 0082340);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0196860, 0450188);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006969, 1333125);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0394280, 0120738);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1414582, 1716772);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0868219, 0256009);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0550881, 0106246);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000881, 0117500);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1128037, 4995790);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001885, 1527186);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003620, 0109445);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0281508, 1560220);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001469, 0095953);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0617042, 0770703);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0178997, 0389860);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0206760, 0449059);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0235719, 1781922);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001532, 0095016);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1291105, 1649419);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0304521, 0237534);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001565, 0473075);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0443411, 1683526);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0520488, 2294449);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1413364, 7550000);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004716, 0138704);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 0096446);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001243, 1726669);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000829, 0120873);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0443411, 0120586);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1410159, 2105044);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000116, 0120338);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0215299, 2557478);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1827931, 5774060);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001382, 0086837);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001508, 0099077);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1767218, 1655441);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0375068, 0452625);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0946734, 1201607);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0481418, 0463998);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000916, 1440129);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0629272, 1517260);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0814085, 1046173);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0400850, 1959563);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0138809, 1980929);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001348, 1095217);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0942504, 0414387);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0081433, 0247586);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0520485, 0120630);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0898288, 2316411);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0300866, 6673612);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0089940, 0095489);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0893659, 0449088);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0757858, 1436562);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0922346, 2231253);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027271, 0113855);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000697, 0053291);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0603628, 0414852);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000399, 0103644);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0520488, 0844471);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0871428, 1343727);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2122478, 2401878);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0019247, 1139797);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0337773, 1502407);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0757858, 0268380);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 0887883);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005222, 0169547);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0796124, 0375173);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0192845, 0446755);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006960, 1226753);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0217505);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0455078, 1261945);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001149, 0075005);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002077, 1083452);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002044, 0118928);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0950553, 0446059);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0859432, 2771372);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005366, 6394270);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0426333, 0120587);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0420941, 0340855);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0525141, 1135084);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0528718, 0088930);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0026442, 1772264);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0583600, 2361509);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0777881, 1245526);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000041, 0047478);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001486, 0074958);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0655683, 0861739);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0855035, 0256415);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0043742, 5519340);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0187769, 0095159);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001379, 0040897);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0777881, 0790736);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000005, 0060827);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0426333, 0165982);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0919369, 0163651);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000316, 0063462);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000095, 0457513);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0269463, 6105098);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0065284, 0288477);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000914, 0079417);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000985, 0086425);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0102873, 7846844);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001880, 0450259);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751102, 1045658);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 0172495);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0384864, 0345950);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1098493, 1489889);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0009190, 1650062);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0373871, 0034492);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0374048, 0905372);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000948, 3799694);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001112, 0233469);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3227090, 2582802);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0591994, 0385002);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0035899, 0033563);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0824882, 0974661);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0125803, 0408839);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001382, 0146675);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0661577, 0089822);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001752, 1130080);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0026442, 0361862);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0655683, 1234721);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0169806, 3501632);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0466349, 1524137);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0043742, 1855199);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0194018, 0048280);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1890845, 7401588);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0327944, 1663202);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000907, 0091541);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0863387, 0203019);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0748066, 1433811);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0506613, 1279935);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0922346, 0118880);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0270263, 3606752);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0362566, 0355702);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000231, 0146838);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0719208, 1690953);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001102, 0122718);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0219959, 0078935);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1294962, 0433362);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0018132, 1592873);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001723, 0129290);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0298807, 2302755);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0594503, 2013293);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0609549, 1091722);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001752, 0181865);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0519434, 0113481);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0934483, 0238380);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0795290, 5462602);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0510912, 1013752);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0609549, 1092026);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0565336, 1606392);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0014960, 0454841);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0711840, 0293564);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0442241, 0180073);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001716, 0266987);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0668247, 1821549);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0715636, 0478970);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0193508, 1655420);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0094435, 0353969);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2320658, 5109280);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2648685, 1549572);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003423, 0095956);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0609549, 2387499);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0028764, 1217209);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0466349, 2719848);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0720135, 1045772);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0692872, 0070355);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000568, 0131325);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0462895, 1547234);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0594503, 0087544);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0398185, 0274166);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0455741, 0033563);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0898288, 3397884);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000455, 0098554);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0962729, 1071875);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0132709, 0120746);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004306, 0094332);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2320658, 3521164);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0868219, 2554274);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000005, 0083922);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0440458, 2283362);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0075849, 0489237);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3462290, 2222042);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0927468, 0010323);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000965, 2763304);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1490123, 1457767);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0871860, 0493430);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1417392, 2980592);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1083489, 0453556);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0138809, 3544112);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0329755, 1093357);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1989536, 0948470);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1379002, 3235888);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001880, 0758752);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0101540);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2305431, 1179904);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1139726, 1219289);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000759, 0175880);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000316, 0071230);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001024, 0332280);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0788202, 0452598);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0893659, 0119715);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0153078, 0889583);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001814, 0363589);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0833780, 1564585);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001425, 0108394);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0440459, 1763303);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0668247, 1033575);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000108, 2404311);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0386246, 0374887);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0971239, 1911658);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001149, 0118883);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2942187, 5363618);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0154819, 0097958);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001162, 0120791);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0759207, 0301470);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0931095, 1536044);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0744834, 0462322);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0268380, 0183505);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0500610, 2911666);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0386570, 0427392);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1294961, 0433362);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0240627, 1300851);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0190859, 0304141);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0337773, 1366344);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001060, 0814255);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001338, 0120784);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0500444, 0242423);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000697, 0036775);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0118607);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0594503, 0245429);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000184, 0069704);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0193508, 2404425);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1167933, 3011894);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0871860, 1116184);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3363032, 1825683);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0527261, 1179891);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000436, 0119488);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001708, 0106856);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0712753, 0401997);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0919369, 0385267);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0572562, 3758172);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005124, 0120363);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000941, 1790885);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0829820, 0822847);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000774, 0060176);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0942504, 0783233);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0824882, 1438254);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2585406, 0293429);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0504642, 0342258);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0773605, 0811138);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001566, 0096463);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3371961, 0762125);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0120815);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0125803, 0338466);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001188, 0374536);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0152312, 0120794);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001328, 0038355);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000490, 7349662);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0252135, 0318649);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001149, 0097733);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000490, 0307901);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0821432, 6146586);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0094435, 6751668);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0914132, 0377092);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0719208, 5113040);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1079062, 1937149);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000118, 0084787);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0730860, 0032910);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000941, 0887912);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0160840, 1193631);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0772259, 0074860);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2277869, 1567437);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000041, 0089881);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000142, 0498380);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0132709, 1133985);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000186, 0166924);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0679031, 2231461);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002337, 0185183);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (4099092, 4695012);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1053530, 4550098);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002044, 0094889);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0919363, 0163651);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0878756, 0396171);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000881, 0172156);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0570912, 1229340);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001392, 0360717);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0783536, 0466342);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0499724, 0102070);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0339030, 4196776);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0937748, 0852713);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2304675, 8637428);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0757858, 0438097);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0349183, 0239395);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2947553, 1190539);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0443505, 1985949);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0862211, 1080016);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001466, 0064116);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001112, 0106977);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1033517, 1491044);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359457, 0057546);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1259871, 2381111);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1012385, 1365519);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0281507, 0087078);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2609807, 1878870);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001438, 0450345);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1140275, 1893256);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1993322, 1034314);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0080315, 7886848);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0014960, 1528071);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0868153, 1924396);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3211470, 4263482);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001837, 1023114);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1234345, 0391198);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0281396, 0804497);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001490, 0099871);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001328, 0053221);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0213450, 2386490);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359734, 1149362);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001392, 0120737);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0291082, 0427470);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0049371, 1245112);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0440913, 0348836);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0893659, 0325980);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002120, 0241303);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0252135, 0455407);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0525303, 1343092);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0178376, 1263670);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0455741, 0043274);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0386246, 2338151);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001752, 1506999);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0702797, 2106361);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1300606, 1568338);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 2193215);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003697, 1243957);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718627, 0076618);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0898288, 1392214);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0576298, 1129442);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1760830, 1618434);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0652631, 0056197);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000601, 0122933);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0812200, 0397101);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0190859, 1454468);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 0401445);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0107290);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000788, 0110367);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0758574, 0318462);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0558873, 2106651);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0097079, 0431021);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000602, 0105265);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0715636, 1068680);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000600, 0106308);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0181579, 1748179);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0331532, 0267913);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000876, 7653254);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0587277, 0020629);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0614682, 0879870);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3611349, 3731562);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000033, 0044079);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0868153, 0120731);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2497546, 4786282);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1343394, 4846232);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000154, 0335345);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 0758774);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001379, 0033870);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0174374, 1673434);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751221, 0349710);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0634240, 6723592);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001328, 0029947);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0014960, 0464154);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0286975, 0285742);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (9054338, 0389790);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0357453, 1155056);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1556116, 0837563);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0946811, 0062765);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0527217, 0055254);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0596407, 5719748);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1417392, 5034838);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0407304);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0905152, 1371111);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0945026, 1656190);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000814, 0091326);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0030735, 0452702);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000600, 1623205);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0505152, 0116705);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1650283, 1790809);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001124, 0049833);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0373282, 0480242);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000697, 0053604);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359387, 4276820);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0190859, 6155172);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0709056, 1446192);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1560977, 1229822);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0026442, 1911644);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0294997, 1073498);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0164187, 0113540);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0158966, 0842926);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0662529, 1634122);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0197855, 2704998);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0868219, 5580390);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000419, 0053472);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001566, 0472062);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000186, 0100935);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3227090, 3783958);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 0117438);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0634602, 0385700);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001081, 1243974);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0378893, 0115433);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718645, 0083131);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001317, 0099423);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359387, 2140373);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0680846, 1119646);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0325196, 0114148);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1098493, 5758778);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0304521, 0384537);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0420422, 0862846);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000948, 1300854);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0268380, 0408839);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 1126590);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027572, 0432283);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000386, 0319262);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1160962, 2109184);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002120, 0989757);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0009463, 2226597);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003620, 0113749);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0828245, 0082406);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0615780, 0103639);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2782185, 1735898);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0916424, 0335119);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0281396, 0468489);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0266622, 3850214);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000881, 1980209);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000399, 1568346);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0108052);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0031976, 1758830);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0118333, 0423294);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0470443, 0183869);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0487166, 5083738);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1294961, 2397535);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000127, 1262416);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000019, 0053779);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000186, 0105665);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0720135, 1570728);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0499724, 0097493);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0593610, 2279373);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0796117, 6823368);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0651900, 0113568);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718627, 0070608);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001754, 0147612);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1247462, 1187064);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000591, 0095174);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2210720, 5323662);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0405632, 0450385);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006960, 0138097);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001178, 0015648);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1969144, 6977338);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001392, 0167260);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751577, 1843866);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1699934, 1441326);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001708, 0093437);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0459170, 0080453);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000186, 0460829);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0936374, 0101414);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001241, 0436697);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000233, 0113101);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005069, 0386117);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3817317, 9484998);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0089940, 0120913);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005062, 0113101);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001149, 0110478);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001885, 0115751);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0453518, 0365376);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1291105, 0464141);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1397301, 2082197);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001774, 0115798);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000217, 0090863);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0443505, 2990140);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0742819, 0082495);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0090386, 2567026);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001104, 0111161);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001162, 1333125);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0564970, 0023969);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0709056, 4633694);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1275670, 0884732);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0848414, 0329774);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0043742, 2713180);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1783265, 1431045);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0696309, 0103060);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000033, 0049470);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000455, 0088128);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0141961, 0393162);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0779433, 2387559);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002044, 2402157);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0474955, 0253867);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000484, 0086465);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0357891, 0058150);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1564809, 2548396);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0796117, 0949731);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1720541, 0389722);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000118, 0085333);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2277869, 0808417);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001392, 2310332);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2095817, 1197628);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0551076, 0483607);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0065608, 0486946);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000814, 0087538);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0081540, 2737304);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1049433, 3170832);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0504513, 0086393);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0677953, 0212346);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0677953, 0110989);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000881, 8106534);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005367, 0477051);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0139867, 1114740);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001008, 0036613);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0378893, 0108333);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001741, 1877832);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0802248, 1667353);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0802693, 0073707);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0684336, 1231587);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0563243, 1860213);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006846, 6189022);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0132709, 0381061);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0394280, 0116409);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0193485, 0314331);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1207904, 1179056);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1349522, 1588173);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0524190, 4651520);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000464, 1714915);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3360961, 0762125);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0661910, 0312004);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2588606, 1723811);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0269463, 0409847);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2284484, 3748528);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0410769, 0160862);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003638, 0013442);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000630, 0404030);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0336695, 2935510);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3210494, 3469046);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002041, 1981128);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000517, 0077405);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001716, 0108399);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004056, 0120623);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001281, 1912398);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0281508, 1156398);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000416, 0114746);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0615592, 1396484);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0527217, 0046183);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001596, 0073650);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001486, 0070666);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0724938, 3647498);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000601, 0085995);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000231, 0101761);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001490, 0107211);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1509613, 2262227);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0249897, 0443536);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000142, 0327056);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0075859, 0082406);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000682, 0103772);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2588606, 2024544);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001675, 1077258);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0314671, 0043274);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1068186, 0938330);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718646, 1625346);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 0319061);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0956052, 0102492);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000142, 3263904);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1163264, 4532826);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0464804, 0851578);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0426287, 3846674);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0583600, 0457939);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0325776, 0120913);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2482088, 1536537);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0268380, 0338466);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0773689, 6048922);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001392, 0167261);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0379237, 0333780);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0336620, 0377471);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1127632, 1403177);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0082802, 0490204);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0262595, 0780571);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0345307, 0815245);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1026883, 1645080);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0134176, 0380389);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0609236, 0118771);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0983193);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001708, 0117913);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001102, 0096734);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001437, 0114787);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751102, 2446980);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1027719, 0292490);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0510731, 0258463);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0481418, 1559547);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0868219, 0167190);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0634240, 0468569);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0291205, 0458352);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1490123, 0455760);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0082450, 1289401);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0812307, 1979388);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0905154, 1371111);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0423333, 0421206);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0833779, 1564585);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1164861, 1499658);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003593, 0044706);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0101508, 0312004);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 0138524);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0336620, 0120768);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0834902, 1587310);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0701592, 0117705);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2535507, 8110330);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0848414, 0119051);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000338, 0071360);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0359387, 1860242);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1294962, 3348730);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0829820, 1038686);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000957, 0117998);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0957772, 0462322);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1079062, 4857264);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2155757, 1979376);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000957, 0111257);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0661910, 0120630);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000797, 0078841);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005222, 1074638);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001628, 0084805);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0223359, 0284490);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0591450, 0110357);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0440913, 0113247);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 0367594);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0871860, 3063516);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0163706, 0085334);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0331532, 0208003);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002030, 0032904);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0291205, 4682786);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001104, 0268995);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000005, 0050986);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0009190, 0317919);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2586324, 4765284);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1844237, 0448694);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0668247, 0375063);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0353673, 0478134);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0960028, 0094625);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000576, 0237572);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000697, 0043014);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0950553, 0329101);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003697, 0405094);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0432627, 0147800);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0067457, 0403358);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0641373, 0327679);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718645, 0120828);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1429471, 2024469);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0659380, 0814022);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1950086, 4925292);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (8078611, 0401383);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0662530, 6911608);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000382, 1352824);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1197971, 0816462);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0346550, 0497116);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0950553, 0144120);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000361, 0387877);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0139867, 0317303);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000247, 0115759);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0715636, 0452594);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0357453, 4501244);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0446819, 0246578);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0551128, 1298650);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0942504, 1781769);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0603628, 1179034);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0254786, 1144884);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1243905, 1485796);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0332950, 0367110);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 1142977);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0381416, 1234548);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0955443, 1410063);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1170855, 1488606);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0400441, 1037705);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0796117, 0368447);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0345174, 5726616);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0030253, 0787474);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0610496, 0112950);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002653, 0097523);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0769874, 0070511);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0322515, 0097742);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001024, 0426883);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004716, 5109784);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027271, 0120157);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000517, 0478304);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000033, 0026029);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005509, 0114924);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0680846, 0215129);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0942367, 0425112);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000186, 0074486);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000247, 0338337);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002700, 0795461);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (8078611, 5168192);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1443023, 4680182);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003160, 0790724);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001752, 2053463);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0504513, 0081573);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0536299, 0098439);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0729514, 1571234);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1022455, 2125435);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0240797, 2191701);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3363032, 3076658);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0792202, 0426931);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0875793, 1216492);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0340958, 0881320);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001490, 0250797);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002191, 4971344);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0498555, 0443536);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0326246, 2704998);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0839660, 0108525);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0569891, 0479952);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0155093, 0240890);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000455, 0091042);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001741, 0290334);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0591994, 0450314);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0718627, 0065421);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0833889, 2452244);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1698571, 1245492);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002132, 0083929);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1363250, 2545118);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0591171, 0120694);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0314671, 0055254);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002044, 0146309);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001102, 0093260);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0178997, 0327437);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1103162, 0120667);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0868153, 0213847);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0671210, 0265349);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005647, 0419706);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003506, 0381849);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0504642, 3381008);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1512910, 1182345);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000165, 1390411);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0330347, 0445934);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0074426, 0138749);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 0101410);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0759207, 0263488);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0397174, 0398286);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0414144, 0029583);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0629334, 4225622);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000399, 0421715);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0276349, 0419677);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000500, 0112471);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0178997, 1222817);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000948, 3829266);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0531817, 1034389);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000709, 0109830);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0068587, 3882082);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005436, 0322259);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0620378, 0178868);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0939182, 0765120);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0424800, 0257076);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005190, 0368933);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000881, 1055369);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0400850, 2333784);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005563, 0113957);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000709, 3488710);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1234893, 0480255);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001054, 0138524);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0164203, 0053285);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0075860);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0881038, 0100814);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1580671, 1450321);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0668998, 0029583);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0467646, 0083944);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0227540, 0120917);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1742427, 1600196);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0570912, 0838283);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1099918, 4062536);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0797869, 0120632);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000520, 0248667);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000814, 0097647);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000948, 0373469);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000108, 2239822);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001708, 0293508);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0881279, 0198781);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000142, 3513548);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0853374, 2322441);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000118, 0096256);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002175, 0056197);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0997291, 2094766);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0588340, 0458481);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1725469, 10272386);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0573796, 0120890);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 3861390);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1601644, 4520988);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000568, 0095031);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0381478, 0374900);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000233, 0119396);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0527217, 0042332);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0525659, 0250494);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027572, 5104604);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0777881, 3410834);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0389591, 0316396);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1019493, 0290095);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1720541, 1325004);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000399, 0137523);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0738796, 0265459);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000520, 0104691);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001880, 1034303);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000602, 0146984);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0520749, 2083383);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001093, 0206314);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1837748, 2582846);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0715636, 5095030);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0275629, 3553442);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000233, 0401792);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0751102, 1800241);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001317, 1043726);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0958969, 1155076);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0317638, 0402910);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0881279, 0266543);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1463981, 0476735);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000455, 0090305);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001232, 0073486);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001241, 0094947);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001437, 0118843);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001756, 0120891);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0640334, 1291584);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000116, 0088247);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001112, 0120787);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0231596, 0443680);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0661751, 1821694);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0802807, 0340163);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0828245, 0076618);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0868153, 0095765);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001104, 0884328);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001053, 0100150);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0322144, 3316960);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001587, 0074119);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0152312, 1217209);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0233757, 0485947);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0528718, 0190138);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000750, 0298814);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0229694, 1872194);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0092965);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0348181, 0439815);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001361, 0084516);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0348181, 3896198);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 0078748);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001716, 0328107);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0899121, 2106476);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001885, 0168629);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0125803, 0129387);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0027183, 0074812);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0934483, 0370032);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0870469, 1179933);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001361, 0072271);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0400441, 0107554);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0505152, 0109813);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0125803, 0109686);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0591450, 0164912);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001338, 3569230);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0206760, 1839492);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000750, 0112722);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005348, 0079367);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0570912, 0357413);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0934864, 1334512);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001770, 1389096);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0668247, 0257360);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1012102, 0173840);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0212720);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0405632, 1161864);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001239, 0122690);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1481959, 0385700);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0006904, 0465538);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0111845, 0832266);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1442514, 4849438);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0201509, 0351283);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0716257, 3450958);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0298807, 1210042);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1733778, 3794354);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0527261, 1502404);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002083, 0313443);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0549658, 0086190);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0243233, 1588334);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0550881, 0397313);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1503575, 4975722);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000040, 0054331);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0026442, 0800241);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0680846, 7286456);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0831557, 1195478);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0593610, 3513498);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1429471, 0397065);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0275698, 0492956);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000631, 0765429);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002120, 1441952);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1349376, 0480249);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1916835, 4364194);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0371755, 0451079);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1437189, 8108198);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0942504, 3332064);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0201509, 1277953);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0004886, 0108147);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0716347, 1974419);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0003620, 1385867);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0236226, 1486834);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1497918, 0384806);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0331532, 0151738);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000318, 0096895);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0730385, 0055614);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0583600, 0337741);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1890845, 1528854);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1203138, 3863552);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001675, 0287717);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0796117, 0217869);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1033517, 3014866);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1705578, 10886166);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000520, 0369339);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0340436, 1477076);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0914132, 0821640);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0833779, 0758730);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001639, 2404233);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0327944, 0315733);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0382956, 1327194);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000184, 0076759);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0716257, 2103281);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0229694, 1488555);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0314671, 0046183);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0615780, 0097757);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0002653, 0102803);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0799050, 6791096);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0014960, 0790686);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0298807, 2404435);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005366, 0118655);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000431, 0084434);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1413364, 3531824);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000583, 0114069);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000916, 4560436);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0220600, 0404032);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000154, 2119532);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0353673, 0375679);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001675, 0112851);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000180, 0059113);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001880, 0115956);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0001060, 0099785);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0936482, 0401855);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0562266, 0366627);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0933505, 0087928);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000229, 0367882);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0294457, 1854564);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0005124, 0114709);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0615780, 0119282);
-INSERT INTO Director_Movie (directors_id, movies_id) VALUES (0000118, 0116225);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (323239, 1632708),
+(855035, 256415),
+(68587, 3882082),
+(863387, 2726560),
+(229, 1568911),
+(231, 91763),
+(1012501, 2039393),
+(1392, 103873),
+(671210, 137363),
+(206760, 449059),
+(709, 88011),
+(366004, 144084),
+(5820154, 3072482),
+(338, 71360),
+(49371, 1038988),
+(1104, 111161),
+(853380, 120679),
+(95, 91167),
+(386, 105698),
+(27572, 1748122),
+(817447, 1711525),
+(753382, 238546),
+(2410311, 2436386),
+(2320658, 3521164),
+(180, 59113),
+(421776, 126029),
+(935095, 892318),
+(916, 448157),
+(788202, 209475),
+(682, 93870),
+(3211470, 4263482),
+(1989536, 4481414),
+(637518, 145681),
+(1068186, 970452),
+(504642, 3381008),
+(142, 1616195),
+(563301, 426592),
+(568, 91419),
+(919363, 1259571),
+(443505, 2990140),
+(769840, 356150),
+(619836, 3300542),
+(153078, 815241),
+(3611349, 2179116),
+(1661, 825232),
+(154, 335345),
+(772259, 64665),
+(906476, 430922),
+(814716, 384116),
+(118, 228333),
+(1093053, 816442),
+(6916, 91129),
+(220600, 2377322),
+(440459, 1763303),
+(820934, 787474),
+(6846, 1117385),
+(268380, 480687),
+(343, 115964),
+(33, 38787),
+(1880, 1034303),
+(1410, 285531),
+(464, 5247022),
+(833780, 1564585),
+(165, 870111),
+(576298, 1657507),
+(455, 91042),
+(920425, 120794),
+(2158772, 1675192),
+(215455, 2096673),
+(240797, 1564367),
+(919369, 276751),
+(294379, 463854),
+(11470, 363771),
+(1770, 1389096),
+(689852, 382077),
+(1012501, 5968394),
+(510912, 2660888),
+(3697, 1243957),
+(635759, 311429),
+(453518, 1549920),
+(796923, 79116),
+(709, 161081),
+(187769, 95159),
+(359610, 32455),
+(190859, 206634),
+(751102, 1800241),
+(210320, 481499),
+(145309, 106701),
+(770, 108002),
+(331532, 151738),
+(65284, 245674),
+(6625, 106598),
+(1741, 120903),
+(396074, 808506),
+(581, 42192),
+(939182, 212712),
+(405632, 1211956),
+(2277869, 1567437),
+(384825, 1212450),
+(298807, 1210042);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1047, 77416),
+(905152, 133093),
+(637615, 8359848),
+(1469, 117665),
+(9463, 2226597),
+(343, 91064),
+(109359, 1333125),
+(965, 163978),
+(14960, 790686),
+(875793, 1216492),
+(205157, 465602),
+(132709, 120746),
+(191147, 1961175),
+(1844237, 448694),
+(788202, 1336608),
+(95, 416320),
+(916, 1091191),
+(2419470, 2105044),
+(108, 2404311),
+(777881, 790736),
+(951975, 5657856),
+(404606, 65207),
+(141961, 206275),
+(95, 497465),
+(718627, 82406),
+(773603, 401383),
+(181903, 6998518),
+(318, 367594),
+(231, 469641),
+(371890, 1655442),
+(1375358, 1605630),
+(33, 32976),
+(5507490, 2679042),
+(711110, 1727388),
+(1162, 120791),
+(406334, 1226774),
+(941, 887912),
+(1026778, 1355631),
+(27271, 1509767),
+(132709, 381061),
+(233, 1853728),
+(873779, 116583),
+(1878, 306047),
+(40, 66921),
+(217, 106226),
+(831557, 1195478),
+(264, 287467),
+(751102, 964517),
+(1403, 476964),
+(1053, 475290),
+(222043, 191397),
+(1191481, 6499752),
+(24622, 369702),
+(2155757, 1979376),
+(178376, 5478478),
+(4155547, 1703199),
+(331532, 331632),
+(386, 6924650),
+(525303, 203009),
+(38432, 377981),
+(132709, 190865),
+(102873, 7846844),
+(7045, 443473),
+(930261, 397892),
+(5366, 212338),
+(3371961, 762125),
+(639321, 89907),
+(554249, 56197),
+(942504, 993842),
+(82526, 1078940),
+(388817, 199753),
+(695937, 52561),
+(154716, 2543472),
+(420941, 7126948),
+(2688320, 1971325),
+(562645, 119137),
+(1675, 462322),
+(201509, 1277953),
+(814085, 120616),
+(950775, 1302011),
+(751221, 349710),
+(178997, 1086772),
+(759, 272338),
+(609236, 181852),
+(438394, 115641),
+(2120, 989757),
+(751577, 1843866),
+(5421, 105812),
+(178376, 1263670),
+(600, 114214),
+(2782185, 1735898),
+(576987, 317248),
+(891216, 4649466),
+(2676052, 1483013),
+(229, 88939),
+(644203, 112281),
+(1906430, 1764183),
+(1068186, 938330),
+(788940, 73629),
+(1452, 48424);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (871428, 1343727),
+(294997, 799949),
+(291082, 365907),
+(573589, 200550),
+(1716, 266987),
+(587955, 1100089),
+(985, 119822),
+(6846, 882977),
+(2044, 146309),
+(3506, 309698),
+(191717, 400717),
+(680846, 1231583),
+(336620, 317740),
+(957, 111257),
+(792263, 5362988),
+(716257, 3450958),
+(815204, 2358891),
+(1119079, 1865505),
+(682, 103772),
+(31976, 3152624),
+(190780, 398808),
+(1314116, 864761),
+(588340, 401792),
+(748066, 1433811),
+(504642, 388482),
+(5363, 120735),
+(163706, 85334),
+(814085, 209163),
+(428600, 396752),
+(201509, 120587),
+(318, 121164),
+(1060, 241527),
+(756983, 173840),
+(176905, 120762),
+(271402, 1623288),
+(594503, 97814),
+(709, 96438),
+(962729, 479884),
+(2031, 34583),
+(400436, 1037705),
+(814, 97647),
+(474955, 433400),
+(298807, 349683),
+(190859, 1454468),
+(304541, 1063669),
+(742819, 82495),
+(327273, 799934),
+(318, 162661),
+(878638, 134847),
+(781842, 1661382),
+(850733, 2510894),
+(863387, 1433108),
+(476201, 1131734),
+(520, 369339),
+(1915, 105417),
+(1032521, 5503686),
+(9190, 1650062),
+(125803, 109686),
+(620378, 377109),
+(235719, 1314655),
+(948159, 1220719),
+(1675, 338459),
+(510731, 356910),
+(138809, 907657),
+(490, 307901),
+(421776, 307453),
+(741262, 103919),
+(1630273, 1007029),
+(781842, 398165),
+(382956, 117631),
+(27271, 119081),
+(5069, 386117),
+(426059, 393109),
+(1716, 120660),
+(1174251, 5442430),
+(3506, 1950186),
+(2676052, 1104001),
+(341, 70909),
+(833889, 2452244),
+(327273, 338013),
+(219959, 78935),
+(601781, 2948356),
+(1149, 75005),
+(2653, 113497),
+(797869, 339291),
+(715636, 478970),
+(1756, 120912),
+(1149, 300556),
+(936838, 318627),
+(2947553, 5215952),
+(1716, 328107),
+(313623, 4776998),
+(359457, 34492),
+(651706, 1754656),
+(281508, 1156398),
+(197855, 2704998),
+(359734, 1602620),
+(594503, 2013293),
+(4675, 97351),
+(1104, 884328);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (300866, 1800302),
+(958969, 1155076),
+(538320, 338564),
+(109359, 817538),
+(126096, 2866360),
+(6960, 138097),
+(229, 120815),
+(718645, 2223990),
+(331532, 208003),
+(484, 94898),
+(7992231, 10579952),
+(1720541, 389722),
+(49633, 1482459),
+(1093, 128442),
+(2158772, 1935179),
+(1348, 1095217),
+(149446, 286499),
+(357891, 70328),
+(631, 401445),
+(505152, 103786),
+(440458, 1284575),
+(942367, 1213663),
+(1291105, 4881806),
+(1732981, 1931533),
+(610831, 454921),
+(5363, 365686),
+(957798, 130623),
+(5363, 208092),
+(436, 119488),
+(936404, 59742),
+(965, 1542344),
+(5062, 99700),
+(682, 164052),
+(217, 88680),
+(1349376, 360486),
+(914132, 821640),
+(31976, 1758830),
+(679031, 1397514),
+(500, 2937696),
+(1486, 72890),
+(867127, 1582507),
+(812307, 1979388),
+(272568, 32910),
+(588340, 458481),
+(3458, 1242432),
+(1382, 86837),
+(109359, 185431),
+(1653753, 4468740),
+(591450, 865556),
+(1214, 113627),
+(386, 319262),
+(1888091, 7775622),
+(1103162, 1408253),
+(677953, 212346),
+(541635, 356150),
+(2134474, 3322420),
+(1752, 1506999),
+(970447, 1277953),
+(484, 92086),
+(298807, 139654),
+(220600, 1922777),
+(577647, 2170593),
+(1490123, 455760),
+(191712, 1355630),
+(2191, 4971344),
+(414144, 29583),
+(950226, 181984),
+(281507, 87078),
+(276349, 480025),
+(361, 106519),
+(576, 758758),
+(1053, 110074),
+(788202, 452598),
+(615592, 7349950),
+(269, 120102),
+(594503, 104652),
+(440913, 113247),
+(455741, 43274),
+(1129, 368008),
+(1206844, 6628394),
+(962729, 1121931),
+(588087, 2294449),
+(357891, 71807),
+(151540, 377818),
+(25978, 113101),
+(425843, 121164),
+(229694, 300471),
+(95, 1178663),
+(1885, 1937390),
+(3620, 424345),
+(939182, 109424),
+(359457, 82406),
+(1486, 50083),
+(1317, 116908),
+(466, 112682),
+(268380, 6966692),
+(174374, 1673434),
+(820934, 400717),
+(233, 401792),
+(721817, 114898);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (378893, 104868),
+(631, 119173),
+(720135, 2381941),
+(307497, 2798920),
+(591, 63522),
+(304521, 384537),
+(1002424, 3741700),
+(743093, 356470),
+(4056, 266543),
+(160840, 1193631),
+(1130, 221027),
+(684342, 382932),
+(1878, 95705),
+(923736, 2395427),
+(165, 352248),
+(634240, 5013056),
+(1024, 2203939),
+(891216, 375912),
+(811583, 770828),
+(525659, 369735),
+(116, 96754),
+(1650283, 1790809),
+(609549, 1092026),
+(318, 96895),
+(812200, 397101),
+(946734, 1201607),
+(398185, 120148),
+(1140275, 1893256),
+(101385, 357277),
+(1060, 99785),
+(400850, 2333784),
+(965, 289043),
+(43742, 2713180),
+(796117, 938283),
+(233, 266697),
+(3343, 295700),
+(155528, 2709692),
+(218621, 4094724),
+(3418, 116040),
+(4410, 479884),
+(218621, 2975578),
+(40, 50825),
+(1312575, 1489887),
+(109359, 280590),
+(583600, 457939),
+(730860, 32910),
+(1163264, 4532826),
+(205542, 120693),
+(709, 162222),
+(359734, 387898),
+(934, 70849),
+(758574, 318462),
+(721817, 102798),
+(82802, 490204),
+(2120, 402894),
+(2339, 1403981),
+(4056, 2277860),
+(718645, 87332),
+(5509, 117333),
+(1164755, 465494),
+(957, 120179),
+(153078, 443453),
+(215299, 2557478),
+(186, 460829),
+(797869, 112642),
+(233, 1028528),
+(455741, 32910),
+(1291105, 464141),
+(149491, 467200),
+(615780, 97757),
+(922346, 1764651),
+(19247, 1139797),
+(881279, 266543),
+(1052791, 1029234),
+(525659, 250494),
+(125803, 256380),
+(593610, 2279373),
+(410769, 160862),
+(4716, 5109784),
+(1120, 40522),
+(661751, 1821694),
+(1566, 111742),
+(339030, 4196776),
+(661791, 364569),
+(911334, 3169706),
+(591, 253474),
+(24912, 871510),
+(1242054, 4287320),
+(416, 81633),
+(1016428, 1155592),
+(155528, 2709768),
+(4886, 108147),
+(233, 7131622),
+(600, 1623205),
+(1429471, 1401152),
+(269, 91605),
+(190859, 304141),
+(455, 98554),
+(916, 4560436),
+(2045, 45152);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1064048, 1648190),
+(789313, 33563),
+(637615, 3774694),
+(774, 60176),
+(965, 117951),
+(6969, 2848292),
+(250410, 443536),
+(959034, 259446),
+(267512, 1839492),
+(815070, 1070874),
+(942504, 4555426),
+(19242, 1216487),
+(374048, 905372),
+(1752, 1915581),
+(1752, 1130080),
+(941, 1790885),
+(1349522, 2139881),
+(1060, 107614),
+(384825, 1712261),
+(217, 993846),
+(103187, 1234719),
+(612322, 56592),
+(337773, 1502407),
+(414423, 2268016),
+(2284484, 1470827),
+(227540, 371606),
+(1349376, 480249),
+(1834213, 1448755),
+(41, 55630),
+(878763, 1355644),
+(574625, 1486192),
+(946734, 4123430),
+(1203138, 3863552),
+(1098493, 1489889),
+(186, 166924),
+(997291, 2884018),
+(1139726, 1219289),
+(615780, 103639),
+(1837, 90329),
+(871860, 322802),
+(134176, 380389),
+(788202, 395699),
+(1093039, 5606664),
+(429964, 914863),
+(615780, 3521164),
+(1024, 251160),
+(1224299, 5884052),
+(661577, 89822),
+(3506, 3315342),
+(1301264, 115641),
+(625458, 277027),
+(1092087, 8936646),
+(718646, 5610554),
+(551076, 1020558),
+(1178, 15648),
+(165, 1979320),
+(1119880, 1862079),
+(709, 1907668),
+(609549, 1091722),
+(574625, 434409),
+(229, 108052),
+(943758, 36868),
+(357453, 4501244),
+(3611349, 3731562),
+(286975, 816711),
+(718645, 251075),
+(1442514, 2631186),
+(637518, 109444),
+(5190, 247638),
+(517, 77405),
+(1880, 110322),
+(426333, 165982),
+(917992, 866439),
+(381416, 1234548),
+(108, 119116),
+(868219, 5580390),
+(1814, 102494),
+(5540, 381707),
+(213450, 892769),
+(568, 327162),
+(576, 237572),
+(490, 454848),
+(751080, 110475),
+(750, 137494),
+(229, 73195),
+(5509, 368891),
+(919369, 385267),
+(490, 1321511),
+(1789, 79944),
+(637518, 435651),
+(893659, 384680),
+(142, 3513548),
+(2132, 83929),
+(190859, 6155172),
+(759, 118749),
+(455, 90305),
+(318947, 119345),
+(814, 87538),
+(868153, 120731),
+(245888, 278488);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (504642, 342258),
+(229694, 1872194),
+(1139726, 443543),
+(744834, 498353),
+(1630273, 795421),
+(570912, 838283),
+(88955, 1823672),
+(5363, 1638355),
+(101508, 312004),
+(851281, 834001),
+(4170048, 8772262),
+(592400, 125022),
+(796117, 4972582),
+(848414, 435705),
+(165, 96446),
+(387706, 488120),
+(531817, 455590),
+(1532, 93773),
+(677953, 397078),
+(413875, 120461),
+(1343394, 5727208),
+(594503, 119698),
+(1348, 462504),
+(1244760, 986264),
+(591, 71315),
+(4014166, 7713068),
+(1455688, 1294226),
+(551128, 1298650),
+(515891, 111255),
+(727754, 1335975),
+(142286, 364045),
+(781842, 425061),
+(386, 120685),
+(5647, 419706),
+(1008, 36613),
+(484, 109254),
+(388198, 80745),
+(591171, 120694),
+(515891, 118615),
+(142, 3263904),
+(43742, 421073),
+(586281, 296042),
+(570912, 415306),
+(1486, 70666),
+(936482, 320691),
+(400441, 120681),
+(3592235, 2350496),
+(1400426, 1152398),
+(619923, 1675434),
+(1193346, 460740),
+(362566, 1486185),
+(240797, 810913),
+(751577, 463034),
+(109359, 2463288),
+(1081, 259711),
+(318, 133152),
+(876, 2347569),
+(751648, 4154756),
+(970447, 1700841),
+(500, 1704573),
+(1741, 348150),
+(3809021, 5813916),
+(118333, 4520988),
+(4303, 804522),
+(661751, 177789),
+(275698, 454945),
+(698184, 242519),
+(1349522, 1306980),
+(166256, 133240),
+(24622, 1186830),
+(204628, 3741834),
+(268380, 338466),
+(917188, 268380),
+(2030, 32138),
+(855035, 770752),
+(297935, 266308),
+(601382, 467197),
+(829038, 58331),
+(750, 298814),
+(946734, 373889),
+(568, 131325),
+(871860, 1116184),
+(610831, 814314),
+(387706, 251114),
+(1676223, 1298649),
+(5190, 163187),
+(1079062, 1937149),
+(1149, 78346),
+(5358492, 2948372),
+(520, 1152836),
+(371955, 1258197),
+(229, 408306),
+(402597, 64757),
+(551128, 299658),
+(179221, 1972571),
+(718645, 465624),
+(484, 77975),
+(466349, 2719848),
+(6487, 765010),
+(631, 172495);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1767218, 1655441),
+(27271, 1921064),
+(906476, 243655),
+(1355, 1972779),
+(566788, 1591479),
+(637615, 290673),
+(6476, 465580),
+(3620, 118842),
+(914132, 416236),
+(4306, 94332),
+(300866, 6673612),
+(1228976, 1800741),
+(425756, 1185416),
+(603628, 414852),
+(1723225, 4430212),
+(601, 289848),
+(1675, 116367),
+(4306, 79501),
+(1500577, 3622592),
+(484, 80455),
+(1382, 146675),
+(318, 1126590),
+(1019493, 290095),
+(1224299, 307453),
+(5069, 120601),
+(1068, 159097),
+(343, 1571222),
+(5, 60827),
+(594503, 87544),
+(881, 112442),
+(1960322, 1687901),
+(941, 267626),
+(811583, 363547),
+(500610, 6806448),
+(229, 107290),
+(229, 367882),
+(382, 1352824),
+(193485, 1131729),
+(229, 6294822),
+(2503633, 1502712),
+(885249, 962736),
+(74426, 307453),
+(37708, 403702),
+(426059, 1276104),
+(629334, 2172934),
+(336620, 4630562),
+(1234345, 391198),
+(1079776, 1385826),
+(813164, 981227),
+(1103162, 120667),
+(1281, 1912398),
+(1438, 450345),
+(715636, 204946),
+(600409, 1242422),
+(958387, 80339),
+(774325, 24216),
+(164187, 113540),
+(349183, 362165),
+(631, 3659388),
+(336620, 113118),
+(682, 3716530),
+(1160962, 3531824),
+(330347, 445934),
+(637518, 120053),
+(41161, 499556),
+(125803, 408839),
+(1708, 481369),
+(90386, 2567026),
+(518644, 408345),
+(1675, 2002718),
+(467396, 42546),
+(1425, 111495),
+(602, 105265),
+(269463, 371746),
+(1565, 473075),
+(229694, 8580274),
+(2120, 241303),
+(719208, 5113040),
+(610496, 112950),
+(1466, 87843),
+(1885, 4003440),
+(1219963, 406759),
+(125803, 2096672),
+(1149, 110478),
+(459170, 77631),
+(1698571, 1245492),
+(1853544, 1690953),
+(324875, 93692),
+(394280, 100403),
+(1220140, 1020530),
+(1206844, 1259521),
+(323239, 1282140),
+(673400, 1637706),
+(5124, 1216475),
+(916, 327850),
+(570, 84503),
+(252135, 1618442),
+(1367933, 364517),
+(1601644, 4520988),
+(4217, 3387520);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1294036, 3316948),
+(922346, 118880),
+(487166, 5715874),
+(487, 388795),
+(95, 2870756),
+(3620, 873886),
+(917188, 848537),
+(593610, 405325),
+(86301, 5710514),
+(339030, 475276),
+(500, 332379),
+(455078, 1261945),
+(831557, 800039),
+(1681, 77402),
+(583600, 2361509),
+(1241, 146882),
+(1093039, 3748172),
+(2044, 114508),
+(939128, 195714),
+(911486, 97815),
+(751080, 277296),
+(958387, 99653),
+(600, 219699),
+(716347, 780504),
+(1417392, 1853739),
+(510674, 461770),
+(1532, 264395),
+(287198, 120770),
+(2158772, 2649554),
+(951975, 2494362),
+(718627, 55254),
+(2411495, 829150),
+(5366, 6394270),
+(1053, 2042568),
+(1413364, 2109184),
+(510731, 1631867),
+(318150, 62512),
+(176905, 1430607),
+(464, 379217),
+(957772, 373883),
+(416, 88846),
+(1348, 68182),
+(600, 145487),
+(41, 42876),
+(217, 99685),
+(298807, 314353),
+(814085, 338526),
+(1241, 94947),
+(1868917, 2267968),
+(936404, 55614),
+(601337, 1981677),
+(3699790, 3262342),
+(881, 418279),
+(587955, 1210166),
+(1147588, 1783232),
+(283816, 3717252),
+(382072, 101452),
+(601781, 1772341),
+(353673, 1458175),
+(937748, 852713),
+(422484, 61811),
+(631, 78748),
+(1345, 91369),
+(650905, 962726),
+(1752, 1598778),
+(583600, 207201),
+(5190, 100405),
+(418883, 108358),
+(585011, 264472),
+(500444, 242423),
+(1148550, 1020072),
+(905152, 1371111),
+(1093039, 5022702),
+(855035, 386588),
+(2045, 56923),
+(178376, 1355683),
+(603628, 936501),
+(758574, 382628),
+(300265, 114148),
+(160840, 1583421),
+(217, 1130884),
+(564970, 23969),
+(339004, 491152),
+(588087, 1232829),
+(3094978, 1273235),
+(1226871, 1790864),
+(294997, 1213644),
+(1149, 89218),
+(709, 3640424),
+(551076, 435625),
+(487166, 5083738),
+(452319, 317198),
+(916, 4572514),
+(165, 808151),
+(373871, 34492),
+(108, 2239822),
+(359387, 10016180),
+(542450, 985694),
+(1433996, 492044),
+(1741, 1727824);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (3506, 35423),
+(269463, 6105098),
+(27572, 432283),
+(1497918, 384806),
+(948, 373469),
+(697, 51201),
+(1102, 96734),
+(1154886, 3416828),
+(27271, 1855325),
+(811583, 416449),
+(5124, 120623),
+(506613, 1078912),
+(500610, 5463162),
+(1137264, 2105044),
+(127, 134084),
+(711840, 289765),
+(715636, 5095030),
+(1402, 71853),
+(1661, 98635),
+(585011, 1126618),
+(1752, 240772),
+(697, 46359),
+(2657, 5164214),
+(184, 121766),
+(1479803, 3799232),
+(848414, 246460),
+(316, 63462),
+(1675, 437086),
+(1331, 9071322),
+(1837748, 4682266),
+(5190, 1598822),
+(76, 53198),
+(970447, 298148),
+(228542, 1292566),
+(67457, 403358),
+(1756, 120891),
+(5363, 8367814),
+(525303, 117509),
+(761498, 892769),
+(94435, 6751668),
+(469694, 404390),
+(3227090, 3783958),
+(1880, 133952),
+(635759, 120611),
+(1392, 360717),
+(1103162, 2869728),
+(2191, 1235166),
+(570, 77928),
+(336695, 2935510),
+(914132, 322330),
+(661791, 4016934),
+(1170286, 800069),
+(27271, 1220634),
+(1353, 116830),
+(1005, 107822),
+(3418, 295701),
+(178997, 389860),
+(26442, 261983),
+(591, 1139328),
+(424103, 1188996),
+(1697112, 1323045),
+(705535, 87803),
+(1026883, 1645080),
+(2044, 2402157),
+(664756, 385307),
+(149, 2241351),
+(1532, 112864),
+(1259871, 2381111),
+(637615, 1191111),
+(227540, 120917),
+(1149, 97733),
+(836328, 54047),
+(142, 2179136),
+(431918, 387808),
+(2095817, 1197628),
+(835799, 67992),
+(583600, 337741),
+(33, 53125),
+(1988, 112682),
+(233, 110912),
+(487, 454876),
+(585011, 125439),
+(5366, 427152),
+(448900, 374102),
+(1402, 79470),
+(946327, 477071),
+(798899, 462538),
+(3109770, 2377938),
+(527217, 55254),
+(416, 1054606),
+(6625, 100758),
+(1560977, 1229822),
+(601859, 4651520),
+(1328, 29947),
+(776, 980970),
+(878763, 2084970),
+(359734, 808279),
+(298807, 3766354),
+(4716, 414993),
+(1989536, 1022603);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (266622, 3850214),
+(631, 765429),
+(217, 75314),
+(1241, 436697),
+(802248, 209958),
+(551076, 280609),
+(65284, 288477),
+(893659, 236493),
+(622112, 123755),
+(125803, 183505),
+(601, 1045778),
+(492909, 313737),
+(797526, 89822),
+(868219, 187738),
+(1410159, 5638642),
+(1396121, 5311514),
+(788202, 281358),
+(322144, 3316960),
+(405632, 450385),
+(35899, 32455),
+(267512, 449059),
+(1675, 287717),
+(558873, 2106651),
+(2193504, 9620292),
+(680846, 2005151),
+(229, 362227),
+(885249, 1172049),
+(814, 75148),
+(717678, 1985949),
+(426333, 120587),
+(550881, 106246),
+(751102, 1045658),
+(181902, 108358),
+(499724, 97493),
+(5190, 93693),
+(868219, 2554274),
+(466349, 1272878),
+(570912, 1596363),
+(1661, 104257),
+(14960, 338095),
+(27572, 838221),
+(197855, 1524930),
+(701592, 117705),
+(1437, 118843),
+(536299, 98439),
+(2676052, 3829920),
+(275629, 1045772),
+(3506, 118887),
+(629272, 119177),
+(504513, 86393),
+(631, 320661),
+(668247, 257360),
+(1053, 190590),
+(1846132, 2265398),
+(634240, 278504),
+(184, 76759),
+(1716, 1111422),
+(1108007, 6265828),
+(858525, 455967),
+(957, 117998),
+(1054, 100150),
+(1481493, 1029360),
+(3102998, 7014006),
+(600, 316654),
+(240627, 144117),
+(431, 118971),
+(1878, 102510),
+(509448, 420294),
+(2366012, 2105044),
+(184, 121765),
+(1837, 120382),
+(327944, 2562232),
+(127, 1262416),
+(644695, 89530),
+(593610, 3513498),
+(317638, 402910),
+(4056, 401729),
+(459552, 91251),
+(443505, 1985949),
+(1053, 118715),
+(466, 118583),
+(524190, 4651520),
+(1024, 1078588),
+(1112, 311289),
+(318150, 79574),
+(64181, 1418377),
+(500343, 130623),
+(118, 80749),
+(1566, 376541),
+(730860, 34492),
+(551128, 2180411),
+(118333, 120855),
+(345174, 1034415),
+(181902, 89880),
+(881, 1399103),
+(118333, 423294),
+(1129, 107818),
+(5222, 169547),
+(318, 1077368),
+(747849, 356618);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (853238, 3631112),
+(1887, 86200),
+(416, 355295),
+(2120, 124315),
+(330347, 889573),
+(1490123, 804461),
+(769874, 63442),
+(718627, 61852),
+(3211470, 7984734),
+(27271, 370263),
+(926919, 56197),
+(4469445, 4954522),
+(757858, 358082),
+(281945, 462590),
+(1490123, 2820852),
+(510674, 120855),
+(254786, 1144884),
+(802807, 340163),
+(272568, 32455),
+(751102, 120188),
+(464, 8695030),
+(138809, 1980929),
+(142286, 1464540),
+(2083, 313443),
+(798899, 198781),
+(661910, 120630),
+(2653, 163025),
+(712947, 48545),
+(716347, 1974419),
+(118, 120877),
+(27271, 120804),
+(1762961, 2854926),
+(939182, 118694),
+(142, 1057500),
+(425756, 287978),
+(335138, 1399683),
+(1413364, 3531824),
+(1756, 113161),
+(985, 371246),
+(4410, 1034032),
+(574625, 427392),
+(318916, 805564),
+(1164861, 369436),
+(336695, 1212428),
+(21249, 110357),
+(1596, 73650),
+(594503, 245429),
+(268380, 129387),
+(294997, 466342),
+(905154, 1371111),
+(339030, 1535109),
+(1749112, 808417),
+(361, 183523),
+(314671, 57546),
+(387706, 186151),
+(1049433, 3170832),
+(5062, 113101),
+(1300606, 1568338),
+(711840, 266915),
+(1294962, 433362),
+(1372836, 10886166),
+(550881, 397313),
+(1002424, 3850590),
+(759, 5776858),
+(783536, 799949),
+(1756, 1409024),
+(236226, 1456635),
+(1723, 119528),
+(1226871, 4046784),
+(893659, 119715),
+(1512910, 1182345),
+(3423, 95956),
+(3109770, 3848892),
+(1653753, 1109624),
+(631, 83658),
+(1741, 114814),
+(337773, 910936),
+(340436, 1477076),
+(936482, 401855),
+(252135, 455407),
+(8078611, 401383),
+(1054, 887883),
+(41, 44741),
+(5366, 295178),
+(19247, 1758810),
+(5509, 963966),
+(275286, 359013),
+(161152, 814022),
+(33, 44079),
+(231, 102138),
+(504642, 800080),
+(1556116, 837563),
+(2021516, 2823054),
+(180, 50212),
+(583, 114069),
+(179542, 2051879),
+(149131, 7668842),
+(36582, 92675),
+(97079, 431021),
+(36349, 1232776);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (316, 72431),
+(773689, 6048922),
+(460206, 1840417),
+(249897, 443536),
+(797869, 120632),
+(1158544, 2948356),
+(1219, 313542),
+(19, 53779),
+(43742, 1855199),
+(602104, 2910904),
+(1054, 1019452),
+(6969, 1333125),
+(142286, 1293847),
+(679031, 2126355),
+(811583, 978764),
+(165, 1390411),
+(1317, 297284),
+(709, 88763),
+(842339, 4624424),
+(885249, 2305051),
+(700301, 489237),
+(277, 103939),
+(4810, 443701),
+(464804, 156887),
+(103744, 302640),
+(506613, 2234155),
+(936374, 116583),
+(1752, 98724),
+(442241, 86197),
+(510731, 139239),
+(38432, 298148),
+(958969, 1538403),
+(381478, 374900),
+(386570, 363163),
+(70436, 453451),
+(655683, 1234721),
+(797869, 457400),
+(848414, 164334),
+(711840, 293564),
+(348181, 2015381),
+(4716, 180093),
+(567620, 1540133),
+(1392, 380510),
+(291082, 427470),
+(1969144, 6977338),
+(453518, 365376),
+(504495, 88944),
+(400850, 1959563),
+(442109, 7939766),
+(506613, 2692250),
+(228542, 1638002),
+(1197971, 816462),
+(1466, 64116),
+(1328, 53221),
+(564586, 462465),
+(1054, 6412452),
+(1566, 61184),
+(3483756, 762125),
+(1977355, 398286),
+(440604, 1954470),
+(1054, 116282),
+(565336, 340377),
+(223522, 10280276),
+(455078, 1000774),
+(893659, 298130),
+(1500577, 1990314),
+(933505, 124298),
+(266777, 449010),
+(796923, 66999),
+(709056, 4633694),
+(631, 955308),
+(682, 100802),
+(718645, 110216),
+(936482, 337978),
+(307497, 470752),
+(322515, 82398),
+(1659741, 1860353),
+(881279, 435761),
+(1128037, 4995790),
+(1018426, 1772240),
+(1442514, 4849438),
+(629334, 758794),
+(2341611, 11464826),
+(167195, 70034),
+(692872, 70355),
+(247, 338337),
+(612816, 1032846),
+(829, 253754),
+(770942, 756683),
+(1486, 292963),
+(976, 95631),
+(436, 185014),
+(1164861, 1469304),
+(262595, 780571),
+(318, 94721),
+(898288, 1255953),
+(4332, 455538),
+(587518, 87985),
+(1725469, 10272386),
+(757858, 438097);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (506613, 383216),
+(1741, 1877832),
+(687042, 1038988),
+(420422, 862846),
+(1053, 401711),
+(387706, 117381),
+(186, 105665),
+(1134029, 3470600),
+(477035, 293662),
+(601382, 1606378),
+(603628, 1179034),
+(775447, 264935),
+(3620, 109445),
+(565336, 1895587),
+(1415, 44081),
+(833779, 758730),
+(178376, 1206543),
+(922346, 146316),
+(3506, 1430132),
+(4716, 1125849),
+(958387, 113071),
+(976, 105323),
+(3620, 120655),
+(337773, 1366344),
+(603628, 6850820),
+(868219, 457430),
+(254786, 309593),
+(192845, 446755),
+(134176, 130018),
+(2782185, 1219827),
+(922903, 3316960),
+(1052162, 482606),
+(4816401, 1502397),
+(223359, 184894),
+(1460, 119874),
+(569891, 479952),
+(281508, 1321870),
+(4306, 1392190),
+(240797, 1375670),
+(871860, 493430),
+(769135, 790628),
+(905152, 234215),
+(5366, 118655),
+(959062, 162346),
+(526199, 317248),
+(6846, 6189022),
+(606439, 1341167),
+(593610, 1679335),
+(1723, 117218),
+(1417392, 2980592),
+(1149, 450232),
+(1464314, 10189514),
+(732430, 376136),
+(7082, 378109),
+(600, 413300),
+(2588606, 1723811),
+(677953, 110989),
+(2284484, 3748528),
+(718627, 76618),
+(170719, 391304),
+(1219, 2312718),
+(27572, 5104604),
+(1853544, 1323594),
+(680846, 1411697),
+(525141, 1135084),
+(6452, 55031),
+(481418, 1559547),
+(1404307, 3661210),
+(1885, 276919),
+(399, 10618286),
+(757858, 1436562),
+(393799, 810819),
+(247, 245562),
+(711840, 376994),
+(2132, 112697),
+(318, 109707),
+(640334, 482572),
+(269463, 1228705),
+(2130108, 4633694),
+(381478, 2461150),
+(1565, 304415),
+(751102, 2446980),
+(709, 99088),
+(197636, 249462),
+(730860, 33563),
+(942367, 3890160),
+(1916835, 4364194),
+(378893, 108333),
+(444244, 2278871),
+(881, 2109248),
+(958387, 250687),
+(691, 99329),
+(33, 49470),
+(2648685, 2884206),
+(601, 122933),
+(3350420, 1413492),
+(878756, 130827),
+(1463981, 476735),
+(5124, 114709),
+(1752, 496806);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (82450, 2404463),
+(865918, 1675434),
+(611683, 432021),
+(862211, 1667889),
+(11470, 126029),
+(95, 457513),
+(911061, 252076),
+(743671, 3553976),
+(716257, 1228987),
+(1302, 218839),
+(905154, 242653),
+(125803, 480687),
+(527217, 53285),
+(462895, 3045616),
+(1915, 92890),
+(28764, 1217209),
+(254120, 1674771),
+(709, 3488710),
+(181579, 1462758),
+(40, 49406),
+(413875, 103855),
+(217, 217505),
+(233757, 485947),
+(428600, 780511),
+(2653, 780653),
+(91076, 1121096),
+(716347, 1602613),
+(1207904, 1179056),
+(1317, 95742),
+(971239, 389790),
+(513974, 84827),
+(919363, 276751),
+(206760, 4622512),
+(510912, 1013752),
+(583, 332452),
+(615592, 1396484),
+(193485, 314331),
+(853238, 1454029),
+(711840, 218967),
+(1756, 106220),
+(1293863, 347618),
+(82450, 1478338),
+(2285536, 5461944),
+(2556572, 1527788),
+(861703, 32138),
+(1160962, 1778304),
+(919369, 163651),
+(166256, 97757),
+(657372, 472160),
+(553942, 451079),
+(851537, 32138),
+(33, 36342),
+(668998, 29583),
+(527217, 48280),
+(2366012, 7798634),
+(1053, 100150),
+(1175, 54698),
+(1149, 112401),
+(509448, 1217613),
+(1104, 268995),
+(828245, 76618),
+(1024, 332280),
+(718646, 427944),
+(1675, 112851),
+(1083489, 453556),
+(1135423, 890870),
+(43742, 5519340),
+(802248, 1253864),
+(217, 490215),
+(27572, 362270),
+(5366, 290002),
+(697, 53604),
+(962729, 1071875),
+(771054, 1174732),
+(661751, 369441),
+(3160, 2381249),
+(415207, 428803),
+(4675, 105435),
+(694, 93191),
+(899121, 2106476),
+(570912, 357413),
+(133899, 362225),
+(2436566, 4364194),
+(619599, 271027),
+(2586324, 4765284),
+(825407, 1496025),
+(1902232, 4877122),
+(89940, 95489),
+(851930, 1981115),
+(896542, 32138),
+(1698571, 2788710),
+(1885, 2382009),
+(520, 430357),
+(171253, 366548),
+(1053530, 4550098),
+(1164861, 2024432),
+(166256, 3521164),
+(229, 3682448),
+(2044, 412080),
+(936374, 230011);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (276169, 94862),
+(477129, 403508),
+(720135, 3553442),
+(1232, 125664),
+(275698, 492956),
+(914132, 1686821),
+(425756, 259324),
+(1170855, 1615147),
+(868153, 1924396),
+(682, 389557),
+(1699934, 1441326),
+(658837, 406759),
+(716257, 1060277),
+(682, 120201),
+(946521, 7752126),
+(795290, 5462602),
+(1436693, 1166100),
+(5303, 1939659),
+(5436, 430105),
+(878638, 1411250),
+(65608, 486946),
+(185848, 1465522),
+(49633, 2293640),
+(631, 325805),
+(12541, 347304),
+(682, 114436),
+(1628, 106918),
+(708903, 1242460),
+(1168657, 2802154),
+(958, 68473),
+(359734, 254686),
+(1232, 73486),
+(231, 1615065),
+(787601, 274812),
+(1349376, 1951265),
+(525659, 1142988),
+(649117, 1132620),
+(1587, 74119),
+(229, 102057),
+(4824763, 2674426),
+(362566, 328538),
+(229, 264464),
+(919363, 163651),
+(1149, 118883),
+(630, 404030),
+(268380, 116778),
+(464, 165798),
+(406334, 4686844),
+(1752, 120780),
+(1783265, 1431045),
+(905152, 115736),
+(286975, 830515),
+(110, 1661199),
+(213450, 275847),
+(1053, 887883),
+(462895, 363988),
+(4716, 947798),
+(2304675, 8637428),
+(281396, 804497),
+(720, 88286),
+(527261, 1502404),
+(318, 99487),
+(386246, 2338151),
+(276349, 419677),
+(965, 2763304),
+(1880, 97441),
+(2120, 2980648),
+(142, 498380),
+(132709, 386140),
+(609236, 118771),
+(1804518, 1846589),
+(1349818, 804497),
+(853380, 445922),
+(399, 2267998),
+(2645, 4901306),
+(1878, 88286),
+(941, 102685),
+(389591, 1093908),
+(331532, 119303),
+(520, 2717822),
+(423646, 91530),
+(217, 81398),
+(751080, 116213),
+(1752, 307479),
+(957505, 8244784),
+(6487, 1462041),
+(586281, 235198),
+(527217, 42332),
+(108, 151137),
+(118, 90728),
+(721817, 375154),
+(298807, 2404435),
+(718646, 1625346),
+(110, 800369),
+(339030, 440963),
+(455, 88128),
+(1053, 1019452),
+(881, 399201),
+(583, 88323),
+(680846, 7286456);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (384722, 952640),
+(922346, 144214),
+(5116, 98084),
+(583292, 102975),
+(815070, 4209788),
+(569891, 351283),
+(41, 47478),
+(1742427, 1600196),
+(1628, 373926),
+(583, 82096),
+(1093039, 2388715),
+(844896, 185937),
+(634240, 468569),
+(330347, 1711525),
+(384825, 898367),
+(1053530, 1315981),
+(1732981, 5027774),
+(751648, 1843866),
+(1708, 99582),
+(520, 140352),
+(1093039, 4361050),
+(2284484, 831387),
+(1566, 472062),
+(934864, 1334512),
+(1108007, 2788732),
+(281396, 4154664),
+(812200, 113243),
+(114226, 787524),
+(343, 85407),
+(269542, 1727388),
+(1756, 101272),
+(192090, 1333125),
+(1349818, 4154664),
+(397174, 397892),
+(233, 113101),
+(916, 431197),
+(905154, 234215),
+(551076, 483607),
+(4675, 164184),
+(1053, 116282),
+(936482, 1386703),
+(6487, 97937),
+(4410, 1071875),
+(781842, 305224),
+(916, 390022),
+(277, 75784),
+(720, 107144),
+(179697, 2058673),
+(794791, 89686),
+(893659, 449088),
+(744834, 3605418),
+(868219, 1663662),
+(1325899, 4302938),
+(1027719, 292490),
+(500, 1065073),
+(221133, 115641),
+(5237, 116209),
+(1294961, 433362),
+(617042, 284837),
+(520488, 1232829),
+(719208, 1323594),
+(142, 418689),
+(694, 87884),
+(1661, 93779),
+(1532, 99810),
+(217, 95497),
+(724938, 398712),
+(1681, 63350),
+(853374, 2322441),
+(5237, 134119),
+(1512910, 803096),
+(1099918, 2359024),
+(1102, 99700),
+(916, 1440129),
+(2125482, 9770150),
+(464, 1714915),
+(484, 82010),
+(568, 795368),
+(56725, 372824),
+(1033517, 3014866),
+(345307, 815245),
+(89940, 120913),
+(223359, 284490),
+(339004, 1924435),
+(782900, 285492),
+(5540, 430304),
+(1508, 104694),
+(564827, 327137),
+(1349376, 2873282),
+(314671, 48280),
+(1429471, 2199571),
+(943758, 46250),
+(1329166, 4387040),
+(281945, 988595),
+(399, 137523),
+(426059, 2527336),
+(1396121, 983213),
+(950775, 2267968),
+(281945, 1041829),
+(22768, 839980);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (298807, 822854),
+(505152, 109813),
+(186, 80678),
+(338, 119978),
+(343, 765443),
+(357453, 343135),
+(90386, 1204342),
+(414144, 48280),
+(848414, 119051),
+(40, 57012),
+(939128, 1098327),
+(138620, 1601913),
+(230032, 2096673),
+(236226, 810922),
+(423646, 87553),
+(631, 2316204),
+(1733778, 3794354),
+(1376383, 481536),
+(139867, 317303),
+(318, 1142977),
+(950109, 55928),
+(5101, 2101441),
+(680846, 1951261),
+(510731, 3532216),
+(381478, 457510),
+(2419470, 7798634),
+(1878, 795461),
+(591171, 139414),
+(950553, 446059),
+(23355, 795351),
+(1741, 290334),
+(217, 70379),
+(1676, 69995),
+(70594, 2125608),
+(1991847, 6214928),
+(400436, 107554),
+(1081, 116695),
+(955443, 2034800),
+(229, 118607),
+(3363032, 3076658),
+(736, 61578),
+(141222, 111280),
+(1885, 115751),
+(1069989, 1220198),
+(583, 409182),
+(591450, 864835),
+(882330, 132347),
+(399, 103644),
+(783139, 107688),
+(517, 69762),
+(327944, 1164999),
+(1429471, 4052882),
+(796117, 368447),
+(1708, 93437),
+(1714255, 1297919),
+(269463, 319343),
+(14960, 454841),
+(158966, 842926),
+(420941, 340855),
+(384825, 421238),
+(939128, 414982),
+(591994, 450314),
+(849164, 1010048),
+(1880, 3393786),
+(1490123, 1591095),
+(107774, 289879),
+(1885, 870984),
+(891216, 1270798),
+(631, 212985),
+(410494, 211443),
+(3160, 790724),
+(318, 408236),
+(771228, 997152),
+(498555, 443536),
+(1226871, 4500922),
+(2122478, 2401878),
+(1328, 32599),
+(209, 112818),
+(634240, 1345836),
+(1716636, 3224458),
+(881279, 198781),
+(2153088, 2265171),
+(948, 1300854),
+(4170048, 7784604),
+(4410, 1121931),
+(80315, 7886848),
+(615780, 119282),
+(1880, 758752),
+(957772, 251736),
+(781842, 114694),
+(783536, 1213644),
+(930261, 2245084),
+(536632, 1473832),
+(565336, 1606392),
+(629658, 2140619),
+(608714, 2709692),
+(5237, 159365),
+(426287, 3846674),
+(329755, 1093357),
+(2120, 108550);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1364790, 3262342),
+(936404, 43456),
+(520, 104691),
+(264, 1189073),
+(127, 111686),
+(357891, 66995),
+(89940, 118617),
+(332950, 367110),
+(631, 2193215),
+(418982, 416508),
+(696309, 103060),
+(1054, 86979),
+(446819, 246578),
+(75849, 489237),
+(95, 1605783),
+(2728, 1305806),
+(506613, 349205),
+(833780, 758730),
+(2588606, 986233),
+(1425, 108394),
+(955443, 385004),
+(680846, 215129),
+(1060, 295297),
+(1752, 195685),
+(254178, 978762),
+(2657, 329575),
+(1708, 106856),
+(1840064, 5093026),
+(81433, 247586),
+(569891, 1277953),
+(220600, 404032),
+(2653, 317648),
+(161834, 2547584),
+(26442, 361862),
+(528718, 104952),
+(5540, 257106),
+(576987, 387131),
+(602, 110932),
+(1413364, 1778304),
+(213450, 1646971),
+(878756, 396171),
+(1890845, 1135985),
+(1760830, 1618434),
+(850733, 837562),
+(67457, 1611224),
+(927468, 10323),
+(602, 146984),
+(51643, 120762),
+(414144, 42332),
+(1793079, 4160708),
+(1460, 223897),
+(27572, 2278388),
+(33, 52357),
+(2653, 102803),
+(716257, 2103281),
+(3620, 1385867),
+(829, 116253),
+(5222, 418763),
+(905154, 115736),
+(5, 50976),
+(891216, 486655),
+(1188, 108160),
+(744834, 450278),
+(286975, 285742),
+(812200, 272152),
+(338, 103874),
+(341, 120657),
+(500610, 2406566),
+(569891, 3874544),
+(898288, 2543164),
+(1490, 119558),
+(593610, 205000),
+(1466, 60196),
+(1885, 1527186),
+(436, 388125),
+(233, 378194),
+(916424, 367959),
+(440458, 7975244),
+(194018, 48280),
+(816, 411061),
+(83348, 129167),
+(750857, 139809),
+(177170, 166813),
+(2030, 32904),
+(83348, 3606756),
+(572562, 3758172),
+(1793079, 1288558),
+(218621, 2184339),
+(178997, 1222817),
+(1908892, 1592525),
+(661910, 312004),
+(591450, 110357),
+(711840, 1267297),
+(525303, 1343092),
+(1708, 117913),
+(322515, 97742),
+(24622, 230600),
+(655053, 4729430),
+(264236, 465551),
+(1191481, 1051906);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (371059, 80801),
+(4056, 120623),
+(95, 4513674),
+(1139726, 1840309),
+(668247, 1389072),
+(9942, 472033),
+(197636, 477302),
+(440913, 364970),
+(1174251, 1599348),
+(361, 117060),
+(878638, 971209),
+(1166926, 315983),
+(7181, 2176013),
+(1637768, 815236),
+(634240, 372784),
+(1338, 120784),
+(881, 8106534),
+(702797, 2106361),
+(75528, 5164432),
+(169806, 3501632),
+(1481618, 3322364),
+(186, 74486),
+(1754, 147612),
+(442241, 77745),
+(67457, 493464),
+(128883, 96487),
+(142286, 486822),
+(269463, 409847),
+(965, 111149),
+(1392, 2310332),
+(2086105, 1333125),
+(416, 96764),
+(1084488, 2283748),
+(1239, 122690),
+(905592, 1023111),
+(788202, 960731),
+(814085, 1046173),
+(223359, 427229),
+(1993322, 1034314),
+(914, 79417),
+(1026778, 1189340),
+(781842, 110622),
+(1469, 219965),
+(5124, 120363),
+(629334, 160127),
+(1234893, 480255),
+(379179, 914798),
+(715346, 41959),
+(710020, 317219),
+(431, 84434),
+(1016428, 2980516),
+(881279, 2380307),
+(1243905, 1485796),
+(2132, 97778),
+(631, 1446714),
+(680846, 335438),
+(26442, 1772264),
+(1741, 1351685),
+(1706767, 5613484),
+(1379, 40897),
+(125803, 338466),
+(948, 3799694),
+(1054, 101410),
+(180, 56172),
+(881, 213149),
+(426059, 8946378),
+(751577, 3498820),
+(551076, 2274648),
+(229, 97576),
+(298807, 455944),
+(1752, 349903),
+(190859, 245574),
+(464, 102536),
+(943758, 52618),
+(718627, 57546),
+(1149, 81573),
+(531817, 1034389),
+(1018493, 2356180),
+(601, 107048),
+(2648685, 1549572),
+(3418, 232500),
+(736930, 252866),
+(583, 118571),
+(254786, 337921),
+(1481493, 970411),
+(938471, 13143964),
+(935095, 337563),
+(877078, 116231),
+(270263, 3606752),
+(205542, 112508),
+(420941, 451279),
+(3817317, 9484998),
+(5366, 145660),
+(95, 795493),
+(919363, 385752),
+(1108556, 5688932),
+(373429, 32910),
+(1729171, 1253863),
+(601, 230030),
+(946734, 926084);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (629272, 1637688),
+(108094, 373051),
+(414144, 33563),
+(515005, 4853102),
+(359387, 2140373),
+(33, 47396),
+(286975, 371257),
+(217, 163988),
+(142286, 1059786),
+(139867, 1114740),
+(43742, 1742334),
+(5190, 817230),
+(5366, 1790886),
+(338, 99674),
+(751648, 463034),
+(634240, 154506),
+(167241, 46268),
+(3363032, 1825683),
+(629334, 305357),
+(1729303, 844479),
+(504642, 800320),
+(316, 71230),
+(1410815, 5186714),
+(528718, 190138),
+(801, 401711),
+(792202, 426931),
+(751577, 4154796),
+(406, 32551),
+(229694, 1488555),
+(416, 101889),
+(759207, 263488),
+(712444, 138304),
+(265, 66026),
+(359734, 1149362),
+(1716, 92099),
+(905154, 1617661),
+(178997, 120484),
+(49371, 1245112),
+(871428, 443274),
+(2171633, 3042408),
+(105169, 120363),
+(1256143, 6921996),
+(946734, 3183660),
+(958, 82348),
+(43742, 433387),
+(329650, 456554),
+(399, 1285016),
+(729514, 1571234),
+(591450, 243585),
+(1814, 1013753),
+(401203, 413267),
+(783536, 466342),
+(1837748, 2205697),
+(1068, 422720),
+(474955, 139134),
+(336620, 120768),
+(27572, 128445),
+(27183, 74812),
+(1408, 127536),
+(942504, 1781769),
+(1022455, 2125435),
+(19247, 1340800),
+(4303, 458525),
+(587277, 20629),
+(831557, 4624424),
+(1587, 107798),
+(1508, 99077),
+(881, 1980209),
+(1294036, 1636826),
+(3230448, 1800246),
+(1814, 181536),
+(1883257, 1619029),
+(35899, 34492),
+(118, 84787),
+(94435, 353969),
+(939992, 31381),
+(399, 114369),
+(733263, 5886046),
+(600, 1127180),
+(1789, 69293),
+(1272773, 368909),
+(186, 87182),
+(1363250, 2545118),
+(905592, 1650554),
+(318150, 76752),
+(1301035, 348333),
+(718646, 467406),
+(893659, 1210819),
+(422484, 174856),
+(1469, 95953),
+(1294962, 3348730),
+(5509, 114924),
+(416, 114746),
+(6487, 107207),
+(829, 120873),
+(2320658, 2245084),
+(18132, 1592873),
+(384864, 345950),
+(431, 350258),
+(1317, 149261);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (600, 106308),
+(178997, 1648179),
+(484907, 8155288),
+(651900, 113568),
+(462895, 1547234),
+(294457, 1854564),
+(796117, 452637),
+(985, 86425),
+(348181, 1512235),
+(336620, 1197624),
+(697, 53291),
+(923736, 379786),
+(1890845, 7401588),
+(881, 117500),
+(108132, 8526872),
+(281808, 31381),
+(19282, 32455),
+(1060, 814255),
+(233, 462322),
+(268380, 183505),
+(80235, 3390572),
+(796124, 101862),
+(950553, 144120),
+(1328, 38355),
+(1247462, 1187064),
+(965, 8079248),
+(83348, 382932),
+(942367, 462322),
+(1675, 401792),
+(914132, 377092),
+(941, 114558),
+(21249, 400717),
+(339030, 372183),
+(1112, 406816),
+(634602, 385700),
+(5436, 101507),
+(881, 3371366),
+(1338, 183790),
+(1239, 56218),
+(601, 80487),
+(1716, 453467),
+(1000113, 2561572),
+(519434, 113481),
+(132709, 1226273),
+(82450, 1289401),
+(570, 289992),
+(201509, 479952),
+(438090, 1424432),
+(629334, 4225622),
+(1060, 2120120),
+(1708, 112462),
+(677037, 1049413),
+(276169, 89175),
+(222043, 327247),
+(1560977, 1365050),
+(179697, 445990),
+(490, 7349662),
+(6846, 4633690),
+(1880, 325710),
+(2301412, 2105044),
+(898288, 3397884),
+(1274, 93894),
+(680846, 302886),
+(1134029, 371724),
+(886976, 1226837),
+(945026, 1656190),
+(2132, 89670),
+(41474, 401711),
+(108, 110413),
+(629272, 399295),
+(784061, 244244),
+(965, 2080374),
+(587955, 379725),
+(2391575, 1313092),
+(1814, 363589),
+(336695, 498399),
+(165, 101393),
+(916424, 335119),
+(3506, 172493),
+(922346, 472399),
+(181579, 1748179),
+(976, 86960),
+(159147, 112870),
+(930261, 3521164),
+(1053, 86979),
+(629334, 1596350),
+(336620, 1398426),
+(318916, 2025690),
+(4306, 366548),
+(1710, 425413),
+(570912, 6266538),
+(796117, 286106),
+(254786, 417148),
+(9054338, 120794),
+(862911, 1700841),
+(702797, 1622979),
+(942504, 414387),
+(327273, 990407),
+(165, 88933),
+(700760, 1217209);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (2030, 58385),
+(1294962, 2397535),
+(14960, 1528071),
+(304521, 237534),
+(304541, 3522806),
+(517, 402399),
+(868153, 213847),
+(1837, 311113),
+(709, 118884),
+(40, 93058),
+(169806, 4698684),
+(757858, 1080016),
+(3425513, 1703199),
+(262693, 108037),
+(200005, 929632),
+(499724, 243736),
+(811583, 1219342),
+(322515, 93428),
+(277, 83987),
+(362566, 355702),
+(1188, 1135503),
+(1140275, 2692904),
+(824882, 974661),
+(6854, 98536),
+(659380, 814022),
+(510731, 117802),
+(655683, 861739),
+(240797, 762107),
+(217, 112641),
+(27459, 396555),
+(1716, 112740),
+(2482088, 1278340),
+(359457, 57546),
+(723704, 82406),
+(629272, 258153),
+(325776, 120913),
+(1490, 107211),
+(1440846, 401711),
+(1224299, 1320261),
+(406, 56217),
+(1375358, 481536),
+(587518, 82198),
+(1008, 25316),
+(506613, 1371150),
+(1102, 93260),
+(359387, 878804),
+(788234, 918927),
+(1243, 70047),
+(759, 1791528),
+(229, 83866),
+(24622, 125659),
+(709, 96874),
+(796117, 3567288),
+(123379, 1322312),
+(899121, 154420),
+(338, 78788),
+(1031639, 2381991),
+(229, 407304),
+(620378, 178868),
+(719208, 1690953),
+(80120, 356680),
+(1012385, 1365519),
+(386, 116629),
+(1675, 458481),
+(496969, 7282468),
+(400441, 1235522),
+(294997, 1073498),
+(174374, 3168230),
+(1425, 111507),
+(664756, 111070),
+(271402, 424095),
+(1099918, 4062536),
+(922346, 2231253),
+(1827931, 2910814),
+(361, 387877),
+(139867, 1333125),
+(622112, 1017460),
+(738796, 1334260),
+(2480587, 1645089),
+(668247, 1033575),
+(821432, 2911666),
+(393799, 1504320),
+(796117, 217869),
+(950109, 59800),
+(684336, 1231587),
+(178997, 327437),
+(600, 92991),
+(709, 1067106),
+(412465, 107943),
+(31976, 405422),
+(138620, 475394),
+(1853544, 3469046),
+(220600, 970416),
+(379237, 333780),
+(550881, 99052),
+(399, 119174),
+(1054, 93822),
+(231, 3774114),
+(1827931, 5774060),
+(33, 48728);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (510731, 258463),
+(905152, 242653),
+(134224, 2531344),
+(146341, 119164),
+(201509, 1911658),
+(362566, 1099212),
+(1002424, 862856),
+(3613566, 5700672),
+(509448, 1291150),
+(165, 170016),
+(915304, 2369135),
+(149446, 401711),
+(6960, 4540710),
+(873779, 101414),
+(881, 120591),
+(527217, 46183),
+(231596, 1764234),
+(1880, 115956),
+(142, 1212419),
+(815204, 3312830),
+(1490, 93010),
+(2120, 1441952),
+(593610, 892791),
+(4303, 1731141),
+(165, 3778644),
+(43742, 1386697),
+(942504, 783233),
+(1351, 64115),
+(531817, 473705),
+(15359, 347048),
+(527261, 1179891),
+(1890845, 1232200),
+(680846, 1119646),
+(640466, 230838),
+(617523, 1496025),
+(2482088, 1428538),
+(30253, 787474),
+(588087, 844471),
+(160840, 1702443),
+(629334, 438488),
+(313623, 395169),
+(738796, 265459),
+(281508, 1622547),
+(108132, 6802400),
+(905152, 811080),
+(1741, 985699),
+(824, 86567),
+(2816668, 1058017),
+(362, 266489),
+(264, 275491),
+(824882, 1438254),
+(1490, 250797),
+(1053, 101410),
+(359387, 4276820),
+(86431, 328880),
+(229, 119567),
+(935095, 901476),
+(1317, 1043726),
+(116, 111503),
+(2120, 1753383),
+(492909, 758766),
+(831557, 2004420),
+(997291, 2094766),
+(3792134, 7668870),
+(167241, 46911),
+(134176, 113492),
+(586281, 1436045),
+(796124, 375173),
+(1351, 70735),
+(5563, 113957),
+(816, 1034331),
+(153078, 889583),
+(154, 472043),
+(4716, 138704),
+(267512, 4622512),
+(600, 83907),
+(574625, 1186367),
+(594503, 92067),
+(1417392, 1241317),
+(816, 101921),
+(1012501, 1318514),
+(127, 117571),
+(443411, 1683526),
+(812200, 494238),
+(286975, 4575576),
+(490, 97216),
+(386, 1190080),
+(802248, 460791),
+(1012102, 173840),
+(474955, 253867),
+(106230, 351977),
+(339004, 265208),
+(275629, 2381941),
+(327944, 245712),
+(40, 62622),
+(35899, 33563),
+(9190, 2527338),
+(809321, 118689),
+(2788015, 5109280),
+(431918, 151804);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (516360, 5168192),
+(1167933, 3011894),
+(247, 120755),
+(891114, 1033643),
+(6476, 425210),
+(400441, 107554),
+(33, 56869),
+(1708, 118688),
+(797, 78841),
+(718645, 97428),
+(750, 112722),
+(601337, 1850457),
+(1162, 1333125),
+(2340, 89885),
+(1334526, 6565702),
+(1675, 285823),
+(839660, 108525),
+(3462290, 2222042),
+(1081, 1243974),
+(634240, 482571),
+(506613, 433035),
+(591994, 385002),
+(878763, 1614989),
+(821432, 4425200),
+(6854, 120347),
+(881, 1055369),
+(772259, 74860),
+(314671, 55254),
+(1950086, 3281548),
+(1587, 118972),
+(893659, 325980),
+(2308774, 2370248),
+(577647, 4846340),
+(1392, 903624),
+(720, 80339),
+(573796, 120890),
+(344259, 289879),
+(570, 95647),
+(27271, 113855),
+(118, 113409),
+(326246, 2704998),
+(600546, 150662),
+(327944, 1663202),
+(152312, 120794),
+(567620, 2234003),
+(455, 88847),
+(1429471, 397065),
+(252135, 318649),
+(160840, 3104988),
+(957772, 462322),
+(1878, 80339),
+(108132, 462200),
+(1989536, 948470),
+(1170855, 2937898),
+(777881, 408790),
+(776, 143145),
+(5540, 175142),
+(6476, 1976009),
+(422484, 93565),
+(33, 54215),
+(5222, 1074638),
+(399, 421715),
+(671210, 265349),
+(346550, 497116),
+(2127650, 963794),
+(887, 120749),
+(1104, 120689),
+(406, 49730),
+(125803, 129387),
+(718627, 70608),
+(2161247, 2091935),
+(824, 91949),
+(631, 96933),
+(506613, 1279935),
+(771923, 4226388),
+(615780, 780521),
+(4217, 3289956),
+(948488, 1568921),
+(344496, 1567609),
+(4056, 910970),
+(1226, 104348),
+(934483, 238380),
+(606688, 366548),
+(217, 407887),
+(235719, 1781922),
+(118, 116225),
+(917188, 358082),
+(82450, 3079380),
+(1804614, 2574698),
+(1531934, 844708),
+(768959, 7146812),
+(1639, 118929),
+(291205, 458352),
+(326040, 1837709),
+(814, 100507),
+(1361, 84516),
+(87595, 146336),
+(345174, 5726616),
+(520, 248667),
+(464, 412019);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (834902, 1587310),
+(229, 92965),
+(272568, 33563),
+(881038, 100814),
+(520, 113277),
+(1429471, 2024469),
+(955443, 299977),
+(361, 74285),
+(9190, 2488496),
+(641373, 327679),
+(229, 181689),
+(386, 111282),
+(3620, 300051),
+(2410311, 3717490),
+(1490123, 3065204),
+(5509, 465234),
+(5436, 322259),
+(959774, 4139588),
+(1486, 74958),
+(269463, 3040964),
+(33, 46912),
+(1129, 102926),
+(576298, 2446042),
+(2497546, 448115),
+(1676223, 787475),
+(264, 8291806),
+(453518, 1588170),
+(724938, 3647498),
+(568, 103241),
+(920274, 2503944),
+(847223, 95327),
+(1343394, 4846232),
+(1720541, 424136),
+(122427, 2452386),
+(1093, 206314),
+(5008, 104940),
+(2277869, 808417),
+(942504, 3332064),
+(500, 381681),
+(1564809, 2548396),
+(2588606, 4218572),
+(220600, 1211837),
+(601859, 1711425),
+(870469, 1179933),
+(959062, 307987),
+(789313, 29583),
+(711840, 120812),
+(828970, 441773),
+(1490, 99871),
+(4099092, 4695012),
+(1392, 116365),
+(165, 268978),
+(94435, 468492),
+(318, 1935859),
+(3453283, 4034354),
+(1068, 335266),
+(500, 112471),
+(466, 101700),
+(118, 85333),
+(1188, 128853),
+(850, 93177),
+(634240, 6723592),
+(718646, 1193138),
+(264, 441909),
+(2535507, 8110330),
+(876, 367089),
+(1392, 167260),
+(718645, 96320),
+(1188, 374536),
+(1325899, 4701182),
+(1552637, 837563),
+(440458, 2283362),
+(1490123, 1477834),
+(449984, 80684),
+(591450, 164912),
+(536632, 243155),
+(848414, 1270262),
+(6498, 118849),
+(1716, 421054),
+(314671, 46183),
+(911910, 120889),
+(3620, 1007028),
+(590122, 1532503),
+(1469, 120184),
+(715636, 452594),
+(1149, 122151),
+(1142073, 4547056),
+(1026778, 2364841),
+(467646, 83944),
+(340958, 881320),
+(101385, 120902),
+(1603, 67800),
+(811583, 974015),
+(265, 105151),
+(2044, 200465),
+(1081, 98258),
+(414144, 46183),
+(175775, 346156),
+(75528, 1055292),
+(27271, 2592614);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (601781, 5848272),
+(318916, 1438176),
+(335138, 3892172),
+(440458, 1956620),
+(456732, 327084),
+(27572, 115734),
+(715636, 1068680),
+(784061, 107302),
+(111845, 832266),
+(617130, 185937),
+(771054, 1563738),
+(1290515, 7395114),
+(1752, 181865),
+(668247, 375063),
+(316, 107977),
+(116, 88247),
+(235719, 2870612),
+(2128335, 9893250),
+(455741, 33563),
+(1294961, 3348730),
+(1843, 21884),
+(361, 86250),
+(868153, 95765),
+(440913, 348836),
+(6476, 324554),
+(1950086, 4925292),
+(382956, 481141),
+(3227090, 1213641),
+(9190, 1408101),
+(761498, 481499),
+(240627, 1300851),
+(2175, 56197),
+(386, 2334879),
+(94435, 1216496),
+(3506, 1013743),
+(6846, 7737786),
+(920274, 1322269),
+(1443502, 5052448),
+(524190, 1711425),
+(428600, 1586265),
+(231, 96969),
+(618680, 988047),
+(405632, 398017),
+(759, 175880),
+(3418, 116136),
+(588340, 831887),
+(1837, 97165),
+(1124, 49833),
+(588087, 1490017),
+(667734, 2718492),
+(1603, 65214),
+(654868, 46438),
+(1989536, 1872181),
+(26442, 1911644),
+(1681, 418819),
+(268380, 109686),
+(1532, 120657),
+(236226, 1486834),
+(6904, 465538),
+(1466, 59578),
+(319659, 7043012),
+(300174, 3713166),
+(5363, 1972591),
+(934, 309987),
+(905154, 811080),
+(2653, 458339),
+(1353, 83511),
+(908824, 277434),
+(797, 67185),
+(721817, 245844),
+(661791, 1682180),
+(1098493, 364725),
+(4217, 1740707),
+(132709, 1133985),
+(563243, 1860213),
+(1437189, 8108198),
+(318916, 5580036),
+(517, 120863),
+(359457, 29583),
+(339030, 947810),
+(915, 150377),
+(423333, 421206),
+(796117, 1815862),
+(640334, 2140479),
+(777, 370986),
+(322242, 203119),
+(231, 146838),
+(1410159, 2105044),
+(318, 3861390),
+(359387, 1860242),
+(1723, 109040),
+(1701024, 8267604),
+(3582089, 4729430),
+(95, 3715320),
+(500444, 366551),
+(898288, 2316411),
+(424800, 257076),
+(773605, 811138),
+(3363032, 2334649),
+(181902, 90859);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1460, 120647),
+(240797, 2191701),
+(783139, 327597),
+(455, 93748),
+(914132, 425123),
+(1661, 398375),
+(1053, 93822),
+(1379, 43265),
+(127, 120082),
+(1703612, 211933),
+(777881, 2908446),
+(591, 1692486),
+(166256, 103639),
+(65608, 283111),
+(1566, 115685),
+(614682, 879870),
+(690597, 58946),
+(103785, 2568862),
+(829820, 822847),
+(601382, 159273),
+(878756, 1371111),
+(229, 983193),
+(2391575, 7984766),
+(850733, 5220122),
+(594503, 347149),
+(339030, 6878306),
+(1294961, 2397535),
+(108, 7456310),
+(942367, 365748),
+(1723, 315327),
+(286975, 1586752),
+(946811, 62765),
+(302778, 277371),
+(1708, 109446),
+(551128, 5028340),
+(359457, 70608),
+(719208, 2709768),
+(416, 120669),
+(2477891, 8350360),
+(868219, 167190),
+(3088, 112431),
+(1098493, 1723121),
+(1661, 112346),
+(1331, 2402927),
+(464, 112817),
+(651706, 345950),
+(769874, 66206),
+(950553, 329101),
+(160840, 1023481),
+(960028, 94625),
+(275629, 1570728),
+(720135, 1045772),
+(784061, 187078),
+(389591, 119738),
+(828245, 82406),
+(286975, 420223),
+(235719, 1082868),
+(824882, 1374989),
+(594503, 96283),
+(1661, 92005),
+(243231, 1588334),
+(48918, 5649144),
+(583600, 1230414),
+(662529, 1634122),
+(166256, 119282),
+(668247, 126886),
+(1392, 120737),
+(1410815, 1832382),
+(1018493, 405508),
+(745247, 4633694),
+(19, 56801),
+(510912, 1596343),
+(386570, 250258),
+(394280, 116409),
+(1317, 99423),
+(217, 338751),
+(9190, 317919),
+(338, 68646),
+(392237, 2390361),
+(1960428, 2005374),
+(359734, 119167),
+(1547964, 1440292),
+(2653, 97523),
+(240797, 116483),
+(549658, 86190),
+(518644, 360201),
+(1885, 168629),
+(3021, 4116284),
+(330140, 245686),
+(757858, 3411444),
+(2210720, 5323662),
+(440458, 841046),
+(466, 211915),
+(3160, 4912910),
+(1639, 343818),
+(3109770, 1280558),
+(1241, 2431286),
+(1503575, 4975722),
+(1058247, 477139),
+(1532, 107362);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (127, 421239),
+(230032, 1049413),
+(1601882, 5848272),
+(720, 102059),
+(2120, 1028532),
+(27271, 452608),
+(893659, 1192628),
+(487166, 1379182),
+(345615, 1259528),
+(3593, 44706),
+(2077, 2066051),
+(3638, 13442),
+(609236, 986263),
+(583600, 120783),
+(94435, 3967856),
+(88955, 1136608),
+(1312919, 2614684),
+(1223910, 1821480),
+(945026, 210945),
+(138927, 4566758),
+(3646390, 5113040),
+(953123, 56197),
+(165, 382625),
+(871860, 3063516),
+(399, 443706),
+(576298, 1129442),
+(5509, 1204975),
+(5820154, 7888964),
+(1814, 119217),
+(712753, 401997),
+(179221, 421082),
+(916, 1860357),
+(1081, 368709),
+(1112, 106977),
+(325196, 114148),
+(1675, 133751),
+(1580671, 1450321),
+(27572, 265666),
+(1716, 108399),
+(661791, 310775),
+(591, 142688),
+(3418, 382992),
+(487, 119349),
+(26442, 4332232),
+(3078140, 6292852),
+(268380, 256380),
+(1720541, 1325004),
+(1508, 94737),
+(520485, 120630),
+(2618764, 6133466),
+(817447, 445934),
+(848414, 329774),
+(609236, 141926),
+(936404, 79945),
+(1878, 131857),
+(247, 115759),
+(933505, 87928),
+(1053, 6412452),
+(1837748, 2582846),
+(811583, 409459),
+(666802, 138749),
+(464846, 98439),
+(154, 2119532),
+(1224299, 1051904),
+(115669, 17925),
+(476201, 2400463),
+(689343, 423977),
+(1565, 330373),
+(398185, 274166),
+(314671, 53285),
+(634240, 1375666),
+(1160962, 2109184),
+(125803, 116778),
+(1600872, 1840417),
+(357891, 58150),
+(386246, 374887),
+(1008, 31679),
+(601, 85995),
+(5509, 4779682),
+(1661, 817177),
+(40, 120663),
+(386, 1628841),
+(777881, 3410834),
+(466153, 8075192),
+(5, 50986),
+(154819, 106387),
+(2947553, 1190539),
+(510912, 1905041),
+(939182, 765120),
+(1317, 106582),
+(1054, 2042568),
+(504642, 293662),
+(540532, 185371),
+(2191, 2053425),
+(1331, 368794),
+(1338, 453562),
+(5647, 165929),
+(196860, 450188),
+(533691, 2277860),
+(891216, 2802144);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (378893, 115433),
+(265363, 90555),
+(443411, 120586),
+(1783265, 6450804),
+(709, 109830),
+(948, 3829266),
+(637518, 944835),
+(359457, 32455),
+(1565, 109831),
+(265, 280707),
+(873779, 230011),
+(718627, 65421),
+(905154, 133093),
+(751577, 4154756),
+(160840, 3110958),
+(349183, 239395),
+(898288, 1856101),
+(518836, 4034228),
+(711840, 471042),
+(318, 103776),
+(2329165, 1985966),
+(2320658, 5109280),
+(942367, 446029),
+(1170855, 2017038),
+(2503633, 1706593),
+(709, 338348),
+(65615, 301357),
+(193508, 1655420),
+(318, 1014759),
+(651706, 441773),
+(1160962, 7550000),
+(442109, 2401878),
+(213450, 2386490),
+(1174251, 1014763),
+(485, 17136),
+(481418, 463998),
+(1675, 227538),
+(829820, 1038686),
+(193508, 2404425),
+(164203, 53285),
+(757858, 268380),
+(298807, 2302755),
+(1890845, 1528854),
+(389591, 316396),
+(11470, 298148),
+(609549, 2387499),
+(533284, 2582782),
+(751080, 93629),
+(108, 2872732),
+(371755, 1075747),
+(662530, 6911608),
+(568, 227445),
+(118333, 2294629),
+(768959, 1453405),
+(332950, 169102),
+(905152, 1617661),
+(569891, 1001526),
+(809877, 1430607),
+(322515, 90264),
+(464911, 113824),
+(11470, 499448),
+(957772, 395584),
+(1469, 120885),
+(668247, 1821549),
+(4306, 82694),
+(853546, 89370),
+(9190, 796366),
+(470443, 183869),
+(915304, 1591479),
+(601382, 377062),
+(934578, 106965),
+(1566, 96463),
+(281598, 115963),
+(1353, 80120),
+(193485, 2194499),
+(876, 7653254),
+(6960, 1226753),
+(906476, 1655460),
+(440913, 228786),
+(165, 112384),
+(5222, 2379713),
+(1135423, 432348),
+(436284, 112461),
+(919514, 312528),
+(1396048, 1185834),
+(426333, 2224026),
+(3215397, 4034354),
+(2128335, 2304933),
+(1780037, 8613070),
+(184, 69704),
+(2305431, 1179904),
+(650905, 107120),
+(1519353, 1467304),
+(1361, 72271),
+(1241, 4136084),
+(976, 119643),
+(3360961, 762125),
+(1732981, 780536),
+(2159, 410297),
+(1708, 293508);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (881, 4172430),
+(5363, 6139732),
+(1429471, 1148204),
+(88955, 1535108),
+(281808, 32138),
+(5363, 1515091),
+(40, 81505),
+(1128037, 2121382),
+(186, 116922),
+(533284, 6679794),
+(1008, 38650),
+(1226, 4477536),
+(40, 72684),
+(881279, 120363),
+(744834, 1137450),
+(576987, 8404614),
+(730385, 55614),
+(40, 56193),
+(812626, 1374992),
+(5, 83922),
+(970606, 1985966),
+(2942187, 5363618),
+(2379028, 5814060),
+(1675, 985694),
+(315065, 975645),
+(1104118, 423866),
+(1224299, 892782),
+(1127632, 1403177),
+(1102, 122718),
+(2008067, 8228288),
+(1437, 114787),
+(1060, 182789),
+(314671, 42332),
+(322515, 86034),
+(1708, 134273),
+(1628, 89755),
+(19242, 1343097),
+(217, 970179),
+(906548, 145531),
+(510912, 463985),
+(729701, 1502712),
+(1081, 181875),
+(31976, 478311),
+(318, 116996),
+(281507, 70723),
+(4318159, 5074352),
+(340436, 1233227),
+(2044, 292506),
+(322242, 1441395),
+(286975, 308644),
+(2700, 795461),
+(338, 116669),
+(175730, 97659),
+(965, 1010048),
+(373282, 480242),
+(525659, 478087),
+(634240, 816692),
+(1847738, 1666801),
+(229, 75860),
+(1601644, 2294629),
+(83348, 317705),
+(1403, 104036),
+(476064, 2345759),
+(1149, 96061),
+(1705578, 10886166),
+(1226, 4465564),
+(522028, 76618),
+(386570, 427392),
+(799050, 6791096),
+(957, 325703),
+(268380, 408839),
+(1403, 110148),
+(476201, 402022),
+(5348, 79367),
+(217, 1302006),
+(779433, 2387559),
+(382072, 356634),
+(500610, 2911666),
+(82450, 8623904),
+(174374, 1324999),
+(183183, 29583),
+(268380, 2096672),
+(5509, 106611),
+(655683, 1555149),
+(1988, 101700),
+(446819, 362478),
+(1661, 100157),
+(878756, 963178),
+(431, 1904996),
+(152312, 1217209),
+(8078611, 5168192),
+(1401, 1809398),
+(231596, 443680),
+(565336, 3203616),
+(3210494, 3469046),
+(1723, 129290),
+(4023702, 6343314),
+(1890845, 2170439),
+(570, 92563),
+(868219, 256009);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (463359, 6791096),
+(1054, 1403865),
+(386246, 1187043),
+(576298, 1397280),
+(1060, 120686),
+(5222, 257044),
+(684336, 384793),
+(477129, 1001508),
+(718645, 83131),
+(946734, 918940),
+(5076, 138749),
+(83348, 1229238),
+(1054, 190590),
+(158984, 401711),
+(1338, 3569230),
+(104193, 106697),
+(466349, 1524137),
+(1532, 95016),
+(1752, 2053463),
+(634240, 209144),
+(600, 99365),
+(217, 90863),
+(94435, 1706620),
+(744035, 54997),
+(1757777, 3949660),
+(831557, 4438848),
+(836328, 57115),
+(255, 452623),
+(1349376, 1951266),
+(718645, 120828),
+(736, 56687),
+(591, 95174),
+(757858, 2357291),
+(2752098, 1623288),
+(81540, 2737304),
+(158984, 286244),
+(490487, 338564),
+(919369, 970866),
+(165, 104231),
+(165, 1578275),
+(1024, 426883),
+(580351, 6513120),
+(640334, 1291584),
+(253819, 271367),
+(1032521, 1307068),
+(520488, 844471),
+(326246, 1524930),
+(394280, 120738),
+(697, 36775),
+(27271, 120157),
+(380705, 98206),
+(604392, 29583),
+(970447, 892782),
+(1054, 118715),
+(1054, 335245),
+(802248, 1667353),
+(200005, 1327773),
+(2892, 2209764),
+(230666, 1679335),
+(783139, 116683),
+(2657, 120789),
+(118, 96256),
+(1681, 88993),
+(744834, 462322),
+(31078, 1126591),
+(802693, 73707),
+(487, 190332),
+(397174, 2948356),
+(1414582, 1716772),
+(1243, 1726669),
+(353673, 478134),
+(2120, 1702439),
+(785227, 2388771),
+(1466, 58461),
+(5124, 317219),
+(907, 91541),
+(1054, 477348),
+(327944, 449467),
+(764601, 1053424),
+(1639, 109506),
+(862211, 1080016),
+(583, 107206),
+(455741, 46183),
+(1112, 120787),
+(615592, 2023587),
+(859432, 2771372),
+(2153088, 1899353),
+(75666, 2481498),
+(783, 76786),
+(343, 86541),
+(1218281, 2250912),
+(281396, 468489),
+(652631, 56197),
+(138620, 429493),
+(1774, 115798),
+(957, 171363),
+(116, 499549),
+(881, 172156),
+(1074107, 328880),
+(504513, 81573);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (811583, 2975590),
+(375068, 452625),
+(601680, 1024255),
+(783536, 1073498),
+(562645, 181316),
+(551128, 397535),
+(386, 443649),
+(4017355, 1703199),
+(1379002, 3235888),
+(591171, 82418),
+(600, 120324),
+(2044, 118928),
+(500, 106677),
+(318, 319061),
+(1081, 1389137),
+(300866, 365737),
+(817447, 889573),
+(1135423, 489270),
+(594503, 876563),
+(206760, 1839492),
+(533284, 1439572),
+(4263190, 1502397),
+(720135, 1570728),
+(500, 243017),
+(464804, 851578),
+(685759, 327554),
+(918873, 119190),
+(671957, 61418),
+(74426, 138749),
+(631, 103074),
+(527217, 43274),
+(1490123, 387564),
+(6854, 216216),
+(23355, 1188729),
+(527109, 272020),
+(4303, 2057392),
+(667734, 6543652),
+(484, 86465),
+(5069, 1798709),
+(2041, 1981128),
+(931095, 1536044),
+(4234, 2582496),
+(916, 8629748),
+(649117, 2101341),
+(399, 258000),
+(2482088, 1536537),
+(344496, 1206885),
+(336620, 2283336),
+(1102, 87363),
+(19282, 34492),
+(662086, 1991245),
+(1461392, 1790809),
+(116, 90605),
+(138809, 3544112),
+(1837, 1023114),
+(759, 1560747),
+(858525, 118998),
+(786, 119229),
+(631, 5294550),
+(697656, 7556122),
+(5367, 477051),
+(971239, 1911658),
+(1880, 450259),
+(611683, 91203),
+(1408, 414055),
+(719208, 1482459),
+(833779, 1564585),
+(2588606, 2024544),
+(914132, 1396218),
+(5363, 988045),
+(898288, 1392214),
+(709, 104070),
+(245888, 328828),
+(1356588, 5052474),
+(596407, 5719748),
+(233, 361748),
+(327273, 354899),
+(286975, 419887),
+(899121, 10288566),
+(3506, 358273),
+(448768, 2321549),
+(1397301, 2082197),
+(1752, 5439796),
+(1392, 167261),
+(1060, 104431),
+(827750, 2357129),
+(1890845, 5657846),
+(631, 1528100),
+(9054338, 389790),
+(5363, 1032755),
+(1994, 119395),
+(269, 215750),
+(393799, 1707386),
+(844358, 77766),
+(942504, 821642),
+(4761826, 2105044),
+(4306, 89530),
+(1054, 138524),
+(338, 86066),
+(1068, 5592248);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1049433, 1605717),
+(796117, 6823368),
+(744834, 303816),
+(855035, 1038919),
+(457565, 805570),
+(484907, 5308322),
+(231, 110632),
+(831557, 1226229),
+(893659, 4731136),
+(327944, 315733),
+(527217, 32910),
+(31976, 1201167),
+(687042, 1245112),
+(26442, 800241),
+(243233, 1588334),
+(371755, 451079),
+(336620, 377471),
+(505152, 116705),
+(1675, 1077258),
+(1170339, 4530422),
+(5190, 368933),
+(965, 448134),
+(2077, 1083452),
+(1461392, 4777008),
+(1376383, 1605630),
+(343, 399146),
+(230032, 198781),
+(33, 40746),
+(863387, 203019),
+(165, 117438),
+(154716, 1659337),
+(688636, 4044364),
+(331532, 472181),
+(357453, 1155056),
+(19, 47528),
+(386, 187393),
+(240797, 142342),
+(1968474, 32455),
+(948159, 1386932),
+(1381100, 489049),
+(186, 100935),
+(631, 89469),
+(1716, 99371),
+(824, 76666),
+(802248, 2140379),
+(95, 2334873),
+(1413364, 7550000),
+(186, 90756),
+(814, 91326),
+(950109, 57076),
+(708903, 5742374),
+(6904, 1194173),
+(348181, 3896198),
+(233, 119396),
+(759, 469494),
+(178260, 24216),
+(1429471, 1590193),
+(141961, 393162),
+(4139472, 1291570),
+(229, 87469),
+(442241, 180073),
+(2653, 132477),
+(387706, 119099),
+(229, 443272),
+(784061, 479997),
+(1756, 119654),
+(4716, 1959490),
+(1628, 84805),
+(662529, 1235124),
+(49633, 3469046),
+(343, 120907),
+(609549, 829482),
+(553942, 1667889),
+(572562, 416315),
+(462895, 164181),
+(5387, 265029),
+(487, 1025100),
+(399853, 82158),
+(1119880, 369610),
+(132709, 1615160),
+(942367, 425112),
+(1218281, 6320628),
+(116, 120338),
+(615780, 133240),
+(180257, 92493),
+(2937122, 2380307),
+(936374, 101414),
+(766402, 34492),
+(15295, 1562872),
+(83348, 1964418),
+(40, 54331),
+(1675, 113101),
+(3227090, 2582802),
+(165, 3062096),
+(1220140, 1596365),
+(5222, 8579674),
+(400436, 4244998),
+(751648, 3498820),
+(382956, 1327194),
+(33, 26029);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (75859, 82406),
+(697, 47437),
+(934483, 370032),
+(893659, 383574),
+(449984, 100502),
+(487, 286716),
+(781842, 343660),
+(796117, 949731),
+(298807, 1798684),
+(887452, 1850397),
+(769874, 70511),
+(1149, 93409),
+(436, 298203),
+(459170, 80453),
+(583, 177971),
+(504642, 1670345),
+(821432, 6146586),
+(485, 22100),
+(41, 89881),
+(291205, 4682786),
+(2888554, 3470600),
+(862211, 3416828),
+(885249, 790636),
+(269463, 406375),
+(1379, 33870),
+(1047532, 8688634),
+(509448, 1646987),
+(118, 82340),
+(1242054, 1714206),
+(400441, 1037705),
+(570912, 1229340),
+(811583, 12361974),
+(576987, 861689),
+(1349376, 1067583),
+(331532, 267913),
+(956052, 102492),
+(405632, 1161864),
+(30735, 452702),
+(30735, 1424381),
+(2585406, 293429),
+(197636, 274558),
+(833889, 1268799),
+(962729, 1034032),
+(697, 43014),
+(3620, 113749),
+(1509478, 5727208),
+(503777, 32138),
+(1232, 86879),
+(3697, 405094),
+(462895, 995039),
+(5222, 1176740),
+(631, 758774),
+(353673, 375679),
+(570912, 1386588),
+(923736, 848228),
+(197636, 976051),
+(868219, 411477),
+(166256, 780521),
+(127, 87800),
+(240797, 960144),
+(528381, 365830),
+(431, 228750),
+(934, 93389),
+(217, 101540),
+(281508, 1270797),
+(378144, 330793),
+(1349522, 1588173),
+(378893, 96928),
+(751648, 4154796),
+(520488, 1490017),
+(788, 110367),
+(2905562, 1289406),
+(733263, 5726086),
+(5436, 1600195),
+(747849, 102945),
+(338, 71562),
+(1716, 477080),
+(1149, 104714),
+(679031, 2231461),
+(1716, 92644),
+(105169, 423294),
+(1349376, 1951264),
+(1068, 2132285),
+(1844237, 413267),
+(1197971, 324216),
+(314671, 43274),
+(275698, 1075417),
+(38432, 166813),
+(1196684, 2279373),
+(948159, 2888046),
+(2030, 31381),
+(352524, 1132626),
+(419, 53472),
+(423626, 1726592),
+(1098493, 5758778),
+(1392, 110005),
+(14960, 8364368),
+(3506, 381849),
+(1878, 362120),
+(1054, 475290);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (716347, 862467),
+(275629, 3553442),
+(631, 265086),
+(1512910, 945513),
+(1756, 449089),
+(211823, 111301),
+(742341, 61512),
+(281508, 1560220),
+(230859, 3612616),
+(1219, 119468),
+(414144, 43274),
+(2657, 1124037),
+(2044, 94889),
+(601382, 466909),
+(629272, 1517260),
+(229, 82971),
+(510731, 489099),
+(132709, 113189),
+(499724, 102070),
+(1741, 3385516),
+(506977, 1216475),
+(1443502, 6857112),
+(3418, 859163),
+(361, 120832),
+(637518, 105112),
+(487, 114388),
+(935863, 380389),
+(5436, 162650),
+(709, 442933),
+(2128363, 5109280),
+(751102, 356721),
+(1716, 102266),
+(1053, 1403865),
+(878638, 296572),
+(466, 344510),
+(319213, 9243946),
+(161834, 1817273),
+(617042, 770703),
+(501185, 304669),
+(661791, 451094),
+(965, 1924429),
+(1723, 413099),
+(955443, 1410063),
+(2497546, 5140878),
+(727960, 5109280),
+(1291105, 3416532),
+(1079062, 4857264),
+(1486, 71877),
+(231, 101761),
+(1566, 61722),
+(291205, 822832),
+(142, 327056),
+(1382, 111438),
+(2035886, 1758692),
+(1490123, 1457767),
+(1708, 183649),
+(583292, 84726),
+(958387, 88286),
+(362736, 70917),
+(276062, 404203),
+(154819, 97958),
+(1302591, 1606389),
+(1112, 233469),
+(1285613, 1175709),
+(946734, 417741),
+(1112, 105690),
+(1481959, 385700),
+(481418, 431308),
+(233, 3460252),
+(1469, 93105),
+(1053, 335245),
+(788202, 427327),
+(186, 166896),
+(101047, 424095),
+(1490123, 2226417),
+(233, 105236),
+(228262, 97659),
+(2308774, 4916630),
+(1291105, 1649419),
+(337773, 1240982),
+(525659, 1103153),
+(1232, 117318),
+(155093, 240890),
+(264, 185125),
+(915, 97239),
+(174374, 443489),
+(777881, 1245526),
+(677953, 251127),
+(1053, 477348),
+(188165, 218922),
+(500, 2209418),
+(442109, 383028),
+(414144, 32910),
+(5222, 959337),
+(1760911, 5988370),
+(6889, 87277),
+(1392, 1170358),
+(1243, 67116),
+(718645, 1411238),
+(517, 478304);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (1140492, 1592525),
+(1369708, 165982),
+(73688, 356150),
+(330140, 286788),
+(348181, 439815),
+(192446, 80761),
+(222043, 91790),
+(184, 120915),
+(520749, 2083383),
+(229, 3691740),
+(1197971, 758746),
+(5303, 171804),
+(325776, 118617),
+(502954, 3322940),
+(734319, 113101),
+(759207, 301470),
+(397174, 398286),
+(345294, 815245),
+(718645, 99938),
+(14960, 464154),
+(1443023, 4680182),
+(432627, 147800),
+(1415, 47296),
+(217, 85794),
+(6960, 1412386),
+(525303, 455824),
+(562266, 366627),
+(153078, 1645170),
+(1170855, 1488606),
+(101385, 253556),
+(1275670, 884732),
+(449984, 86006),
+(1103162, 486576),
+(790715, 105793),
+(908824, 120744),
+(118, 77651),
+(231, 346491),
+(777881, 452694),
+(399, 1568346),
+(709056, 1446192),
+(231, 1027718),
+(920425, 268695),
+(891216, 1250777),
+(5366, 3203606),
+(108, 100263),
+(851930, 1340138),
+(5069, 268126),
+(829820, 2387433),
+(2337, 185183),
+(174374, 2771200),
+(506613, 305711),
+(319659, 2872718),
+(1353, 95963),
+(1532, 155267),
+(400436, 120681),
+(487166, 3464902),
+(855035, 120631),
+(179221, 1440728),
+(339004, 255798),
+(190859, 119223),
+(180428, 1478964),
+(568, 95031),
+(1033517, 1491044),
+(201509, 351283),
+(1509613, 2262227),
+(796117, 167404),
+(2657, 1392170),
+(1481493, 385880),
+(178997, 120888),
+(3734458, 2273657),
+(2573005, 6663582),
+(82450, 7040874),
+(229, 1677720),
+(1639, 448011),
+(231, 94291),
+(1053, 138524),
+(500, 405296),
+(1054, 243133),
+(161834, 1120985),
+(2609807, 1878870),
+(1164861, 1499658),
+(142, 824747),
+(1702145, 1634106),
+(1675, 104815),
+(1266897, 2932536),
+(2371802, 8503618),
+(520488, 2294449),
+(230032, 2948372),
+(1417392, 5034838),
+(165, 88161),
+(506613, 477347),
+(1565, 119008),
+(229, 212720),
+(2497546, 4786282),
+(1054, 110074),
+(116, 103064),
+(716347, 1172570),
+(426333, 327084),
+(229694, 396269),
+(939128, 267804);
+INSERT INTO Director_Movie (directors_id, movies_id) VALUES (528718, 88930),
+(91, 152930),
+(718627, 53285),
+(1349522, 3530002),
+(520, 91474),
+(1639, 2404233),
+(228147, 120177),
+(361, 94226),
+(247, 119094);
