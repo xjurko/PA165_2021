@@ -18,9 +18,9 @@ import React, { useState } from "react"
 
 interface Movie {
     id: number
-    title: string
-    year: number
-    externalRef: string
+    name: string
+    releaseYear: number
+    runtimeMin: number
     genres: string[]
 }
 
@@ -30,7 +30,7 @@ const Home: React.FC = () => {
 
     const getMovies = async () => {
         try {
-            const response = await fetch("http://localhost:5000/movies")
+            const response = await fetch("http://aedfa87e9cd6.ngrok.io/movie/468569")
             if (!response.ok) {
                 throw Error(response.statusText)
             }
@@ -81,10 +81,10 @@ const Home: React.FC = () => {
                               {movie.id}
                           </IonCol>
                           <IonCol>
-                              {movie.title}
+                              {movie.name}
                           </IonCol>
                           <IonCol>
-                              {movie.year}
+                              {movie.releaseYear}
                           </IonCol>
                       </IonRow>
                   ))}
