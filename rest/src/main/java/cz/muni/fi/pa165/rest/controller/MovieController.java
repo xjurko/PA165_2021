@@ -3,14 +3,7 @@ package cz.muni.fi.pa165.rest.controller;
 import cz.muni.fi.pa165.dto.MovieDto;
 import cz.muni.fi.pa165.facade.MovieFacade;
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.RestController;
-
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -20,6 +13,7 @@ import java.util.Optional;
  */
 
 @RestController
+@CrossOrigin
 @AllArgsConstructor
 public class MovieController {
 
@@ -28,6 +22,16 @@ public class MovieController {
     @GetMapping("/movie/{id}")
     Optional<MovieDto> getMovie(@PathVariable Long id) {
         return moviesFacade.getMovieById(id);
+    }
+
+    @GetMapping("/movie/recommend/{id}")
+    List<MovieDto> getMoviesForMovie(@PathVariable Long id) {
+        return moviesFacade.findRecommendedMoviesBasedOnMovie(id);
+    }
+
+    @GetMapping("/movie/find/{name}")
+    List<MovieDto> findMovie(@PathVariable String name) {
+        return moviesFacade.findMoviesByName(name);
     }
 }
 
