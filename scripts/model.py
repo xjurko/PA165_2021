@@ -32,3 +32,19 @@ class Director:
   birthYear: int
   deathYear: Optional[int]
   posterUrl: str
+
+
+@dataclass
+class Rating:
+  userId: int
+  movieId: int
+  rating: str
+
+
+@dataclass
+class User:
+  id: int
+  name: str
+  email: str
+  passHash: str
+  isAdmin: bool
