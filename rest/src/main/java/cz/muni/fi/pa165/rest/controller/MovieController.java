@@ -29,6 +29,11 @@ public class MovieController {
         return moviesFacade.findRecommendedMoviesBasedOnMovie(id);
     }
 
+    @GetMapping("/user/recommend/{id}")
+    List<MovieDto> getMoviesForUser(@PathVariable Long id) {
+        return moviesFacade.findRecommendedMoviesForUser(id);
+    }
+
     @GetMapping("/movie/find/{name}")
     List<MovieDto> findMovie(@PathVariable String name) {
         return moviesFacade.findMoviesByName(name);

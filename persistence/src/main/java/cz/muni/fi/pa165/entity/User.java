@@ -44,7 +44,7 @@ public class User {
     @Column(nullable = false, unique = true)
     private String email;
 
-    @OneToMany(mappedBy = "movie",  orphanRemoval = true)
+    @OneToMany(mappedBy = "user",  orphanRemoval = true)
     private Set<MovieRating> movieRatings = new HashSet<>();
 
     // TODO: possibly replace with a separate roles entity
