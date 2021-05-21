@@ -1,16 +1,15 @@
 import {
-    IonButton,
-    IonCol,
     IonContent,
     IonFooter,
-    IonGrid,
     IonHeader,
     IonPage,
-    IonRow,
     IonTitle,
     IonToolbar
 } from '@ionic/react';
 import { IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent} from '@ionic/react';
+import {useIonViewWillEnter} from '@ionic/react';
+import {IonInfiniteScroll, IonInfiniteScrollContent} from '@ionic/react';
+
 
 import './Home.css';
 
@@ -24,23 +23,36 @@ interface Movie {
     genres: string[]
 }
 
-
 const Home: React.FC = () => {
     const [movies, setMovies] = useState<Movie[]>([])
+    const [disableInfiniteScroll, setDisableInfiniteScroll] = useState<boolean>(false);
+
 
     const getMovies = async () => {
         try {
-            const response = await fetch("http://aedfa87e9cd6.ngrok.io/movie/468569")
+            const response: Response = await fetch("http://localhost:5000/movies")
             if (!response.ok) {
                 throw Error(response.statusText)
             }
             const json = await response.json()
             setMovies(json)
+            setDisableInfiniteScroll(json.message.length < 10);
             console.log(json)
         } catch (error) {
             console.error(error.message)
         }
     }
+
+    async function searchNext($event: CustomEvent<void>) {
+        await getMovies();
+
+        ($event.target as HTMLIonInfiniteScrollElement).complete();
+    }
+
+    // hook to fetch data and display them on page diplay
+    useIonViewWillEnter(async () => {
+        await getMovies();
+    });
 
   return (
       <IonPage>
@@ -72,23 +84,25 @@ const Home: React.FC = () => {
                   </IonCardContent>
               </IonCard>
 
-              <IonButton onClick={getMovies}>Get</IonButton>
-
-              <IonGrid className="ion-padding">
                   {movies.map((movie) => (
-                      <IonRow key={movie.id}>
-                          <IonCol>
-                              {movie.id}
-                          </IonCol>
-                          <IonCol>
-                              {movie.name}
-                          </IonCol>
-                          <IonCol>
-                              {movie.releaseYear}
-                          </IonCol>
-                      </IonRow>
+                      <IonCard>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Capitol_Madison%2C_WI.jpg/220px-Capitol_Madison%2C_WI.jpg" alt="noimage"/>
+                          <IonCardHeader>
+                              <IonCardTitle>{movie.name}</IonCardTitle>
+                              <IonCardSubtitle>{movie.releaseYear}</IonCardSubtitle>
+                          </IonCardHeader>
+
+                          <IonCardContent>
+                              Lorem Ipsum Dolor Sit Amet
+                          </IonCardContent>
+                      </IonCard>
                   ))}
-              </IonGrid>
+              <IonInfiniteScroll threshold="100px" disabled={disableInfiniteScroll}
+                                 onIonInfinite={(e: CustomEvent<void>) => searchNext(e)}>
+                  <IonInfiniteScrollContent
+                      loadingText="Loading...">
+                  </IonInfiniteScrollContent>
+              </IonInfiniteScroll>
           </IonContent>
 
           <IonFooter>
