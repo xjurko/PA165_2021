@@ -44,12 +44,12 @@ public class MovieFacadeImplTest extends AbstractTransactionalTestNGSpringContex
 
     MovieFacade movieFacade;
 
-    private Movie testMovie = new Movie(123L, "test", Set.of(), Set.of(), 0, Set.of(Genre.ACTION), Set.of(), "test caption", "test ref", 1990);
-    private MovieDto testMovieDto = new MovieDto(123L, "test", "test caption", 1990, 0, Set.of(), Set.of());
+    private Movie testMovie = new Movie(123L, "test", Set.of(), Set.of(), 0, Set.of(Genre.ACTION), Set.of(), "test caption", "test ref", 1990, "");
+    private MovieDto testMovieDto = new MovieDto(123L, "test", "test caption", 1990, 0, Set.of(), Set.of(), "test ref", "", List.of(cz.muni.fi.pa165.dto.Genre.ACTION));
     private CreateMovieDto testCreateMovieDto = new CreateMovieDto("test", "test caption", 1990, 0, "test ref", Set.of(1L), Set.of(1L), Set.of(cz.muni.fi.pa165.dto.Genre.ACTION));
     private Director testDirector = new Director("test director").withId(1L);
     private Actor testActor = new Actor("testActor").withId(1L);
-    private Movie testCreateMovie = new Movie(null, "test", Set.of(testActor), Set.of(testDirector), 0, Set.of(Genre.ACTION), Set.of(), "test caption", "test ref", 1990);
+    private Movie testCreateMovie = new Movie(null, "test", Set.of(testActor), Set.of(testDirector), 0, Set.of(Genre.ACTION), Set.of(), "test caption", "test ref", 1990, "");
 
 
     @BeforeClass

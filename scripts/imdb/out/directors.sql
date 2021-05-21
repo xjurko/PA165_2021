@@ -1,4 +1,4 @@
-INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES (5, 1918, 2007, 'Ingmar Bergman', 'nm0000005', 'https://m.media-amazon.com/images/M/MV5BMTc4MjQwMzY0N15BMl5BanBnXkFtZTcwNTI1NTM1MQ@@._V1_UX400.jpg'),
+INSERT INTO Director (id, birthYear, deathYear, name, externalRef, posterUrl) VALUES (5, 1918, 2007, 'Ingmar Bergman', 'nm0000005', 'https://m.media-amazon.com/images/M/MV5BMTc4MjQwMzY0N15BMl5BanBnXkFtZTcwNTI1NTM1MQ@@._V1_UX400.jpg'),
 (19, 1920, 1993, 'Federico Fellini', 'nm0000019', 'https://m.media-amazon.com/images/M/MV5BMjE0NDI1MDU5Nl5BMl5BanBnXkFtZTgwNjQ2ODMwMzE@._V1_UX400.jpg'),
 (33, 1899, 1980, 'Alfred Hitchcock', 'nm0000033', 'https://m.media-amazon.com/images/M/MV5BMTQxOTg3ODc2NV5BMl5BanBnXkFtZTYwNTg0NTU2._V1_UX400.jpg'),
 (40, 1928, 1999, 'Stanley Kubrick', 'nm0000040', 'https://m.media-amazon.com/images/M/MV5BMTIwMzAwMzg1MV5BMl5BanBnXkFtZTYwMjc4ODQ2._V1_UX400.jpg'),
@@ -98,7 +98,7 @@ INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VA
 (934, 1941, 2018, 'Bernardo Bertolucci', 'nm0000934', 'https://m.media-amazon.com/images/M/MV5BMTc2OTY0NjAyN15BMl5BanBnXkFtZTgwMjY5MDY2MDE@._V1_UX400.jpg'),
 (941, 1951, NULL, 'Kathryn Bigelow', 'nm0000941', 'https://m.media-amazon.com/images/M/MV5BMTM3NjE4MDYyN15BMl5BanBnXkFtZTcwNDk3MTQ2NA@@._V1_UX400.jpg'),
 (948, 1961, NULL, 'Shane Black', 'nm0000948', 'https://m.media-amazon.com/images/M/MV5BMTM2ODI3NzkyNl5BMl5BanBnXkFtZTYwMDQ3OTYz._V1_UX400.jpg');
-INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES (957, 1943, NULL, 'Jan de Bont', 'nm0000957', 'https://m.media-amazon.com/images/M/MV5BMTc4MzMxNzAzM15BMl5BanBnXkFtZTYwNDA1NDc0._V1_UX400.jpg'),
+INSERT INTO Director (id, birthYear, deathYear, name, externalRef, posterUrl) VALUES (957, 1943, NULL, 'Jan de Bont', 'nm0000957', 'https://m.media-amazon.com/images/M/MV5BMTc4MzMxNzAzM15BMl5BanBnXkFtZTYwNDA1NDc0._V1_UX400.jpg'),
 (958, 1933, NULL, 'John Boorman', 'nm0000958', 'https://m.media-amazon.com/images/M/MV5BNDM0Njg2ODY2NF5BMl5BanBnXkFtZTYwMTUyNjU1._V1_UX400.jpg'),
 (965, 1956, NULL, 'Danny Boyle', 'nm0000965', 'https://m.media-amazon.com/images/M/MV5BMTc2NTU0ODQ0M15BMl5BanBnXkFtZTcwNjYzMzc5Mg@@._V1_UX400.jpg'),
 (976, 1951, NULL, 'Martin Brest', 'nm0000976', 'https://m.media-amazon.com/images/M/MV5BOTRlN2UwNTEtNTI3OS00ZmYwLTk0NzktODViNjUxZjdjYTZlXkEyXkFqcGdeQXVyMjA0MTYzNzI@._V1_UX400.jpg'),
@@ -198,7 +198,7 @@ INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VA
 (1988, 1956, NULL, 'Marc Caro', 'nm0001988', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (1994, 1957, NULL, 'Michael Caton-Jones', 'nm0001994', 'https://m.media-amazon.com/images/M/MV5BMjA0MTE1OTcyMl5BMl5BanBnXkFtZTYwMDAxNTMz._V1_UX400.jpg'),
 (2030, 1899, 1983, 'George Cukor', 'nm0002030', 'https://m.media-amazon.com/images/M/MV5BMTkzNjU2MTI2Nl5BMl5BanBnXkFtZTcwMDQzNTgxMw@@._V1_UX400.jpg');
-INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES (2031, 1886, 1962, 'Michael Curtiz', 'nm0002031', 'https://m.media-amazon.com/images/M/MV5BMTcyMjA2MTgwNF5BMl5BanBnXkFtZTYwMTcwMDY2._V1_UX400.jpg'),
+INSERT INTO Director (id, birthYear, deathYear, name, externalRef, posterUrl) VALUES (2031, 1886, 1962, 'Michael Curtiz', 'nm0002031', 'https://m.media-amazon.com/images/M/MV5BMTcyMjA2MTgwNF5BMl5BanBnXkFtZTYwMTcwMDY2._V1_UX400.jpg'),
 (2041, 1962, NULL, 'Dean Devlin', 'nm0002041', 'https://m.media-amazon.com/images/M/MV5BMjIyODg1NjE1NV5BMl5BanBnXkFtZTgwODUzMzQ4MDE@._V1_UX400.jpg'),
 (2044, 1945, NULL, 'Roger Donaldson', 'nm0002044', 'https://m.media-amazon.com/images/M/MV5BMTI3NjI5NTA2NF5BMl5BanBnXkFtZTYwMjI2NzI0._V1_UX400.jpg'),
 (2045, 1924, 2019, 'Stanley Donen', 'nm0002045', 'https://m.media-amazon.com/images/M/MV5BNTQ0MDgxNzEtYWUyZC00MjhkLThmOTItOTU5ZmZjYTg4Zjc3XkEyXkFqcGdeQXVyMjUxODE0MDY@._V1_UX400.jpg'),
@@ -298,7 +298,7 @@ INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VA
 (25978, 1954, NULL, 'Allison Anders', 'nm0025978', 'https://m.media-amazon.com/images/M/MV5BODUzMDA4NjM4OF5BMl5BanBnXkFtZTYwNTgyNDY2._V1_UX400.jpg'),
 (26442, 1964, NULL, 'Brad Anderson', 'nm0026442', 'https://m.media-amazon.com/images/M/MV5BMTY3ODMyMDYxMV5BMl5BanBnXkFtZTcwNzkyNjY3MQ@@._V1_UX400.jpg'),
 (27183, 1920, 2018, 'Michael Anderson', 'nm0027183', 'https://m.media-amazon.com/images/M/MV5BNzU5NjM2OTAtYTRlOC00NWIzLWExMTQtYThiZjBiOGM5NDg1XkEyXkFqcGdeQXVyMTc4MzI2NQ@@._V1_UX400.jpg');
-INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES (27271, 1965, NULL, 'Paul W.S. Anderson', 'nm0027271', 'https://m.media-amazon.com/images/M/MV5BMTYxNjg0ODEwMV5BMl5BanBnXkFtZTYwMDgxNzEz._V1_UX400.jpg'),
+INSERT INTO Director (id, birthYear, deathYear, name, externalRef, posterUrl) VALUES (27271, 1965, NULL, 'Paul W.S. Anderson', 'nm0027271', 'https://m.media-amazon.com/images/M/MV5BMTYxNjg0ODEwMV5BMl5BanBnXkFtZTYwMDgxNzEz._V1_UX400.jpg'),
 (27459, 1970, NULL, 'Stephen J. Anderson', 'nm0027459', 'https://m.media-amazon.com/images/M/MV5BMTY1NzY0MjM1MV5BMl5BanBnXkFtZTgwMjU2ODA5ODE@._V1_UX400.jpg'),
 (27572, 1969, NULL, 'Wes Anderson', 'nm0027572', 'https://m.media-amazon.com/images/M/MV5BMTY1MjgzODIwNF5BMl5BanBnXkFtZTcwNTM2NzExMw@@._V1_UX400.jpg'),
 (28764, 1968, NULL, 'Mark Andrews', 'nm0028764', 'https://m.media-amazon.com/images/M/MV5BMTc5Nzk4ODQzOF5BMl5BanBnXkFtZTcwMTg4Mjc5Nw@@._V1_UX400.jpg'),
@@ -398,7 +398,7 @@ INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VA
 (155093, 1956, NULL, 'Peter Chelsom', 'nm0155093', 'https://m.media-amazon.com/images/M/MV5BMTY1MjMwMzE3NV5BMl5BanBnXkFtZTgwMTg3Nzk2MTE@._V1_UX400.jpg'),
 (155528, NULL, NULL, 'Yarrow Cheney', 'nm0155528', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (158966, 1964, NULL, 'Lisa Cholodenko', 'nm0158966', 'https://m.media-amazon.com/images/M/MV5BMjA4NTY4MTgyNF5BMl5BanBnXkFtZTcwNTkyNDg1Mw@@._V1_UX400.jpg');
-INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES (158984, 1963, NULL, 'Sylvain Chomet', 'nm0158984', 'https://m.media-amazon.com/images/M/MV5BMjA0ODE5MDkxMF5BMl5BanBnXkFtZTYwMzY0NjQ3._V1_UX400.jpg'),
+INSERT INTO Director (id, birthYear, deathYear, name, externalRef, posterUrl) VALUES (158984, 1963, NULL, 'Sylvain Chomet', 'nm0158984', 'https://m.media-amazon.com/images/M/MV5BMjA0ODE5MDkxMF5BMl5BanBnXkFtZTYwMzY0NjQ3._V1_UX400.jpg'),
 (159147, 1971, NULL, 'Aditya Chopra', 'nm0159147', 'https://m.media-amazon.com/images/M/MV5BMjlkYmIzOTgtMmM0NC00Y2UwLWFkMTUtYmY1NWI3NWNkNzZmXkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_UX400.jpg'),
 (160840, 1979, NULL, 'Jon M. Chu', 'nm0160840', 'https://m.media-amazon.com/images/M/MV5BNDM0NjgyNjkwOV5BMl5BanBnXkFtZTgwNzYzOTMzMDE@._V1_UX400.jpg'),
 (161152, 1965, NULL, 'Oxide Chun Pang', 'nm0161152', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
@@ -498,7 +498,7 @@ INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VA
 (268380, 1956, NULL, 'Peter Farrelly', 'nm0268380', 'https://m.media-amazon.com/images/M/MV5BMTU5Njg0NjU0M15BMl5BanBnXkFtZTgwNDM5OTg4NjM@._V1_UX400.jpg'),
 (269463, 1966, NULL, 'Jon Favreau', 'nm0269463', 'https://m.media-amazon.com/images/M/MV5BNjcwNzg4MjktNDNlMC00M2U1LWJmMjgtZTVkMmI4MDI2MTVmXkEyXkFqcGdeQXVyMjI4MDI0NTM@._V1_UX400.jpg'),
 (269542, NULL, NULL, 'Nat Faxon', 'nm0269542', 'https://m.media-amazon.com/images/M/MV5BMTYxMDM1MDEyM15BMl5BanBnXkFtZTcwMzg2NDY0Nw@@._V1_UX400.jpg');
-INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES (270263, 1975, NULL, 'Brian Fee', 'nm0270263', 'https://m.media-amazon.com/images/M/MV5BMjE1MjUyODI1MF5BMl5BanBnXkFtZTgwNzg0NDI5MDI@._V1_UX400.jpg'),
+INSERT INTO Director (id, birthYear, deathYear, name, externalRef, posterUrl) VALUES (270263, 1975, NULL, 'Brian Fee', 'nm0270263', 'https://m.media-amazon.com/images/M/MV5BMjE1MjUyODI1MF5BMl5BanBnXkFtZTgwNzg0NDI5MDI@._V1_UX400.jpg'),
 (271402, NULL, NULL, 'Sam Fell', 'nm0271402', 'https://m.media-amazon.com/images/M/MV5BMjA5OTEzMTQwN15BMl5BanBnXkFtZTYwMzY1Njgz._V1_UX400.jpg'),
 (272568, 1902, 1957, 'Norman Ferguson', 'nm0272568', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (275286, 1965, NULL, 'David S. Goyer', 'nm0275286', 'https://m.media-amazon.com/images/M/MV5BMTIyNDI4MDcyOV5BMl5BanBnXkFtZTYwMjAxODQ3._V1_UX400.jpg'),
@@ -598,7 +598,7 @@ INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VA
 (379179, 1954, NULL, 'Mark Herman', 'nm0379179', 'https://m.media-amazon.com/images/M/MV5BNjk0MjY2NTQxNF5BMl5BanBnXkFtZTcwNzQ5NDgwMw@@._V1_UX400.jpg'),
 (379237, 1966, NULL, 'Charles Herman-Wurmfeld', 'nm0379237', 'https://m.media-amazon.com/images/M/MV5BZTljYjE5NGQtODFkNS00OTNhLWFlOTktYWIxOWZlYzE3NzMwXkEyXkFqcGdeQXVyMjIyNjI0OTI@._V1_UX400.jpg'),
 (380705, 1951, NULL, 'Rowdy Herrington', 'nm0380705', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png');
-INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES (381416, 1963, NULL, 'Grant Heslov', 'nm0381416', 'https://m.media-amazon.com/images/M/MV5BMTQzNjQ3MjI3N15BMl5BanBnXkFtZTYwODE4NDQ1._V1_UX400.jpg'),
+INSERT INTO Director (id, birthYear, deathYear, name, externalRef, posterUrl) VALUES (381416, 1963, NULL, 'Grant Heslov', 'nm0381416', 'https://m.media-amazon.com/images/M/MV5BMTQzNjQ3MjI3N15BMl5BanBnXkFtZTYwODE4NDQ1._V1_UX400.jpg'),
 (381478, 1979, NULL, 'Jared Hess', 'nm0381478', 'https://m.media-amazon.com/images/M/MV5BMTI0ODkwODY2OV5BMl5BanBnXkFtZTYwODExNjA3._V1_UX400.jpg'),
 (382072, 1962, NULL, 'Peter Hewitt', 'nm0382072', 'https://m.media-amazon.com/images/M/MV5BMTI2NTY2NzAyMF5BMl5BanBnXkFtZTYwNzMxNzg2._V1_UX400.jpg'),
 (382956, 1953, NULL, 'Scott Hicks', 'nm0382956', 'https://m.media-amazon.com/images/M/MV5BMzc2OTQ5MTM2OF5BMl5BanBnXkFtZTcwNjgxMDY4Mg@@._V1_UX400.jpg'),
@@ -698,7 +698,7 @@ INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VA
 (484907, 1975, NULL, 'Christopher Landon', 'nm0484907', 'https://m.media-amazon.com/images/M/MV5BMTI5NTA1ODU2MV5BMl5BanBnXkFtZTcwODI3MDMzNA@@._V1_UX400.jpg'),
 (487166, 1973, NULL, 'Yorgos Lanthimos', 'nm0487166', 'https://m.media-amazon.com/images/M/MV5BMWYwMTVlOGMtYTQzNi00NzM4LTliNDgtZWU4Zjc4YjQ2NDJmXkEyXkFqcGdeQXVyNTQ3MDc0NTg@._V1_UX400.jpg'),
 (490487, 1960, NULL, 'Andrew Lau', 'nm0490487', 'https://m.media-amazon.com/images/M/MV5BNmQwMTE1ZDItYzgyMS00ODljLWEwMzctNzIwYzY5YmU4ZTZkXkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_UX400.jpg');
-INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES (492909, 1959, NULL, 'Marc Lawrence', 'nm0492909', 'https://m.media-amazon.com/images/M/MV5BMjc3NzMwNDUyNF5BMl5BanBnXkFtZTcwNDk5MTYwMw@@._V1_UX400.jpg'),
+INSERT INTO Director (id, birthYear, deathYear, name, externalRef, posterUrl) VALUES (492909, 1959, NULL, 'Marc Lawrence', 'nm0492909', 'https://m.media-amazon.com/images/M/MV5BMjc3NzMwNDUyNF5BMl5BanBnXkFtZTcwNDk5MTYwMw@@._V1_UX400.jpg'),
 (496969, 1954, NULL, 'Chang-dong Lee', 'nm0496969', 'https://m.media-amazon.com/images/M/MV5BMTc5NjIwOTc0MV5BMl5BanBnXkFtZTcwMzQ2Mzc3NA@@._V1_UX400.jpg'),
 (498555, 1968, NULL, 'Tony Leech', 'nm0498555', 'https://m.media-amazon.com/images/M/MV5BMTM0ZjdiMmEtYzUwMS00MTk0LTg0OWMtYzFjMTc2ZGY2YWY4XkEyXkFqcGdeQXVyMjgzMTI0MQ@@._V1_UX400.jpg'),
 (499724, 1957, NULL, 'Michael Lehmann', 'nm0499724', 'https://m.media-amazon.com/images/M/MV5BMTc3NTYwMjYxMV5BMl5BanBnXkFtZTYwMjk5MDM1._V1_UX400.jpg'),
@@ -798,7 +798,7 @@ INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VA
 (601382, 1970, NULL, 'John Moore', 'nm0601382', 'https://m.media-amazon.com/images/M/MV5BMzQ1MzExNjQ1NV5BMl5BanBnXkFtZTcwNDIxMzAzMQ@@._V1_UX400.jpg'),
 (601680, NULL, NULL, 'Nick Moore', 'nm0601680', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (601781, 1963, NULL, 'Rich Moore', 'nm0601781', 'https://m.media-amazon.com/images/M/MV5BMTg2OTA2NTMyNV5BMl5BanBnXkFtZTcwNTQ3NTg2OA@@._V1_UX400.jpg');
-INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES (601859, NULL, NULL, 'Scott Moore', 'nm0601859', 'https://m.media-amazon.com/images/M/MV5BMTUxODQ1MzU3N15BMl5BanBnXkFtZTgwNzEzMDYyMDI@._V1_UX400.jpg'),
+INSERT INTO Director (id, birthYear, deathYear, name, externalRef, posterUrl) VALUES (601859, NULL, NULL, 'Scott Moore', 'nm0601859', 'https://m.media-amazon.com/images/M/MV5BMTUxODQ1MzU3N15BMl5BanBnXkFtZTgwNzEzMDYyMDI@._V1_UX400.jpg'),
 (602104, 1960, NULL, 'Jocelyn Moorhouse', 'nm0602104', 'https://m.media-amazon.com/images/M/MV5BNjk1NTAzMzk0MF5BMl5BanBnXkFtZTcwNDgyODgwMw@@._V1_UX400.jpg'),
 (603628, 1964, NULL, 'Pierre Morel', 'nm0603628', 'https://m.media-amazon.com/images/M/MV5BMjE3NDcyNzY4Nl5BMl5BanBnXkFtZTcwNDg5NDUxMw@@._V1_UX400.jpg'),
 (604392, 1905, 1971, 'Larry Morey', 'nm0604392', 'https://m.media-amazon.com/images/M/MV5BY2U2ZTAzMGUtZWM1MC00ZDQ2LWFlMjUtY2E3NjU1MzUyMzEzXkEyXkFqcGdeQXVyMjQwOTE1MzE@._V1_UX400.jpg'),
@@ -898,7 +898,7 @@ INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VA
 (715346, 1906, 1976, 'Carol Reed', 'nm0715346', 'https://m.media-amazon.com/images/M/MV5BMjBjZjRjMTctNzc1OC00NDZlLTgxODEtNTE1YmIxOGUyNWY1XkEyXkFqcGdeQXVyMjUxODE0MDY@._V1_UX400.jpg'),
 (715636, 1964, NULL, 'Peyton Reed', 'nm0715636', 'https://m.media-amazon.com/images/M/MV5BMTkwNTk3MzY2NV5BMl5BanBnXkFtZTgwNjc2MjM0NjE@._V1_UX400.jpg'),
 (716257, 1966, NULL, 'Matt Reeves', 'nm0716257', 'https://m.media-amazon.com/images/M/MV5BYmM5NTA4ZGMtMGJhYy00YzlhLThlM2QtZjFjY2Y5YmJjOTE2XkEyXkFqcGdeQXVyNzg5MzIyOA@@._V1_UX400.jpg');
-INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES (716347, 1970, NULL, 'Nicolas Winding Refn', 'nm0716347', 'https://m.media-amazon.com/images/M/MV5BOTI3NzAzMTAwMl5BMl5BanBnXkFtZTcwNzM5MjQxNw@@._V1_UX400.jpg'),
+INSERT INTO Director (id, birthYear, deathYear, name, externalRef, posterUrl) VALUES (716347, 1970, NULL, 'Nicolas Winding Refn', 'nm0716347', 'https://m.media-amazon.com/images/M/MV5BOTI3NzAzMTAwMl5BMl5BanBnXkFtZTcwNzM5MjQxNw@@._V1_UX400.jpg'),
 (717678, NULL, NULL, 'Fergal Reilly', 'nm0717678', 'https://m.media-amazon.com/images/S/sash/9FayPGLPcrscMjU.png'),
 (718627, 1909, 1985, 'Wolfgang Reitherman', 'nm0718627', 'https://m.media-amazon.com/images/M/MV5BN2JiY2NhYjgtY2U4MS00MTNhLWI5YTYtZjMzODA0ZWY4YWFiL2ltYWdlXkEyXkFqcGdeQXVyMTQxMjk0Mg@@._V1_UX400.jpg'),
 (718645, 1946, NULL, 'Ivan Reitman', 'nm0718645', 'https://m.media-amazon.com/images/M/MV5BMTc1MDA2NDgwM15BMl5BanBnXkFtZTcwOTA3NjQxMw@@._V1_UX400.jpg'),
@@ -998,7 +998,7 @@ INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VA
 (815204, 1970, NULL, 'Paolo Sorrentino', 'nm0815204', 'https://m.media-amazon.com/images/M/MV5BMTkyODc1OTU1NV5BMl5BanBnXkFtZTcwNjAyOTMzNQ@@._V1_UX400.jpg'),
 (817447, NULL, NULL, 'Will Speck', 'nm0817447', 'https://m.media-amazon.com/images/M/MV5BMTIwODE0MzA5MV5BMl5BanBnXkFtZTYwNTIyMTE2._V1_UX400.jpg'),
 (820934, NULL, NULL, 'Anthony Stacchi', 'nm0820934', 'https://m.media-amazon.com/images/M/MV5BMTQ5MDU2MzczNF5BMl5BanBnXkFtZTgwNjkyODMyMDI@._V1_UX400.jpg');
-INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES (821432, 1968, NULL, 'Chad Stahelski', 'nm0821432', 'https://m.media-amazon.com/images/M/MV5BNjgwNzc0NTc2Nl5BMl5BanBnXkFtZTgwMjM0NzEzMDI@._V1_UX400.jpg'),
+INSERT INTO Director (id, birthYear, deathYear, name, externalRef, posterUrl) VALUES (821432, 1968, NULL, 'Chad Stahelski', 'nm0821432', 'https://m.media-amazon.com/images/M/MV5BNjgwNzc0NTc2Nl5BMl5BanBnXkFtZTgwMjM0NzEzMDI@._V1_UX400.jpg'),
 (824882, 1965, NULL, 'Burr Steers', 'nm0824882', 'https://m.media-amazon.com/images/M/MV5BMjEwMjYyNjEwN15BMl5BanBnXkFtZTcwMTI1Nzc2Mw@@._V1_UX400.jpg'),
 (825407, 1970, NULL, 'Björn Stein', 'nm0825407', 'https://m.media-amazon.com/images/M/MV5BODQ4MzA5ODI1OF5BMl5BanBnXkFtZTgwMTEyMjk5MjE@._V1_UX400.jpg'),
 (827750, NULL, NULL, 'Joshua Michael Stern', 'nm0827750', 'https://m.media-amazon.com/images/M/MV5BM2I1NTNiNTktOTRlOS00Y2FjLTgwYjAtNjgxZWFjNjdkYWNiXkEyXkFqcGdeQXVyMDMzMTMwMA@@._V1_UX400.jpg'),
@@ -1098,7 +1098,7 @@ INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VA
 (936404, 1914, 2005, 'Robert Wise', 'nm0936404', 'https://m.media-amazon.com/images/M/MV5BMTA5MDYxNTc4OTVeQTJeQWpwZ15BbWU2MDg0MDYwNQ@@._V1_UX400.jpg'),
 (936482, 1973, NULL, 'Len Wiseman', 'nm0936482', 'https://m.media-amazon.com/images/M/MV5BMTI0ODY0NjkxNl5BMl5BanBnXkFtZTcwNjI2OTM0Mg@@._V1_UX400.jpg'),
 (936838, 1952, NULL, 'Alexander Witt', 'nm0936838', 'https://m.media-amazon.com/images/M/MV5BMTM1OTczNjA4M15BMl5BanBnXkFtZTcwMTkzMDcyMQ@@._V1_UX400.jpg');
-INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES (937748, 1964, NULL, 'Fred Wolf', 'nm0937748', 'https://m.media-amazon.com/images/M/MV5BMTk1MjE3MTU0NV5BMl5BanBnXkFtZTgwOTExNzgwNjE@._V1_UX400.jpg'),
+INSERT INTO Director (id, birthYear, deathYear, name, externalRef, posterUrl) VALUES (937748, 1964, NULL, 'Fred Wolf', 'nm0937748', 'https://m.media-amazon.com/images/M/MV5BMTk1MjE3MTU0NV5BMl5BanBnXkFtZTgwOTExNzgwNjE@._V1_UX400.jpg'),
 (938471, NULL, NULL, 'Jason Woliner', 'nm0938471', 'https://m.media-amazon.com/images/M/MV5BMTY1OTk1NjI4NV5BMl5BanBnXkFtZTcwMTA3NDkyMg@@._V1_UX400.jpg'),
 (939128, NULL, NULL, 'James Wong', 'nm0939128', 'https://m.media-amazon.com/images/M/MV5BNzc5MDc5NzI1MF5BMl5BanBnXkFtZTYwMjEyNjM0._V1_UX400.jpg'),
 (939182, 1956, NULL, 'Kar-Wai Wong', 'nm0939182', 'https://m.media-amazon.com/images/M/MV5BMTY4MTQyMjI4NV5BMl5BanBnXkFtZTcwNDk2MzQ2MQ@@._V1_UX400.jpg'),
@@ -1198,7 +1198,7 @@ INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VA
 (1168657, 1964, NULL, 'Andrey Zvyagintsev', 'nm1168657', 'https://m.media-amazon.com/images/M/MV5BMTgzNDEwMzU1OV5BMl5BanBnXkFtZTYwODg5OTg0._V1_UX400.jpg'),
 (1170286, 1966, NULL, 'Martin Weisz', 'nm1170286', 'https://m.media-amazon.com/images/M/MV5BM2JkZDhmZWYtY2IwNC00NGM3LWJjOGItYzI2MDhlNTNlNTM5XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX400.jpg'),
 (1170339, NULL, NULL, 'Julius Avery', 'nm1170339', 'https://m.media-amazon.com/images/M/MV5BOGY3OTExNTUtMTEzOS00MDYyLTgxYzQtNTBjYzdjZDI3NTc3XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX400.jpg');
-INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES (1170855, NULL, NULL, 'J.C. Chandor', 'nm1170855', 'https://m.media-amazon.com/images/M/MV5BMjAxNjMwNzA3Ml5BMl5BanBnXkFtZTcwNDMxNDQ5Mw@@._V1_UX400.jpg'),
+INSERT INTO Director (id, birthYear, deathYear, name, externalRef, posterUrl) VALUES (1170855, NULL, NULL, 'J.C. Chandor', 'nm1170855', 'https://m.media-amazon.com/images/M/MV5BMjAxNjMwNzA3Ml5BMl5BanBnXkFtZTcwNDMxNDQ5Mw@@._V1_UX400.jpg'),
 (1174251, 1977, NULL, 'Daniel Espinosa', 'nm1174251', 'https://m.media-amazon.com/images/M/MV5BMzdmYzE4MzAtYzFlMC00ZTgxLWJkNmUtNzBhOGIzZTVhZjAxXkEyXkFqcGdeQXVyODI0NTA2MDQ@._V1_UX400.jpg'),
 (1191481, 1977, NULL, 'Leigh Whannell', 'nm1191481', 'https://m.media-amazon.com/images/M/MV5BMTkyMzA3OTI0Ml5BMl5BanBnXkFtZTcwNDUzMTEzMQ@@._V1_UX400.jpg'),
 (1193346, 1970, NULL, 'Sean Ellis', 'nm1193346', 'https://m.media-amazon.com/images/M/MV5BMjM4ZGViZjMtNDBkYy00M2U1LWExNzQtMTdkODc1YzExMjEwXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX400.jpg'),
@@ -1298,7 +1298,7 @@ INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VA
 (1564809, 1983, NULL, 'Julius Onah', 'nm1564809', 'https://m.media-amazon.com/images/M/MV5BMTQxNTU4OTUxNF5BMl5BanBnXkFtZTcwNjU0Njk3OA@@._V1_UX400.jpg'),
 (1580671, 1972, NULL, 'Jon S. Baird', 'nm1580671', 'https://m.media-amazon.com/images/M/MV5BMjVkMDk1NmQtNzIwMy00N2M2LWFjMTYtYjMzOTllY2UxZWQ2XkEyXkFqcGdeQXVyMjc3ODEwOQ@@._V1_UX400.jpg'),
 (1600872, NULL, NULL, 'Lee Sternthal', 'nm1600872', 'https://m.media-amazon.com/images/M/MV5BNzM3NDMyNTY0MV5BMl5BanBnXkFtZTcwNTgwMzMzNw@@._V1_UX400.jpg');
-INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES (1601644, 1971, NULL, 'Jennifer Lee', 'nm1601644', 'https://m.media-amazon.com/images/M/MV5BODIzNzYxMDg0MF5BMl5BanBnXkFtZTgwMDIwMDA5NzM@._V1_UX400.jpg'),
+INSERT INTO Director (id, birthYear, deathYear, name, externalRef, posterUrl) VALUES (1601644, 1971, NULL, 'Jennifer Lee', 'nm1601644', 'https://m.media-amazon.com/images/M/MV5BODIzNzYxMDg0MF5BMl5BanBnXkFtZTgwMDIwMDA5NzM@._V1_UX400.jpg'),
 (1601882, 1971, NULL, 'Phil Johnston', 'nm1601882', 'https://m.media-amazon.com/images/M/MV5BMTg1MDEwNzMzMV5BMl5BanBnXkFtZTgwMTUxMzY3ODE@._V1_UX400.jpg'),
 (1630273, 1957, NULL, 'Phyllida Lloyd', 'nm1630273', 'https://m.media-amazon.com/images/M/MV5BMTUyNzkyOTY2Ml5BMl5BanBnXkFtZTcwNDg0MjAyNw@@._V1_UX400.jpg'),
 (1637768, 1979, NULL, 'Jim Field Smith', 'nm1637768', 'https://m.media-amazon.com/images/M/MV5BOGVkMGJkN2EtNWQ1NC00NzZlLThlYzItYjBiNjlkYjlmZGU0XkEyXkFqcGdeQXVyNDQwNzQ2Nw@@._V1_UX400.jpg'),
@@ -1398,7 +1398,7 @@ INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VA
 (2419470, NULL, NULL, 'Tyler Gillett', 'nm2419470', 'https://m.media-amazon.com/images/M/MV5BNWViMDlhMTQtOWQwYy00M2I2LWFjYTItMGU0ZjY0MWU5NDlhXkEyXkFqcGdeQXVyMTA1ODg2ODc@._V1_UX400.jpg'),
 (2436566, NULL, NULL, 'Tyler Nilson', 'nm2436566', 'https://m.media-amazon.com/images/M/MV5BNDZjZmU1YmYtMWQ5Yy00Y2NkLWI3Y2EtOWYwOGU5MGIwM2NjXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX400.jpg'),
 (2477891, NULL, NULL, 'Gary Dauberman', 'nm2477891', 'https://m.media-amazon.com/images/M/MV5BMTcyNDcxNTk4NV5BMl5BanBnXkFtZTgwNTcwODAzNjM@._V1_UX400.jpg');
-INSERT INTO Director (id, birthDate, deathDate, name, externalRef, posterUrl) VALUES (2480587, 1955, NULL, 'Charles Ferguson', 'nm2480587', 'https://m.media-amazon.com/images/M/MV5BMTQ5NTE5NjYyOV5BMl5BanBnXkFtZTcwMDYyMDQ1NA@@._V1_UX400.jpg'),
+INSERT INTO Director (id, birthYear, deathYear, name, externalRef, posterUrl) VALUES (2480587, 1955, NULL, 'Charles Ferguson', 'nm2480587', 'https://m.media-amazon.com/images/M/MV5BMTQ5NTE5NjYyOV5BMl5BanBnXkFtZTcwMDYyMDQ1NA@@._V1_UX400.jpg'),
 (2482088, 1979, NULL, 'Tommy Wirkola', 'nm2482088', 'https://m.media-amazon.com/images/M/MV5BMjE2NjIxNDg4OV5BMl5BanBnXkFtZTcwOTExNTg2OA@@._V1_UX400.jpg'),
 (2497546, 1981, NULL, 'David F. Sandberg', 'nm2497546', 'https://m.media-amazon.com/images/M/MV5BNTc0MDI1ODk2N15BMl5BanBnXkFtZTgwNzIzMjIxNzE@._V1_UX400.jpg'),
 (2503633, 1984, NULL, 'Josh Trank', 'nm2503633', 'https://m.media-amazon.com/images/M/MV5BNTUyNDU3MTE0N15BMl5BanBnXkFtZTcwMzI2OTU5Ng@@._V1_UX400.jpg'),

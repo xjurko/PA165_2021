@@ -15,5 +15,7 @@ import java.time.LocalDate;
 public class DirectorDto {
     Long id;
     String name;
-    LocalDate birthDate;
+    Integer birthYear;
+    Integer deathYear;
+    String posterUrl;
 }
