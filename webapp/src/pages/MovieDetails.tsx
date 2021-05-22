@@ -22,6 +22,7 @@ type Actor = {
     name: string;
     img: string;
 };
+
 type Film = {
     name: string;
     img: string;
