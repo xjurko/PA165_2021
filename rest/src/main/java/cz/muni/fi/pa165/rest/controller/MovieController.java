@@ -23,6 +23,7 @@ import java.util.Optional;
 
 @RestController
 @AllArgsConstructor
+@CrossOrigin
 @Slf4j
 public class MovieController {
 
@@ -73,6 +74,13 @@ public class MovieController {
     void removeUserRating(@PathVariable Long movieId, Authentication authentication) {
         Long userId = (Long) authentication.getPrincipal();
         movieRatingsFacade.deleteRating(userId, movieId);
+    }
+
+
+    //TODO - add (semi)propper pagination this is jsut a POC
+    @GetMapping("/movies/{page}")
+    List<MovieDto> getMovies(@PathVariable Integer page) {
+        return moviesFacade.findMoviesByName("").subList((page-1) * 10, page * 10);
     }
 
     @RolesAllowed(Role.USER)
