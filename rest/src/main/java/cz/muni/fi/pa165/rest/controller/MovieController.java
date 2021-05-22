@@ -2,9 +2,15 @@ package cz.muni.fi.pa165.rest.controller;
 
 import cz.muni.fi.pa165.dto.MovieDto;
 import cz.muni.fi.pa165.facade.MovieFacade;
+import cz.muni.fi.pa165.rest.model.Role;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.security.RolesAllowed;
+import java.security.Principal;
 import java.util.List;
 import java.util.Optional;
 
@@ -13,8 +19,8 @@ import java.util.Optional;
  */
 
 @RestController
-@CrossOrigin
 @AllArgsConstructor
+@Slf4j
 public class MovieController {
 
     MovieFacade moviesFacade;
@@ -29,9 +35,11 @@ public class MovieController {
         return moviesFacade.findRecommendedMoviesBasedOnMovie(id);
     }
 
-    @GetMapping("/user/recommend/{id}")
-    List<MovieDto> getMoviesForUser(@PathVariable Long id) {
-        return moviesFacade.findRecommendedMoviesForUser(id);
+    @RolesAllowed({Role.USER})
+    @GetMapping("/user/recommend")
+    List<MovieDto> getMoviesForUser(Authentication authentication) {
+        Long userId = (Long) authentication.getPrincipal();
+        return moviesFacade.findRecommendedMoviesForUser(userId);
     }
 
     @GetMapping("/movie/find/{name}")
