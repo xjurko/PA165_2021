@@ -32,7 +32,7 @@ public class MovieRatingDaoImpl implements MovieRatingDao {
     public Optional<MovieRating> findById(RatingId raitingId) {
         try {
             return Optional.ofNullable(
-                    em.createQuery("select mr from MovieRating mr where mr.rating = :ratingId", MovieRating.class)
+                    em.createQuery("select mr from MovieRating mr where mr.id = :ratingId", MovieRating.class)
                             .setParameter("ratingId", raitingId)
                             .getSingleResult()
             );

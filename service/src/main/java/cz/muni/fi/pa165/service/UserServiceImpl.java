@@ -4,7 +4,6 @@ import cz.muni.fi.pa165.dao.UserDao;
 import cz.muni.fi.pa165.entity.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.dao.DataRetrievalFailureException;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
