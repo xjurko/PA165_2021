@@ -3,6 +3,7 @@ package cz.muni.fi.pa165.facade;
 import cz.muni.fi.pa165.dto.MovieRatingDto;
 import cz.muni.fi.pa165.dto.Rating;
 
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -27,7 +28,7 @@ public interface MovieRatingFacade {
      * @param movieId id of the given movie
      * @return ratings for the given movie
      */
-    Iterable<MovieRatingDto> findRatingsByMovie(Long movieId);
+    List<MovieRatingDto> findRatingsByMovie(Long movieId);
 
     /**
      * Find all ratings by user
@@ -35,7 +36,7 @@ public interface MovieRatingFacade {
      * @param userId id of the given user
      * @return ratings for the given user
      */
-    Iterable<MovieRatingDto> findRatingsByUser(Long userId);
+    List<MovieRatingDto> findRatingsByUser(Long userId);
 
     /**
      * Find rating by user and movie

@@ -1,16 +1,19 @@
 package cz.muni.fi.pa165.rest.controller;
 
 import cz.muni.fi.pa165.dto.MovieDto;
+import cz.muni.fi.pa165.dto.MovieRatingDto;
+import cz.muni.fi.pa165.dto.Rating;
+import cz.muni.fi.pa165.entity.MovieRating;
 import cz.muni.fi.pa165.facade.MovieFacade;
+import cz.muni.fi.pa165.facade.MovieRatingFacade;
+import cz.muni.fi.pa165.facade.UserFacade;
 import cz.muni.fi.pa165.rest.model.Role;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.security.RolesAllowed;
-import java.security.Principal;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,6 +27,8 @@ import java.util.Optional;
 public class MovieController {
 
     MovieFacade moviesFacade;
+    MovieRatingFacade movieRatingsFacade;
+    UserFacade userFacade;
 
     @GetMapping("/movie/{id}")
     Optional<MovieDto> getMovie(@PathVariable Long id) {
@@ -43,8 +48,38 @@ public class MovieController {
     }
 
     @GetMapping("/movie/find/{name}")
-    List<MovieDto> findMovie(@PathVariable String name) {
+    List<MovieDto> findMovieByName(@PathVariable String name) {
         return moviesFacade.findMoviesByName(name);
+    }
+
+
+    @RolesAllowed({Role.USER})
+    @GetMapping("/user/ratings/{movieId}")
+    Optional<MovieRatingDto> getUserRatingForMovie(@PathVariable Long movieId, Authentication authentication) {
+        Long userId = (Long) authentication.getPrincipal();
+        return movieRatingsFacade.findRatingByUserAndMovie(userId, movieId);
+    }
+
+
+    @RolesAllowed(Role.USER)
+    @GetMapping("/user/ratings/all")
+    List<MovieRatingDto> getAllUserRatings(Authentication authentication) {
+        Long userId = (Long) authentication.getPrincipal();
+        return movieRatingsFacade.findRatingsByUser(userId);
+    }
+
+    @RolesAllowed(Role.USER)
+    @DeleteMapping("/user/ratings/{movieId}")
+    void removeUserRating(@PathVariable Long movieId, Authentication authentication) {
+        Long userId = (Long) authentication.getPrincipal();
+        movieRatingsFacade.deleteRating(userId, movieId);
+    }
+
+    @RolesAllowed(Role.USER)
+    @PostMapping("/user/ratings/{movieId}/{rating}")
+    void removeUserRating(@PathVariable Long movieId, @PathVariable Rating rating, Authentication authentication) {
+        Long userId = (Long) authentication.getPrincipal();
+        movieRatingsFacade.setRating(new MovieRatingDto(movieId, userId, rating));
     }
 }
 

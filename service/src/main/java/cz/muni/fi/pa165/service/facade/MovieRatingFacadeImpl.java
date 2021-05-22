@@ -32,8 +32,8 @@ public class MovieRatingFacadeImpl implements MovieRatingFacade {
             .withUserId(rating.getUser().getId());
     }
 
-    private Iterable<MovieRatingDto> convertList(List<MovieRating> ratings) {
-        return Vector.ofAll(ratings).map(this::convertMovieRating);
+    private List<MovieRatingDto> convertList(List<MovieRating> ratings) {
+        return io.vavr.collection.List.ofAll(ratings).map(this::convertMovieRating).asJava();
     }
 
     private cz.muni.fi.pa165.entity.Rating convertRatingValue(Rating rating) {
@@ -47,12 +47,12 @@ public class MovieRatingFacadeImpl implements MovieRatingFacade {
     }
 
     @Override
-    public Iterable<MovieRatingDto> findRatingsByMovie(Long movieId) {
+    public List<MovieRatingDto> findRatingsByMovie(Long movieId) {
         return convertList(movieRatingService.findRatingsForMovie(movieId));
     }
 
     @Override
-    public Iterable<MovieRatingDto> findRatingsByUser(Long userId) {
+    public List<MovieRatingDto> findRatingsByUser(Long userId) {
         return convertList(movieRatingService.findRatingsByUser(userId));
     }
 
