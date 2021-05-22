@@ -19,23 +19,26 @@ interface Movie {
     id: number
     name: string
     releaseYear: number
+    caption: string
+    posterUrl: string
     runtimeMin: number
     genres: string[]
 }
 
 const Home: React.FC = () => {
     const [movies, setMovies] = useState<Movie[]>([])
+    const [page, setPage] = useState(1)
+
     const [disableInfiniteScroll, setDisableInfiniteScroll] = useState<boolean>(false);
 
-
-    const getMovies = async () => {
+    const getMovies = async (page: number) => {
         try {
-            const response: Response = await fetch("http://localhost:5000/movies")
+            const response: Response = await fetch("http://localhost:5000/movies/" + page)
             if (!response.ok) {
                 throw Error(response.statusText)
             }
             const json = await response.json()
-            setMovies(json)
+            setMovies(movies.concat(json))
             setDisableInfiniteScroll(json.message.length < 10);
             console.log(json)
         } catch (error) {
@@ -44,14 +47,16 @@ const Home: React.FC = () => {
     }
 
     async function searchNext($event: CustomEvent<void>) {
-        await getMovies();
+        setPage(page + 1)
+        await getMovies(page);
 
         ($event.target as HTMLIonInfiniteScrollElement).complete();
     }
 
     // hook to fetch data and display them on page diplay
     useIonViewWillEnter(async () => {
-        await getMovies();
+        setPage(page + 1)
+        await getMovies(page);
     });
 
   return (
@@ -72,32 +77,20 @@ const Home: React.FC = () => {
                   </IonToolbar>
               </IonHeader>
 
-              <IonCard>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Capitol_Madison%2C_WI.jpg/220px-Capitol_Madison%2C_WI.jpg" alt="noimage"/>
-                  <IonCardHeader>
-                      <IonCardTitle>Card Title</IonCardTitle>
-                      <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
-                  </IonCardHeader>
-
-                  <IonCardContent>
-                      Lorem Ipsum Dolor Sit Amet
-                  </IonCardContent>
-              </IonCard>
-
                   {movies.map((movie) => (
                       <IonCard>
-                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Capitol_Madison%2C_WI.jpg/220px-Capitol_Madison%2C_WI.jpg" alt="noimage"/>
+                          <img src={movie.posterUrl} alt="noimage"/>
                           <IonCardHeader>
                               <IonCardTitle>{movie.name}</IonCardTitle>
                               <IonCardSubtitle>{movie.releaseYear}</IonCardSubtitle>
                           </IonCardHeader>
 
                           <IonCardContent>
-                              Lorem Ipsum Dolor Sit Amet
+                              {movie.caption}
                           </IonCardContent>
                       </IonCard>
                   ))}
-              <IonInfiniteScroll threshold="100px" disabled={disableInfiniteScroll}
+              <IonInfiniteScroll threshold="700px" disabled={disableInfiniteScroll}
                                  onIonInfinite={(e: CustomEvent<void>) => searchNext(e)}>
                   <IonInfiniteScrollContent
                       loadingText="Loading...">
