@@ -25,7 +25,7 @@ import static org.mockito.Mockito.*;
 @ContextConfiguration(classes = ServiceConfig.class)
 public class UserFacadeImplTest extends AbstractTransactionalTestNGSpringContextTests {
 
-    private final UserDto userDto = new UserDto(1L, "user", "user@user.com");
+    private final UserDto userDto = new UserDto(1L, "user", "user@user.com", "", false);
     UserService userServiceMock;
     UserFacade userFacade;
     @Inject
