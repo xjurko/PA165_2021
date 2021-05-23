@@ -19,6 +19,7 @@ import {
 import {thumbsDownOutline, thumbsUp} from 'ionicons/icons'
 import './MovieDetails.css';
 import {RouteComponentProps} from "react-router";
+import {Link} from 'react-router-dom';
 import {useState} from "react";
 
 type Actor = {
@@ -60,9 +61,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
         const response = await fetch("http://localhost:5000/movie/" + match.params.id);
         const json = await response.json()
         setMovie(json);
-        console.log(json);
         //TODO implement setRecommendedMovies
-        //TODO implement actor redirect on click
     });
 
     return (
@@ -97,10 +96,12 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
                     <IonCardContent>
                         <IonList class="lst">
                             {movie.cast.map((actor, i) => (
-                                <div className="itm" key={i}>
-                                    <IonImg src={actor.posterUrl} class="img"/>
-                                    <IonLabel>{actor.fullName}</IonLabel>
-                                </div>
+                                <Link to={"/actor/".concat(String(actor.id))} key={i}>
+                                    <div className="itm">
+                                        <IonImg src={actor.posterUrl} class="img"/>
+                                        <IonLabel>{actor.fullName}</IonLabel>
+                                    </div>
+                                </Link>
                             ))}
                         </IonList>
                     </IonCardContent>
