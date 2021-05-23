@@ -21,6 +21,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import {ModalLogin} from "./pages/ModalLogin";
 import MovieDetails from "./pages/MovieDetails";
 import ActorDetails from "./pages/ActorDetails";
 
@@ -32,6 +33,9 @@ const App: React.FC = () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/movie/:id" component={MovieDetails} />
         <Route exact path="/actor/:id" component={ActorDetails} />
+        <Route exact path="/login">
+          <ModalLogin />
+        </Route>
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

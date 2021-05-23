@@ -29,6 +29,7 @@ import static cz.muni.fi.pa165.rest.model.Role.USER;
 @RestController
 @RequestMapping("/auth")
 @AllArgsConstructor
+@CrossOrigin
 @Slf4j
 public class AuthController {
 
