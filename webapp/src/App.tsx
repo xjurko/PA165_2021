@@ -1,5 +1,5 @@
-import { Redirect, Route } from 'react-router-dom';
-import {IonApp, IonRouterOutlet} from '@ionic/react';
+import { Route } from 'react-router-dom';
+import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 
@@ -22,19 +22,19 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import {ModalLogin} from "./pages/ModalLogin";
+import MovieDetails from "./pages/MovieDetails";
+import ActorDetails from "./pages/ActorDetails";
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/movie/:id" component={MovieDetails} />
+        <Route exact path="/actor/:id" component={ActorDetails} />
         <Route exact path="/login">
           <ModalLogin />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
