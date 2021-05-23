@@ -76,11 +76,9 @@ public class MovieController {
         movieRatingsFacade.deleteRating(userId, movieId);
     }
 
-
-    //TODO - add (semi)propper pagination this is jsut a POC
     @GetMapping("/movies/{page}")
     List<MovieDto> getMovies(@PathVariable Integer page) {
-        return moviesFacade.findMoviesByName("").subList((page-1) * 10, page * 10);
+        return moviesFacade.fetchMovies(page, 10);
     }
 
     @RolesAllowed(Role.USER)

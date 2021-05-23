@@ -62,14 +62,21 @@ public class MovieFacadeImpl implements MovieFacade {
         val directors = Vector.ofAll(movie.getDirectorIds()).flatMap(id -> Option.ofOptional(directorService.findById(id)));
         val actors = Vector.ofAll(movie.getActorIds()).flatMap(id -> Option.ofOptional(actorService.findActorById(id)));
 
-        val missingDirectorsIds =  Vector.ofAll(movie.getDirectorIds()).toSet().diff( directors.map(Director::getId).toSet());
-        val missingActorsIds =  Vector.ofAll(movie.getActorIds()).toSet().diff( actors.map(Actor::getId).toSet());
+        val missingDirectorsIds = Vector.ofAll(movie.getDirectorIds()).toSet().diff(directors.map(Director::getId).toSet());
+        val missingActorsIds = Vector.ofAll(movie.getActorIds()).toSet().diff(actors.map(Actor::getId).toSet());
 
-        if (missingActorsIds.nonEmpty()) throw new DataRetrievalFailureException("Couldnt create movie: couldnt find linked actors: " + missingActorsIds);
-        if (missingDirectorsIds.nonEmpty()) throw new DataRetrievalFailureException("Couldnt create movie: couldnt find linked directors: " + missingActorsIds);
+        if (missingActorsIds.nonEmpty())
+            throw new DataRetrievalFailureException("Couldnt create movie: couldnt find linked actors: " + missingActorsIds);
+        if (missingDirectorsIds.nonEmpty())
+            throw new DataRetrievalFailureException("Couldnt create movie: couldnt find linked directors: " + missingActorsIds);
 
         val denormalizedMovie = movieEntity.withDirectors(directors.toJavaSet()).withCast(actors.toJavaSet());
         return movieService.createMovie(denormalizedMovie);
+    }
+
+    @Override
+    public List<MovieDto> fetchMovies(Integer page, Integer pageSize) {
+        return converter.convert(movieService.fetchMovies(page, pageSize), MovieDto.class);
     }
 
     @Override

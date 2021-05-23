@@ -20,6 +20,8 @@ public interface MovieFacade {
      */
     List<MovieDto> findRecommendedMoviesBasedOnMovie(Long movieId);
 
+
+
     /**
      * Finds movies recommended for a user based on movies they have already seen and liked
      * by people who liked the same movies as this user
@@ -55,6 +57,14 @@ public interface MovieFacade {
      */
     Long createMovie(CreateMovieDto movie);
 
+    /**
+     * Fetches movies with pagination
+     *
+     * @param page page number / offset
+     * @param pageSize size of the result
+     * @return Subset of movies
+     */
+    List<MovieDto>fetchMovies(Integer page, Integer pageSize);
 
     /**
      * Deletes a movie

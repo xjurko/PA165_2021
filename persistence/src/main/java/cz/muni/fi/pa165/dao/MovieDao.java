@@ -25,9 +25,11 @@ public interface MovieDao {
     /**
      * Fetch all movies
      *
-     * @return all movies currently stored
+     * @return subset of movies stored
+     * @param page page number / offset
+     * @param pageSize results set size
      */
-    List<Movie> fetchAll();
+    List<Movie> fetchPage(Integer page, Integer pageSize);
 
     /**
      * Find all movies containing substring in name

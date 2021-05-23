@@ -89,7 +89,7 @@ const Home: React.FC = () => {
                           </IonCardContent>
                       </IonCard>
                   ))}
-              <IonInfiniteScroll threshold="700px" disabled={disableInfiniteScroll}
+              <IonInfiniteScroll threshold="1600px" disabled={disableInfiniteScroll} //this threshold will need to be change d if the card size changes
                                  onIonInfinite={(e: CustomEvent<void>) => searchNext(e)}>
                   <IonInfiniteScrollContent
                       loadingText="Loading...">

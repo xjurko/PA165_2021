@@ -6,7 +6,6 @@ import cz.muni.fi.pa165.entity.Movie;
 import cz.muni.fi.pa165.entity.MovieRating;
 import cz.muni.fi.pa165.entity.Rating;
 import io.vavr.Tuple;
-import io.vavr.Tuple2;
 import io.vavr.collection.List;
 import io.vavr.collection.Vector;
 import io.vavr.control.Option;
@@ -91,5 +90,10 @@ public class MovieServiceImpl implements MovieService {
     @Override
     public void deleteMovie(Long movieId) {
         movieDao.findById(movieId).ifPresent(movieDao::remove);
+    }
+
+    @Override
+    public java.util.List<Movie> fetchMovies(Integer page, Integer pageSize) {
+        return movieDao.fetchPage(page, pageSize);
     }
 }
