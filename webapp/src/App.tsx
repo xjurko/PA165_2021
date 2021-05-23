@@ -27,7 +27,7 @@ import ActorDetails from "./pages/ActorDetails";
 
 const App: React.FC = () => (
   <IonApp>
-    <IonReactRouter>
+    <IonReactRouter basename="/pa165">
       <IonRouterOutlet>
         <Route exact path="/home" component={Home} />
         <Route exact path="/" component={Home} />

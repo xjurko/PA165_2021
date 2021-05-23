@@ -41,7 +41,7 @@ const Home: React.FC = () => {
             }
             const json = await response.json()
             setMovies(movies.concat(json))
-            setDisableInfiniteScroll(json.message.length < 10);
+            setDisableInfiniteScroll(json.length < 10);
             console.log(json)
         } catch (error) {
             console.error(error.message)
