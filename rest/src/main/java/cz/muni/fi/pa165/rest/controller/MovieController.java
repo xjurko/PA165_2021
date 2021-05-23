@@ -41,51 +41,17 @@ public class MovieController {
         return moviesFacade.findRecommendedMoviesBasedOnMovie(id);
     }
 
-    @RolesAllowed({Role.USER})
-    @GetMapping("/user/recommend")
-    List<MovieDto> getMoviesForUser(Authentication authentication) {
-        Long userId = (Long) authentication.getPrincipal();
-        return moviesFacade.findRecommendedMoviesForUser(userId);
-    }
-
     @GetMapping("/movie/find/{name}")
     List<MovieDto> findMovieByName(@PathVariable String name) {
         return moviesFacade.findMoviesByName(name);
     }
 
 
-    @RolesAllowed({Role.USER})
-    @GetMapping("/user/ratings/{movieId}")
-    Optional<MovieRatingDto> getUserRatingForMovie(@PathVariable Long movieId, Authentication authentication) {
-        Long userId = (Long) authentication.getPrincipal();
-        return movieRatingsFacade.findRatingByUserAndMovie(userId, movieId);
-    }
-
-
-    @RolesAllowed(Role.USER)
-    @GetMapping("/user/ratings/all")
-    List<MovieRatingDto> getAllUserRatings(Authentication authentication) {
-        Long userId = (Long) authentication.getPrincipal();
-        return movieRatingsFacade.findRatingsByUser(userId);
-    }
-
-    @RolesAllowed(Role.USER)
-    @DeleteMapping("/user/ratings/{movieId}")
-    void removeUserRating(@PathVariable Long movieId, Authentication authentication) {
-        Long userId = (Long) authentication.getPrincipal();
-        movieRatingsFacade.deleteRating(userId, movieId);
-    }
-
     @GetMapping("/movies/{page}")
     List<MovieDto> getMovies(@PathVariable Integer page) {
         return moviesFacade.fetchMovies(page, 10);
     }
 
-    @RolesAllowed(Role.USER)
-    @PostMapping("/user/ratings/{movieId}/{rating}")
-    void removeUserRating(@PathVariable Long movieId, @PathVariable Rating rating, Authentication authentication) {
-        Long userId = (Long) authentication.getPrincipal();
-        movieRatingsFacade.setRating(new MovieRatingDto(movieId, userId, rating));
-    }
+
 }
 
