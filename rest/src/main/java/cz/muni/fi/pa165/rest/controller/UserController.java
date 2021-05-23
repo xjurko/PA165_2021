@@ -65,5 +65,13 @@ public class UserController {
         Long userId = (Long) authentication.getPrincipal();
         movieRatingsFacade.setRating(new MovieRatingDto(movieId, userId, rating));
     }
+
+
+    @RolesAllowed(Role.ADMIN)
+    @DeleteMapping("/user/{id}")
+    void deleteUser(@PathVariable Long id) {
+        userFacade.removeUser(id);
+    }
+
 }
 
