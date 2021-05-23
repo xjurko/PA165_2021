@@ -8,6 +8,7 @@ import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.SignatureException;
 import io.jsonwebtoken.UnsupportedJwtException;
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
@@ -72,6 +73,10 @@ public class JwtUtil {
             .getBody();
 
         return claims.getExpiration();
+    }
+
+    public boolean isExpired(String token) {
+        return (new Date()).after(getExpirationDate(token));
     }
 
     public boolean validate(String token) {

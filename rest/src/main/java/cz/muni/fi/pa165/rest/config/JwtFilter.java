@@ -52,6 +52,11 @@ public class JwtFilter extends OncePerRequestFilter {
             return;
         }
 
+        if (!jwtTokenUtil.isExpired(token)) {
+            chain.doFilter(request, response);
+            return;
+        }
+
         // Get user identity and set it on the spring security context
         UserDetails userDetails = userFacade
             .findByName(jwtTokenUtil.getUsername(token))

@@ -30,15 +30,8 @@ import java.util.Set;
     prePostEnabled = true)
 @Slf4j
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-
     private final UserFacade userFacade;
     private final JwtFilter jwtTokenFilter;
-
-//        @Bean
-//    GrantedAuthorityDefaults grantedAuthorityDefaults() {
-//        return new GrantedAuthorityDefaults(""); // Remove the ROLE_ prefix
-//    }
-
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
@@ -60,13 +53,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http = http.cors().and().csrf().disable();
+        http = http.csrf().disable();
         http = http
             .sessionManagement()
             .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
             .and();
 
-        // Set unauthorized requests exception handler
         http = http
             .exceptionHandling()
             .authenticationEntryPoint(
@@ -79,14 +71,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             )
             .and();
 
-        // Set permissions on endpoints
         http.authorizeRequests()
-            // Our public endpoints
-//            .antMatchers("/auth/**").permitAll()
-            // Our private endpoints
             .anyRequest().permitAll();
 
-        // Add JWT token filter
         http.addFilterBefore(
             jwtTokenFilter,
             UsernamePasswordAuthenticationFilter.class
