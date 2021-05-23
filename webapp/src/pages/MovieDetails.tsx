@@ -1,4 +1,5 @@
 import {
+    IonButton,
     IonCard,
     IonCardContent,
     IonCardHeader,
@@ -16,7 +17,7 @@ import {
     IonToolbar,
     useIonViewWillEnter
 } from '@ionic/react';
-import {thumbsDownOutline, thumbsUp} from 'ionicons/icons'
+import {home, thumbsDownOutline, thumbsUp} from 'ionicons/icons'
 import './MovieDetails.css';
 import {RouteComponentProps} from "react-router";
 import {Link} from 'react-router-dom';
@@ -68,6 +69,9 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
         <IonPage>
             <IonHeader>
                 <IonToolbar>
+                    <IonButton color="light" fill="solid" routerLink="/">
+                        <IonIcon icon={home} />
+                    </IonButton>
                     <IonTitle>{movie.name} ({movie.releaseYear})</IonTitle>
                 </IonToolbar>
             </IonHeader>

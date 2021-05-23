@@ -9,11 +9,14 @@ import {
     IonPage,
     IonTitle,
     IonToolbar,
+    IonButton,
+    IonIcon,
     useIonViewWillEnter
 } from '@ionic/react';
 import './MovieDetails.css';
 import {RouteComponentProps} from "react-router";
 import {useState} from "react";
+import {home} from "ionicons/icons";
 
 type Actor = {
     id: number;
@@ -40,6 +43,9 @@ const ActorDetails: React.FC<ActorDetailsProps> = ({match}) => {
         <IonPage>
             <IonHeader>
                 <IonToolbar>
+                    <IonButton color="light" fill="solid" routerLink="/">
+                        <IonIcon icon={home} />
+                    </IonButton>
                     <IonTitle>{actor.fullName}</IonTitle>
                 </IonToolbar>
             </IonHeader>
