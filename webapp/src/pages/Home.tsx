@@ -9,6 +9,7 @@ import {
 import { IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent} from '@ionic/react';
 import {useIonViewWillEnter} from '@ionic/react';
 import {IonInfiniteScroll, IonInfiniteScrollContent} from '@ionic/react';
+import {IonGrid, IonRow, IonCol} from '@ionic/react';
 
 
 import './Home.css';
@@ -53,7 +54,7 @@ const Home: React.FC = () => {
         ($event.target as HTMLIonInfiniteScrollElement).complete();
     }
 
-    // hook to fetch data and display them on page diplay
+    // hook to fetch data and display them on page display
     useIonViewWillEnter(async () => {
         setPage(page + 1)
         await getMovies(page);
@@ -79,15 +80,22 @@ const Home: React.FC = () => {
 
                   {movies.map((movie) => (
                       <IonCard>
-                          <img src={movie.posterUrl} alt="noimage"/>
-                          <IonCardHeader>
-                              <IonCardTitle>{movie.name}</IonCardTitle>
-                              <IonCardSubtitle>{movie.releaseYear}</IonCardSubtitle>
-                          </IonCardHeader>
-
-                          <IonCardContent>
-                              {movie.caption}
-                          </IonCardContent>
+                          <IonGrid>
+                              <IonRow>
+                                  <IonCol>
+                                  <img src={movie.posterUrl} alt="noimage"/>
+                                  </IonCol>
+                                  <IonCol>
+                                      <IonCardHeader>
+                                          <IonCardTitle>{movie.name}</IonCardTitle>
+                                          <IonCardSubtitle>{movie.releaseYear}</IonCardSubtitle>
+                                      </IonCardHeader>
+                                      <IonCardContent>
+                                          {movie.caption}
+                                      </IonCardContent>
+                                  </IonCol>
+                              </IonRow>
+                          </IonGrid>
                       </IonCard>
                   ))}
               <IonInfiniteScroll threshold="1600px" disabled={disableInfiniteScroll} //this threshold will need to be change d if the card size changes
