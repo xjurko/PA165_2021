@@ -54,15 +54,24 @@ interface MovieDetailsProps extends RouteComponentProps<{
 }> {}
 
 const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
-    const [movie, setMovie] = useState<Movie>({id: 1, name: "", caption: "", img: "", releaseYear: 1,
-        runtimeMin: 1, cast: [], directors: [], externalRef: "", genres: [], posterUrl: ""})
+    const [movie, setMovie] = useState<Movie>({
+        id: 1, name: "", caption: "", img: "", releaseYear: 1,
+        runtimeMin: 1, cast: [], directors: [], externalRef: "", genres: [], posterUrl: ""
+    })
     const [recommended, setRecommendedMovies] = useState<Movie[]>([])
 
-    useIonViewWillEnter(async () => {
-        const response = await fetch("http://localhost:5000/movie/" + match.params.id);
-        const json = await response.json();
-        setMovie(json);
-        setRecommendedMovies(await (await fetch("http://localhost:5000/movie/recommend/" + match.params.id)).json());
+    useIonViewWillEnter(() => {
+        console.log("enter new movie page")
+        fetch("http://localhost:5000/movie/" + match.params.id)
+            .then(resp => resp.json())
+            .then(data => setMovie(data))
+
+
+        fetch("http://localhost:5000/movie/recommend/" + match.params.id)
+            .then(resp => resp.json())
+            .then(data => setRecommendedMovies(data))
+
+
     });
 
     return (
@@ -70,7 +79,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
             <IonHeader>
                 <IonToolbar>
                     <IonButton color="light" fill="solid" routerLink="/">
-                        <IonIcon icon={home} />
+                        <IonIcon icon={home}/>
                     </IonButton>
                     <IonTitle>{movie.name} ({movie.releaseYear})</IonTitle>
                 </IonToolbar>
@@ -78,7 +87,8 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
             <IonContent fullscreen>
                 <IonCard>
                     <IonCardHeader>
-                        <IonCardSubtitle class="card-subtitle">{movie.releaseYear} | {movie.runtimeMin}min</IonCardSubtitle>
+                        <IonCardSubtitle
+                            class="card-subtitle">{movie.releaseYear} | {movie.runtimeMin}min</IonCardSubtitle>
                         <IonCardTitle>{movie.name}</IonCardTitle>
                     </IonCardHeader>
                     <IonImg src={movie.posterUrl}/>
