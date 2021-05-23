@@ -1,6 +1,9 @@
 # PA165_2021
 PA165 project at MUNI
 
+## Local deployment
+mvn clean install & cd rest & mvn spring-boot:run
+
 ## Description  
 
 **_Movies Recommender Catalogue_** is a web application which provides a **catalogue** of movies and **recommendations** 

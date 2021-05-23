@@ -77,7 +77,6 @@ const Home: React.FC = () => {
                       <IonTitle size="large">This is an Ionic toolbar</IonTitle>
                   </IonToolbar>
               </IonHeader>
-
                   {movies.map((movie) => (
                       <IonCard>
                           <IonGrid>
