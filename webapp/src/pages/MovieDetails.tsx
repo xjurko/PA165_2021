@@ -58,7 +58,9 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 
     useIonViewWillEnter(async () => {
         const response = await fetch("http://localhost:5000/movie/" + match.params.id);
-        setMovie(await response.json());
+        const json = await response.json()
+        setMovie(json);
+        console.log(json);
         //TODO implement setRecommendedMovies
         //TODO implement actor redirect on click
     });
