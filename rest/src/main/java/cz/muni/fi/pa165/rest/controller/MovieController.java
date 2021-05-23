@@ -53,5 +53,11 @@ public class MovieController {
     }
 
 
+    @RolesAllowed({Role.ADMIN})
+    @DeleteMapping("/movie/{id}")
+    void deleteMovie(@PathVariable Long id) {
+        moviesFacade.removeMovie(id);
+    }
+
 }
 
