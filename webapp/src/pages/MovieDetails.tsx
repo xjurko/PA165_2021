@@ -1,93 +1,118 @@
 import {
-    IonContent,
-    IonHeader,
-    IonPage,
-    IonTitle,
-    IonToolbar,
     IonCard,
+    IonCardContent,
     IonCardHeader,
     IonCardSubtitle,
     IonCardTitle,
-    IonCardContent,
-    IonImg,
     IonChip,
+    IonContent,
+    IonHeader,
     IonIcon,
+    IonImg,
     IonLabel,
-    IonList
+    IonList,
+    IonPage,
+    IonTitle,
+    IonToolbar,
+    useIonViewWillEnter
 } from '@ionic/react';
-import {thumbsUp, thumbsDownOutline} from 'ionicons/icons'
+import {thumbsDownOutline, thumbsUp} from 'ionicons/icons'
 import './MovieDetails.css';
+import {RouteComponentProps} from "react-router";
+import {useState} from "react";
 
 type Actor = {
-    name: string;
-    img: string;
+    id: number;
+    fullName: string;
+    posterUrl: string;
 };
 
-type Film = {
+type Director = {
+    id: number;
     name: string;
-    img: string;
-    year: number;
-    duration: number;
+    posterUrl: string;
+};
+
+type Movie = {
+    id: number;
+    name: string;
     caption: string;
+    img: string;
+    releaseYear: number;
+    runtimeMin: number;
+    cast: Actor[];
+    directors: Director[];
+    externalRef: string;
+    genres: string[];
+    posterUrl: string;
 };
 
-const film: Film =
-    { name: "The Fall", img: 'http://placekitten.com/g/200/300',
-        year:1994, duration:165,
-        caption:"Keep close to Nature's heart... " +
-            "and break clear away, once in awhile," +
-            "and climb a mountain or spend a week in the woods." +
-            "Wash your spirit clean." };
-const genres: string[] = ["Drama", "Action"];
-const cast: Actor[] = [
-    { name: "Catinca Untaru", img: 'http://placekitten.com/g/200/300' },
-    { name: "Lee Pace", img: 'http://placekitten.com/g/200/300' },
-    { name: "Justine Waddell", img: 'http://placekitten.com/g/200/300' },
-    { name: "Sean Gilder", img: 'http://placekitten.com/g/200/300' }
-];
-const films: Film[] = [
-    { name: "The Rise", img: 'http://placekitten.com/g/200/300', year:0, caption:"", duration:0 },
-    { name: "The Sun", img: 'http://placekitten.com/g/200/300', year:0, caption:"", duration:0  },
-    { name: "The Snow", img: 'http://placekitten.com/g/200/300', year:0, caption:"", duration:0  },
-    { name: "The Night", img: 'http://placekitten.com/g/200/300', year:0, caption:"", duration:0  }
-];
+interface MovieDetailsProps extends RouteComponentProps<{
+    id: string;
+}> {}
 
-const MovieDetails: React.FC = () => {
+const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
+    const [movie, setMovie] = useState<Movie>({id: 1, name: "", caption: "", img: "", releaseYear: 1,
+        runtimeMin: 1, cast: [], directors: [], externalRef: "", genres: [], posterUrl: ""})
+    const [recommended, setRecommendedMovies] = useState<Movie[]>([])
+
+    useIonViewWillEnter(async () => {
+        const response = await fetch("http://localhost:5000/movie/" + match.params.id);
+        setMovie(await response.json());
+        //TODO implement setRecommendedMovies
+        //TODO implement actor redirect on click
+    });
+
     return (
         <IonPage>
             <IonHeader>
                 <IonToolbar>
-                    <IonTitle>{film.name} ({film.year})</IonTitle>
+                    <IonTitle>{movie.name} ({movie.releaseYear})</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
                 <IonCard>
                     <IonCardHeader>
-                        <IonCardSubtitle class="card-subtitle">{film.year} | {film.duration}min</IonCardSubtitle>
-                        <IonCardTitle>{film.name}</IonCardTitle>
+                        <IonCardSubtitle class="card-subtitle">{movie.releaseYear} | {movie.runtimeMin}min</IonCardSubtitle>
+                        <IonCardTitle>{movie.name}</IonCardTitle>
                     </IonCardHeader>
-                    <IonImg src={film.img}/>
+                    <IonImg src={movie.posterUrl}/>
                     <IonCardContent>
-                        {genres.map((genre, i) => (
+                        {movie.genres.map((genre, i) => (
                             <IonChip outline key={i}>
                                 <IonLabel>{genre}</IonLabel>
                             </IonChip>
                         ))}
-                        <p>{film.caption}</p>
+                        <p>{movie.caption}</p>
                         <IonIcon icon={thumbsUp} size="large"/>
                         <IonIcon icon={thumbsDownOutline} size="large"/>
                     </IonCardContent>
                 </IonCard>
                 <IonCard>
                     <IonCardHeader>
-                        <IonCardSubtitle>Cast & Crew</IonCardSubtitle>
+                        <IonCardSubtitle>Cast</IonCardSubtitle>
                     </IonCardHeader>
                     <IonCardContent>
                         <IonList class="lst">
-                            {cast.map((actor, i) => (
+                            {movie.cast.map((actor, i) => (
                                 <div className="itm" key={i}>
-                                    <IonImg src={actor.img} class="img"/>
-                                    <IonLabel>{actor.name}</IonLabel>
+                                    <IonImg src={actor.posterUrl} class="img"/>
+                                    <IonLabel>{actor.fullName}</IonLabel>
+                                </div>
+                            ))}
+                        </IonList>
+                    </IonCardContent>
+                </IonCard>
+                <IonCard>
+                    <IonCardHeader>
+                        <IonCardSubtitle>Directors</IonCardSubtitle>
+                    </IonCardHeader>
+                    <IonCardContent>
+                        <IonList class="lst">
+                            {movie.directors.map((director, i) => (
+                                <div className="itm" key={i}>
+                                    <IonImg src={director.posterUrl} class="img"/>
+                                    <IonLabel>{director.name}</IonLabel>
                                 </div>
                             ))}
                         </IonList>
@@ -99,12 +124,12 @@ const MovieDetails: React.FC = () => {
                     </IonCardHeader>
                     <IonCardContent>
                         <IonList class="lst">
-                            {films.length ? (films.map((film, i) => (
+                            {recommended.length ? (recommended.map((movie, i) => (
                                 <div className="itm" key={i}>
-                                    <IonImg src={film.img} class="img"/>
-                                    <IonLabel>{film.name}</IonLabel>
+                                    <IonImg src={movie.posterUrl} class="img"/>
+                                    <IonLabel>{movie.name}</IonLabel>
                                 </div>
-                            ))) : <div>No films found.</div>
+                            ))) : <div>No movies found.</div>
                             }
                         </IonList>
                     </IonCardContent>

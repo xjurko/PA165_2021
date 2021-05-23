@@ -4,7 +4,7 @@
 }
 
 .img {
-    height: 200px;
+    height: 150px;
     width: 150px;
 }
 .lst {
@@ -16,6 +16,7 @@
     color: black;
     text-align: center;
     padding-top: 15px;
+    padding-bottom: 15px;
     text-decoration: none;
 }
 .itm:hover {
