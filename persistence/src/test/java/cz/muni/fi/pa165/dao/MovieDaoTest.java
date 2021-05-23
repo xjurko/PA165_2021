@@ -100,7 +100,7 @@ public class MovieDaoTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void testStoreAndFindAll() {
-        List<Movie> storedMovie = movieDao.fetchAll();
+        List<Movie> storedMovie = movieDao.fetchPage(1, 50);
         Assert.assertTrue(storedMovie.containsAll(List.of(m1, m2)));
     }
 
@@ -122,12 +122,12 @@ public class MovieDaoTest extends AbstractTestNGSpringContextTests {
         em.flush();
         Assert.assertTrue(movieDao.findById(m1.getId()).isEmpty());
         Assert.assertTrue(movieDao.findById(m2.getId()).isPresent());
-        Assert.assertEquals(Set.copyOf(movieDao.fetchAll()), Set.of(m2, m3, m4));
+        Assert.assertEquals(Set.copyOf(movieDao.fetchPage(1, 50)), Set.of(m2, m3, m4));
 
         movieDao.remove(m2);
         em.flush();
         Assert.assertTrue(movieDao.findById(m2.getId()).isEmpty());
-        Assert.assertEquals(Set.copyOf(movieDao.fetchAll()), Set.of(m3, m4));
+        Assert.assertEquals(Set.copyOf(movieDao.fetchPage(1, 50)), Set.of(m3, m4));
     }
 
 

@@ -30,8 +30,11 @@ public class MovieDaoImpl implements MovieDao {
     }
 
     @Override
-    public List<Movie> fetchAll() {
-        return em.createQuery("select m from Movie m", Movie.class).getResultList();
+    public List<Movie> fetchPage(Integer page, Integer pageSize) {
+        return em.createQuery("select m from Movie m", Movie.class)
+            .setFirstResult((page - 1) * pageSize)
+            .setMaxResults(pageSize)
+            .getResultList();
     }
 
     @Override

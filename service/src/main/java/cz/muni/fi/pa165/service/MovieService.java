@@ -63,4 +63,15 @@ public interface MovieService {
      * @param movieId id of movie to be deleted
      */
     void deleteMovie(Long movieId);
+
+    /**
+     * Fetches movies with pagination
+     *
+     * @param page page number / offset
+     * @param pageSize size of the result
+     * @return Subset of movies
+     */
+    List<Movie>fetchMovies(Integer page, Integer pageSize);
+
+
 }
