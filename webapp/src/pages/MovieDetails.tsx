@@ -60,9 +60,9 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 
     useIonViewWillEnter(async () => {
         const response = await fetch("http://localhost:5000/movie/" + match.params.id);
-        const json = await response.json()
+        const json = await response.json();
         setMovie(json);
-        //TODO implement setRecommendedMovies
+        setRecommendedMovies(await (await fetch("http://localhost:5000/movie/recommend/" + match.params.id)).json());
     });
 
     return (
@@ -131,11 +131,13 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
                     </IonCardHeader>
                     <IonCardContent>
                         <IonList class="lst">
-                            {recommended.length ? (recommended.map((movie, i) => (
-                                <div className="itm" key={i}>
-                                    <IonImg src={movie.posterUrl} class="img"/>
-                                    <IonLabel>{movie.name}</IonLabel>
-                                </div>
+                            {recommended.length ? (recommended.map((mov, i) => (
+                                <Link to={"/movie/".concat(String(mov.id))} key={i}>
+                                    <div className="itm">
+                                        <IonImg src={mov.posterUrl} class="img"/>
+                                        <IonLabel>{mov.name}</IonLabel>
+                                    </div>
+                                </Link>
                             ))) : <div>No movies found.</div>
                             }
                         </IonList>
