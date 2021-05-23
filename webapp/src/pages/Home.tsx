@@ -1,19 +1,21 @@
 import {
     IonContent,
     IonFooter,
-    IonHeader,
+    IonHeader, IonItem,
     IonPage,
     IonTitle,
     IonToolbar
 } from '@ionic/react';
-import { IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent} from '@ionic/react';
+import {IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent} from '@ionic/react';
 import {useIonViewWillEnter} from '@ionic/react';
 import {IonInfiniteScroll, IonInfiniteScrollContent} from '@ionic/react';
+import {IonGrid, IonRow, IonCol} from '@ionic/react';
 
 
 import './Home.css';
 
-import React, { useState } from "react"
+import React, {useState} from "react"
+import {Link} from 'react-router-dom';
 
 interface Movie {
     id: number
@@ -53,57 +55,67 @@ const Home: React.FC = () => {
         ($event.target as HTMLIonInfiniteScrollElement).complete();
     }
 
-    // hook to fetch data and display them on page diplay
+    // hook to fetch data and display them on page display
     useIonViewWillEnter(async () => {
         setPage(page + 1)
         await getMovies(page);
     });
 
-  return (
-      <IonPage>
-          <IonHeader>
-              <IonToolbar>
-                  <IonTitle>Blank</IonTitle>
-              </IonToolbar>
-          </IonHeader>
+    return (
+        <IonPage>
+            <IonHeader>
+                <IonToolbar>
+                    <IonTitle>Blank</IonTitle>
+                </IonToolbar>
+            </IonHeader>
 
-          <IonContent>
-              <div className="ion-padding">
-                  <h1>Ionic React Rest Example</h1>
-              </div>
-              <IonHeader collapse="condense">
-                  <IonToolbar>
-                      <IonTitle size="large">This is an Ionic toolbar</IonTitle>
-                  </IonToolbar>
-              </IonHeader>
-                  {movies.map((movie) => (
-                      <IonCard>
-                          <img src={movie.posterUrl} alt="noimage"/>
-                          <IonCardHeader>
-                              <IonCardTitle>{movie.name}</IonCardTitle>
-                              <IonCardSubtitle>{movie.releaseYear}</IonCardSubtitle>
-                          </IonCardHeader>
+            <IonContent>
+                <div className="ion-padding">
+                    <h1>Ionic React Rest Example</h1>
+                </div>
+                <IonHeader collapse="condense">
+                    <IonToolbar>
+                        <IonTitle size="large">This is an Ionic toolbar</IonTitle>
+                    </IonToolbar>
+                </IonHeader>
+                {movies.map((movie, i) => (
+                    <Link to={"/movie/" + movie.id} key={i}  style={{ textDecoration: 'none' }}>
+                        <IonCard>
+                            <IonGrid>
+                                <IonRow>
+                                    <IonCol>
+                                        <img src={movie.posterUrl} alt="noimage"/>
+                                    </IonCol>
+                                    <IonCol>
+                                        <IonCardHeader>
+                                            <IonCardTitle>{movie.name}</IonCardTitle>
+                                            <IonCardSubtitle>{movie.releaseYear}</IonCardSubtitle>
+                                        </IonCardHeader>
+                                        <IonCardContent>
+                                            {movie.caption}
+                                        </IonCardContent>
+                                    </IonCol>
+                                </IonRow>
+                            </IonGrid>
+                        </IonCard>
+                    </Link>
+                ))}
+                <IonInfiniteScroll threshold="1600px"
+                                   disabled={disableInfiniteScroll} //this threshold will need to be change d if the card size changes
+                                   onIonInfinite={(e: CustomEvent<void>) => searchNext(e)}>
+                    <IonInfiniteScrollContent
+                        loadingText="Loading...">
+                    </IonInfiniteScrollContent>
+                </IonInfiniteScroll>
+            </IonContent>
 
-                          <IonCardContent>
-                              {movie.caption}
-                          </IonCardContent>
-                      </IonCard>
-                  ))}
-              <IonInfiniteScroll threshold="1600px" disabled={disableInfiniteScroll} //this threshold will need to be change d if the card size changes
-                                 onIonInfinite={(e: CustomEvent<void>) => searchNext(e)}>
-                  <IonInfiniteScrollContent
-                      loadingText="Loading...">
-                  </IonInfiniteScrollContent>
-              </IonInfiniteScroll>
-          </IonContent>
-
-          <IonFooter>
-              <IonToolbar>
-                  <IonTitle>Footer</IonTitle>
-              </IonToolbar>
-          </IonFooter>
-      </IonPage>
-  );
+            <IonFooter>
+                <IonToolbar>
+                    <IonTitle>Footer</IonTitle>
+                </IonToolbar>
+            </IonFooter>
+        </IonPage>
+    );
 };
 
 export default Home;
