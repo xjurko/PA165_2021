@@ -10,6 +10,8 @@ import cz.muni.fi.pa165.service.util.TestUtil;
 import io.vavr.collection.List;
 import io.vavr.collection.Vector;
 import lombok.val;
+import org.apache.commons.text.similarity.EditDistance;
+import org.apache.commons.text.similarity.SimilarityScore;
 import org.springframework.dao.DataAccessException;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
@@ -32,17 +34,19 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
 
     MovieDao movieDaoMock = mock(MovieDao.class);
     UserDao userDaoMock = mock(UserDao.class);
+    EditDistance<Double> similarityMock = mock(EditDistance.class);
 
     MovieService movieService;
 
     @BeforeClass
     public void init() {
-        movieService = new MovieServiceImpl(movieDaoMock, userDaoMock);
+        movieService = new MovieServiceImpl(movieDaoMock, userDaoMock, similarityMock);
     }
 
     @BeforeMethod
     public void resetMocks() {
         reset(movieDaoMock);
+        when(similarityMock.apply(anyString(), anyString())).thenReturn(1.0);
         reset(userDaoMock);
     }
 
