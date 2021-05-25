@@ -3,7 +3,9 @@ import {
     IonHeader,
     IonPage,
     IonTitle,
-    IonToolbar
+    IonToolbar,
+    IonSearchbar,
+    IonFooter
 } from '@ionic/react';
 import {IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent} from '@ionic/react';
 import {useIonViewWillEnter} from '@ionic/react';
@@ -29,6 +31,7 @@ interface Movie {
 const Home: React.FC = () => {
     const [movies, setMovies] = useState<Movie[]>([])
     const [page, setPage] = useState(1)
+    const [searchText, setSearchText] = useState('');
 
     const [disableInfiniteScroll, setDisableInfiniteScroll] = useState<boolean>(false);
 
@@ -69,6 +72,10 @@ const Home: React.FC = () => {
             </IonHeader>
 
             <IonContent>
+
+                <p>Default Searchbar</p>
+                <IonSearchbar value={searchText} onIonChange={e => setSearchText(e.detail.value!)  }></IonSearchbar>
+
                 <IonHeader collapse="condense">
                     <IonToolbar>
                         <IonTitle size="large">Movie Recommender</IonTitle>
