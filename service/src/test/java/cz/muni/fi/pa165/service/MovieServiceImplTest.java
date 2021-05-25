@@ -10,10 +10,7 @@ import cz.muni.fi.pa165.service.util.TestUtil;
 import io.vavr.collection.List;
 import io.vavr.collection.Vector;
 import lombok.val;
-import org.apache.commons.text.similarity.EditDistance;
 import org.apache.commons.text.similarity.JaroWinklerSimilarity;
-import org.apache.commons.text.similarity.SimilarityScore;
-import org.springframework.dao.DataAccessException;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
 import org.testng.Assert;
@@ -23,7 +20,6 @@ import org.testng.annotations.Test;
 
 import java.util.Optional;
 
-import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.*;
 
 /**
