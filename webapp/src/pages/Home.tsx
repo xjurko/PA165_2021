@@ -1,7 +1,6 @@
 import {
     IonContent,
-    IonFooter,
-    IonHeader, IonItem,
+    IonHeader,
     IonPage,
     IonTitle,
     IonToolbar
@@ -41,7 +40,7 @@ const Home: React.FC = () => {
             }
             const json = await response.json()
             setMovies(movies.concat(json))
-            setDisableInfiniteScroll(json.message.length < 10);
+            setDisableInfiniteScroll(json.length < 10);
             console.log(json)
         } catch (error) {
             console.error(error.message)
@@ -65,17 +64,14 @@ const Home: React.FC = () => {
         <IonPage>
             <IonHeader>
                 <IonToolbar>
-                    <IonTitle>Blank</IonTitle>
+                    <IonTitle>Catalogue</IonTitle>
                 </IonToolbar>
             </IonHeader>
 
             <IonContent>
-                <div className="ion-padding">
-                    <h1>Ionic React Rest Example</h1>
-                </div>
                 <IonHeader collapse="condense">
                     <IonToolbar>
-                        <IonTitle size="large">This is an Ionic toolbar</IonTitle>
+                        <IonTitle size="large">Movie Recommender</IonTitle>
                     </IonToolbar>
                 </IonHeader>
                 {movies.map((movie, i) => (
@@ -108,12 +104,6 @@ const Home: React.FC = () => {
                     </IonInfiniteScrollContent>
                 </IonInfiniteScroll>
             </IonContent>
-
-            <IonFooter>
-                <IonToolbar>
-                    <IonTitle>Footer</IonTitle>
-                </IonToolbar>
-            </IonFooter>
         </IonPage>
     );
 };
