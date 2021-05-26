@@ -19,7 +19,7 @@ import java.util.Optional;
  */
 
 @Repository
-public class MovieDaoImpl implements MovieDao {
+    public class MovieDaoImpl implements MovieDao {
 
     @PersistenceContext
     private EntityManager em;
@@ -31,16 +31,23 @@ public class MovieDaoImpl implements MovieDao {
 
     @Override
     public List<Movie> fetchPage(Integer page, Integer pageSize) {
-        return em.createQuery("select m from Movie m", Movie.class)
+        return em.createQuery("select m from Movie m order by m.releaseYear desc, m.id", Movie.class)
             .setFirstResult((page - 1) * pageSize)
             .setMaxResults(pageSize)
             .getResultList();
     }
 
+
     @Override
     public List<Movie> findByName(String name) {
         return em.createQuery("select m from Movie m where upper(m.name) like :name", Movie.class)
             .setParameter("name", MatchMode.ANYWHERE.toMatchString(name.toUpperCase()))
+            .getResultList();
+    }
+
+    @Override
+    public List<Movie> fetchAll() {
+        return em.createQuery("select m from Movie m order by m.releaseYear desc, m.id", Movie.class)
             .getResultList();
     }
 

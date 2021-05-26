@@ -6,13 +6,17 @@ import cz.muni.fi.pa165.entity.Movie;
 import cz.muni.fi.pa165.entity.MovieRating;
 import cz.muni.fi.pa165.entity.Rating;
 import io.vavr.Tuple;
+import io.vavr.collection.Array;
 import io.vavr.collection.List;
 import io.vavr.collection.Vector;
 import io.vavr.control.Option;
 import lombok.RequiredArgsConstructor;
 import lombok.val;
+import org.apache.commons.text.similarity.SimilarityScore;
 import org.springframework.stereotype.Service;
 
+import javax.inject.Inject;
+import java.util.Locale;
 import java.util.Optional;
 
 
@@ -24,9 +28,29 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class MovieServiceImpl implements MovieService {
 
-    final MovieDao movieDao;
-    final UserDao userDao;
+    private final MovieDao movieDao;
+    private final UserDao userDao;
+    private final SimilarityScore<Double> similarityMatcher;
 
+    private final boolean similarityReversed;
+
+    @Inject
+    MovieServiceImpl(
+        MovieDao movieDao,
+        UserDao userDao,
+        SimilarityScore<Double> similarity
+    ) {
+        this.movieDao = movieDao;
+        this.userDao = userDao;
+        this.similarityMatcher = similarity;
+        this.similarityReversed = isSimilarityReversed();
+    }
+
+    private boolean isSimilarityReversed() {
+        val s1 = similarityMatcher.apply("abcd", "xyzq");
+        val s2 = similarityMatcher.apply("xxxx", "xxxx");
+        return s2 < s1;
+    }
 
     private Vector<Movie> getRecommendedMoviesBasedOnMovie(Movie movie) {
         return Vector.ofAll(movie.getRatings())
@@ -76,9 +100,24 @@ public class MovieServiceImpl implements MovieService {
         return sortAndCountMoviesByFrequency(recommendedMovies).asJava();
     }
 
+    private Double getSimilarityMatcher(String movieName, String searchTerm) {
+        val tokens = Array.of(movieName.split("\\s"));
+        val modifier = movieName.toLowerCase().contains(searchTerm.toLowerCase()) ? 0.5 : 0.0;
+        return
+            tokens.map(token -> similarityMatcher.apply(token.toLowerCase(), searchTerm.toLowerCase()))
+                .max()
+                .getOrElse(0.0)
+                + modifier;
+    }
+
     @Override
-    public java.util.List<Movie> findMoviesByName(String name) {
-        return movieDao.findByName(name);
+    public java.util.List<Movie> findMoviesByName(String searchTerm) {
+        val movies = Vector.ofAll(movieDao.fetchAll()).sortBy(m -> getSimilarityMatcher(m.getName(), searchTerm));
+        if (similarityReversed) {
+            return movies.take(20).asJava();
+        } else {
+            return movies.reverse().take(20).asJava();
+        }
     }
 
     @Override
