@@ -10,7 +10,7 @@ import cz.muni.fi.pa165.service.util.TestUtil;
 import io.vavr.collection.List;
 import io.vavr.collection.Vector;
 import lombok.val;
-import org.springframework.dao.DataAccessException;
+import org.apache.commons.text.similarity.JaroWinklerSimilarity;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
 import org.testng.Assert;
@@ -20,7 +20,6 @@ import org.testng.annotations.Test;
 
 import java.util.Optional;
 
-import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.*;
 
 /**
@@ -37,7 +36,7 @@ public class MovieServiceImplTest extends AbstractTransactionalTestNGSpringConte
 
     @BeforeClass
     public void init() {
-        movieService = new MovieServiceImpl(movieDaoMock, userDaoMock);
+        movieService = new MovieServiceImpl(movieDaoMock, userDaoMock, new JaroWinklerSimilarity());
     }
 
     @BeforeMethod

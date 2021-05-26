@@ -41,6 +41,14 @@ public interface MovieDao {
 
 
     /**
+     * Fetch all movies
+     *
+     * @return all movies in the system
+     */
+    List<Movie> fetchAll();
+
+
+    /**
      * Find a single movie by its Id
      *
      * @param id id of movie
