@@ -71,7 +71,6 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
             .then(resp => resp.json())
             .then(data => setRecommendedMovies(data))
 
-
     });
 
     return (
