@@ -5,19 +5,16 @@ import {
     IonCardHeader,
     IonCardSubtitle,
     IonCardTitle,
-    IonChip, IonCol,
+    IonCol,
     IonContent, IonGrid,
     IonHeader,
     IonIcon,
-    IonImg, IonInfiniteScroll, IonInfiniteScrollContent,
-    IonLabel,
-    IonList,
     IonPage, IonRow, IonSearchbar,
     IonTitle,
     IonToolbar,
     useIonViewWillEnter
 } from '@ionic/react';
-import {home, search, thumbsDownOutline, thumbsUp} from 'ionicons/icons'
+import {home, search} from 'ionicons/icons'
 import './MovieDetails.css';
 import {RouteComponentProps} from "react-router";
 import {Link} from 'react-router-dom';
@@ -55,10 +52,7 @@ interface SearchMoviesProps extends RouteComponentProps<{
 
 const SearchMovies: React.FC<SearchMoviesProps> = ({match}) => {
     const [movies, setMovies] = useState<Movie[]>([])
-    const [page, setPage] = useState(1)
     const [searchText, setSearchText] = useState('');
-
-    const [disableInfiniteScroll, setDisableInfiniteScroll] = useState<boolean>(false);
 
     const getMovies = async () => {
         try {
@@ -74,9 +68,7 @@ const SearchMovies: React.FC<SearchMoviesProps> = ({match}) => {
         }
     }
 
-    // hook to fetch data and display them on page display
     useIonViewWillEnter(async () => {
-        //setPage(page + 1)
         await getMovies();
     });
 
