@@ -52,7 +52,7 @@ public class JwtFilter extends OncePerRequestFilter {
             return;
         }
 
-        if (!jwtTokenUtil.isExpired(token)) {
+        if (jwtTokenUtil.isExpired(token)) {
             chain.doFilter(request, response);
             return;
         }
