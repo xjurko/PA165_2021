@@ -98,34 +98,36 @@ const Home: React.FC = () => {
 				<IonToolbar>
 					<IonGrid>
 						<IonRow>
-						<IonCol size='1'/>
-						<IonCol>
-							<IonSearchbar debounce={250} onIonClear={() => setSearchResult([])}
-							              onIonChange={e => findMovies(e.detail.value!)} animated
-							              placeholder="Find Movie">
-							</IonSearchbar>
-						</IonCol>
-						<IonCol size='1'/>
+							<IonCol size='1'/>
+							<IonCol>
+								<IonSearchbar debounce={250} onIonClear={() => setSearchResult([])}
+								              onIonChange={e => findMovies(e.detail.value!)} animated
+								              placeholder="Find Movie">
+								</IonSearchbar>
+							</IonCol>
+							<IonCol size='1'/>
 						</IonRow>
 					</IonGrid>
 
 				</IonToolbar>
 				<IonList style={{position: 'absolute', zIndex: 1000}}>
 					{searchResult.map((movie, i) =>
-						<Link to={"/movie/" + movie.id} key={i} style={{textDecoration: 'none'}}>
-							<IonGrid>
-								<IonRow>
-									<IonCol size={'2'}>
-										<IonImg src={movie.posterUrl}/>
-									</IonCol>
-									<IonCol>
-										<IonLabel>
-											{movie.name} ({movie.releaseYear})
-										</IonLabel>
-									</IonCol>
-								</IonRow>
-							</IonGrid>
-						</Link>
+						<IonItem>
+							<Link to={"/movie/" + movie.id} key={i} style={{textDecoration: 'none', color: 'none'}}>
+								<IonGrid>
+									<IonRow>
+										<IonCol size={'2'}>
+											<IonImg src={movie.posterUrl}/>
+										</IonCol>
+										<IonCol>
+											<IonLabel>
+												{movie.name} ({movie.releaseYear})
+											</IonLabel>
+										</IonCol>
+									</IonRow>
+								</IonGrid>
+							</Link>
+						</IonItem>
 					)}
 				</IonList>
 			</IonHeader>
