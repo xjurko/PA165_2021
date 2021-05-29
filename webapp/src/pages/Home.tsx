@@ -1,4 +1,5 @@
 import {
+	IonChip,
 	IonContent,
 	IonHeader,
 	IonPage,
@@ -6,7 +7,7 @@ import {
 	IonToolbar,
 	IonSearchbar,
 	IonButton,
-	IonIcon, IonList, IonItem, IonLabel, IonImg, IonRouterLink, IonBackdrop
+	IonIcon, IonList, IonItem, IonLabel, IonImg, IonRouterLink, IonBackdrop, IonButtons
 } from '@ionic/react';
 import {IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent} from '@ionic/react';
 import {useIonViewWillEnter} from '@ionic/react';
@@ -18,6 +19,8 @@ import './Home.css';
 
 import React, {useState} from "react"
 import {Link} from 'react-router-dom';
+import {normalizeGenre, normalizeRuntime} from "../utils";
+import {Actor, Director} from "./MovieDetails";
 
 interface Movie {
 	id: number
@@ -26,6 +29,8 @@ interface Movie {
 	caption: string
 	posterUrl: string
 	runtimeMin: number
+	cast: Actor[]
+	directors: Director[]
 	genres: string[]
 }
 
@@ -86,20 +91,26 @@ const Home: React.FC = () => {
 		setSearchResult([])
 	}
 
+
 	return (
 		<IonPage>
 			<IonHeader>
 				<IonToolbar>
-					<IonTitle>Catalogue</IonTitle>
-				</IonToolbar>
-			</IonHeader>
+					<IonGrid>
+						<IonRow>
+						<IonCol size='1'/>
+						<IonCol>
+							<IonSearchbar debounce={250} onIonClear={() => setSearchResult([])}
+							              onIonChange={e => findMovies(e.detail.value!)} animated
+							              placeholder="Find Movie">
+							</IonSearchbar>
+						</IonCol>
+						<IonCol size='1'/>
+						</IonRow>
+					</IonGrid>
 
-			<IonContent>
-				<IonSearchbar debounce={250} onIonClear={() => setSearchResult([])}
-				              onIonChange={e => findMovies(e.detail.value!)} animated
-				              placeholder="Find Movie">
-				</IonSearchbar>
-				<IonList style={{position: 'fixed', zIndex: 100}}>
+				</IonToolbar>
+				<IonList style={{position: 'absolute', zIndex: 1000}}>
 					{searchResult.map((movie, i) =>
 						<Link to={"/movie/" + movie.id} key={i} style={{textDecoration: 'none'}}>
 							<IonGrid>
@@ -117,10 +128,14 @@ const Home: React.FC = () => {
 						</Link>
 					)}
 				</IonList>
+			</IonHeader>
+
+			<IonContent>
+
 
 				<IonHeader collapse="condense">
 					<IonToolbar>
-						<IonTitle size="large">Movie Recommender</IonTitle>
+						<IonTitle size="large">Latest Movies</IonTitle>
 					</IonToolbar>
 				</IonHeader>
 
@@ -130,16 +145,35 @@ const Home: React.FC = () => {
 							<IonGrid>
 								<IonRow>
 									<IonCol>
-										<img src={movie.posterUrl} alt="noimage"/>
+										<IonCardTitle>{movie.name}</IonCardTitle>
 									</IonCol>
-									<IonCol>
-										<IonCardHeader>
-											<IonCardTitle>{movie.name}</IonCardTitle>
-											<IonCardSubtitle>{movie.releaseYear}</IonCardSubtitle>
-										</IonCardHeader>
-										<IonCardContent>
-											{movie.caption}
-										</IonCardContent>
+								</IonRow>
+								<IonRow>
+									{movie.genres.map((genre, i) => (
+										<IonChip outline key={i}>
+											<IonLabel>{normalizeGenre(genre)}</IonLabel>
+										</IonChip>
+									))}
+								</IonRow>
+								<IonRow>
+									<IonCol size="5">
+										<IonImg src={movie.posterUrl} alt="noimage"/>
+									</IonCol>
+									<IonCol size="7">
+										<IonGrid>
+											<IonRow>
+												<IonCol>{movie.releaseYear}</IonCol>
+												<IonCol>{normalizeRuntime(movie.runtimeMin)}</IonCol>
+											</IonRow>
+											<IonRow><br/></IonRow>
+											<IonRow>
+												Staring: {movie.cast.map(_ => _.fullName).join(", ")}
+											</IonRow>
+											<IonRow><br/></IonRow>
+											<IonRow>
+												Directed by: {movie.directors.map(_ => _.name).join(", ")}
+											</IonRow>
+										</IonGrid>
 									</IonCol>
 								</IonRow>
 							</IonGrid>

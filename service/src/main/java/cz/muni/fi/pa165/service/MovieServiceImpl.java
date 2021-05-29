@@ -114,9 +114,9 @@ public class MovieServiceImpl implements MovieService {
     public java.util.List<Movie> findMoviesByName(String searchTerm) {
         val movies = Vector.ofAll(movieDao.fetchAll()).sortBy(m -> getSimilarityMatcher(m.getName(), searchTerm));
         if (similarityReversed) {
-            return movies.take(20).asJava();
+            return movies.take(10).asJava();
         } else {
-            return movies.reverse().take(20).asJava();
+            return movies.reverse().take(10).asJava();
         }
     }
 
