@@ -24,6 +24,7 @@ import './theme/variables.css';
 import {ModalLoginTest} from "./pages/ModalLoginTest";
 import MovieDetails from "./pages/MovieDetails";
 import ActorDetails from "./pages/ActorDetails";
+import SearchMovies from "./pages/SearchMovies";
 
 const App: React.FC = () => (
   <IonApp>
@@ -36,6 +37,7 @@ const App: React.FC = () => (
         <Route exact path="/login">
           <ModalLoginTest />
         </Route>
+        <Route exact path="/find/:str" component={SearchMovies} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

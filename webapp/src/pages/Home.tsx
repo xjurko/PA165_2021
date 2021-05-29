@@ -4,13 +4,16 @@ import {
 	IonHeader, IonLabel,
 	IonPage,
 	IonTitle,
-	IonToolbar
+	IonToolbar,
+	IonSearchbar,
+	IonButton,
+	IonIcon, IonList, IonItem, IonLabel, IonImg, IonRouterLink, IonBackdrop
 } from '@ionic/react';
 import {IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent} from '@ionic/react';
 import {useIonViewWillEnter} from '@ionic/react';
 import {IonInfiniteScroll, IonInfiniteScrollContent} from '@ionic/react';
 import {IonGrid, IonRow, IonCol} from '@ionic/react';
-
+import {search} from 'ionicons/icons'
 
 import './Home.css';
 
@@ -65,6 +68,33 @@ const Home: React.FC = () => {
 		await getMovies(page);
 	});
 
+	const [searchResult, setSearchResult] = useState<Movie[]>([])
+	const [backdropEnabled, setBackdropEnabled] = useState(false)
+
+	const findMovies: (name: string) => void = (name) => {
+		if (name.length > 0)
+			fetch(`http://localhost:5000/movie/find/${name}`).then(resp => {
+					if (resp.ok) {
+						resp.json().then(movies => {
+								setBackdropEnabled(true)
+								setSearchResult(movies.slice(0, 5))
+							}
+						)
+					}
+				}
+			)
+		else clearResults()
+	}
+
+	const clearResults = () => {
+		setBackdropEnabled(false)
+		setSearchResult([])
+	}
+
+
+
+
+
 	return (
 		<IonPage>
 			<IonHeader>
@@ -74,6 +104,29 @@ const Home: React.FC = () => {
 			</IonHeader>
 
 			<IonContent>
+				<IonSearchbar debounce={250} onIonClear={() => setSearchResult([])}
+				              onIonChange={e => findMovies(e.detail.value!)} animated
+				              placeholder="Find Movie">
+				</IonSearchbar>
+				<IonList style={{position: 'fixed', zIndex: 100}}>
+					{searchResult.map((movie, i) =>
+						<Link to={"/movie/" + movie.id} key={i} style={{textDecoration: 'none'}}>
+							<IonGrid>
+								<IonRow>
+									<IonCol size={'2'}>
+										<IonImg src={movie.posterUrl}/>
+									</IonCol>
+									<IonCol>
+										<IonLabel>
+											{movie.name} ({movie.releaseYear})
+										</IonLabel>
+									</IonCol>
+								</IonRow>
+							</IonGrid>
+						</Link>
+					)}
+				</IonList>
+
 				<IonHeader collapse="condense">
 					<IonToolbar>
 						<IonTitle size="large">Movie Recommender</IonTitle>
