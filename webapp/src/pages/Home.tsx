@@ -1,13 +1,13 @@
 import {
 	IonChip,
 	IonContent,
-	IonHeader, IonLabel,
+	IonHeader,
 	IonPage,
 	IonTitle,
 	IonToolbar,
 	IonSearchbar,
 	IonButton,
-	IonIcon, IonList, IonItem, IonLabel, IonImg, IonRouterLink, IonBackdrop
+	IonIcon, IonList, IonItem, IonLabel, IonImg, IonRouterLink, IonBackdrop, IonButtons
 } from '@ionic/react';
 import {IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent} from '@ionic/react';
 import {useIonViewWillEnter} from '@ionic/react';
@@ -92,23 +92,25 @@ const Home: React.FC = () => {
 	}
 
 
-
-
-
 	return (
 		<IonPage>
 			<IonHeader>
 				<IonToolbar>
-					<IonTitle>Catalogue</IonTitle>
-				</IonToolbar>
-			</IonHeader>
+					<IonGrid>
+						<IonRow>
+						<IonCol size='1'/>
+						<IonCol>
+							<IonSearchbar debounce={250} onIonClear={() => setSearchResult([])}
+							              onIonChange={e => findMovies(e.detail.value!)} animated
+							              placeholder="Find Movie">
+							</IonSearchbar>
+						</IonCol>
+						<IonCol size='1'/>
+						</IonRow>
+					</IonGrid>
 
-			<IonContent>
-				<IonSearchbar debounce={250} onIonClear={() => setSearchResult([])}
-				              onIonChange={e => findMovies(e.detail.value!)} animated
-				              placeholder="Find Movie">
-				</IonSearchbar>
-				<IonList style={{position: 'fixed', zIndex: 100}}>
+				</IonToolbar>
+				<IonList style={{position: 'absolute', zIndex: 1000}}>
 					{searchResult.map((movie, i) =>
 						<Link to={"/movie/" + movie.id} key={i} style={{textDecoration: 'none'}}>
 							<IonGrid>
@@ -126,12 +128,17 @@ const Home: React.FC = () => {
 						</Link>
 					)}
 				</IonList>
+			</IonHeader>
+
+			<IonContent>
+
 
 				<IonHeader collapse="condense">
 					<IonToolbar>
-						<IonTitle size="large">Movie Recommender</IonTitle>
+						<IonTitle size="large">Latest Movies</IonTitle>
 					</IonToolbar>
 				</IonHeader>
+
 				{movies.map((movie, i) => (
 					<Link to={"/movie/" + movie.id} key={i} style={{textDecoration: 'none'}}>
 						<IonCard>
@@ -150,7 +157,7 @@ const Home: React.FC = () => {
 								</IonRow>
 								<IonRow>
 									<IonCol size="5">
-										<img src={movie.posterUrl} alt="noimage"/>
+										<IonImg src={movie.posterUrl} alt="noimage"/>
 									</IonCol>
 									<IonCol size="7">
 										<IonGrid>
@@ -159,7 +166,6 @@ const Home: React.FC = () => {
 												<IonCol>{normalizeRuntime(movie.runtimeMin)}</IonCol>
 											</IonRow>
 											<IonRow><br/></IonRow>
-
 											<IonRow>
 												Staring: {movie.cast.map(_ => _.fullName).join(", ")}
 											</IonRow>
@@ -168,10 +174,6 @@ const Home: React.FC = () => {
 												Directed by: {movie.directors.map(_ => _.name).join(", ")}
 											</IonRow>
 										</IonGrid>
-										<IonCardSubtitle></IonCardSubtitle>
-										<IonCardContent>
-											{/*{movie.caption}*/}
-										</IonCardContent>
 									</IonCol>
 								</IonRow>
 							</IonGrid>

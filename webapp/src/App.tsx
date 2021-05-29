@@ -25,6 +25,7 @@ import {ModalLoginTest} from "./pages/ModalLoginTest";
 import MovieDetails from "./pages/MovieDetails";
 import ActorDetails from "./pages/ActorDetails";
 import SearchMovies from "./pages/SearchMovies";
+import {ToolbarExample} from "./pages/Header";
 
 const App: React.FC = () => (
   <IonApp>
@@ -34,6 +35,7 @@ const App: React.FC = () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/movie/:id" component={MovieDetails} />
         <Route exact path="/actor/:id" component={ActorDetails} />
+        <Route exact path="/header" component={ToolbarExample} />
         <Route exact path="/login">
           <ModalLoginTest />
         </Route>
