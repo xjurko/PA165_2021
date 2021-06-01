@@ -2,26 +2,11 @@
 
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
-import {
-	IonCol,
-	IonGrid,
-	IonHeader,
-	IonIcon,
-	IonImg,
-	IonItem,
-	IonLabel,
-	IonList,
-	IonRow,
-	IonToolbar, useIonModal
-} from '@ionic/react';
+import {IonCol, IonGrid, IonHeader, IonItem, IonLabel, IonList, IonRow, IonToolbar} from '@ionic/react';
 import {Searchbar} from "./Searchbar";
 import {Movie} from "../utils";
-import {personCircle} from "ionicons/icons";
-import {LoginCard} from "./LoginCard";
 import "./LoginCard.css"
-import jwt_decode from "jwt-decode";
 import {LoginLogout} from "./LoginLogout";
-
 
 
 export const Toolbar: React.FC = () => {
