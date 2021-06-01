@@ -55,12 +55,14 @@ export const Toolbar: React.FC = () => {
 		<IonHeader>
 			<IonToolbar>
 				<IonGrid >
-					<IonRow style={{display: 'flex'}} className="ion-text-center ion-justify-content-center ion-align-items-center">
-						<IonCol size='2'/>
+					<IonRow>
+						<IonCol size='2' style={{display: 'flex'}} className="ion-text-center ion-justify-content-center ion-align-items-center">
+							<img src="assets/Logo.svg"/>
+						</IonCol>
 						<IonCol>
 							<Searchbar resultsCallback={setSearchResult}/>
 						</IonCol>
-						<IonCol size='2' className="ion-text-center ion-justify-content-center ion-align-items-center">
+						<IonCol size='2' style={{display: 'flex'}} className="ion-text-center ion-justify-content-center ion-align-items-center">
 								<LoginLogout>
 								</LoginLogout>
 						</IonCol>

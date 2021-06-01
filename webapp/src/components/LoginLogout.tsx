@@ -44,7 +44,7 @@ export const LoginLogout: React.FC = () => {
 	});
 
 	const [user, setUser] = useState<string | null>(null)
-	const getLogoutMessage = () => user
+	const getLogoutMessage = () => `Logged in as ${user}`
 
 
 	const [spawnLogoutModal, dismissLogoutModal] = useIonModal(LogoutCard, {
