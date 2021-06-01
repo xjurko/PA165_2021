@@ -1,39 +1,28 @@
 import {
+	IonCard,
+	IonCardTitle,
 	IonChip,
+	IonCol,
 	IonContent,
+	IonGrid,
 	IonHeader,
+	IonImg,
+	IonInfiniteScroll,
+	IonInfiniteScrollContent,
+	IonLabel,
 	IonPage,
+	IonRow,
 	IonTitle,
 	IonToolbar,
-	IonSearchbar,
-	IonButton,
-	IonIcon, IonList, IonItem, IonLabel, IonImg, IonRouterLink, IonBackdrop, IonButtons
+	useIonViewWillEnter
 } from '@ionic/react';
-import {IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent} from '@ionic/react';
-import {useIonViewWillEnter} from '@ionic/react';
-import {IonInfiniteScroll, IonInfiniteScrollContent} from '@ionic/react';
-import {IonGrid, IonRow, IonCol} from '@ionic/react';
-import {search} from 'ionicons/icons'
 
 import './Home.css';
 
 import React, {useState} from "react"
 import {Link} from 'react-router-dom';
-import {normalizeGenre, normalizeRuntime} from "../utils";
-import {Actor, Director} from "./MovieDetails";
-import {Searchbar} from "../components/Searchbar";
-
-export interface Movie {
-	id: number
-	name: string
-	releaseYear: number
-	caption: string
-	posterUrl: string
-	runtimeMin: number
-	cast: Actor[]
-	directors: Director[]
-	genres: string[]
-}
+import {Movie, normalizeGenre, normalizeRuntime} from "../utils";
+import {Toolbar} from "../components/Toolbar";
 
 const Home: React.FC = () => {
 	const [movies, setMovies] = useState<Movie[]>([])
@@ -69,50 +58,10 @@ const Home: React.FC = () => {
 		await getMovies(page);
 	});
 
-	const [searchResult, setSearchResult] = useState<Movie[]>([])
-	const [backdropEnabled, setBackdropEnabled] = useState(false)
-
-
 	return (
 		<IonPage>
-			<IonHeader>
-				<IonToolbar>
-					<IonGrid>
-						<IonRow>
-							<IonCol size='1'/>
-							<IonCol>
-								<Searchbar resultsCallback={setSearchResult}/>
-							</IonCol>
-							<IonCol size='1'/>
-						</IonRow>
-					</IonGrid>
-
-				</IonToolbar>
-				<IonList style={{position: 'absolute', zIndex: 1000}}>
-					{searchResult.map((movie, i) =>
-						<IonItem>
-							<Link to={"/movie/" + movie.id} key={i} style={{textDecoration: 'none', color: 'none'}}>
-								<IonGrid>
-									<IonRow>
-										<IonCol size={'2'}>
-											<IonImg src={movie.posterUrl}/>
-										</IonCol>
-										<IonCol>
-											<IonLabel>
-												{movie.name} ({movie.releaseYear})
-											</IonLabel>
-										</IonCol>
-									</IonRow>
-								</IonGrid>
-							</Link>
-						</IonItem>
-					)}
-				</IonList>
-			</IonHeader>
-
+			<Toolbar/>
 			<IonContent>
-
-
 				<IonHeader collapse="condense">
 					<IonToolbar>
 						<IonTitle size="large">Latest Movies</IonTitle>

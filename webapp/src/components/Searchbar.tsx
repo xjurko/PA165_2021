@@ -1,9 +1,9 @@
 /* Using with IonModal Component */
 
-import React, {useState} from 'react';
+import React from 'react';
 import "./LoginCard.css"
 import {IonSearchbar} from '@ionic/react';
-import {Movie} from "../pages/Home";
+import {Movie} from "../utils";
 
 
 export const Searchbar: React.FC<{resultsCallback: (movies:Movie[]) => void}>  = ({resultsCallback}) => {
