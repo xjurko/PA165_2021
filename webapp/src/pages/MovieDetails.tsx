@@ -22,34 +22,11 @@ import './MovieDetails.css';
 import {RouteComponentProps} from "react-router";
 import {Link} from 'react-router-dom';
 import {useState} from "react";
-import {normalizeGenre, normalizeRuntime} from "../utils";
+import {Movie, normalizeGenre, normalizeRuntime} from "../utils";
 import {LoginCard} from "../components/LoginCard";
+import {Toolbar} from "../components/Toolbar";
 
-export type Actor = {
-	id: number;
-	fullName: string;
-	posterUrl: string;
-};
 
-export type Director = {
-	id: number;
-	name: string;
-	posterUrl: string;
-};
-
-type Movie = {
-	id: number;
-	name: string;
-	caption: string;
-	img: string;
-	releaseYear: number;
-	runtimeMin: number;
-	cast: Actor[];
-	directors: Director[];
-	externalRef: string;
-	genres: string[];
-	posterUrl: string;
-};
 
 const liked = 1
 const disliked = 2
@@ -161,20 +138,9 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 
 		const [rating, setRating] = useState(notRated)
 
-
-		const header =
-			<IonHeader>
-				<IonToolbar>
-					<IonButton color="light" fill="solid" routerLink="/">
-						<IonIcon icon={home}/>
-					</IonButton>
-					<IonTitle>{movie.name} ({movie.releaseYear})</IonTitle>
-				</IonToolbar>
-			</IonHeader>
-
 		return (
 			<IonPage>
-				{header}
+				<Toolbar/>
 				<IonContent fullscreen>
 					<IonCard>
 						<IonCardHeader>
