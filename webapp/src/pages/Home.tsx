@@ -21,8 +21,9 @@ import React, {useState} from "react"
 import {Link} from 'react-router-dom';
 import {normalizeGenre, normalizeRuntime} from "../utils";
 import {Actor, Director} from "./MovieDetails";
+import {Searchbar} from "../components/Searchbar";
 
-interface Movie {
+export interface Movie {
 	id: number
 	name: string
 	releaseYear: number
@@ -71,26 +72,6 @@ const Home: React.FC = () => {
 	const [searchResult, setSearchResult] = useState<Movie[]>([])
 	const [backdropEnabled, setBackdropEnabled] = useState(false)
 
-	const findMovies: (name: string) => void = (name) => {
-		if (name.length > 0)
-			fetch(`http://localhost:5000/movie/find/${name}`).then(resp => {
-					if (resp.ok) {
-						resp.json().then(movies => {
-								setBackdropEnabled(true)
-								setSearchResult(movies.slice(0, 5))
-							}
-						)
-					}
-				}
-			)
-		else clearResults()
-	}
-
-	const clearResults = () => {
-		setBackdropEnabled(false)
-		setSearchResult([])
-	}
-
 
 	return (
 		<IonPage>
@@ -100,10 +81,7 @@ const Home: React.FC = () => {
 						<IonRow>
 							<IonCol size='1'/>
 							<IonCol>
-								<IonSearchbar debounce={250} onIonClear={() => setSearchResult([])}
-								              onIonChange={e => findMovies(e.detail.value!)} animated
-								              placeholder="Find Movie">
-								</IonSearchbar>
+								<Searchbar resultsCallback={setSearchResult}/>
 							</IonCol>
 							<IonCol size='1'/>
 						</IonRow>
