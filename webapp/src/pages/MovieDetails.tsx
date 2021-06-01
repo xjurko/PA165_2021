@@ -24,6 +24,7 @@ import {Link} from 'react-router-dom';
 import {useState} from "react";
 import {Movie, normalizeGenre, normalizeRuntime} from "../utils";
 import {LoginCard} from "../components/LoginCard";
+import {Toolbar} from "../components/Toolbar";
 
 
 
@@ -137,20 +138,9 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 
 		const [rating, setRating] = useState(notRated)
 
-
-		const header =
-			<IonHeader>
-				<IonToolbar>
-					<IonButton color="light" fill="solid" routerLink="/">
-						<IonIcon icon={home}/>
-					</IonButton>
-					<IonTitle>{movie.name} ({movie.releaseYear})</IonTitle>
-				</IonToolbar>
-			</IonHeader>
-
 		return (
 			<IonPage>
-				{header}
+				<Toolbar/>
 				<IonContent fullscreen>
 					<IonCard>
 						<IonCardHeader>
