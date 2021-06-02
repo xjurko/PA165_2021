@@ -1,5 +1,4 @@
 import {
-	IonButton,
 	IonCard,
 	IonCardContent,
 	IonCardHeader,
@@ -7,17 +6,15 @@ import {
 	IonCardTitle,
 	IonChip,
 	IonContent,
-	IonHeader,
 	IonIcon,
 	IonImg,
 	IonLabel,
 	IonList,
 	IonPage,
-	IonTitle,
-	IonToolbar, useIonModal,
+	useIonModal,
 	useIonViewWillEnter
 } from '@ionic/react';
-import {home, thumbsDown, thumbsDownOutline, thumbsUp, thumbsUpOutline} from 'ionicons/icons'
+import {thumbsDown, thumbsDownOutline, thumbsUp, thumbsUpOutline} from 'ionicons/icons'
 import './MovieDetails.css';
 import {RouteComponentProps} from "react-router";
 import {Link} from 'react-router-dom';
@@ -161,56 +158,61 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 							<IonIcon onClick={() => handleRatingClick(disliked)} icon={getIcons().td} size="large"/>
 						</IonCardContent>
 					</IonCard>
-					<IonCard>
-						<IonCardHeader>
-							<IonCardSubtitle>Cast</IonCardSubtitle>
-						</IonCardHeader>
-						<IonCardContent>
-							<IonList class="lst">
-								{movie.cast.map((actor, i) => (
-									<Link to={"/actor/".concat(String(actor.id))} key={i}>
-										<div className="itm">
-											<IonImg src={actor.posterUrl} class="img"/>
-											<IonLabel>{actor.fullName}</IonLabel>
+					{ movie.cast.length > 0 &&
+						<IonCard>
+							<IonCardHeader>
+								<IonCardSubtitle>Cast</IonCardSubtitle>
+							</IonCardHeader>
+							<IonCardContent>
+								<IonList class="lst">
+									{movie.cast.map((actor, i) => (
+										<Link to={"/actor/".concat(String(actor.id))} key={i}>
+											<div className="itm">
+												<IonImg src={actor.posterUrl} class="img"/>
+												<IonLabel>{actor.fullName}</IonLabel>
+											</div>
+										</Link>
+									))}
+								</IonList>
+							</IonCardContent>
+						</IonCard>
+					}
+					{ movie.directors.length > 0 &&
+						<IonCard>
+							<IonCardHeader>
+								<IonCardSubtitle>Directors</IonCardSubtitle>
+							</IonCardHeader>
+							<IonCardContent>
+								<IonList class="lst">
+									{movie.directors.map((director, i) => (
+										<div className="itm" key={i}>
+											<IonImg src={director.posterUrl} class="img"/>
+											<IonLabel>{director.name}</IonLabel>
 										</div>
-									</Link>
-								))}
-							</IonList>
-						</IonCardContent>
-					</IonCard>
-					<IonCard>
-						<IonCardHeader>
-							<IonCardSubtitle>Directors</IonCardSubtitle>
-						</IonCardHeader>
-						<IonCardContent>
-							<IonList class="lst">
-								{movie.directors.map((director, i) => (
-									<div className="itm" key={i}>
-										<IonImg src={director.posterUrl} class="img"/>
-										<IonLabel>{director.name}</IonLabel>
-									</div>
-								))}
-							</IonList>
-						</IonCardContent>
-					</IonCard>
-					<IonCard>
-						<IonCardHeader>
-							<IonCardSubtitle>Recommended Movies</IonCardSubtitle>
-						</IonCardHeader>
-						<IonCardContent>
-							<IonList class="lst">
-								{recommended.length ? (recommended.map((mov, i) => (
-									<Link to={"/movie/".concat(String(mov.id))} key={i}>
-										<div className="itm">
-											<IonImg src={mov.posterUrl} class="img"/>
-											<IonLabel>{mov.name}</IonLabel>
-										</div>
-									</Link>
-								))) : <div>No movies found.</div>
-								}
-							</IonList>
-						</IonCardContent>
-					</IonCard>
+									))}
+								</IonList>
+							</IonCardContent>
+						</IonCard>
+					}
+					{ recommended.length > 0 &&
+						<IonCard>
+							<IonCardHeader>
+								<IonCardSubtitle>Recommended Movies</IonCardSubtitle>
+							</IonCardHeader>
+							<IonCardContent>
+								<IonList class="lst">
+									{recommended.map((mov, i) => (
+										<Link to={"/movie/".concat(String(mov.id))} key={i}>
+											<div className="itm">
+												<IonImg src={mov.posterUrl} class="img"/>
+												<IonLabel>{mov.name}</IonLabel>
+											</div>
+										</Link>
+									))}
+								</IonList>
+							</IonCardContent>
+						</IonCard>
+					}
 				</IonContent>
 			</IonPage>
 		);
