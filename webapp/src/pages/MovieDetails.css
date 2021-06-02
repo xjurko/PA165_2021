@@ -6,19 +6,23 @@
 .img {
     height: 150px;
     width: 150px;
+    position: center;
 }
+
 .lst {
     overflow: auto;
     white-space: nowrap;
 }
+
 .itm {
     display: inline-block;
     color: black;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
     text-decoration: none;
+    width: 190px;
 }
+
 .itm:hover {
     background-color: #777;
 }

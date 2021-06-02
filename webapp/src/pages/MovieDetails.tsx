@@ -166,12 +166,12 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 							<IonCardContent>
 								<IonList class="lst">
 									{movie.cast.map((actor, i) => (
-										<Link to={"/actor/".concat(String(actor.id))} key={i}>
-											<div className="itm">
+										<IonCard className="itm" routerLink={"/actor/" + actor.id} key={"actor_" + i}>
+											<IonCardContent>
 												<IonImg src={actor.posterUrl} class="img"/>
 												<IonLabel>{actor.fullName}</IonLabel>
-											</div>
-										</Link>
+											</IonCardContent>
+										</IonCard>
 									))}
 								</IonList>
 							</IonCardContent>
@@ -185,10 +185,12 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 							<IonCardContent>
 								<IonList class="lst">
 									{movie.directors.map((director, i) => (
-										<div className="itm" key={i}>
-											<IonImg src={director.posterUrl} class="img"/>
-											<IonLabel>{director.name}</IonLabel>
-										</div>
+										<IonCard className="itm" key={"director_" + i}>
+											<IonCardContent>
+												<IonImg src={director.posterUrl} class="img"/>
+												<IonLabel>{director.name}</IonLabel>
+											</IonCardContent>
+										</IonCard>
 									))}
 								</IonList>
 							</IonCardContent>
@@ -202,12 +204,14 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 							<IonCardContent>
 								<IonList class="lst">
 									{recommended.map((mov, i) => (
-										<Link to={"/movie/".concat(String(mov.id))} key={i}>
-											<div className="itm">
+										<IonCard className="itm" routerLink={"/movie/" + mov.id} key={"movie_" + i}>
+											<IonCardContent >
 												<IonImg src={mov.posterUrl} class="img"/>
-												<IonLabel>{mov.name}</IonLabel>
-											</div>
-										</Link>
+												<IonLabel className="ion-text-wrap">
+													{ mov.name.length < 15 ?
+														mov.name : mov.name.substr(0,14) + "..."}</IonLabel>
+											</IonCardContent>
+										</IonCard>
 									))}
 								</IonList>
 							</IonCardContent>
