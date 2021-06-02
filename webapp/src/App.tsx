@@ -1,6 +1,6 @@
-import { Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
+import {Redirect, Route} from 'react-router-dom';
+import {IonApp, IonRouterOutlet} from '@ionic/react';
+import {IonReactRouter} from '@ionic/react-router';
 import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
@@ -28,21 +28,22 @@ import SearchMovies from "./pages/SearchMovies";
 import {ToolbarExample} from "./pages/Header";
 
 const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter basename="/pa165">
-      <IonRouterOutlet>
-        <Route exact path="/home" component={Home} />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/movie/:id" component={MovieDetails} />
-        <Route exact path="/actor/:id" component={ActorDetails} />
-        <Route exact path="/header" component={ToolbarExample} />
-        <Route exact path="/login">
-          <ModalLoginTest />
-        </Route>
-        <Route exact path="/find/:str" component={SearchMovies} />
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
+	<IonApp>
+		<IonReactRouter basename="/pa165">
+			<IonRouterOutlet>
+				<Route exact path="/home" component={Home}/>
+				<Route exact path="/" component={Home}/>
+				<Route exact path="/movie/:id" component={MovieDetails}/>
+				<Route exact path="/actor/:id" component={ActorDetails}/>
+				<Route exact path="/header" component={ToolbarExample}/>
+				<Route exact path="/login">
+					<ModalLoginTest/>
+				</Route>
+				<Route exact path="/find/:str" component={SearchMovies}/>
+				<Redirect to='/home'/>
+			</IonRouterOutlet>
+		</IonReactRouter>
+	</IonApp>
 );
 
 export default App;
