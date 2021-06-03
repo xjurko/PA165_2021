@@ -17,13 +17,10 @@ import {
 import {thumbsDown, thumbsDownOutline, thumbsUp, thumbsUpOutline} from 'ionicons/icons'
 import './MovieDetails.css';
 import {RouteComponentProps} from "react-router";
-import {Link} from 'react-router-dom';
 import {useState} from "react";
 import {Movie, normalizeGenre, normalizeRuntime} from "../utils";
 import {LoginCard} from "../components/LoginCard";
 import {Toolbar} from "../components/Toolbar";
-
-
 
 const liked = 1
 const disliked = 2
@@ -31,8 +28,7 @@ const notRated = 0
 
 interface MovieDetailsProps extends RouteComponentProps<{
 	id: string;
-}> {
-}
+}> {}
 
 const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 		const [movie, setMovie] = useState<Movie>({
@@ -41,20 +37,22 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 		})
 		const [recommended, setRecommendedMovies] = useState<Movie[]>([])
 
+		const id = match.params.id
+
 		useIonViewWillEnter(() => {
+
 			fetchRating()
-			console.log("enter new movie page")
-			fetch("http://localhost:5000/movie/" + match.params.id)
+			console.log("enter new movie page " + id)
+			fetch("http://localhost:5000/movie/" + id)
 				.then(resp => resp.json())
 				.then(data => setMovie(data))
 
 
-			fetch("http://localhost:5000/movie/recommend/" + match.params.id)
+			fetch("http://localhost:5000/movie/recommend/" + id)
 				.then(resp => resp.json())
 				.then(data => setRecommendedMovies(data))
 
 		});
-
 
 		const handleRatingClick = (clickedValue: number) => {
 			if (clickedValue === rating) deleteRating()
@@ -70,7 +68,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 
 			const newRating = clicked === liked ? 'LIKED' : 'DISLIKED'
 
-			return fetch(`http://localhost:5000/user/ratings/${match.params.id}/${newRating}`, req)
+			return fetch(`http://localhost:5000/user/ratings/${id}/${newRating}`, req)
 				.then(resp => {
 						if (resp.ok) {
 							setRating(clicked)
@@ -100,7 +98,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 				headers: {'Content-Type': 'application/json', 'Authorization': `Bearer ${token}`},
 			};
 
-			fetch(`http://localhost:5000/user/ratings/${match.params.id}`, req).then(resp => {
+			fetch(`http://localhost:5000/user/ratings/${id}`, req).then(resp => {
 					if (resp.ok) setRating(notRated)
 				}
 			)
@@ -113,7 +111,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 				headers: {'Content-Type': 'application/json', 'Authorization': `Bearer ${token}`},
 			};
 
-			return fetch(`http://localhost:5000/user/ratings/${match.params.id}`, req)
+			return fetch(`http://localhost:5000/user/ratings/${id}`, req)
 				.then(resp => {
 					if (resp.ok) {
 						resp.json()?.then(data => {
@@ -169,7 +167,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 										<IonCard className="itm" routerLink={"/actor/" + actor.id} key={"actor_" + i}>
 											<IonCardContent>
 												<IonImg src={actor.posterUrl} class="img"/>
-												<IonLabel>{actor.fullName}</IonLabel>
+												<IonLabel className="ion-text-wrap">{actor.fullName}</IonLabel>
 											</IonCardContent>
 										</IonCard>
 									))}
@@ -188,7 +186,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 										<IonCard className="itm" key={"director_" + i}>
 											<IonCardContent>
 												<IonImg src={director.posterUrl} class="img"/>
-												<IonLabel>{director.name}</IonLabel>
+												<IonLabel className="ion-text-wrap">{director.name}</IonLabel>
 											</IonCardContent>
 										</IonCard>
 									))}
@@ -204,14 +202,16 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 							<IonCardContent>
 								<IonList class="lst">
 									{recommended.map((mov, i) => (
-										<IonCard className="itm" routerLink={"/movie/" + mov.id} key={"movie_" + i}>
-											<IonCardContent >
-												<IonImg src={mov.posterUrl} class="img"/>
-												<IonLabel className="ion-text-wrap">
-													{ mov.name.length < 15 ?
-														mov.name : mov.name.substr(0,14) + "..."}</IonLabel>
-											</IonCardContent>
-										</IonCard>
+										<a onClick={() => {window.location.href="/movie/" + mov.id}}>
+											<IonCard className="itm" key={"movie_" + i}>
+												<IonCardContent >
+													<IonImg src={mov.posterUrl} class="img"/>
+													<IonLabel className="ion-text-wrap">
+														{ mov.name.length < 15 ?
+															mov.name : mov.name.substr(0,14) + "..."}</IonLabel>
+												</IonCardContent>
+											</IonCard>
+										</a>
 									))}
 								</IonList>
 							</IonCardContent>

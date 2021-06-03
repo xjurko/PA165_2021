@@ -20,7 +20,6 @@ import {
 import './Home.css';
 
 import React, {useState} from "react"
-import {Link} from 'react-router-dom';
 import {Movie, normalizeGenre, normalizeRuntime} from "../utils";
 import {Toolbar} from "../components/Toolbar";
 
@@ -110,7 +109,7 @@ const Home: React.FC = () => {
 					//</Link>
 				))}
 				<IonInfiniteScroll threshold="1600px"
-				                   disabled={disableInfiniteScroll} //this threshold will need to be change d if the card size changes
+				                   disabled={disableInfiniteScroll} //this threshold will need to be changed if the card size changes
 				                   onIonInfinite={(e: CustomEvent<void>) => searchNext(e)}>
 					<IonInfiniteScrollContent
 						loadingText="Loading...">
