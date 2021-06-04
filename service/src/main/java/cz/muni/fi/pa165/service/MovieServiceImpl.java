@@ -67,6 +67,7 @@ public class MovieServiceImpl implements MovieService {
         return movies.groupBy(x -> x)
             .map((mov, movs) -> Tuple.of(mov, movs.length()))
             .toList()
+            .sortBy(movCounts -> movCounts._1.getName())
             .sortBy(movCounts -> movCounts._2)
             .map(movCounts -> movCounts._1)
             .reverse();
