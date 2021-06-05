@@ -196,11 +196,11 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 							</IonListHeader>
 								<IonList class="lst">
 									{recommended.map((mov, i) => (
-											<IonCard href={"/movie/" + mov.id} key={"movie_" + i} className="itm">
+											<IonCard href={"/movie/" + mov.id} key={"movie_" + i} className="itm" style={{"height": "300px"}}>
 												<IonImg src={mov.posterUrl} class="img"/>
-												<IonLabel className="ion-text-wrap">
-													{ mov.name.length < 15 ?
-														mov.name : mov.name.substr(0,14) + "..."}</IonLabel>
+												<IonLabel className="ion-text-wrap" >
+													{ mov.name.length < 30 ?
+														mov.name : mov.name.substr(0,30) + "..."}</IonLabel>
 											</IonCard>
 									))}
 								</IonList>
