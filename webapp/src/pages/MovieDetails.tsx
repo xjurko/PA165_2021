@@ -135,7 +135,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 
 		return (
 			<IonPage>
-				<Toolbar/>
+				<Toolbar onLogin={() => {}}/>
 				<IonContent fullscreen>
 					<IonCard>
 						<IonCardHeader>

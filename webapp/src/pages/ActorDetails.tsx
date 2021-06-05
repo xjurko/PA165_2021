@@ -36,7 +36,7 @@ const ActorDetails: React.FC<ActorDetailsProps> = ({match}) => {
 
     return (
         <IonPage>
-            <Toolbar/>
+            <Toolbar onLogin={() => {}}/>
             <IonContent fullscreen>
                 <IonCard>
                     <IonCardHeader>

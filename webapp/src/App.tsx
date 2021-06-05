@@ -1,6 +1,6 @@
-import { Route, Redirect } from 'react-router-dom';
-import { IonApp, IonRouterOutlet } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
+import {Redirect, Route} from 'react-router-dom';
+import {IonApp, IonRouterOutlet} from '@ionic/react';
+import {IonReactRouter} from '@ionic/react-router';
 import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
@@ -21,32 +21,21 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import {ModalLoginTest} from "./pages/ModalLoginTest";
 import MovieDetails from "./pages/MovieDetails";
 import ActorDetails from "./pages/ActorDetails";
-import SearchMovies from "./pages/SearchMovies";
-import {ToolbarExample} from "./pages/Header";
 
 const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter basename="/pa165">
-      <IonRouterOutlet>
-        <Route exact path="/home" component={Home} />
-        <Redirect exact from="/" to="/home" />
-        <Route exact path="/movie/:id" component={MovieDetails} />
-        <Route exact path="/actor/:id" component={ActorDetails} />
-        <Route exact path="/header" component={ToolbarExample} />
-        <Route exact path="/login">
-          <ModalLoginTest />
-        </Route>
-        <Route exact path="/find/:str" component={SearchMovies} />
-        <Route component={Home}/>
-        {/*<Route render={() => <Redirect to={{pathname: "/"}} />} />*/}
-        {/*TODO redirection to home doesn't work*/}
-        {/*<Route render={(match) => <Redirect to="/" />} />*/}
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
+	<IonApp>
+		<IonReactRouter basename="/pa165">
+			<IonRouterOutlet>
+				<Route exact path="/home" component={Home}/>
+				<Redirect exact from="/" to="/home" />
+				<Route component={Home}/>
+				<Route exact path="/movie/:id" component={MovieDetails}/>
+				<Route exact path="/actor/:id" component={ActorDetails}/>
+			</IonRouterOutlet>
+		</IonReactRouter>
+	</IonApp>
 );
 
 export default App;

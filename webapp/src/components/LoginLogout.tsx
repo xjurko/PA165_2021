@@ -1,21 +1,7 @@
 /* Using with IonModal Component */
 
 import React, {useState} from 'react';
-import {Link} from "react-router-dom";
-import {
-	IonCol,
-	IonGrid,
-	IonHeader,
-	IonIcon,
-	IonImg,
-	IonItem,
-	IonLabel,
-	IonList,
-	IonRow,
-	IonToolbar, useIonModal
-} from '@ionic/react';
-import {Searchbar} from "./Searchbar";
-import {Movie} from "../utils";
+import {IonIcon, useIonModal} from '@ionic/react';
 import {personCircle} from "ionicons/icons";
 import {LoginCard} from "./LoginCard";
 import "./LoginCard.css"
@@ -29,7 +15,7 @@ interface Token {
 	expiresAt: number;
 }
 
-export const LoginLogout: React.FC = () => {
+export const LoginLogout: React.FC<{onLogin: () => void}> = ({onLogin}) => {
 	const handleDismiss = () => {
 		dismissLoginModal();
 	};
@@ -40,7 +26,8 @@ export const LoginLogout: React.FC = () => {
 
 	const [spawnLoginModal, dismissLoginModal] = useIonModal(LoginCard, {
 		dismiss: handleDismiss,
-		promptMessage: "Login"
+		promptMessage: "Login",
+		onLogin: onLogin
 	});
 
 	const [user, setUser] = useState<string | null>(null)

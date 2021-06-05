@@ -2,14 +2,14 @@
 
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
-import {IonCol, IonGrid, IonHeader, IonItem, IonLabel, IonList, IonRow, IonToolbar} from '@ionic/react';
+import {IonCol, IonGrid, IonHeader, IonImg, IonItem, IonLabel, IonList, IonRow, IonToolbar} from '@ionic/react';
 import {Searchbar} from "./Searchbar";
 import {Movie} from "../utils";
 import "./LoginCard.css"
 import {LoginLogout} from "./LoginLogout";
 
 
-export const Toolbar: React.FC = () => {
+export const Toolbar: React.FC<{onLogin: () => void}> = ({onLogin}) => {
 
 	const [searchResult, setSearchResult] = useState<Movie[]>([])
 	const [backdropEnabled, setBackdropEnabled] = useState(false)
@@ -22,7 +22,7 @@ export const Toolbar: React.FC = () => {
 						<IonGrid>
 							<IonRow>
 								<IonCol size={'2'}>
-									<img src={movie.posterUrl}/>
+									<IonImg src={movie.posterUrl}/>
 								</IonCol>
 								<IonCol>
 									<IonLabel>
@@ -39,17 +39,18 @@ export const Toolbar: React.FC = () => {
 	return (
 		<IonHeader>
 			<IonToolbar>
-				<IonGrid >
+				<IonGrid>
 					<IonRow>
-						<IonCol size='2' style={{display: 'flex'}} className="ion-text-center ion-justify-content-center ion-align-items-center">
+						<IonCol size='2' style={{display: 'flex'}}
+						        className="ion-text-center ion-justify-content-center ion-align-items-center">
 							<img src="assets/Logo.svg"/>
 						</IonCol>
 						<IonCol>
 							<Searchbar resultsCallback={setSearchResult}/>
 						</IonCol>
-						<IonCol size='2' style={{display: 'flex'}} className="ion-text-center ion-justify-content-center ion-align-items-center">
-								<LoginLogout>
-								</LoginLogout>
+						<IonCol size='2' style={{display: 'flex'}}
+						        className="ion-text-center ion-justify-content-center ion-align-items-center">
+							<LoginLogout onLogin={onLogin}/>
 						</IonCol>
 					</IonRow>
 				</IonGrid>

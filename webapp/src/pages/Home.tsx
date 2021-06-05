@@ -22,73 +22,83 @@ import './Home.css';
 import React, {useState} from "react"
 import {Movie, normalizeGenre, normalizeRuntime} from "../utils";
 import {Toolbar} from "../components/Toolbar";
-import useStateRef from 'react-usestateref';
+import {useHistory} from "react-router-dom";
+
 
 const Home: React.FC = () => {
 	const [movies, setMovies] = useState<Movie[]>([])
-	const [userRecMovies, setUserRecMovies, userRecMoviesRef] = useStateRef([])
+	const [userRecMovies, setUserRecMovies] = useState([])
 	const [page, setPage] = useState(1)
-	const [itemsPerPage, setItemsPerPage] = useState(10);
-	const [auth, setAuth] = useState(false);
+	const itemsPerPage = 10
+	const history = useHistory()
+	const [auth, setAuth] = useState(false)
 
-	const [disableInfiniteScroll, setDisableInfiniteScroll] = useState<boolean>(false);
+	const [disableInfiniteScroll, setDisableInfiniteScroll] = useState<boolean>(false)
 
-	const getMovies = async (page: number) => {
-		try {
-			const response: Response = await fetch("http://localhost:5000/movies/" + page)
-			if (!response.ok) {
-				throw Error(response.statusText)
+	const getMovies = (page: number) => {
+		fetch("http://localhost:5000/movies/" + page).then((response) => {
+				if (response.ok) {
+					response.json().then((json) => {
+							setMovies(movies.concat(json))
+							setDisableInfiniteScroll(movies.length < itemsPerPage)
+							console.log(json)
+						}
+					)
+				} else {
+					throw Error(response.statusText)
+				}
 			}
-			const json = await response.json()
-			setMovies(movies.concat(json))
-			setDisableInfiniteScroll(movies.length < itemsPerPage);
-			console.log(json)
-		} catch (error) {
-			console.error(error.message)
-		}
+		)
 	}
 
-	async function searchNext($event: CustomEvent<void>) {
+	const searchNext = ($event: CustomEvent<void>) => {
 		setPage(page + 1)
-		if(auth){
-			const indexOfLastPost = page * itemsPerPage;
-			const indexOfFirstPost = indexOfLastPost - itemsPerPage;
-			setMovies(movies.concat(userRecMoviesRef.current.slice(indexOfFirstPost, indexOfLastPost)));
-		}
-		else {
-			await getMovies(page);
+		if (auth) {
+			const indexOfLastPost = page * itemsPerPage
+			const indexOfFirstPost = indexOfLastPost - itemsPerPage
+			setMovies(movies.concat(userRecMovies.slice(indexOfFirstPost, indexOfLastPost)))
+		} else {
+			getMovies(page)
 		}
 
-		($event.target as HTMLIonInfiniteScrollElement).complete();
+		($event.target as HTMLIonInfiniteScrollElement).complete()
 	}
+
+
+	const refreshHome = () => {
+		history.push("/")
+	}
+
 
 	// hook to fetch data and display them on page display
-	useIonViewWillEnter(async () => {
+	useIonViewWillEnter(() => {
 		setPage(page + 1)
 		setAuth(false)
 		const token = localStorage.getItem('currentUser') || ""
 		const req = {
 			method: 'GET',
 			headers: {'Content-Type': 'application/json', 'Authorization': `Bearer ${token}`},
-		};
-		const response: Response = await fetch("http://localhost:5000/user/recommend", req)
-		if(response.ok){
-			setAuth(true)
-			const json = await response.json()
-			setUserRecMovies(json)
-			const indexOfLastPost = page * itemsPerPage;
-			const indexOfFirstPost = indexOfLastPost - itemsPerPage;
-			setMovies(movies.concat(userRecMoviesRef.current.slice(indexOfFirstPost, indexOfLastPost)))
-			console.log(userRecMoviesRef.current)
 		}
-		else {
-			await getMovies(page);
-		}
-	});
+
+		fetch("http://localhost:5000/user/recommend", req).then((response) => {
+			if (response.ok) {
+				setAuth(true)
+				response.json().then((json) => {
+					setUserRecMovies(json)
+					const indexOfLastPost = page * itemsPerPage
+					const indexOfFirstPost = indexOfLastPost - itemsPerPage
+					setMovies(movies.concat(json.slice(indexOfFirstPost, indexOfLastPost)))
+					console.log(json)
+				})
+			} else {
+				getMovies(page)
+			}
+		})
+	})
 
 	return (
 		<IonPage>
-			<Toolbar/>
+			<Toolbar onLogin={refreshHome}/>
 			<IonContent>
 				<IonHeader collapse="condense">
 					<IonToolbar>
