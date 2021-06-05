@@ -30,21 +30,19 @@ export const Toolbar: React.FC<{ onLogin: () => void }> = ({onLogin}) => {
 	const searchResults =
 		<IonList style={{position: 'absolute'}}>
 			{searchResult.map((movie, i) =>
-				<IonItem>
-					<Link to={"/movie/" + movie.id} key={i} style={{textDecoration: 'none', color: 'none'}}>
+				<IonItem routerLink={"/movie/" + movie.id} key={i} style={{textDecoration: 'none', color: 'none'}}>
 						<IonGrid>
 							<IonRow>
 								<IonCol size={'2'}>
 									<IonImg src={movie.posterUrl}/>
 								</IonCol>
 								<IonCol>
-									<IonLabel>
+									<IonLabel className="ion-text-wrap">
 										{movie.name} ({movie.releaseYear})
 									</IonLabel>
 								</IonCol>
 							</IonRow>
 						</IonGrid>
-					</Link>
 				</IonItem>
 			)}
 		</IonList>
