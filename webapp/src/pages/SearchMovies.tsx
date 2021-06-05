@@ -19,32 +19,7 @@ import './MovieDetails.css';
 import {RouteComponentProps} from "react-router";
 import {Link} from 'react-router-dom';
 import React, {useState} from "react";
-
-type Actor = {
-    id: number;
-    fullName: string;
-    posterUrl: string;
-};
-
-type Director = {
-    id: number;
-    name: string;
-    posterUrl: string;
-};
-
-type Movie = {
-    id: number;
-    name: string;
-    caption: string;
-    img: string;
-    releaseYear: number;
-    runtimeMin: number;
-    cast: Actor[];
-    directors: Director[];
-    externalRef: string;
-    genres: string[];
-    posterUrl: string;
-};
+import {Movie} from "../utils";
 
 interface SearchMoviesProps extends RouteComponentProps<{
     str: string;
@@ -75,15 +50,12 @@ const SearchMovies: React.FC<SearchMoviesProps> = ({match}) => {
     return (
         <IonPage>
             <IonHeader>
-
-
                 <IonToolbar>
                     <IonButton color="light" fill="solid" routerLink="/">
                         <IonIcon icon={home}/>
                     </IonButton>
                     <IonTitle>Catalogue</IonTitle>
                 </IonToolbar>
-
             </IonHeader>
 
             <IonContent>
@@ -95,7 +67,6 @@ const SearchMovies: React.FC<SearchMoviesProps> = ({match}) => {
 
                 <IonHeader collapse="condense">
                     <IonToolbar>
-
                         <IonTitle size="large">Movie Recommender</IonTitle>
                     </IonToolbar>
                 </IonHeader>
