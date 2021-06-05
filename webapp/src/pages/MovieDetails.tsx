@@ -39,14 +39,12 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 
 		const id = match.params.id
 
-		useIonViewWillEnter(() => {
-
+		useIonViewWillEnter( () => {
 			fetchRating()
 
 			fetch("http://localhost:5000/movie/" + id)
 				.then(resp => resp.json())
 				.then(data => setMovie(data))
-
 
 			fetch("http://localhost:5000/movie/recommend/" + id)
 				.then(resp => resp.json())
