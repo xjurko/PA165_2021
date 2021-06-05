@@ -66,7 +66,7 @@ const Home: React.FC = () => {
 
 
 	const refreshHome = () => {
-		history.push("/home")
+		history.push("/")
 	}
 
 
