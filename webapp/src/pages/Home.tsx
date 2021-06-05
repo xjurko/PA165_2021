@@ -22,10 +22,14 @@ import './Home.css';
 import React, {useState} from "react"
 import {Movie, normalizeGenre, normalizeRuntime} from "../utils";
 import {Toolbar} from "../components/Toolbar";
+import useStateRef from 'react-usestateref';
 
 const Home: React.FC = () => {
 	const [movies, setMovies] = useState<Movie[]>([])
+	const [userRecMovies, setUserRecMovies, userRecMoviesRef] = useStateRef([])
 	const [page, setPage] = useState(1)
+	const [itemsPerPage, setItemsPerPage] = useState(10);
+	const [auth, setAuth] = useState(false);
 
 	const [disableInfiniteScroll, setDisableInfiniteScroll] = useState<boolean>(false);
 
@@ -37,7 +41,7 @@ const Home: React.FC = () => {
 			}
 			const json = await response.json()
 			setMovies(movies.concat(json))
-			setDisableInfiniteScroll(json.length < 10);
+			setDisableInfiniteScroll(movies.length < itemsPerPage);
 			console.log(json)
 		} catch (error) {
 			console.error(error.message)
@@ -46,7 +50,14 @@ const Home: React.FC = () => {
 
 	async function searchNext($event: CustomEvent<void>) {
 		setPage(page + 1)
-		await getMovies(page);
+		if(auth){
+			const indexOfLastPost = page * itemsPerPage;
+			const indexOfFirstPost = indexOfLastPost - itemsPerPage;
+			setMovies(movies.concat(userRecMoviesRef.current.slice(indexOfFirstPost, indexOfLastPost)));
+		}
+		else {
+			await getMovies(page);
+		}
 
 		($event.target as HTMLIonInfiniteScrollElement).complete();
 	}
@@ -54,7 +65,25 @@ const Home: React.FC = () => {
 	// hook to fetch data and display them on page display
 	useIonViewWillEnter(async () => {
 		setPage(page + 1)
-		await getMovies(page);
+		setAuth(false)
+		const token = localStorage.getItem('currentUser') || ""
+		const req = {
+			method: 'GET',
+			headers: {'Content-Type': 'application/json', 'Authorization': `Bearer ${token}`},
+		};
+		const response: Response = await fetch("http://localhost:5000/user/recommend", req)
+		if(response.ok){
+			setAuth(true)
+			const json = await response.json()
+			setUserRecMovies(json)
+			const indexOfLastPost = page * itemsPerPage;
+			const indexOfFirstPost = indexOfLastPost - itemsPerPage;
+			setMovies(movies.concat(userRecMoviesRef.current.slice(indexOfFirstPost, indexOfLastPost)))
+			console.log(userRecMoviesRef.current)
+		}
+		else {
+			await getMovies(page);
+		}
 	});
 
 	return (
