@@ -5,8 +5,9 @@
 
 .img {
     height: 240px;
-    width: 180px;
+    width: 170px;
     position: center;
+    object-fit: cover;
 }
 
 .lst {

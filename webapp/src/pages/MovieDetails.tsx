@@ -9,7 +9,7 @@ import {
 	IonIcon,
 	IonImg,
 	IonLabel,
-	IonList,
+	IonList, IonListHeader,
 	IonPage,
 	useIonModal,
 	useIonViewWillEnter
@@ -158,24 +158,27 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 					</IonCard>
 					{ movie.cast.length > 0 &&
 						<IonCard>
-							<IonCardHeader>
+							{/*<IonCardHeader>
 								<IonCardSubtitle>Cast</IonCardSubtitle>
-							</IonCardHeader>
-								<IonList class="lst">
-									{movie.cast.map((actor, i) => (
-										<IonCard className="itm" routerLink={"/actor/" + actor.id} key={"actor_" + i}>
-												<IonImg src={actor.posterUrl} class="img" />
-												<IonLabel className="ion-text-wrap">{actor.fullName}</IonLabel>
-										</IonCard>
-									))}
-								</IonList>
+							</IonCardHeader>*/}
+							<IonListHeader>
+								Cast
+							</IonListHeader>
+							<IonList class="lst">
+								{movie.cast.map((actor, i) => (
+									<IonCard className="itm" routerLink={"/actor/" + actor.id} key={"actor_" + i}>
+											<IonImg src={actor.posterUrl} class="img" />
+											<IonLabel className="ion-text-wrap">{actor.fullName}</IonLabel>
+									</IonCard>
+								))}
+							</IonList>
 						</IonCard>
 					}
 					{ movie.directors.length > 0 &&
 						<IonCard>
-							<IonCardHeader>
-								<IonCardSubtitle>Directors</IonCardSubtitle>
-							</IonCardHeader>
+							<IonListHeader>
+								Directors
+							</IonListHeader>
 								<IonList class="lst">
 									{movie.directors.map((director, i) => (
 										<IonCard className="itm" key={"director_" + i}>
@@ -188,9 +191,9 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 					}
 					{ recommended.length > 0 &&
 						<IonCard>
-							<IonCardHeader>
-								<IonCardSubtitle>Recommended Movies</IonCardSubtitle>
-							</IonCardHeader>
+							<IonListHeader>
+								Recommended Movies
+							</IonListHeader>
 								<IonList class="lst">
 									{recommended.map((mov, i) => (
 											<IonCard href={"/movie/" + mov.id} key={"movie_" + i} className="itm">
