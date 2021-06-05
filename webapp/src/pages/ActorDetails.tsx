@@ -4,19 +4,14 @@ import {
     IonCardSubtitle,
     IonCardTitle,
     IonContent,
-    IonHeader,
     IonImg,
     IonPage,
-    IonTitle,
-    IonToolbar,
-    IonButton,
-    IonIcon,
     useIonViewWillEnter
 } from '@ionic/react';
 import './MovieDetails.css';
 import {RouteComponentProps} from "react-router";
-import {useState} from "react";
-import {home} from "ionicons/icons";
+import React, {useState} from "react";
+import {Toolbar} from "../components/Toolbar";
 
 type Actor = {
     id: number;
@@ -41,14 +36,7 @@ const ActorDetails: React.FC<ActorDetailsProps> = ({match}) => {
 
     return (
         <IonPage>
-            <IonHeader>
-                <IonToolbar>
-                    <IonButton color="light" fill="solid" routerLink="/">
-                        <IonIcon icon={home} />
-                    </IonButton>
-                    <IonTitle>{actor.fullName}</IonTitle>
-                </IonToolbar>
-            </IonHeader>
+            <Toolbar/>
             <IonContent fullscreen>
                 <IonCard>
                     <IonCardHeader>
