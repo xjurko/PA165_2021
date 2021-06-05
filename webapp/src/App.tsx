@@ -21,29 +21,21 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import {ModalLoginTest} from "./pages/ModalLoginTest";
 import MovieDetails from "./pages/MovieDetails";
 import ActorDetails from "./pages/ActorDetails";
-import SearchMovies from "./pages/SearchMovies";
-import {ToolbarExample} from "./pages/Header";
 
 const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter basename="/pa165">
-      <IonRouterOutlet>
-        <Route exact path="/home" component={Home} />
-        <Redirect exact from="/" to="/home" />
-        <Route exact path="/movie/:id" component={MovieDetails} />
-        <Route exact path="/actor/:id" component={ActorDetails} />
-        <Route exact path="/header" component={ToolbarExample} />
-        <Route exact path="/login">
-          <ModalLoginTest />
-        </Route>
-        <Route exact path="/find/:str" component={SearchMovies} />
-        <Route component={Home}/>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
+	<IonApp>
+		<IonReactRouter basename="/pa165">
+			<IonRouterOutlet>
+				<Route exact path="/home" component={Home}/>
+				<Redirect exact from="/" to="/home" />
+				<Route component={Home}/>
+				<Route exact path="/movie/:id" component={MovieDetails}/>
+				<Route exact path="/actor/:id" component={ActorDetails}/>
+			</IonRouterOutlet>
+		</IonReactRouter>
+	</IonApp>
 );
 
 export default App;
