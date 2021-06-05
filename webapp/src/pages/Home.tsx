@@ -17,16 +17,19 @@ import {
 	useIonViewWillEnter
 } from '@ionic/react';
 
+
 import './Home.css';
 
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import {Movie, normalizeGenre, normalizeRuntime} from "../utils";
 import {Toolbar} from "../components/Toolbar";
 import {useHistory} from "react-router-dom";
+import ReactDOM from 'react-dom';
 
 
 const Home: React.FC = () => {
 	const [movies, setMovies] = useState<Movie[]>([])
+	const [title, setTitle] = useState<string>("Latest Movies")
 	const [userRecMovies, setUserRecMovies] = useState([])
 	const [page, setPage] = useState(1)
 	const itemsPerPage = 10
@@ -40,7 +43,7 @@ const Home: React.FC = () => {
 				if (response.ok) {
 					response.json().then((json) => {
 							setMovies(movies.concat(json))
-							setDisableInfiniteScroll(movies.length < itemsPerPage)
+							setDisableInfiniteScroll(json.length < itemsPerPage)
 							console.log(json)
 						}
 					)
@@ -52,6 +55,7 @@ const Home: React.FC = () => {
 	}
 
 	const searchNext = ($event: CustomEvent<void>) => {
+		console.log("infnite scroll next")
 		setPage(page + 1)
 		if (auth) {
 			const indexOfLastPost = page * itemsPerPage
@@ -64,14 +68,15 @@ const Home: React.FC = () => {
 		($event.target as HTMLIonInfiniteScrollElement).complete()
 	}
 
-
-	const refreshHome = () => {
+	const onLogin = () => {
 		history.push("/")
+		loadPage()
 	}
 
+	useEffect(() => loadPage(),[]);
 
 	// hook to fetch data and display them on page display
-	useIonViewWillEnter(() => {
+	const loadPage = () => {
 		setPage(page + 1)
 		setAuth(false)
 		const token = localStorage.getItem('currentUser') || ""
@@ -85,24 +90,26 @@ const Home: React.FC = () => {
 				setAuth(true)
 				response.json().then((json) => {
 					setUserRecMovies(json)
-					const indexOfLastPost = page * itemsPerPage
-					const indexOfFirstPost = indexOfLastPost - itemsPerPage
-					setMovies(movies.concat(json.slice(indexOfFirstPost, indexOfLastPost)))
+					// const indexOfLastPost = (page -1 ) * itemsPerPage
+					// const indexOfFirstPost = indexOfLastPost - itemsPerPage
+					setTitle("Recommended")
+					setMovies(json.slice(0, 10))
 					console.log(json)
 				})
 			} else {
+				setTitle("Latest Movies")
 				getMovies(page)
 			}
 		})
-	})
+	}
 
 	return (
 		<IonPage>
-			<Toolbar onLogin={refreshHome}/>
+			<Toolbar onLogin={onLogin}/>
 			<IonContent>
 				<IonHeader collapse="condense">
 					<IonToolbar>
-						<IonTitle size="large">Latest Movies</IonTitle>
+						<IonTitle size="large">{title}</IonTitle>
 					</IonToolbar>
 				</IonHeader>
 
