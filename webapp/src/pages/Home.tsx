@@ -114,8 +114,7 @@ const Home: React.FC = () => {
 				</IonHeader>
 
 				{movies.map((movie, i) => (
-					// <Link to={"/movie/" + movie.id} key={i} style={{textDecoration: 'none'}}>
-						<IonCard routerLink={"/movie/" + movie.id} key={i} >
+						<IonCard routerLink={"/movie/" + movie.id} key={movie.id} >
 							<IonGrid>
 								<IonRow>
 									<IonCol>
@@ -152,7 +151,6 @@ const Home: React.FC = () => {
 								</IonRow>
 							</IonGrid>
 						</IonCard>
-					//</Link>
 				))}
 				<IonInfiniteScroll threshold="1600px"
 				                   disabled={disableInfiniteScroll} //this threshold will need to be changed if the card size changes
