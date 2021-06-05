@@ -6,6 +6,7 @@ import cz.muni.fi.pa165.entity.Movie;
 import cz.muni.fi.pa165.entity.MovieRating;
 import cz.muni.fi.pa165.entity.Rating;
 import io.vavr.Tuple;
+import io.vavr.Tuple2;
 import io.vavr.collection.Array;
 import io.vavr.collection.List;
 import io.vavr.collection.Vector;
@@ -66,6 +67,7 @@ public class MovieServiceImpl implements MovieService {
         return movies.groupBy(x -> x)
             .map((mov, movs) -> Tuple.of(mov, movs.length()))
             .toList()
+            .sortBy(movCounts -> movCounts._1.getName())
             .sortBy(movCounts -> movCounts._2)
             .map(movCounts -> movCounts._1)
             .reverse();
@@ -91,10 +93,16 @@ public class MovieServiceImpl implements MovieService {
         val recommendedMovies = Option.ofOptional(userDao.findById(userId))
             .toVector()
             .flatMap(user -> {
-                val likedMovies = Vector.ofAll(user.getMovieRatings())
-                    .filter(rating -> rating.getRating() == Rating.LIKED)
-                    .map(MovieRating::getMovie);
-                return likedMovies.flatMap(this::getRecommendedMoviesBasedOnMovie).removeAll(likedMovies);
+                val ratedMovies = Vector.ofAll(user.getMovieRatings())
+                    .map((rating) -> new Tuple2<>(rating.getRating(), rating.getMovie()))
+                    .groupBy(movieRating -> movieRating._1);
+                val likedMovies = ratedMovies.getOrElse(Rating.LIKED,Vector.empty()).map(Tuple2::_2);
+                val dislikedMovies = ratedMovies.getOrElse(Rating.DISLIKED,Vector.empty()).map(Tuple2::_2);
+
+                return likedMovies
+                    .flatMap(this::getRecommendedMoviesBasedOnMovie)
+                    .removeAll(likedMovies)
+                    .removeAll(dislikedMovies);
             });
 
         return sortAndCountMoviesByFrequency(recommendedMovies).asJava();

@@ -1,6 +1,6 @@
-import { Route, Redirect } from 'react-router-dom';
-import { IonApp, IonRouterOutlet } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
+import {Redirect, Route} from 'react-router-dom';
+import {IonApp, IonRouterOutlet} from '@ionic/react';
+import {IonReactRouter} from '@ionic/react-router';
 import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
@@ -41,9 +41,6 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/find/:str" component={SearchMovies} />
         <Route component={Home}/>
-        {/*<Route render={() => <Redirect to={{pathname: "/"}} />} />*/}
-        {/*TODO redirection to home doesn't work*/}
-        {/*<Route render={(match) => <Redirect to="/" />} />*/}
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
