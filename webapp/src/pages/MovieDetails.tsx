@@ -147,7 +147,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 						<IonImg src={movie.posterUrl}/>
 						<IonCardContent>
 							{movie.genres.map((genre, i) => (
-								<IonChip outline key={i}>
+								<IonChip outline key={i} disabled={true}>
 									<IonLabel>{normalizeGenre(genre)}</IonLabel>
 								</IonChip>
 							))}
