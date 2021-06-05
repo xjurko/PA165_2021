@@ -2,17 +2,30 @@
 
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
-import {IonCol, IonGrid, IonHeader, IonImg, IonItem, IonLabel, IonList, IonRow, IonToolbar} from '@ionic/react';
+import {
+	IonCol,
+	IonGrid,
+	IonHeader,
+	IonImg,
+	IonItem,
+	IonLabel,
+	IonList, IonRouterLink,
+	IonRow,
+	IonToolbar, useIonViewDidLeave,
+	useIonViewWillEnter, useIonViewWillLeave
+} from '@ionic/react';
 import {Searchbar} from "./Searchbar";
 import {Movie} from "../utils";
 import "./LoginCard.css"
 import {LoginLogout} from "./LoginLogout";
 
 
-export const Toolbar: React.FC<{onLogin: () => void}> = ({onLogin}) => {
+export const Toolbar: React.FC<{ onLogin: () => void }> = ({onLogin}) => {
 
 	const [searchResult, setSearchResult] = useState<Movie[]>([])
 	const [backdropEnabled, setBackdropEnabled] = useState(false)
+
+	useIonViewDidLeave(() => setSearchResult([]))
 
 	const searchResults =
 		<IonList style={{position: 'absolute'}}>
@@ -43,7 +56,9 @@ export const Toolbar: React.FC<{onLogin: () => void}> = ({onLogin}) => {
 					<IonRow>
 						<IonCol size='2' style={{display: 'flex'}}
 						        className="ion-text-center ion-justify-content-center ion-align-items-center">
-							<img src="assets/Logo.svg"/>
+							<IonRouterLink routerLink={"/home"} routerDirection={"back"}>
+								<IonImg src="assets/Logo.svg"/>
+							</IonRouterLink>
 						</IonCol>
 						<IonCol>
 							<Searchbar resultsCallback={setSearchResult}/>

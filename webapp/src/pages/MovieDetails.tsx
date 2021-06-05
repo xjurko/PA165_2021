@@ -42,7 +42,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 		useIonViewWillEnter(() => {
 
 			fetchRating()
-			console.log("enter new movie page " + id)
+
 			fetch("http://localhost:5000/movie/" + id)
 				.then(resp => resp.json())
 				.then(data => setMovie(data))
@@ -52,7 +52,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 				.then(resp => resp.json())
 				.then(data => setRecommendedMovies(data))
 
-		});
+		})
 
 		const handleRatingClick = (clickedValue: number) => {
 			if (clickedValue === rating) deleteRating()
