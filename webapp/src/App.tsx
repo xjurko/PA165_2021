@@ -25,17 +25,17 @@ import MovieDetails from "./pages/MovieDetails";
 import ActorDetails from "./pages/ActorDetails";
 
 const App: React.FC = () => (
-	<IonApp>
-		<IonReactRouter basename="/pa165">
-			<IonRouterOutlet>
-				<Route exact path="/home" component={Home}/>
-				<Redirect exact from="/" to="/home" />
-				<Route component={Home}/>
-				<Route exact path="/movie/:id" component={MovieDetails}/>
-				<Route exact path="/actor/:id" component={ActorDetails}/>
-			</IonRouterOutlet>
-		</IonReactRouter>
-	</IonApp>
+    <IonApp>
+        <IonReactRouter basename="/pa165">
+            <IonRouterOutlet>
+                <Route exact path="/home" component={Home}/>
+                <Redirect exact from="/" to="/home" />
+                <Route component={Home}/>
+                <Route exact path="/movie/:id" component={MovieDetails}/>
+                <Route exact path="/actor/:id" component={ActorDetails}/>
+            </IonRouterOutlet>
+        </IonReactRouter>
+    </IonApp>
 );
 
 export default App;
