@@ -160,9 +160,6 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 					</IonCard>
 					{movie.cast.length > 0 &&
 					<IonCard>
-						{/*<IonCardHeader>
-								<IonCardSubtitle>Cast</IonCardSubtitle>
-							</IonCardHeader>*/}
 						<IonListHeader>
 							Cast
 						</IonListHeader>
@@ -198,11 +195,11 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 						</IonListHeader>
 						<IonList class="lst">
 							{recommended.map((mov, i) => (
-								<IonCard routerLink={`${match.url}/${mov.id}`} key={mov.id} className="itm">
+								<IonCard routerLink={`${match.url}/${mov.id}`} key={mov.id} className="itm" style={{"height": "300px"}}>
 									<IonImg src={mov.posterUrl} class="img"/>
 									<IonLabel className="ion-text-wrap">
-										{mov.name.length < 15 ?
-											mov.name : mov.name.substr(0, 14) + "..."}</IonLabel>
+										{mov.name.length < 35 ?
+											mov.name : mov.name.substr(0, 35) + "..."}</IonLabel>
 								</IonCard>
 							))}
 						</IonList>
