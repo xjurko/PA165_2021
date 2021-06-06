@@ -24,18 +24,30 @@ import './theme/variables.css';
 import MovieDetails from "./pages/MovieDetails";
 import ActorDetails from "./pages/ActorDetails";
 
+const getMovieDetails = () => MovieDetails
+
 const App: React.FC = () => (
-    <IonApp>
-        <IonReactRouter basename="/pa165">
-            <IonRouterOutlet>
-                <Route exact path="/home" component={Home}/>
-                <Redirect exact from="/" to="/home" />
-                <Route component={Home}/>
-                <Route exact path="/movie/:id" component={MovieDetails}/>
-                <Route exact path="/actor/:id" component={ActorDetails}/>
-            </IonRouterOutlet>
-        </IonReactRouter>
-    </IonApp>
+	<IonApp>
+		<IonReactRouter basename="/pa165">
+			<IonRouterOutlet>
+				<Route exact path="/home" component={Home}/>
+				<Redirect exact from="/" to="/home"/>
+				<Route component={Home}/>
+				<Route exact path="/movie/:dummy1/:dummy2/:dummy3/:dummy4/:dummy5/:dummy6/:dummy7/:dummy8/:dummy9/:dummy0/:id" component={getMovieDetails()}/>
+				<Route exact path="/movie/:dummy1/:dummy2/:dummy3/:dummy4/:dummy5/:dummy6/:dummy7/:dummy8/:dummy9/:id" component={getMovieDetails()}/>
+				<Route exact path="/movie/:dummy1/:dummy2/:dummy3/:dummy4/:dummy5/:dummy6/:dummy7/:dummy8/:id" component={getMovieDetails()}/>
+				<Route exact path="/movie/:dummy1/:dummy2/:dummy3/:dummy4/:dummy5/:dummy6/:dummy7/:id" component={getMovieDetails()}/>
+				<Route exact path="/movie/:dummy1/:dummy2/:dummy3/:dummy4/:dummy5/:dummy6/:id" component={getMovieDetails()}/>
+				<Route exact path="/movie/:dummy1/:dummy2/:dummy3/:dummy4/:dummy5/:id" component={getMovieDetails()}/>
+				<Route exact path="/movie/:dummy1/:dummy2/:dummy3/:dummy4/:id" component={getMovieDetails()}/>
+				<Route exact path="/movie/:dummy1/:dummy2/:dummy3/:id" component={getMovieDetails()}/>
+				<Route exact path="/movie/:dummy1/:dummy2/:id" component={getMovieDetails()}/>
+				<Route exact path="/movie/:dummy1/:id" component={getMovieDetails()}/>
+				<Route exact path="/movie/:id" component={getMovieDetails()}/>
+				<Route exact path="/actor/:id" component={ActorDetails}/>
+			</IonRouterOutlet>
+		</IonReactRouter>
+	</IonApp>
 );
 
 export default App;

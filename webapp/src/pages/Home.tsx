@@ -69,7 +69,7 @@ const Home: React.FC = () => {
 	}
 
 	const onLogin = () => {
-		history.push("/")
+		history.push(history.location)
 		loadPage()
 	}
 
@@ -114,8 +114,7 @@ const Home: React.FC = () => {
 				</IonHeader>
 
 				{movies.map((movie, i) => (
-					// <Link to={"/movie/" + movie.id} key={i} style={{textDecoration: 'none'}}>
-						<IonCard routerLink={"/movie/" + movie.id} key={i} >
+						<IonCard routerLink={"/movie/" + movie.id} key={movie.id} >
 							<IonGrid>
 								<IonRow>
 									<IonCol>
@@ -131,7 +130,7 @@ const Home: React.FC = () => {
 								</IonRow>
 								<IonRow>
 									<IonCol size="5">
-										<IonImg src={movie.posterUrl} alt="noimage"/>
+										<img src={movie.posterUrl} alt="noimage"/>
 									</IonCol>
 									<IonCol size="7">
 										<IonGrid>
@@ -152,7 +151,6 @@ const Home: React.FC = () => {
 								</IonRow>
 							</IonGrid>
 						</IonCard>
-					//</Link>
 				))}
 				<IonInfiniteScroll threshold="1600px"
 				                   disabled={disableInfiniteScroll} //this threshold will need to be changed if the card size changes
