@@ -69,7 +69,7 @@ const Home: React.FC = () => {
 	}
 
 	const onLogin = () => {
-		history.push("/")
+		history.push(history.location)
 		loadPage()
 	}
 
@@ -130,7 +130,7 @@ const Home: React.FC = () => {
 								</IonRow>
 								<IonRow>
 									<IonCol size="5">
-										<IonImg src={movie.posterUrl} alt="noimage"/>
+										<img src={movie.posterUrl} alt="noimage"/>
 									</IonCol>
 									<IonCol size="7">
 										<IonGrid>

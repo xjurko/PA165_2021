@@ -146,7 +146,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({match}) => {
 								class="card-subtitle">{movie.releaseYear} | {normalizeRuntime(movie.runtimeMin)}
 							</IonCardSubtitle>
 						</IonCardHeader>
-						<IonImg src={movie.posterUrl}/>
+						<img src={movie.posterUrl}/>
 						<IonCardContent>
 							{movie.genres.map((genre, i) => (
 								<IonChip outline key={i}>
